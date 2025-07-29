@@ -13,9 +13,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   ===================================================================== */
   let news = await charadex.initialize.page(null, charadex.page.index.news, (arr) => {
 
-      // Splice the silly little array
-      let sliceAmount = charadex.page.index.news.amount || 4;
-      arr.splice(sliceAmount, arr.length);
+  // Force sliceAmount to 3
+  let sliceAmount = 3;
+
+  // Get the last 3 (or fewer if less than 3 exist)
+  let recent = arr.slice(-sliceAmount);
+
+  // Overwrite original array in-place
+  arr.length = 0;
+  arr.push(...recent);
 
     }, (data) => {
 
