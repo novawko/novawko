@@ -350,9 +350,7 @@ charadex.page.characters = {
 
     }
 
-  }
-
-};
+  };
     
 
     [charadex.sheet.pages.characters]: {
