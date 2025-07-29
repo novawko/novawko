@@ -233,7 +233,8 @@ body {
   background-color: var(--cd-body-background-color);
   background-image: var(--cd-body-background-image);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-attachment: fixed;
 
 }
 
