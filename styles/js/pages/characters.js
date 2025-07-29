@@ -44,8 +44,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* ==================================================================== */
 /* Cut that dumbie ugly prefixes out
 ======================================================================= */
-    const originalString = "#entryNext span";
-    const newString1 = originalString.replace("#name span");
+    arr.replace("#entryNext span", "#name span"));
   
   
   charadex.tools.loadPage('.softload', 500);
