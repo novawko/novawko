@@ -55,9 +55,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   arr.length = 0;
   arr.push(...recent);
 
-  // Reverse the thing
-  let designs = arr.reverse();
-
   });
 
 
