@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* ==================================================================== */
 /* Cut that dumbie ugly prefixes out
 ======================================================================= */
-    arr.replace("#entryNext span", "#name span"));
+    "#entryNext span".replace("CHA", "");
   
   
   charadex.tools.loadPage('.softload', 500);
