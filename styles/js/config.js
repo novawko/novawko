@@ -359,9 +359,9 @@ charadex.page.characters = {
       sheetPage: charadex.sheet.pages.characters,
       sitePage: 'characters',
       primaryProperty: 'username',
-      relatedProperty: 'name',
-      dexSelector: 'characters',
-      profileProperty: 'character',
+      relatedProperty: 'owner',
+      dexSelector: 'designs',
+      profileProperty: 'design',
       profileToggle: false,
 
     }
