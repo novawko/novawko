@@ -46,7 +46,7 @@ charadex.buildList = (selector = 'charadex') => {
 
     // Attempt to find the profile
     let profile = galleryArray.find((entry) => {
-      return charadex.tools.scrub(entry.profileid) === charadex.tools.scrub(pageParameter)
+      return charadex.tools.scrub(entry.profilename) === charadex.tools.scrub(pageParameter)
     });
 
     // Return the profile in an array if it exists 
@@ -349,8 +349,8 @@ charadex.listFeatures.prevNextLink = function (pageUrl, galleryArray, profileArr
   const updateLink = (selector, profile) => {
     const element = $(selector);
     if (profile) {
-      element.attr('href', charadex.url.addUrlParameters(pageUrl, { profile: profile.profileid }));
-      element.find('span').text(profile.profileid);
+      element.attr('href', charadex.url.addUrlParameters(pageUrl, { profile: profile.profilename }));
+      element.find('span').text(profile.profilename);
       element.show();
     } else {
       element.hide();
@@ -358,7 +358,7 @@ charadex.listFeatures.prevNextLink = function (pageUrl, galleryArray, profileArr
   };
 
   // Check gallery index
-  const currentIndex = galleryArray.findIndex((item) => item.profileid === profileArray[0].profileid);
+  const currentIndex = galleryArray.findIndex((item) => item.profilename === profileArray[0].profilename);
   if (currentIndex === -1) return false;
 
   // Add links based on links
