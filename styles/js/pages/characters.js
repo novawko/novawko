@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
 
     }
-  );
 
 /* ==================================================================== */
 /* Spilt them annoying prefixes to look nicer
@@ -70,6 +69,9 @@ if (urlParams.has('id')) {
 
             }
           }
+
+    
+  );
   
   charadex.tools.loadPage('.softload', 500);
   
