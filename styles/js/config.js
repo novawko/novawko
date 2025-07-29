@@ -66,7 +66,7 @@ charadex.page = {};
 charadex.page.news = {
 
   sheetPage: charadex.sheet.pages.news,
-  sitePage: 'news',
+  sitePage: 'announcements',
   dexSelector: 'charadex',
   profileProperty: 'title',
 
