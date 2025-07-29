@@ -39,6 +39,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     }
 
+  );
+
 /* ==================================================================== */
 /* Cut that dumbie ugly prefixes out
 ======================================================================= */
@@ -58,9 +60,7 @@ document.addEventListener("DOMContentLoaded", async () => {
               } else {
                 $("#entryNext i").remove();
               }
-    
-
-  );
+  
   
   charadex.tools.loadPage('.softload', 500);
   
