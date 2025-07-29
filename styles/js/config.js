@@ -154,7 +154,7 @@ charadex.page.connections = {
     toggle: false,
   },
 
-};
+},
 
 
 /* FAQ
