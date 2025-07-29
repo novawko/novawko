@@ -9,6 +9,10 @@ import { charadex } from '../charadex.js';
 ======================================================================= */
 document.addEventListener("DOMContentLoaded", async () => {
 
+  // Remove the prefixes
+  const entryNext = arr.slice(3);
+  const entryPrev = arr.slice(3);
+
   let dex = await charadex.initialize.page(
     null,
     charadex.page.characters,
@@ -34,10 +38,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             charadex.page.characters.relatedData['image gallery']
           );
         }
-
-      // Remove the prefixes
-      const entryNext = arr.slice(3);
-      const entryPrev = arr.slice(3);
 
       }
 
