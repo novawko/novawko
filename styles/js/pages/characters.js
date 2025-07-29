@@ -39,7 +39,28 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     }
 
-  );  
+/* ==================================================================== */
+/* Cut that dumbie ugly prefixes out
+======================================================================= */
+              // Prev
+              if (sheetArray[len - 1]) {
+                $("#entryPrev").attr("href", url.href.split('?id')[0].split('&id')[0] + preParam + sheetArray[len - 1].id);
+                $("#entryPrev span").text(sheetArray[len - 1].id);
+              } else {
+                $("#entryPrev i").remove();
+              }
+
+              // Next
+              if (sheetArray[len + 1]) {
+                console.log(sheetArray[len + 1]);
+                $("#entryNext").attr("href", url.href.split('?id')[0].split('&id')[0] + preParam + sheetArray[len + 1].id);
+                $("#entryNext span").text(sheetArray[len + 1].id);
+              } else {
+                $("#entryNext i").remove();
+              }
+    
+
+  );
   
   charadex.tools.loadPage('.softload', 500);
   
