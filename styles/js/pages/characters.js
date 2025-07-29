@@ -44,11 +44,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* ==================================================================== */
 /* Cut that dumbie ugly prefixes out
 ======================================================================= */
-              // Prev
-              $("#entryPrev span").text(sheetArray[len - 1].id);
-
-              // Next
-                $("#entryNext span").text(sheetArray[len + 1].id);
+    const originalString = "#entryNext span";
+    const newString1 = originalString.replace("#name span");
   
   
   charadex.tools.loadPage('.softload', 500);
