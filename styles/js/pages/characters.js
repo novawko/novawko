@@ -40,13 +40,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
   );
-
-/* ==================================================================== */
-/* Cut that dumbie ugly prefixes out
-======================================================================= */
-    "#entryPrev".replace("CHA", "");
-    "#entryNext".replace("CHA", "");
-  
   
   charadex.tools.loadPage('.softload', 500);
   
