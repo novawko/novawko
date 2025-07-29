@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /* News
   ===================================================================== */
-  let announcements = await charadex.initialize.page(null, charadex.page.index.news, (arr) => {
+  let news = await charadex.initialize.page(null, charadex.page.index.news, (arr) => {
 
       // Splice the silly little array
       let sliceAmount = charadex.page.index.news.amount || 4;
