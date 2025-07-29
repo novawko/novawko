@@ -45,14 +45,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* Cut that dumbie ugly prefixes out
 ======================================================================= */
               // Prev
-              if (sheetArray[len - 1]) {
-                $("#entryPrev span").text(sheetArray[len - 1].id);
-              }
+              $("#entryPrev span").text(sheetArray[len - 1].id);
 
               // Next
-              if (sheetArray[len + 1]) {
                 $("#entryNext span").text(sheetArray[len + 1].id);
-              }
   
   
   charadex.tools.loadPage('.softload', 500);
