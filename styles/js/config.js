@@ -291,7 +291,7 @@ charadex.page.characters = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'ID', 'Design', 'Owner', 'Designer', 'Artist']
+    parameters: ['All', 'Name', 'Design', 'Owner', 'Designer', 'Artist']
   },
 
   prevNext: {
