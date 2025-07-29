@@ -39,13 +39,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     }
 
+  );
+
 /* ==================================================================== */
 /* Split them prefixes out to look nicer
 ======================================================================= */
     entryNext.split("CHA")
     entryPrev.split("CHA");
     
-  );
   
   charadex.tools.loadPage('.softload', 500);
   
