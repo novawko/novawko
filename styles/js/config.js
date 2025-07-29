@@ -284,7 +284,7 @@ charadex.page.characters = {
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Worlds',
+    folderProperty: 'World',
     parameters: charadex.sheet.options.worlds,
   },
 
