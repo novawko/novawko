@@ -105,7 +105,7 @@ charadex.tools = {
   
   // Adds profile links
   addProfileLinks(entry, pageUrl, key = 1) {
-    entry.profileid = entry[key];
+    entry.profilename = entry[key];
     entry.profilelink = charadex.url.addUrlParameters(pageUrl, { profile: entry[key] });
   },
 
