@@ -109,7 +109,7 @@ charadex.page.news = {
 };
 
 
-/* Staff
+/* Connections
 /* --------------------------------------------------------------- */
 charadex.page.connections = {
 
@@ -306,7 +306,7 @@ charadex.page.characters = {
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'design',
+      profileProperty: 'character',
       profileToggle: false,
 
       sort: {
@@ -359,7 +359,7 @@ charadex.page.characters = {
       sheetPage: charadex.sheet.pages.characters,
       sitePage: 'characters',
       primaryProperty: 'username',
-      relatedProperty: 'owner',
+      relatedProperty: 'name',
       dexSelector: 'characters',
       profileProperty: 'character',
       profileToggle: false,
