@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             fancyTagArr.push(`<a href="${charadex.url.addUrlParameters(charadex.url.getPageUrl(charadex.page.imageGallery.sitePage), {tags: tag})}">#${tag.trim()}</a>`);
           }
         }
-        entry.tags = fancyTagArr.join(' ');
+        entry.fancytags = fancyTagArr.join(' ');
 
       }
     }
