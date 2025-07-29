@@ -35,6 +35,10 @@ document.addEventListener("DOMContentLoaded", async () => {
           );
         }
 
+      // Remove the prefixes
+      const entryNext = arr.slice(3);
+      const entryPrev = arr.slice(3);
+
       }
 
     }
