@@ -41,9 +41,9 @@ charadex.sheet = {
 
     designTypes: ['All', 'Original Character', 'Fan Character', 'Original Species', 'Kinsona'],
 
-    worlds: ['All', 'Jovalan', 'Nubreolan', 'Warriors', 'Harry Potter', 'Pokémon', 'Territory', 'SHaM', 'Siderios', 'Lunamor', 'Zenith', 'Care Bears', 'Turning Red', 'Indigo Park', 'Animal Jam', 'Feral', 'Hazbin Hotel', 'N/A'],
+    worlds: ['All', 'Jovalan', 'Nubreolan', 'Warriors', 'Harry Potter', 'Pokémon', 'Territory', 'SHaM', 'Siderios', 'Lunamor', 'Zenith', 'Care Bears', 'Turning Red', 'Indigo Park', 'Animal Jam', 'Feral', 'Hazbin Hotel', 'Not Applicable'],
 
-    speciesTypes: ['All', 'Open Species', 'Closed Species', 'Semi-Closed Species', 'Open Species w/ Closed Traits', 'Pet Species', 'N/A'],
+    speciesTypes: ['All', 'Open Species', 'Closed Species', 'Semi-Closed Species', 'Open Species with Closed Traits', 'Pet Species', 'Regular Species'],
 
     statuses: ['All', 'Resell', 'Trade', 'Offer', 'Pending', 'For Sale', 'Do Not Offer', 'Auction'],
 
@@ -284,8 +284,8 @@ charadex.page.characters = {
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Species',
-    parameters: charadex.sheet.options.species,
+    folderProperty: 'Worlds',
+    parameters: charadex.sheet.options.worlds,
   },
 
   search: {
