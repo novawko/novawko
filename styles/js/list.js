@@ -46,7 +46,7 @@ charadex.buildList = (selector = 'charadex') => {
 
     // Attempt to find the profile
     let profile = galleryArray.find((entry) => {
-      return charadex.tools.scrub(entry.profileid) === charadex.tools.scrub(pageParameter)
+      return charadex.tools.scrub(entry.profilename) === charadex.tools.scrub(pageParameter)
     });
 
     // Return the profile in an array if it exists 
