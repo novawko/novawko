@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /* Characters
   ===================================================================== */
-  let characters = await charadex.initialize.page(null, charadex.page.index.characters, (arr) => {
+  let designs = await charadex.initialize.page(null, charadex.page.index.characters, (arr) => {
     
     // Splice the silly little array
     let sliceAmount = charadex.page.index.characters.amount || 6;
