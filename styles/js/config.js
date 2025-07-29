@@ -377,19 +377,19 @@ charadex.page.index = {
 
   news: {
     ... charadex.page.news,
-    dexSelector: 'news',
-    amount: 1,
+    dexSelector: 'announcement',
+    amount: 2,
   },
 
   connections: {
     ... charadex.page.connections,
-    dexSelector: 'connections',
+    dexSelector: 'connection',
     amount: 6,
   },
 
   characters: {
     ... charadex.page.characters,
-    dexSelector: 'character',
+    dexSelector: 'design',
     amount: 4,
   }
 
