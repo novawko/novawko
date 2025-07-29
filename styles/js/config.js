@@ -41,7 +41,7 @@ charadex.sheet = {
 
     designTypes: ['All', 'Original Character', 'Fan Character', 'Original Species', 'Kinsona'],
 
-    worlds: ['All', 'Jovalan', 'Nubreolan', 'Warriors', 'Harry Potter', 'Pokémon', 'Territory', 'SHaM', 'Siderios', 'Lunamor', 'Zenith', 'Care Bears', 'Turning Red', 'Indigo Park', 'Animal Jam', 'Feral', 'Hazbin Hotel', 'Not Applicable'],
+    worlds: ['All', 'Jovalan', 'Nubreolan', 'Warriors', 'Harry Potter', 'Pokémon', 'Territory', 'SHaM', 'Siderios', 'Lunamor', 'Zenith', 'Care Bears', 'Turning Red', 'Indigo Park', 'Animal Jam', 'Feral', 'Hazbin Hotel', 'Others'],
 
     speciesTypes: ['All', 'Open Species', 'Closed Species', 'Semi-Closed Species', 'Open Species with Closed Traits', 'Pet Species', 'Regular Species'],
 
