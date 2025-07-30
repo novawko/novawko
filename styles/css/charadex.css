@@ -743,8 +743,12 @@ p:last-child {
     letter-spacing: 2px;
     font-size: 5rem;
   }
-  @media only screen and (max-width: 600px) {
-  height: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+.cd-hero-title {
+  height: auto;
+  max-width: 100%;
 }
 }
 
