@@ -750,6 +750,7 @@ p:last-child {
   background-size: contain !important;
   margin-top: -50px;
   margin-bottom: -50px;
+  border-radius: 1rem !important;
 }
 }
 
