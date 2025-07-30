@@ -748,8 +748,8 @@ p:last-child {
 @media only screen and (max-width: 600px) {
 .cd-hero-title {
   background-size: contain !important;
-  margin-top: -50px;
-  margin-bottom: -50px;
+  margin-top: -65px;
+  margin-bottom: -80px;
   border-radius: 1rem !important;
 }
 }
