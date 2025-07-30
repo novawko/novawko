@@ -748,6 +748,7 @@ p:last-child {
 @media only screen and (max-width: 600px) {
 .cd-hero-title {
   height: 100px;
+  background-size: contain;
 }
 }
 
