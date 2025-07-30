@@ -743,6 +743,9 @@ p:last-child {
     letter-spacing: 2px;
     font-size: 5rem;
   }
+  @media (max-width: 600px) {
+  height: 100px;
+}
 }
 
 
