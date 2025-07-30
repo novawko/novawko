@@ -747,8 +747,7 @@ p:last-child {
 
 @media only screen and (max-width: 600px) {
 .cd-hero-title {
-  height: auto;
-  max-width: 100%;
+  height: 100px;
 }
 }
 
