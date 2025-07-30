@@ -742,14 +742,11 @@ p:last-child {
   .cd-hero-title {
     letter-spacing: 2px;
     font-size: 5rem;
-    background-color: none;
   }
 }
 
 @media only screen and (max-width: 600px) {
 .cd-hero-title {
-  margin-top: -50px;
-  margin-bottom: -50px;
   background-size: contain !important;
 }
 }
