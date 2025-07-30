@@ -338,7 +338,6 @@ charadex.manageData = {
       entry.profilelink = charadex.manage.url.addParameters(pageUrl, { profile: entry[key] });
     };
 
-    entry.profilelink.splice(1, 3)
   }
 
 }
