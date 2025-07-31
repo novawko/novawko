@@ -358,10 +358,10 @@ charadex.page.characters = {
 
 /* Nubreolan Masterlist
 /* --------------------------------------------------------------- */
-charadex.page.nubreolanmasterlist = {
+charadex.page.nubreolanMasterlist = {
 
-  sheetPage: charadex.sheet.pages.nubreolanmasterlist,
-  sitePage: 'nubreolanmasterlist',
+  sheetPage: charadex.sheet.pages.nubreolanMasterlist,
+  sitePage: 'nubreolanMasterlist',
   dexSelector: 'charadex',
   profileProperty: 'listing',
 
@@ -457,7 +457,7 @@ charadex.page.index = {
   },
 
   listings: {
-    ... charadex.page.nubreolanmasterlist,
+    ... charadex.page.nubreolanMasterlist,
     dexSelector: 'listing',
     amount: 4,
   }
