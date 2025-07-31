@@ -406,7 +406,7 @@ charadex.page.index = {
     ... charadex.page.nubreolanmasterlist,
     dexSelector: 'listing',
     amount: 4,
-  },
+  }
 
 };
 
