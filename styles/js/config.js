@@ -467,6 +467,8 @@ charadex.page.nubreolanmasterlist = {
 
   },
 
+  }
+
 };
 
 
