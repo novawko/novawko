@@ -376,7 +376,7 @@ charadex.page.characters = {
 
     }
 
-  },
+  }
 
 };
 
@@ -470,7 +470,7 @@ charadex.page.nubreolanmasterlist = {
 
     }
 
-  },
+  }
 
 };
 
