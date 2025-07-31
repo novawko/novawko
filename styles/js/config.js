@@ -382,9 +382,6 @@ charadex.page.characters = {
 
 
 
-
-
-
 /* Nubreolan Masterlist
 /* --------------------------------------------------------------- */
 charadex.page.nubreolanmasterlist = {
@@ -396,7 +393,7 @@ charadex.page.nubreolanmasterlist = {
 
   sort: {
     toggle: true,
-    key: "id",
+    key: "nubreolanid",
     order: "desc",
     parameters: []
   },
@@ -436,8 +433,8 @@ charadex.page.nubreolanmasterlist = {
     [charadex.sheet.pages.nubreolanLog]: {
 
       sheetPage: charadex.sheet.pages.nubreolanLog,
-      primaryProperty: 'id',
-      relatedProperty: 'id',
+      primaryProperty: 'nubreolanid',
+      relatedProperty: 'nubreolanid',
       dexSelector: 'log',
       profileProperty: 'listing',
       profileToggle: false,
@@ -460,7 +457,7 @@ charadex.page.nubreolanmasterlist = {
 
     [charadex.sheet.pages.nubreolanmasterlist]: {
 
-      // This imports the config from the characters
+      // This imports the config from the listings
       // So you dont have to repeat yourself
       ...charadex.page.nubreolanmasterlist, 
 
