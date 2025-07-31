@@ -487,6 +487,12 @@ charadex.page.index = {
     ... charadex.page.characters,
     dexSelector: 'design',
     amount: 4,
+  },
+
+  nubreolanmasterlist: {
+    ... charadex.page.nubreolanmasterlist,
+    dexSelector: 'listing',
+    amount: 4,
   }
 
 };
