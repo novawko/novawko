@@ -301,7 +301,7 @@ charadex.page.characters = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Name', 'Design', 'Owner', 'Designer', 'Artist']
+    parameters: ['All', 'Name', 'Design', 'Owner', 'Designer', 'Artist', 'Traits']
   },
 
   prevNext: {
@@ -316,7 +316,7 @@ charadex.page.characters = {
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'character',
+      profileProperty: 'design',
       profileToggle: false,
 
       sort: {
@@ -356,13 +356,14 @@ charadex.page.characters = {
         toggle: true,
         bottomToggle: true,
         amount: 12,
-     },
+      },
 
     }
 
-   }
-      
-  },    
+  }
+
+};
+    
 
     [charadex.sheet.pages.characters]: {
 
@@ -380,102 +381,10 @@ charadex.page.characters = {
 
     }
 
-  }
+  },
 
 };
 
-
-
-/* Nubreolan Masterlist
-/* --------------------------------------------------------------- */
-charadex.page.nubreolanmasterlist = {
-
-  sheetPage: charadex.sheet.pages.nubreolanmasterlist,
-  sitePage: 'nubreolanmasterlist',
-  dexSelector: 'charadex',
-  profileProperty: 'listing',
-
-  sort: {
-    toggle: true,
-    key: "nubreolanid",
-    order: "desc",
-    parameters: []
-  },
-
-  pagination: {
-    toggle: true,
-    bottomToggle: true,
-    amount: 12,
-  },
-
-  filters: {
-    toggle: true,
-    parameters: {
-      'Privacy Status': charadex.sheet.options.privacyStatuses,
-      'Status': charadex.sheet.options.statuses,
-    }
-  },
-
-  fauxFolder: {
-    toggle: true,
-    folderProperty: 'Species',
-    parameters: charadex.sheet.options.nubreolanSpecies,
-  },
-
-  search: {
-    toggle: true,
-    filterToggle: true,
-    parameters: ['All', 'ID', 'Design', 'Owner', 'Designer', 'Artist']
-  },
-
-  prevNext: {
-    toggle: true,
-  },
-
-  relatedData: {
-
-    [charadex.sheet.pages.nubreolanLog]: {
-
-      sheetPage: charadex.sheet.pages.nubreolanLog,
-      primaryProperty: 'nubreolanid',
-      relatedProperty: 'nubreolanid',
-      dexSelector: 'log',
-      profileProperty: 'listing',
-      profileToggle: false,
-
-      sort: {
-        toggle: true,
-        key: "timestamp",
-        order: "desc",
-        parameters: []
-      },
-
-      pagination: {
-        toggle: true,
-        bottomToggle: false,
-        amount: 12,
-      },
-
-    },
-
-
-    [charadex.sheet.pages.nubreolanmasterlist]: {
-
-      // This imports the config from the listings
-      // So you dont have to repeat yourself
-      ...charadex.page.nubreolanmasterlist, 
-
-      sheetPage: charadex.sheet.pages.nubreolanmasterlist,
-      sitePage: 'nubreolanmasterlist',
-      primaryProperty: 'username',
-      relatedProperty: 'owner',
-      dexSelector: 'listings',
-      profileProperty: 'listing',
-      profileToggle: false,
-
-  }
-
-};
 
 /* Index
 /* --------------------------------------------------------------- */
