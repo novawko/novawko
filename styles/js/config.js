@@ -301,7 +301,7 @@ charadex.page.characters = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Name', 'Design', 'Owner', 'Designer', 'Artist', 'Traits']
+    parameters: ['All', 'Name', 'Design', 'Owner', 'Designer', 'Artist']
   },
 
   prevNext: {
@@ -362,7 +362,7 @@ charadex.page.characters = {
 
   }
 
-};
+},
     
 
     [charadex.sheet.pages.characters]: {
