@@ -454,14 +454,14 @@ charadex.page.nubreolanmasterlist = {
     },
 
 
-    [charadex.sheet.pages.nubreolanMasterlist]: {
+    [charadex.sheet.pages.nubreolanmasterlist]: {
 
       // This imports the config from the characters
       // So you dont have to repeat yourself
-      ...charadex.page.nubreolanMasterlist, 
+      ...charadex.page.nubreolanmasterlist, 
 
-      sheetPage: charadex.sheet.pages.nubreolanMasterlist,
-      sitePage: 'nubreolanMasterlist',
+      sheetPage: charadex.sheet.pages.nubreolanmasterlist,
+      sitePage: 'nubreolanmasterlist',
       primaryProperty: 'username',
       relatedProperty: 'owner',
       dexSelector: 'listings',
