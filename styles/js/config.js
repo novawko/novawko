@@ -41,8 +41,8 @@ charadex.sheet = {
 
   options: {
 
-    designTypes: ['All', 'Founder Design', 'Staff Design', 'Mascot', 'AU Design', 'MYO', 'Event', 'Custom', 'Bred'],
-    nubreolanTypes: ['All', 'Original Character', 'Fan Character', 'Original Species', 'Kinsona'],
+    designTypes: ['All', 'Original Character', 'Fan Character', 'Original Species', 'Kinsona'],
+    nubreolanTypes: ['All', 'Founder Design', 'Staff Design', 'Mascot', 'AU Design', 'MYO', 'Event', 'Custom', 'Bred'],
     worlds: ['All', 'Jovalan', 'Nubreolan', 'Warriors', 'Harry Potter', 'Pokémon', 'Territory', 'SHaM', 'Siderios', 'Lunamor', 'Zenith', 'Care Bears', 'Turning Red', 'Indigo Park', 'Animal Jam', 'Feral', 'Hazbin Hotel', 'Others'],
     statuses: ['All', 'Resell', 'Trade', 'Offer', 'Pending', 'For Sale', 'Do Not Offer', 'Auction'],
     privacyStatuses: ['All', 'Public', 'Unlisted', 'Authorized Only', 'Logged In Users Only'],
