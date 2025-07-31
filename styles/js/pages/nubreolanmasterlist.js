@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   let dex = await charadex.initialize.page(
     null,
-    charadex.page.nubreolanmasterlist,
+    charadex.page.nubreolanMasterlist,
     null, 
     async (listData) => {
 
@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.log(listData.profileArray[0]);
 
         // Create the log dex
-        if (charadex.tools.checkArray(listData.profileArray[0].nubreolanlog)) {
+        if (charadex.tools.checkArray(listData.profileArray[0].nubreolanLog)) {
           let logs = await charadex.initialize.page(
-            listData.profileArray[0].nubreolanlog,
-            charadex.page.nubreolanmasterlist.relatedData['nubreolan log']
+            listData.profileArray[0].nubreolanLog,
+            charadex.page.nubreolanMasterlist.relatedData['nubreolan log']
           );
         }
 
