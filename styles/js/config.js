@@ -404,14 +404,14 @@ charadex.page.nubreolanmasterlist = {
   filters: {
     toggle: true,
     parameters: {
-      'Status': charadex.sheet.options.nubreolanStatuses,
       'Privacy Status': charadex.sheet.options.privacyStatuses,
+      'Status': charadex.sheet.options.statuses,
     }
   },
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Species',
+    folderProperty: 'Nubreolan Species',
     parameters: charadex.sheet.options.nubreolanSpecies,
   },
 
@@ -427,13 +427,13 @@ charadex.page.nubreolanmasterlist = {
 
   relatedData: {
 
-    [charadex.sheet.pages.nubreolanlog]: {
+    [charadex.sheet.pages.nubreolanLog]: {
 
-      sheetPage: charadex.sheet.pages.nubreolanlog,
+      sheetPage: charadex.sheet.pages.nubreolanLog,
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'listing',
+      profileProperty: 'nubreolanmasterlist',
       profileToggle: false,
 
       sort: {
@@ -449,8 +449,7 @@ charadex.page.nubreolanmasterlist = {
         amount: 12,
       },
 
-    },
-
+    },  
 
     [charadex.sheet.pages.nubreolanmasterlist]: {
 
@@ -465,8 +464,6 @@ charadex.page.nubreolanmasterlist = {
       dexSelector: 'listings',
       profileProperty: 'listing',
       profileToggle: false,
-
-    }
 
   },
 
