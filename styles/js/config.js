@@ -366,10 +366,6 @@ charadex.page.characters = {
 
     }
 
-   },
-
-  }
-
  };
 
 
