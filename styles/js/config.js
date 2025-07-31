@@ -404,14 +404,14 @@ charadex.page.nubreolanmasterlist = {
   filters: {
     toggle: true,
     parameters: {
+      'Design Type': charadex.sheet.options.nubreolanStatuses,
       'Privacy Status': charadex.sheet.options.privacyStatuses,
-      'Status': charadex.sheet.options.nubreolanStatuses,
     }
   },
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Nubreolan Species',
+    folderProperty: 'Species',
     parameters: charadex.sheet.options.nubreolanSpecies,
   },
 
@@ -449,11 +449,12 @@ charadex.page.nubreolanmasterlist = {
         amount: 12,
       },
 
-    },  
+    },
+
 
     [charadex.sheet.pages.nubreolanmasterlist]: {
 
-      // This imports the config from the characters
+      // This imports the config from the listings
       // So you dont have to repeat yourself
       ...charadex.page.nubreolanmasterlist, 
 
@@ -467,10 +468,7 @@ charadex.page.nubreolanmasterlist = {
 
   },
 
-  }
-
 };
-
 
 /* Index
 /* --------------------------------------------------------------- */
