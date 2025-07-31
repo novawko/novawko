@@ -35,6 +35,8 @@ charadex.sheet = {
     news:          "news",
     faq:           "faq",
     connections:   "connections",
+    nubreolanMasterlist: "nubreolan masterlist",
+    nubreolanLog: "nubreolan log",
   },
 
   options: {
@@ -362,6 +364,100 @@ charadex.page.characters = {
       relatedProperty: 'owner',
       dexSelector: 'designs',
       profileProperty: 'design',
+      profileToggle: false,
+
+    }
+
+  },
+
+};
+
+
+/* Nubreolan Masterlist
+/* --------------------------------------------------------------- */
+charadex.page.nubreolanmasterlist = {
+
+  sheetPage: charadex.sheet.pages.nubreolanmasterlist,
+  sitePage: 'nubreolanmasterlist',
+  dexSelector: 'charadex',
+  profileProperty: 'listing',
+
+  sort: {
+    toggle: true,
+    key: "id",
+    order: "desc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 12,
+  },
+
+  filters: {
+    toggle: true,
+    parameters: {
+      'Status': charadex.sheet.options.nubreolanStatuses,
+      'Privacy Status': charadex.sheet.options.privacyStatuses,
+    }
+  },
+
+  fauxFolder: {
+    toggle: true,
+    folderProperty: 'Species',
+    parameters: charadex.sheet.options.nubreolanSpecies,
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: true,
+    parameters: ['All', 'ID', 'Design', 'Owner', 'Designer', 'Artist']
+  },
+
+  prevNext: {
+    toggle: true,
+  },
+
+  relatedData: {
+
+    [charadex.sheet.pages.nubreolanLog]: {
+
+      sheetPage: charadex.sheet.pages.nubreolanLog,
+      primaryProperty: 'id',
+      relatedProperty: 'id',
+      dexSelector: 'log',
+      profileProperty: 'listing',
+      profileToggle: false,
+
+      sort: {
+        toggle: true,
+        key: "timestamp",
+        order: "desc",
+        parameters: []
+      },
+
+      pagination: {
+        toggle: true,
+        bottomToggle: false,
+        amount: 12,
+      },
+
+    },
+
+
+    [charadex.sheet.pages.nubreolanMasterlist]: {
+
+      // This imports the config from the characters
+      // So you dont have to repeat yourself
+      ...charadex.page.nubreolanMasterlist, 
+
+      sheetPage: charadex.sheet.pages.nubreolanMasterlist,
+      sitePage: 'nubreolanMasterlist',
+      primaryProperty: 'username',
+      relatedProperty: 'owner',
+      dexSelector: 'listings',
+      profileProperty: 'listing',
       profileToggle: false,
 
     }
