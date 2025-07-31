@@ -405,7 +405,7 @@ charadex.page.nubreolanmasterlist = {
     toggle: true,
     parameters: {
       'Privacy Status': charadex.sheet.options.privacyStatuses,
-      'Status': charadex.sheet.options.statuses,
+      'Status': charadex.sheet.options.nubreolanStatuses,
     }
   },
 
