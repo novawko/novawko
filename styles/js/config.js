@@ -376,7 +376,7 @@ charadex.page.characters = {
 
   }
 
-};
+}
 
 
 /* Nubreolan Masterlist
