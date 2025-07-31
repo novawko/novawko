@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /* Characters
   ===================================================================== */
-  let designs = await charadex.initialize.page(null, charadex.page.index.characters, (arr) => {
+  let designs = await charadex.initialize.page(null, charadex.page.index.designs, (arr) => {
   // Force sliceAmount to 4
   let sliceAmount = 4;
 
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /* Nubreolan Masterlist
   ===================================================================== */
-  let listings = await charadex.initialize.page(null, charadex.page.index.nubreolanMasterlist, (arr) => {
+  let listings = await charadex.initialize.page(null, charadex.page.index.listings, (arr) => {
   // Force sliceAmount to 4
   let sliceAmount = 4;
 
