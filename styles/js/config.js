@@ -381,6 +381,10 @@ charadex.page.characters = {
 };
 
 
+
+
+
+
 /* Nubreolan Masterlist
 /* --------------------------------------------------------------- */
 charadex.page.nubreolanmasterlist = {
@@ -406,8 +410,8 @@ charadex.page.nubreolanmasterlist = {
   filters: {
     toggle: true,
     parameters: {
-      'Design Type': charadex.sheet.options.nubreolanStatuses,
       'Privacy Status': charadex.sheet.options.privacyStatuses,
+      'Status': charadex.sheet.options.statuses,
     }
   },
 
@@ -435,7 +439,7 @@ charadex.page.nubreolanmasterlist = {
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'nubreolanmasterlist',
+      profileProperty: 'listing',
       profileToggle: false,
 
       sort: {
@@ -456,7 +460,7 @@ charadex.page.nubreolanmasterlist = {
 
     [charadex.sheet.pages.nubreolanmasterlist]: {
 
-      // This imports the config from the listings
+      // This imports the config from the characters
       // So you dont have to repeat yourself
       ...charadex.page.nubreolanmasterlist, 
 
