@@ -49,7 +49,15 @@ charadex.sheet = {
 
     statuses: ['All', 'Resell', 'Trade', 'Offer', 'Pending', 'For Sale', 'Do Not Offer', 'Auction'],
 
-    species: ['All', 'Cat', 'Dog', 'Hamster', 'Kitiguar', 'Human', 'Kanpolo', 'Deep Sea Kanpolo', 'Hyper Kanpolo', 'Kumiyaa', 'Noodle Moth', 'Heavian', 'Burgvoir', 'Sylvarian', 'Woobar', 'Chubbö', 'Yuecoatl', 'Protogen', 'Puffball', 'Yukin', 'Tauyn', 'Eevee', 'Leafeon', 'Sylveon', 'Sprigatito', 'Care Bear', 'Care Bear Cousin', 'Wolf', 'Dragon', 'Rabbit', 'Mecha', 'Fluffy Worm', 'Fox', 'Sparkle Cat', 'Arctic Fox', 'Arctic Wolf', 'Senri', 'Jackalope'],
+    privacyStatuses: ['All', 'Resell', 'Trade', 'Offer', 'Pending', 'For Sale', 'Do Not Offer', 'Auction'],
+
+    nubreolanStatuses: ['All', 'Private', 'Public', 'Authorized Only', 'Unlisted', 'Logged In Users Only'],
+
+    nubreolanTypes: ['All', 'Founder Design', 'Staff Design', 'Mascot', 'AU Design', 'MYO', 'Event', 'Custom', 'Bred'],
+
+    nubreolanSpecies: ['All', 'Resell', 'Trade', 'Offer', 'Pending', 'For Sale', 'Do Not Offer', 'Auction', 'Voided'],
+
+    species: ['All', 'Cat', 'Dog', 'Hamster', 'Kitiguar', 'Human', 'Kanpolo', 'Deep Sea Kanpolo', 'Hyper Kanpolo', 'Kumiyaa', 'Noodle Moth', 'Heavian', 'Burgvoir', 'Sylvarian', 'Woobar', 'Chubbö', 'Yuecoatl', 'Protogen', 'Puffball', 'Yukin', 'Tauyn', 'Eevee', 'Leafeon', 'Sylveon', 'Sprigatito', 'Care Bear', 'Care Bear Cousin', 'Wolf', 'Dragon', 'Rabbit', 'Mecha', 'Fluffy Worm', 'Fox', 'Sparkle Cat', 'Arctic Fox', 'Arctic Wolf', 'Senri', 'Jackalope', 'Flareon', 'Tiger'],
 
   }
 
