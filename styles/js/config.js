@@ -377,7 +377,7 @@ charadex.page.characters = {
 
     }
 
- };
+ },
 
 
 /* Index
