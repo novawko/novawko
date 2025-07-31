@@ -35,13 +35,19 @@ charadex.sheet = {
     news:          "news",
     faq:           "faq",
     connections:   "connections",
+    nubreolanMasterlist:   "nubreolan masterlist",
+    nubreolanLog:   "nubreolan log",
   },
 
   options: {
 
-    designTypes: ['All', 'Original Character', 'Fan Character', 'Original Species', 'Kinsona'],
+    designTypes: ['All', 'Founder Design', 'Staff Design', 'Mascot', 'AU Design', 'MYO', 'Event', 'Custom', 'Bred'],
+    nubreolanTypes: ['All', 'Original Character', 'Fan Character', 'Original Species', 'Kinsona'],
     worlds: ['All', 'Jovalan', 'Nubreolan', 'Warriors', 'Harry Potter', 'Pokémon', 'Territory', 'SHaM', 'Siderios', 'Lunamor', 'Zenith', 'Care Bears', 'Turning Red', 'Indigo Park', 'Animal Jam', 'Feral', 'Hazbin Hotel', 'Others'],
     statuses: ['All', 'Resell', 'Trade', 'Offer', 'Pending', 'For Sale', 'Do Not Offer', 'Auction'],
+    privacyStatuses: ['All', 'Public', 'Unlisted', 'Authorized Only', 'Logged In Users Only'],
+    nubreolanStatuses: ['All', 'Resell', 'Trade', 'Offer', 'Pending', 'For Sale', 'Do Not Offer', 'Auction', 'Voided'],
+    nubreolanSpecies: ['All', 'Kitiguar', 'Fluffy Worm'],
     species: ['All', 'Cat', 'Dog', 'Hamster', 'Kitiguar', 'Human', 'Kanpolo', 'Deep Sea Kanpolo', 'Hyper Kanpolo', 'Kumiyaa', 'Noodle Moth', 'Heavian', 'Burgvoir', 'Sylvarian', 'Woobar', 'Chubbö', 'Yuecoatl', 'Protogen', 'Puffball', 'Yukin', 'Tauyn', 'Eevee', 'Leafeon', 'Sylveon', 'Sprigatito', 'Care Bear', 'Care Bear Cousin', 'Wolf', 'Dragon', 'Rabbit', 'Mecha', 'Fluffy Worm', 'Fox', 'Sparkle Cat', 'Arctic Fox', 'Arctic Wolf', 'Senri', 'Jackalope', 'Flareon', 'Tiger'],
 
   }
@@ -350,21 +356,82 @@ charadex.page.characters = {
 };
     
 
-    [charadex.sheet.pages.characters]: {
+/* Nubreolan Masterlist
+/* --------------------------------------------------------------- */
+charadex.page.nubreolanmasterlist = {
 
-      // This imports the config from the masterlist
-      // So you dont have to repeat yourself
-      ...charadex.page.characters, 
+  sheetPage: charadex.sheet.pages.nubreolanmasterlist,
+  sitePage: 'nubreolanmasterlist',
+  dexSelector: 'charadex',
+  profileProperty: 'listing',
 
-      sheetPage: charadex.sheet.pages.characters,
-      sitePage: 'characters',
-      primaryProperty: 'username',
-      relatedProperty: 'owner',
-      dexSelector: 'designs',
-      profileProperty: 'design',
+  sort: {
+    toggle: true,
+    key: "id",
+    order: "desc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 12,
+  },
+
+  filters: {
+    toggle: true,
+    parameters: {
+      'Design Type': charadex.sheet.options.nubreolanTypes,
+      'Privacy Status': charadex.sheet.options.privacyStatuses,
+      'Status': charadex.sheet.options.nubreolanStatuses,
+    }
+  },
+
+  fauxFolder: {
+    toggle: true,
+    folderProperty: 'Species',
+    parameters: charadex.sheet.options.nubreolanSpecies,
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: true,
+    parameters: ['All', 'ID', 'Design', 'Owner', 'Designer', 'Artist']
+  },
+
+  prevNext: {
+    toggle: true,
+  },
+
+  relatedData: {
+
+    [charadex.sheet.pages.nubreolanLog]: {
+
+      sheetPage: charadex.sheet.pages.nubreolanLog,
+      primaryProperty: 'id',
+      relatedProperty: 'id',
+      dexSelector: 'log',
+      profileProperty: 'listing',
       profileToggle: false,
 
-    };
+      sort: {
+        toggle: true,
+        key: "timestamp",
+        order: "desc",
+        parameters: []
+      },
+
+      pagination: {
+        toggle: true,
+        bottomToggle: false,
+        amount: 12,
+      },
+
+    },
+
+  }
+
+};
 
 
 /* Index
@@ -386,6 +453,12 @@ charadex.page.index = {
   designs: {
     ... charadex.page.characters,
     dexSelector: 'design',
+    amount: 4,
+  },
+
+  listings: {
+    ... charadex.page.nubreolanmasterlist,
+    dexSelector: 'listing',
     amount: 4,
   }
 
