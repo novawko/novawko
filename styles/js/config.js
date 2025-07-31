@@ -429,9 +429,9 @@ charadex.page.nubreolanmasterlist = {
 
   relatedData: {
 
-    [charadex.sheet.pages.nubreolanLog]: {
+    [charadex.sheet.pages.nubreolanlog]: {
 
-      sheetPage: charadex.sheet.pages.nubreolanLog,
+      sheetPage: charadex.sheet.pages.nubreolanlog,
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
