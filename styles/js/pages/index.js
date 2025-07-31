@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /* Nubreolan Masterlist
   ===================================================================== */
-  let designs = await charadex.initialize.page(null, charadex.page.index.nubreolanmasterlist, (arr) => {
+  let listings = await charadex.initialize.page(null, charadex.page.index.nubreolanmasterlist, (arr) => {
   // Force sliceAmount to 4
   let sliceAmount = 4;
 
