@@ -356,9 +356,13 @@ charadex.page.characters = {
         toggle: true,
         bottomToggle: true,
         amount: 12,
-      }
+      },
 
-},
+    }
+
+  }
+
+};
     
 
     [charadex.sheet.pages.characters]: {
