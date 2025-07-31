@@ -381,7 +381,7 @@ charadex.page.characters = {
 
     }
 
- };
+ },
 
 
 /* Index
@@ -407,7 +407,7 @@ charadex.page.index = {
   },
 
   nubreolanmasterlist: {
-    ... charadex.page.nubreolanmasterlist,
+    ... charadex.page.nubreolanMasterlist,
     dexSelector: 'listing',
     amount: 4,
   }
