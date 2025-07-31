@@ -35,28 +35,13 @@ charadex.sheet = {
     news:          "news",
     faq:           "faq",
     connections:   "connections",
-    nubreolanMasterlist: "nubreolan masterlist",
-    nubreolanLog: "nubreolan log",
   },
 
   options: {
 
     designTypes: ['All', 'Original Character', 'Fan Character', 'Original Species', 'Kinsona'],
-
     worlds: ['All', 'Jovalan', 'Nubreolan', 'Warriors', 'Harry Potter', 'Pokémon', 'Territory', 'SHaM', 'Siderios', 'Lunamor', 'Zenith', 'Care Bears', 'Turning Red', 'Indigo Park', 'Animal Jam', 'Feral', 'Hazbin Hotel', 'Others'],
-
-    speciesTypes: ['All', 'Open Species', 'Closed Species', 'Semi-Closed Species', 'Open Species with Closed Traits', 'Pet Species', 'Regular Species'],
-
     statuses: ['All', 'Resell', 'Trade', 'Offer', 'Pending', 'For Sale', 'Do Not Offer', 'Auction'],
-
-    privacyStatuses: ['All', 'Resell', 'Trade', 'Offer', 'Pending', 'For Sale', 'Do Not Offer', 'Auction'],
-
-    nubreolanStatuses: ['All', 'Private', 'Public', 'Authorized Only', 'Unlisted', 'Logged In Users Only'],
-
-    nubreolanTypes: ['All', 'Founder Design', 'Staff Design', 'Mascot', 'AU Design', 'MYO', 'Event', 'Custom', 'Bred'],
-
-    nubreolanSpecies: ['All', 'Resell', 'Trade', 'Offer', 'Pending', 'For Sale', 'Do Not Offer', 'Auction', 'Voided'],
-
     species: ['All', 'Cat', 'Dog', 'Hamster', 'Kitiguar', 'Human', 'Kanpolo', 'Deep Sea Kanpolo', 'Hyper Kanpolo', 'Kumiyaa', 'Noodle Moth', 'Heavian', 'Burgvoir', 'Sylvarian', 'Woobar', 'Chubbö', 'Yuecoatl', 'Protogen', 'Puffball', 'Yukin', 'Tauyn', 'Eevee', 'Leafeon', 'Sylveon', 'Sprigatito', 'Care Bear', 'Care Bear Cousin', 'Wolf', 'Dragon', 'Rabbit', 'Mecha', 'Fluffy Worm', 'Fox', 'Sparkle Cat', 'Arctic Fox', 'Arctic Wolf', 'Senri', 'Jackalope', 'Flareon', 'Tiger'],
 
   }
@@ -164,7 +149,7 @@ charadex.page.connections = {
     toggle: false,
   },
 
-},
+};
 
 
 /* FAQ
@@ -301,7 +286,7 @@ charadex.page.characters = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Name', 'Design', 'Owner', 'Designer', 'Artist']
+    parameters: ['All', 'Name', 'Design', 'Owner', 'Designer', 'Artist', 'Traits']
   },
 
   prevNext: {
@@ -348,7 +333,7 @@ charadex.page.characters = {
       sort: {
         toggle: true,
         key: "id",
-        order: "desc",
+        order: "asc",
         parameters: []
       },
 
@@ -365,9 +350,9 @@ charadex.page.characters = {
 };
     
 
-    [charadex.sheet.pages.characters]: {
+    [charadex.sheet.pages.masterlist]: {
 
-      // This imports the config from the characters
+      // This imports the config from the masterlist
       // So you dont have to repeat yourself
       ...charadex.page.characters, 
 
@@ -379,7 +364,13 @@ charadex.page.characters = {
       profileProperty: 'design',
       profileToggle: false,
 
-    },
+    }
+
+   },
+
+  }
+
+ };
 
 
 /* Index
@@ -398,15 +389,9 @@ charadex.page.index = {
     amount: 6,
   },
 
-  characters: {
+  designs: {
     ... charadex.page.characters,
     dexSelector: 'design',
-    amount: 4,
-  },
-
-  nubreolanmasterlist: {
-    ... charadex.page.nubreolanMasterlist,
-    dexSelector: 'listing',
     amount: 4,
   }
 
