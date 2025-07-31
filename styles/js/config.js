@@ -374,9 +374,9 @@ charadex.page.characters = {
       profileProperty: 'design',
       profileToggle: false,
 
-  }
+  },
 
-}
+};
 
 
 /* Nubreolan Masterlist
@@ -465,6 +465,8 @@ charadex.page.nubreolanmasterlist = {
       dexSelector: 'listings',
       profileProperty: 'listing',
       profileToggle: false,
+
+    }
 
   },
 
