@@ -364,9 +364,7 @@ charadex.page.characters = {
       profileProperty: 'design',
       profileToggle: false,
 
-    }
-
- };
+    };
 
 
 /* Index
