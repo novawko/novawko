@@ -356,7 +356,11 @@ charadex.page.characters = {
         toggle: true,
         bottomToggle: true,
         amount: 12,
-    },
+     },
+
+    }
+
+   }
       
   },    
 
@@ -468,8 +472,6 @@ charadex.page.nubreolanmasterlist = {
       dexSelector: 'listings',
       profileProperty: 'listing',
       profileToggle: false,
-
-    }
 
   }
 
