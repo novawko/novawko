@@ -361,7 +361,7 @@ charadex.page.characters = {
 charadex.page.nubreolanMasterlist = {
 
   sheetPage: charadex.sheet.pages.nubreolanMasterlist,
-  sitePage: 'nubreolanMasterlist',
+  sitePage: 'nubreolanmasterlist',
   dexSelector: 'charadex',
   profileProperty: 'listing',
 
