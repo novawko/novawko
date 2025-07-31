@@ -358,7 +358,7 @@ charadex.page.characters = {
         amount: 12,
       },
 
-};
+},
     
 
     [charadex.sheet.pages.characters]: {
