@@ -63,6 +63,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   });
 
+  // Reverse the thing
+  let designs = arr.reverse();
+
 
   /* Nubreolan Masterlist
   ===================================================================== */
@@ -78,6 +81,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   arr.push(...recent);
 
   });
+
+  // Reverse the thing
+  let listings = arr.reverse();
 
 
   /* Load Page
