@@ -358,7 +358,7 @@ charadex.page.characters = {
         amount: 12,
       },
 
-},
+};
     
 
     [charadex.sheet.pages.characters]: {
@@ -375,7 +375,9 @@ charadex.page.characters = {
       profileProperty: 'design',
       profileToggle: false,
 
-};
+    }
+
+ };
 
 
 /* Index
