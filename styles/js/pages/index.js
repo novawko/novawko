@@ -60,9 +60,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Overwrite original array in-place
   arr.length = 0;
   arr.push(...recent);
-
-  // Reverse the thing
-  let designs = arr.reverse();
     
   });
 
@@ -79,9 +76,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Overwrite original array in-place
   arr.length = 0;
   arr.push(...recent);
-
-  // Reverse the thing
-  let listings = arr.reverse();
 
   });
 
