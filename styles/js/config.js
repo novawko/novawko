@@ -350,7 +350,7 @@ charadex.page.characters = {
 };
     
 
-    [charadex.sheet.pages.masterlist]: {
+    [charadex.sheet.pages.characters]: {
 
       // This imports the config from the masterlist
       // So you dont have to repeat yourself
