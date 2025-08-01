@@ -781,3 +781,13 @@ p:last-child {
   background-color: var(--cd-rarity-legendary-bg);
   color: var(--cd-rarity-legendary-txt);
 }
+
+.ordernowbtn:hover {
+  transform: scale(1.05, 1.05);
+  transition: .3s ease-in-out;
+}
+
+.tosbtn:hover {
+  transform: scale(1.05, 1.05);
+  transition: .3s ease-in-out;
+}
