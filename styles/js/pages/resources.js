@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         // We're gonna make some badges but you dont have to use them
         entry.resourceTypes = entry.resourceTypes.split(',');
         entry.resourceTypeBadges = [];
-        for (let resource of entry.resourceTypes) {
+        for (let resourceType of entry.resourceTypes) {
           entry.resourceTypeBadges.push(
             `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('resources'), {profile: resource})}">${resourceType.trim()}</a>`
           );
