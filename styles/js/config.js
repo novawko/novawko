@@ -219,7 +219,7 @@ charadex.page.imageGallery = {
   sort: {
     toggle: true,
     key: "id",
-    order: "asc",
+    order: "desc",
     parameters: []
   },
 
@@ -342,7 +342,7 @@ charadex.page.characters = {
       sort: {
         toggle: true,
         key: "id",
-        order: "asc",
+        order: "desc",
         parameters: []
       },
 
