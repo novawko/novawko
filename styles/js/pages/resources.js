@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   let dex = await charadex.initialize.page(
     null,
-    charadex.page.resourceGallery,
+    charadex.page.resources,
     null, 
     async (listData) => {
 
