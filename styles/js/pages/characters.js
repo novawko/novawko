@@ -47,33 +47,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
 /* ==================================================================== */
-/* This helps the logs tab become a direct link
+/* This helps the gallery and logs tab become direct links
 ======================================================================= */
-$( function() {
-    function changeTab() {
-        var logs = window.location.hash.substr(1);
-        var logs = $('[data-w-tab="' + logs + '"]');
-        if (logs.length) {
-            logs.click();
-        }
-    }
-    jQuery('[data-w-tab]').each(function(){
-      var $this = $(this);
-      var dataWTabValu = jQuery($this).attr('data-w-tab');
-      var pargedDataTab = dataWTabValu.replace(/\s+/g,"-");
-      jQuery($this).attr('data-w-tab', pargedDataTab);
-    });
-
-    // when page is first loaded
-    if(window.location.hash){
-        changeTab();
-    }
-
-    // internal page linking
-    $(window).on('hashchange', changeTab);
-
-    $('[data-w-tab]').on('click', function(){
-        history.pushState({}, '', '#'+$(this).data("w-tab"));
-    });
-    
-});
+ $('#gallery').trigger('click');
+ $('#logs').trigger('click');
