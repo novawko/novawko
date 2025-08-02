@@ -782,7 +782,7 @@ p:last-child {
   color: var(--cd-rarity-legendary-txt);
 }
 
-.overlayresourceimg {
+#overlayresourceimg {
   opacity: 1;
   display: block;
   width: 200px;
