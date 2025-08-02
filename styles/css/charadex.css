@@ -781,16 +781,3 @@ p:last-child {
   background-color: var(--cd-rarity-legendary-bg);
   color: var(--cd-rarity-legendary-txt);
 }
-
-#overlayresourceimg {
-  opacity: 1;
-  display: block;
-  width: 200px;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.overlayresourceimg:hover .img {
-  opacity: 0.3;
-}
