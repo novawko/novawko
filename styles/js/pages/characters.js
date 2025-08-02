@@ -44,3 +44,21 @@ document.addEventListener("DOMContentLoaded", async () => {
   charadex.tools.loadPage('.softload', 500);
   
 });
+
+
+/* ==================================================================== */
+/* This helps the profile tabs become a direct link
+======================================================================= */
+  $(document).ready(function() {
+
+    if ($('.profile-tabs').length > 0) { 
+        var hashtag = window.location.hash;
+        if (hashtag!='') {
+            $('.profile-tabs > li').removeClass('active');
+            $('.profile-tabs > li > a[href="'+hashtag+'"]').parent('li').addClass('active');
+            $('.tab-content > div').removeClass('active');
+            $(hashtag).addClass('active');
+        }
+    }
+
+});
