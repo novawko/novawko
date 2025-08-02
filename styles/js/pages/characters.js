@@ -47,43 +47,22 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
 /* ==================================================================== */
-/* This helps the gallery tab become a direct link
-======================================================================= */
-$( function() {
-    function changeTab() {
-        var gallery = window.location.hash.substr(1);
-        var tabEl = $('[data-w-tab="' + gallery + '"]');
-        if (tabEl.length) {
-            tabEl.click();
-        }
-    }
-
-    //when page is first loaded
-    if(window.location.hash){
-        changeTab();
-    }
-
-    //internal page linking
-    $(window).on('hashchange', changeTab);
-
-    $('[data-w-tab]').on('click', function(){
-        history.pushState({}, '', '#'+$(this).data("w-tab"));
-    });
-});
-
-
-
-/* ==================================================================== */
 /* This helps the logs tab become a direct link
 ======================================================================= */
 $( function() {
     function changeTab() {
         var logs = window.location.hash.substr(1);
-        var tabEl = $('[data-w-tab="' + logs + '"]');
-        if (tabEl.length) {
-            tabEl.click();
+        var profile-tabs = $('[data-w-tab="' + logs + '"]');
+        if (profile-tabs.length) {
+            profile-tabs.click();
         }
     }
+    jQuery('[data-w-tab]').each(function(){
+      var $this = $(this);
+      var dataWTabValu = jQuery($this).attr('data-w-tab');
+      var pargedDataTab = dataWTabValu.replace(/\s+/g,"-");
+      jQuery($this).attr('data-w-tab', pargedDataTab);
+    });
 
     //when page is first loaded
     if(window.location.hash){
@@ -96,4 +75,5 @@ $( function() {
     $('[data-w-tab]').on('click', function(){
         history.pushState({}, '', '#'+$(this).data("w-tab"));
     });
+    
 });
