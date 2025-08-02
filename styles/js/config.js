@@ -286,7 +286,7 @@ charadex.page.resourceGallery = {
   },
 
   fauxFolder: {
-    toggle: false,
+    toggle: true,
     folderProperty: 'Resource Type',
     parameters: charadex.sheet.options.resourceTypes,
   },
