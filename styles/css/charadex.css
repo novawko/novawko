@@ -782,12 +782,15 @@ p:last-child {
   color: var(--cd-rarity-legendary-txt);
 }
 
-.ordernowbtn:hover {
-  transform: scale(1.05, 1.05);
-  transition: .3s ease-in-out;
+.overlayresourceimg {
+  opacity: 1;
+  display: block;
+  width: 200px;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
-.tosbtn:hover {
-  transform: scale(1.05, 1.05);
-  transition: .3s ease-in-out;
+.overlayresourceimg:hover .img {
+  opacity: 0.3;
 }
