@@ -37,7 +37,7 @@ charadex.sheet = {
     connections:   "connections",
     nubreolanMasterlist:   "nubreolan masterlist",
     nubreolanLog:   "nubreolan log",
-    resourceGallery:   "resources",
+    resources:   "resources",
   },
 
   options: {
@@ -301,36 +301,6 @@ charadex.page.resources = {
     toggle: true,
   },
 
-  relatedData: {
-
-    [charadex.sheet.pages.resourceGallery]: {
-
-      ... charadex.page.resourceGallery,
-
-      sheetPage: charadex.sheet.pages.resourceGallery,
-      primaryProperty: 'resource',
-      relatedProperty: 'resources',
-      dexSelector: 'gallery',
-      profileProperty: 'id',
-      profileToggle: false,
-
-      sort: {
-        toggle: true,
-        key: "id",
-        order: "desc",
-        parameters: []
-      },
-
-      pagination: {
-        toggle: true,
-        bottomToggle: true,
-        amount: 12,
-      },
-
-    }
-
-  }
-
 };
 
 
@@ -545,7 +515,7 @@ charadex.page.index = {
   },
 
   resources: {
-    ... charadex.page.resourceGallery,
+    ... charadex.page.resources,
     dexSelector: 'resource',
     amount: 4,
   }
