@@ -10,26 +10,29 @@ import { charadex } from '../charadex.js';
 document.addEventListener("DOMContentLoaded", async () => {
 
   let dex = await charadex.initialize.page(
+    null,
+    charadex.page.resources,
     null, 
-    charadex.page.resourceGallery, 
-    (arr) => {
-      for (let entry of arr) {
+    async (listData) => {
 
-        // We're gonna make some badges but you dont have to use them
-        entry.resourceTypes = entry.resourceTypes.split(',');
-        entry.resourceTypeBadges = [];
-        for (let resourceType of entry.resourceTypes) {
-          entry.resourceTypeBadges.push(
-            `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('resources'), {profile: resource})}">${resourceType.trim()}</a>`
+      if (listData.type == 'profile') {
+
+        console.log(listData.profileArray[0]);
+
+        // Create the image gallery
+        if (charadex.tools.checkArray(listData.profileArray[0].resourcegallery)) {
+          let gallery = await charadex.initialize.page(
+            listData.profileArray[0].resourcegallery,
+            charadex.page.resources.relatedData['resource gallery']
           );
         }
-        entry.resourceTypeBadges = entry.resourceTypeBadges.join(' ');
-
 
       }
+
     }
+
   );
-
+  
   charadex.tools.loadPage('.softload', 500);
-
+  
 });
