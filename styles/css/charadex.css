@@ -700,6 +700,7 @@ p:last-child {
 
 .cd-gallery-card > img {
   max-height: 200px !important;
+  max-width: 200px !important;
 }
 
 .cd-profile-image-container > img{
