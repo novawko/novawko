@@ -47,18 +47,53 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
 /* ==================================================================== */
-/* This helps the profile tabs become a direct link
+/* This helps the gallery tab become a direct link
 ======================================================================= */
-  $(document).ready(function() {
-
-    if ($('.profile-tabs').length > 0) { 
-        var hashtag = window.location.hash;
-        if (hashtag!='') {
-            $('.profile-tabs > li').removeClass('active');
-            $('.profile-tabs > li > a[href="'+hashtag+'"]').parent('li').addClass('active');
-            $('.tab-content > div').removeClass('active');
-            $(hashtag).addClass('active');
+$( function() {
+    function changeTab() {
+        var gallery = window.location.hash.substr(1);
+        var tabEl = $('[data-w-tab="' + gallery + '"]');
+        if (tabEl.length) {
+            tabEl.click();
         }
     }
 
+    //when page is first loaded
+    if(window.location.hash){
+        changeTab();
+    }
+
+    //internal page linking
+    $(window).on('hashchange', changeTab);
+
+    $('[data-w-tab]').on('click', function(){
+        history.pushState({}, '', '#'+$(this).data("w-tab"));
+    });
+});
+
+
+
+/* ==================================================================== */
+/* This helps the logs tab become a direct link
+======================================================================= */
+$( function() {
+    function changeTab() {
+        var logs = window.location.hash.substr(1);
+        var tabEl = $('[data-w-tab="' + logs + '"]');
+        if (tabEl.length) {
+            tabEl.click();
+        }
+    }
+
+    //when page is first loaded
+    if(window.location.hash){
+        changeTab();
+    }
+
+    //internal page linking
+    $(window).on('hashchange', changeTab);
+
+    $('[data-w-tab]').on('click', function(){
+        history.pushState({}, '', '#'+$(this).data("w-tab"));
+    });
 });
