@@ -237,9 +237,9 @@ charadex.page.imageGallery = {
   },
 
   fauxFolder: {
-    toggle: true,
-    folderProperty: 'Tags',
-    parameters: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+    toggle: false,
+    folderProperty: '',
+    parameters: [],
   },
 
   search: {
