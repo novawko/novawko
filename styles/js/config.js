@@ -239,7 +239,7 @@ charadex.page.imageGallery = {
   fauxFolder: {
     toggle: false,
     folderProperty: '',
-    parameters: []
+    parameters: [],
   },
 
   search: {
