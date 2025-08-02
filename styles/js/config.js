@@ -258,14 +258,14 @@ charadex.page.imageGallery = {
 
 
 
-/* Resources
+/* Characters
 /* --------------------------------------------------------------- */
-charadex.page.resourceGallery = {
+charadex.page.resources = {
 
-  sheetPage: charadex.sheet.pages.resourceGallery,
+  sheetPage: charadex.sheet.pages.resources,
   sitePage: 'resources',
   dexSelector: 'charadex',
-  profileProperty: 'id',
+  profileProperty: 'resource',
 
   sort: {
     toggle: true,
@@ -298,8 +298,38 @@ charadex.page.resourceGallery = {
   },
 
   prevNext: {
-    toggle: false,
+    toggle: true,
   },
+
+  relatedData: {
+
+    [charadex.sheet.pages.resourceGallery]: {
+
+      ... charadex.page.resourceGallery,
+
+      sheetPage: charadex.sheet.pages.resourceGallery,
+      primaryProperty: 'resource',
+      relatedProperty: 'resources',
+      dexSelector: 'gallery',
+      profileProperty: 'id',
+      profileToggle: false,
+
+      sort: {
+        toggle: true,
+        key: "id",
+        order: "desc",
+        parameters: []
+      },
+
+      pagination: {
+        toggle: true,
+        bottomToggle: true,
+        amount: 12,
+      },
+
+    }
+
+  }
 
 };
 
