@@ -258,7 +258,7 @@ charadex.page.imageGallery = {
 
 
 
-/* Characters
+/* Resources
 /* --------------------------------------------------------------- */
 charadex.page.resources = {
 
