@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   let dex = await charadex.initialize.page(
     null,
-    charadex.page.resources,
+    charadex.page.resourceGallery,
     null, 
     async (listData) => {
 
@@ -19,14 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         console.log(listData.profileArray[0]);
 
-        // Create the image gallery
-        if (charadex.tools.checkArray(listData.profileArray[0].resourcegallery)) {
-          let gallery = await charadex.initialize.page(
-            listData.profileArray[0].resourcegallery,
-            charadex.page.resources.relatedData['resource gallery']
-          );
-        }
-
+      
       }
 
     }
