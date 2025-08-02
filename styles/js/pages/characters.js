@@ -52,9 +52,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 $( function() {
     function changeTab() {
         var logs = window.location.hash.substr(1);
-        var profile-tabs = $('[data-w-tab="' + logs + '"]');
-        if (profile-tabs.length) {
-            profile-tabs.click();
+        var logs = $('[data-w-tab="' + logs + '"]');
+        if (logs.length) {
+            logs.click();
         }
     }
     jQuery('[data-w-tab]').each(function(){
@@ -64,12 +64,12 @@ $( function() {
       jQuery($this).attr('data-w-tab', pargedDataTab);
     });
 
-    //when page is first loaded
+    // when page is first loaded
     if(window.location.hash){
         changeTab();
     }
 
-    //internal page linking
+    // internal page linking
     $(window).on('hashchange', changeTab);
 
     $('[data-w-tab]').on('click', function(){
