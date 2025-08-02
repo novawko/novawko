@@ -48,6 +48,7 @@ charadex.sheet = {
     privacyStatuses: ['All', 'Public', 'Unlisted', 'Authorized Only', 'Logged In Users Only'],
     nubreolanStatuses: ['All', 'Resell', 'Trade', 'Offer', 'Pending', 'For Sale', 'Do Not Offer', 'Auction', 'Voided'],
     nubreolanSpecies: ['All', 'Kitiguar', 'Fluffy Worm'],
+    novawkoArtOnlyToggle: ['All', 'Enable'],
     species: ['All', 'Cat', 'Dog', 'Hamster', 'Kitiguar', 'Human', 'Kanpolo', 'Deep Sea Kanpolo', 'Hyper Kanpolo', 'Kumiyaa', 'Noodle Moth', 'Heavian', 'Burgvoir', 'Sylvarian', 'Woobar', 'Chubbö', 'Yuecoatl', 'Protogen', 'Puffball', 'Yukin', 'Tauyn', 'Eevee', 'Leafeon', 'Sylveon', 'Sprigatito', 'Care Bear', 'Care Bear Cousin', 'Wolf', 'Dragon', 'Rabbit', 'Mecha', 'Fluffy Worm', 'Fox', 'Sparkle Cat', 'Arctic Fox', 'Arctic Wolf', 'Senri', 'Jackalope', 'Flareon', 'Tiger'],
 
   }
@@ -230,8 +231,8 @@ charadex.page.imageGallery = {
 
   filters: {
     toggle: true,
-    parameters: {
-      'Tags': ['All', 'novawko'],
+    parameters:  {
+      'View Novawko Art Only': charadex.sheet.options.novawkoArtOnlyToggle,
     }
   },
 
@@ -294,7 +295,7 @@ charadex.page.characters = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Name', 'Design', 'Owner', 'Designer', 'Artist', 'Traits']
+    parameters: ['All', 'Name', 'Design', 'Owner', 'Designer', 'Artist']
   },
 
   prevNext: {
