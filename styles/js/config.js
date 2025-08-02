@@ -229,20 +229,22 @@ charadex.page.imageGallery = {
   },
 
   filters: {
-    toggle: false,
-    parameters: {}
+    toggle: true,
+    parameters: {
+      'Tags': ['All', 'novawko'],
+    }
   },
 
   fauxFolder: {
-    toggle: false,
-    folderProperty: '',
-    parameters: [],
+    toggle: true,
+    folderProperty: 'Tags',
+    parameters: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
   },
 
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Designs', 'Artist', 'Tags']
+    parameters: ['All', 'Artist', 'Tags']
   },
 
   prevNext: {
