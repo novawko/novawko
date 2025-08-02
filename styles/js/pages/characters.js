@@ -44,10 +44,3 @@ document.addEventListener("DOMContentLoaded", async () => {
   charadex.tools.loadPage('.softload', 500);
   
 });
-
-
-/* ==================================================================== */
-/* This helps the gallery and logs tab become direct links
-======================================================================= */
- $('#gallery').trigger('click');
- $('#logs').trigger('click');
