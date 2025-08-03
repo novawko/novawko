@@ -58,6 +58,10 @@ body {
   --cd-navbar-link-color: var(--cd-navbar-text-color);
   --cd-navbar-link-color-hover: var(--cd-primary-color);
   --cd-navbar-font-family: var(--cd-header-font-family);
+  --cd-navbar-border-color: #000;
+  --cd-navbar-border-style: solid;
+  --cd-navbar-border-width: 0px 1px 1px 0px;
+  --cd-navbar-box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.70);
 
   /* ============================================================= */
   /* Main Fonts
