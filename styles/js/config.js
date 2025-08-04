@@ -505,7 +505,7 @@ charadex.page.index = {
   designs: {
     ... charadex.page.characters,
     dexSelector: 'design',
-    amount: 4,
+    amount: 5,
   },
 
   listings: {
