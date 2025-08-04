@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   charadex.tools.loadIncludedFiles();
   charadex.tools.updateMeta();
   charadex.tools.loadPage('#charadex-body', 100);
-});
 
 /* ==================================================================== */
 /* Scroll to a header with an ID automatically when visited
