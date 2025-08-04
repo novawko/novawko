@@ -14,12 +14,26 @@ document.addEventListener("DOMContentLoaded", () => {
 /* ==================================================================== */
 /* Scroll to the hashtag elements automatically when visiting via address bar
 ======================================================================= */
-const element = document.getElementById("permissions");
-element.scrollIntoView({
-  behavior: 'smooth',  
+/* ==================================================================== */
+/* Scroll to the hashtag elements automatically when visiting via address bar
+======================================================================= */
+window.addEventListener('load', () => {
+  // Get the hash from the URL
+  const hash = window.location.hash;
+
+  // Check if a hash exists and if an element with that ID exists
+  if (hash) {
+    const targetElement = document.querySelector(hash); // Selects by ID (e.g., #section-id)
+
+    if (targetElement) {
+      // Option 1: Instant scroll
+      // targetElement.scrollIntoView(); 
+
+      // Option 2: Smooth scroll
+      targetElement.scrollIntoView({ behavior: 'smooth', }); 
+    }
+  }
 });
 
-/* ==================================================================== */
-/* Scroll into view codes end
-======================================================================= */  
+  
 });
