@@ -786,10 +786,8 @@ p:last-child {
 /* ============================================================= */
 /* My precious tweeks and fixes
 /* ============================================================= */
-html {
-  scroll-behavior: smooth;
-}
-
-#permissions {
-  scroll-margin-top: 20px;
+#permissions:click {
+    #permissions {
+        scroll-into-view: true;
+    }
 }
