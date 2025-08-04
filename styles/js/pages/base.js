@@ -30,7 +30,7 @@ window.addEventListener('load', () => {
       // targetElement.scrollIntoView(); 
 
       // Option 2: Smooth scroll
-      targetElement.scrollIntoView({ behavior: 'smooth', }); 
+      targetElement.scrollIntoView({ behavior: "smooth"}); 
     }
   }
 });
