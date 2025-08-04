@@ -781,13 +781,3 @@ p:last-child {
   background-color: var(--cd-rarity-legendary-bg);
   color: var(--cd-rarity-legendary-txt);
 }
-
-
-/* ============================================================= */
-/* My precious tweeks and fixes
-/* ============================================================= */
-#permissions:click {
-    #permissions {
-        scroll-into-view: true;
-    }
-}
