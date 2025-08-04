@@ -51,10 +51,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   /* Characters
   ===================================================================== */
   let designs = await charadex.initialize.page(null, charadex.page.index.designs, (arr) => {
-  // Force sliceAmount to 4
-  let sliceAmount = 4;
+  // Force sliceAmount to 5
+  let sliceAmount = 5;
 
-  // Get the last 4 (or fewer if less than 4 exist)
+  // Get the last 5 (or fewer if less than 5 exist)
   let recent = arr.slice(-sliceAmount);
 
   // Overwrite original array in-place
