@@ -14,15 +14,21 @@ document.addEventListener("DOMContentLoaded", () => {
 /* ==================================================================== */
 /* Scroll to the hashtag elements automatically when visiting via address bar
 ======================================================================= */
-if (window.location.hash) {
-    var hash = window.location.hash;
+window.addEventListener('load', function () {
 
-    if ($(hash).length) {
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 900, 'swing');
-    }
-}
+	if (window.location.hash == '') {
+		return false;
+	}
+
+	var el = document.querySelector(window.location.hash);
+
+	if (el !== null) {
+
+		el.scrollIntoView({ behavior: 'smooth' });
+
+	}
+
+}, false);
 
   
 });
