@@ -26,11 +26,7 @@ window.addEventListener('load', () => {
     const targetElement = document.querySelector(hash); // Selects by ID (e.g., #section-id)
 
     if (targetElement) {
-      // Option 1: Instant scroll
-      // targetElement.scrollIntoView(); 
-
-      // Option 2: Smooth scroll
-      targetElement.scrollIntoView({ behavior: "smooth"}); 
+      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
     }
   }
 });
