@@ -14,18 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
 /* ==================================================================== */
 /* Scroll to the hashtag elements automatically when visiting via address bar
 ======================================================================= */
-window.onload = function() {
-  if (window.location.hash) {
-    // Get the ID from the hash, removing the '#'
-    const targetId = window.location.hash.substring(1); 
-    const targetElement = document.getElementById(targetId);
+const element = document.getElementById("permissions");
+element.scrollIntoView({
+  behavior: 'smooth',  
+});
 
-    if (targetElement) {
-      // Scroll the element into view smoothly
-      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
-    }
-  }
-};
-
-  
+/* ==================================================================== */
+/* Scroll into view codes end
+======================================================================= */  
 });
