@@ -788,3 +788,9 @@ p:last-child {
   background-color: var(--cd-rarity-legendary-bg);
   color: var(--cd-rarity-legendary-txt);
 }
+
+@media only screen and (max-width: 600px) {
+  .commissionspage_title {
+  font-size: 20px !important;
+  }
+}
