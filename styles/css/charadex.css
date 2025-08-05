@@ -794,3 +794,7 @@ p:last-child {
   font-size: 2.5rem !important;
   }
 }
+
+#nubreolanbtn { 
+  border-radius:100% !important
+}
