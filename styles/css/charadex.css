@@ -790,7 +790,7 @@ p:last-child {
 }
 
 @media only screen and (max-width: 600px) {
-  .commissionspage_title {
-  font-size: 17px !important;
+  .commissionspage_title .display-4 {
+  font-size: 1rem !important;
   }
 }
