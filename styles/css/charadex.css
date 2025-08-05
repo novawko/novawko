@@ -268,11 +268,18 @@ a:active {
 .navbar .navbar-brand {
   color: var(--cd-navbar-brand-color) !important;
   font-size: 2rem;
+  margin-left: 20px;
 }
 
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
   color: var(--cd-navbar-brand-color-hover) !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .navbar-brand {
+  margin-left: inherit;
+  }
 }
 
 .navbar .navbar-nav .nav-link {
@@ -780,10 +787,4 @@ p:last-child {
 .badge-mythic {
   background-color: var(--cd-rarity-legendary-bg);
   color: var(--cd-rarity-legendary-txt);
-}
-
-@media only screen and (max-width: 600px) {
-  .navbar .navbar-brand {
-  margin-left: 5px;
-  }
 }
