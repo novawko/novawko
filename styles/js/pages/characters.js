@@ -44,3 +44,16 @@ document.addEventListener("DOMContentLoaded", async () => {
   charadex.tools.loadPage('.softload', 500);
   
 });
+
+/* ==================================================================== */
+/* Load any specific navtabs
+======================================================================= */
+$(function() {
+  var hash = window.location.hash;
+
+  if (hash != '') {
+    $('.tab-pane').removeClass('active in'); // Remove 'active' from all tab panes
+    $(hash).addClass('active in'); // Add 'active' to the target tab pane
+    $(`a[href="${hash}"]`).tab('show'); // Show the tab linked to the hash
+  }
+});
