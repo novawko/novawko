@@ -278,7 +278,7 @@ a:active {
 
 @media only screen and (max-width: 600px) {
   .navbar .navbar-brand {
-  margin-left: inherit;
+  margin-left: unset;
   }
 }
 
