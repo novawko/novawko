@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   charadex.tools.updateMeta();
   charadex.tools.loadPage('#charadex-body', 100);
 
-  const designs = design.split("3");
+  const designs = prefix.split("");
   
 });
 
