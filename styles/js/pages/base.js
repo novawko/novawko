@@ -10,12 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   charadex.tools.loadIncludedFiles();
   charadex.tools.updateMeta();
   charadex.tools.loadPage('#charadex-body', 100);
-
-/* ==================================================================== */
-/* Cut the prefixes out of URL
-======================================================================= */
-  let designs = window.location.pathname.split("/")[3];
-  let listings = window.location.pathname.split("/")[3];
   
 });
 
