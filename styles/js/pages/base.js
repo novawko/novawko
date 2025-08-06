@@ -11,7 +11,15 @@ document.addEventListener("DOMContentLoaded", () => {
   charadex.tools.updateMeta();
   charadex.tools.loadPage('#charadex-body', 100);
 
+  // Force sliceAmount to 3
+  let designs = 3;
+
+  // Remove the prefix
   let designs = arr.slice(-3);
+
+  // Overwrite original array in-place
+  arr.length = 0;
+  arr.push(...designs);
   
 });
 
