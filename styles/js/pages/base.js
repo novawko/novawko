@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
 /* ==================================================================== */
 /* Cut the prefixes out of URL
 ======================================================================= */
-  let designs = url.pathname.slice(3);
-  let listings = url.pathname.slice(3);
+  let designs = window.location.pathname.split("/")[3];
+  let listings = window.location.pathname.split("/")[3];
   
 });
 
