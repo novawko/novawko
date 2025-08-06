@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       for (let entry of arr) {
 
         // We're gonna make some badges but you dont have to use them
-        entry.names = entry.names.split(',');
+        entry.picturedcharacters = entry.picturedcharacters.split(',');
         entry.nameBadges = [];
-        for (let name of entry.names) {
+        for (let name of entry.picturedcharacters) {
           entry.nameBadges.push(
             `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('characters'), {profile: name})}">${name.trim()}</a>`
           );
