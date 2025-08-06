@@ -11,8 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
   charadex.tools.updateMeta();
   charadex.tools.loadPage('#charadex-body', 100);
 
-  const designs = entry.design.slice(3);
-  const listings = entry.listing.slice(3);
+/* ==================================================================== */
+/* Cut the prefixes out of URL
+======================================================================= */
+  const designs = design.slice(3);
+  const listings = listing.slice(3);
   
 });
 
