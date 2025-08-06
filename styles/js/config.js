@@ -312,7 +312,7 @@ charadex.page.characters = {
   sheetPage: charadex.sheet.pages.characters,
   sitePage: 'characters',
   dexSelector: 'charadex',
-  profileProperty: 'id',
+  profileProperty: 'name',
 
   sort: {
     toggle: true,
@@ -415,7 +415,7 @@ charadex.page.nubreolanMasterlist = {
   sheetPage: charadex.sheet.pages.nubreolanMasterlist,
   sitePage: 'nubreolanmasterlist',
   dexSelector: 'charadex',
-  profileProperty: 'listing',
+  profileProperty: 'id',
 
   sort: {
     toggle: true,
