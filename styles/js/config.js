@@ -312,7 +312,7 @@ charadex.page.characters = {
   sheetPage: charadex.sheet.pages.characters,
   sitePage: 'characters',
   dexSelector: 'charadex',
-  profileProperty: 'name',
+  profileProperty: 'id',
 
   sort: {
     toggle: true,
@@ -359,7 +359,7 @@ charadex.page.characters = {
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'name',
+      profileProperty: 'id',
       profileToggle: false,
 
       sort: {
