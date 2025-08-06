@@ -359,7 +359,7 @@ charadex.page.characters = {
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'design',
+      profileProperty: 'name',
       profileToggle: false,
 
       sort: {
@@ -382,7 +382,7 @@ charadex.page.characters = {
       ... charadex.page.imageGallery,
 
       sheetPage: charadex.sheet.pages.imageGallery,
-      primaryProperty: 'design',
+      primaryProperty: 'name',
       relatedProperty: 'designs',
       dexSelector: 'gallery',
       profileProperty: 'id',
@@ -463,7 +463,7 @@ charadex.page.nubreolanMasterlist = {
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'listing',
+      profileProperty: 'id',
       profileToggle: false,
 
       sort: {
