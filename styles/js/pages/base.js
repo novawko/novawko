@@ -10,14 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   charadex.tools.loadIncludedFiles();
   charadex.tools.updateMeta();
   charadex.tools.loadPage('#charadex-body', 100);
-
-// Remove the prefix
-let url = new URL(window.location.href);
-let params = url.searchParams;
-
-if (params.has('cha')) {
-      params.delete('cha');
-}
   
 });
 
