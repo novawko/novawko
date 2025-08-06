@@ -17,13 +17,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         // We're gonna make some badges but you dont have to use them
         entry.designs = entry.designs.split(',');
-        entry.profileidBadges = [];
-        for (let profileid of entry.designs) {
-          entry.profileidBadges.push(
-            `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('characters'), {profile: profileid})}">${profileid.trim()}</a>`
+        entry.designBadges = [];
+        for (let id of entry.designs) {
+          entry.designBadges.push(
+            `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('characters'), {profile: id})}">${id.trim()}</a>`
           );
         }
-        entry.profileidBadges = entry.profileidBadges.join(' ');
+        entry.designBadges = entry.designBadges.join(' ');
 
         // Make the tags pretty and actually work
         entry.tags = entry.tags ? entry.tags.split(',') : [];
