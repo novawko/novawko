@@ -385,7 +385,7 @@ charadex.page.characters = {
       primaryProperty: 'design',
       relatedProperty: 'designs',
       dexSelector: 'gallery',
-      profileProperty: 'name',
+      profileProperty: 'id',
       profileToggle: false,
 
       sort: {
