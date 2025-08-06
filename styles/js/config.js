@@ -382,8 +382,8 @@ charadex.page.characters = {
       ... charadex.page.imageGallery,
 
       sheetPage: charadex.sheet.pages.imageGallery,
-      primaryProperty: 'design',
-      relatedProperty: 'designs',
+      primaryProperty: 'picturedcharacter',
+      relatedProperty: 'picturedcharacters',
       dexSelector: 'gallery',
       profileProperty: 'id',
       profileToggle: false,
