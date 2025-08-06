@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('characters'), {profile: id})}">${id.trim()}</a>`
           );
         }
-        entry.designBadges = entry.designBadges.join(' ');
+        entry.idBadges = entry.idBadges.join(' ');
 
         // Make the tags pretty and actually work
         entry.tags = entry.tags ? entry.tags.split(',') : [];
