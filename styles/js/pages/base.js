@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
 /* ==================================================================== */
 /* Cut the prefixes out of URL
 ======================================================================= */
-  console.log(design.slice(3));
-  console.log(listing.slice(3));
+  let designs = url.href.slice(3);
+  let listings = url.href.slice(3);
   
 });
 
