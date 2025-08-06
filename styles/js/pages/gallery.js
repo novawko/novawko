@@ -16,14 +16,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       for (let entry of arr) {
 
         // We're gonna make some badges but you dont have to use them
-        entry.designs = entry.designs.split(',');
-        entry.designBadges = [];
-        for (let design of entry.designs) {
-          entry.designBadges.push(
-            `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('characters'), {profile: design})}">${design.trim()}</a>`
+        entry.names = entry.names.split(',');
+        entry.nameBadges = [];
+        for (let name of entry.names) {
+          entry.nameBadges.push(
+            `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('characters'), {profile: name})}">${name.trim()}</a>`
           );
         }
-        entry.designBadges = entry.designBadges.join(' ');
+        entry.nameBadges = entry.nameBadges.join(' ');
 
         // Make the tags pretty and actually work
         entry.tags = entry.tags ? entry.tags.split(',') : [];
