@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   charadex.tools.loadPage('#charadex-body', 100);
 
   const designs = "design";
-  designs.substring(3);
+  let designs = arr.slice(-3);
   
 });
 
