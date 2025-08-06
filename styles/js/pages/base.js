@@ -12,11 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   charadex.tools.loadPage('#charadex-body', 100);
 
   // Remove the prefix
-  let designs = arr.slice(-3);
-
-  // Overwrite original array in-place
-  arr.length = 0;
-  arr.push(...designs);
+  let designs = param.slice(-3);
   
 });
 
