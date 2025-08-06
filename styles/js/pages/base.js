@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
   charadex.tools.updateMeta();
   charadex.tools.loadPage('#charadex-body', 100);
 
-  let designs = arr.slice(3);
-  let listings = arr.slice(3);
+  let designs = key.slice(3);
+  let listings = key.slice(3);
   
 });
 
