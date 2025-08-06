@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
   charadex.tools.loadIncludedFiles();
   charadex.tools.updateMeta();
   charadex.tools.loadPage('#charadex-body', 100);
+
+  const designs = profileid.slice(3);
+  const listings = profileid.slice(3);
   
 });
 
