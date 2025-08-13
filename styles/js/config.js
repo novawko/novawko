@@ -114,6 +114,54 @@ charadex.page.news = {
 };
 
 
+/* News
+/* --------------------------------------------------------------- */
+charadex.page.prompts = {
+
+  sheetPage: charadex.sheet.pages.prompts,
+  sitePage: 'prompts',
+  dexSelector: 'charadex',
+  profileProperty: 'title',
+
+  sort: {
+    toggle: true,
+    key: "posteddate",
+    order: "desc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 12,
+  },
+
+  filters: {
+    toggle: false,
+    parameters: {
+      'TBA': [],
+    }
+  },
+
+  fauxFolder: {
+    toggle: false,
+    folderProperty: '',
+    parameters: [],
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: false,
+    parameters: ['Title']
+  },
+
+  prevNext: {
+    toggle: true,
+  },
+
+};
+
+
 /* Connections
 /* --------------------------------------------------------------- */
 charadex.page.connections = {
