@@ -36,8 +36,9 @@ charadex.sheet = {
     faq:           "faq",
     connections:   "connections",
     nubreolanMasterlist:   "nubreolan masterlist",
-    nubreolanLog:   "nubreolan log",
-    resources:   "resources",
+    nubreolanLog:  "nubreolan log",
+    resources:     "resources",
+    prompts:       "prompts",
   },
 
   options: {
