@@ -10,7 +10,7 @@ import { charadex } from '../charadex.js';
 document.addEventListener("DOMContentLoaded", async () => {
   let dex = await charadex.initialize.page(null, charadex.page.news, null, 
   (listData) => {
-    let backgroundElement = $('.cd-prompt-background');
+    let backgroundElement = $('.cd-news-background');
     if (listData.type == 'profile') {
       backgroundElement.attr('style', `background-image: url(${listData.profileArray[0].image})`);
     } else {
