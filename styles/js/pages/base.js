@@ -9,7 +9,7 @@ import { charadex } from '../utilities.js';
 document.addEventListener("DOMContentLoaded", () => {
   charadex.tools.loadIncludedFiles();
   charadex.tools.updateMeta();
-  charadex.tools.loadPage('#charadex-body', 100);
+  charadex.tools.loadPage('#charadex-body', 0);
   
 });
 
