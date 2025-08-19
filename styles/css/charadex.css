@@ -809,6 +809,6 @@ p:last-child {
 
 @media only screen and (max-width: 600px) {
 #sidebaricon {
-  height: 220px !important;
+  height: auto !important;
 }
 }
