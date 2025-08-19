@@ -804,5 +804,11 @@ p:last-child {
 }
 
 #nubreolanbtn { 
-  border-radius:100% !important
+  border-radius:100% !important;
+}
+
+@media only screen and (max-width: 600px) {
+#sidebaricon {
+  height: 220px !important;
+}
 }
