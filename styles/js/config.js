@@ -486,7 +486,7 @@ charadex.page.nubreolanMasterlist = {
     parameters: {
       'Design Type': charadex.sheet.options.nubreolanTypes,
       'Privacy Status': charadex.sheet.options.privacyStatuses,
-      'Status': charadex.sheet.options.nubreolanStatuses,
+      'Trade Status': charadex.sheet.options.nubreolanStatuses,
     }
   },
 
@@ -499,7 +499,7 @@ charadex.page.nubreolanMasterlist = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'ID', 'Design', 'Owner', 'Designer', 'Artist']
+    parameters: ['All', 'ID', 'Owner', 'Designer', 'Artist']
   },
 
   prevNext: {
