@@ -55,9 +55,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Splice the silly little array
   let sliceAmount = charadex.page.index.designs.amount || 5;
   arr.splice(sliceAmount, arr.length);
-
-  // Reverse the thing
-  let designs = arr.reverse();
     
   });
 
