@@ -388,7 +388,7 @@ charadex.page.characters = {
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Anatomy',
+    folderProperty: 'Anatomy Type',
     parameters: charadex.sheet.options.anatomyTypes,
   },
 
