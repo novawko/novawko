@@ -387,14 +387,14 @@ charadex.page.characters = {
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'World',
-    parameters: charadex.sheet.options.worlds,
+    folderProperty: 'Anatomy',
+    parameters: charadex.sheet.options.anatomyTypes,
   },
 
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Name', 'Design', 'Owner', 'Designer', 'Artist']
+    parameters: ['All', 'Name', 'Owner', 'Designer', 'Artist']
   },
 
   prevNext: {
