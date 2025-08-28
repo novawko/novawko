@@ -51,15 +51,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   /* Characters
   ===================================================================== */
   let designs = await charadex.initialize.page(null, charadex.page.index.designs, (arr) => {
-  // Force sliceAmount to 5
-  let sliceAmount = 5;
 
-  // Get the last 5 (or fewer if less than 5 exist)
-  let recent = arr.slice(-sliceAmount);
-
-  // Overwrite original array in-place
-  arr.length = 0;
-  arr.push(...recent);
+  // Splice the silly little array
+  let sliceAmount = charadex.page.index.designs.amount || 6;
+  arr.splice(sliceAmount, arr.length);
     
   });
 
