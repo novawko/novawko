@@ -78,7 +78,7 @@ charadex.page.news = {
   sort: {
     toggle: true,
     key: "posteddate",
-    order: "desc",
+    order: "asc",
     parameters: []
   },
 
