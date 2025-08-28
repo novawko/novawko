@@ -366,7 +366,7 @@ charadex.page.characters = {
   sort: {
     toggle: true,
     key: "id",
-    order: "desc",
+    order: "asc",
     parameters: []
   },
 
