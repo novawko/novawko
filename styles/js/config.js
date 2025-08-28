@@ -114,7 +114,7 @@ charadex.page.news = {
 };
 
 
-/* News
+/* Prompts
 /* --------------------------------------------------------------- */
 charadex.page.prompts = {
 
@@ -126,7 +126,7 @@ charadex.page.prompts = {
   sort: {
     toggle: true,
     key: "posteddate",
-    order: "desc",
+    order: "asc",
     parameters: []
   },
 
