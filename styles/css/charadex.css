@@ -32,7 +32,7 @@ body {
   --cd-faded-background-color: #f8f8f8;
 
   /* Background Extras */
-  --cd-body-background-image: url(/assets/wallpaper.jpg);
+  --cd-body-background-image: url(/assets/wallpaper2.png);
 
   /* ============================================================= */
   /* Text
@@ -233,7 +233,7 @@ body {
   background-color: var(--cd-body-background-color);
   background-image: var(--cd-body-background-image);
   background-position: center;
-  background-size: contain;
+  background-size: 200px;
   background-attachment: fixed;
 
 }
