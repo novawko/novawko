@@ -93,6 +93,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /* Load Page
   ===================================================================== */
-  charadex.tools.loadPage('.softload', 100);
+  charadex.tools.loadPage('.softload', 500);
 
 });
