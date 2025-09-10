@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (target) {
         setTimeout(() => {
           target.scrollIntoView({ behavior: "smooth" });
-        }, 100);
+        }, 0);
       }
     }
   });
