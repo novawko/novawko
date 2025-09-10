@@ -624,7 +624,7 @@ img {
 
 .softload.active {
   opacity: 1;
-  transition: opacity 2s ease;
+  transition: opacity .1s ease;
 }
 
 /* Fades container in on load so its not as jarring */
