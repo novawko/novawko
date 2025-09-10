@@ -624,7 +624,7 @@ img {
 
 .softload.active {
   opacity: 1;
-  transition: opacity .1s ease;
+  transition: opacity 0s ease;
 }
 
 /* Fades container in on load so its not as jarring */
@@ -634,7 +634,7 @@ img {
 
 .hardload.active {
   opacity: 1;
-  transition: opacity .1s ease;
+  transition: opacity 0s ease;
 }
 
 /* Specifically for the body */
