@@ -103,7 +103,7 @@ charadex.page.news = {
   },
 
   search: {
-    toggle: true,
+    toggle: false,
     filterToggle: false,
     parameters: ['Title']
   },
