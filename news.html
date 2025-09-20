@@ -1,299 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <!-- ----------------------------------------------------------------- -->
-  <!-- About Your Site                                                   -->
-  <!-- ----------------------------------------------------------------- -->
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
-  <title>Novawko | News</title>
-  <meta name="title" content="Novawko | News" />
-  <meta name="type" content="website" />
-  <meta name="url" content="https://novawko.netlify.app/news.html" />
-  <meta name="image" content="assets/meta.png" />
-  <meta name="description" content="Stay up-to-date with Nova with the latest news!">
-
-  <!-- No AI scraping directives -->
-  <meta name="robots" content="noai">
-  <meta name="robots" content="noimageai">
-
-
-  <!-- ----------------------------------------------------------------- -->
-  <!-- Styles                                                            -->
-  <!-- ----------------------------------------------------------------- -->
-
-  <!-- Bootstrap CSS -->
-  <!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
-  <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  
-  <!-- Multiselect CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
-
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-
-  <!-- ----------------------------------------------------------------- -->
-  <!-- Optional Styles                                                   -->
-  <!-- ----------------------------------------------------------------- -->
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
-
-
-</head>
-
-<body id="charadex-body">
-
-
-  <!-- --------------------------------------------------------------------
-  <-- Header
-  <-------------------------------------------------------------------- -->
-  <div class="load-html" id="header" data-source="includes/header.html"></div>
-
-
-  <!-- --------------------------------------------------------------------
-  <-- Main List
-  <-------------------------------------------------------------------- -->
-  <div class="container" id="main-container">
-    <div id="charadex-gallery">
-
-      <!-- Top Card Container
-      <!-- ----------------------------------------------------------------- -->
-      <div class="card p-md-5 p-4 mb-4">
-
-        <!-- Title
-        <!-- --------------------------------------------------------------- -->
-        <h3 class="mb-0"><a href="news.html">Announcements</a></h3>
-
-        <!-- Faux Folders
-        <!-- --------------------------------------------------------------- -->
-        <div style="display:none;" id="charadex-folder-container">
-          <hr>
-          <div class="row no-gutters m-n1" id="charadex-folders"></div>
-          <!-- Buttons -->
-          <div style="display:none;">
-            <div class="col-lg-3 col-md-4 col-sm-6 p-1" id="charadex-folder">
-              <a class="btn btn-primary d-block" href=""></a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------------------------------------------------------------- -->
+    <!-- About Your Site                                                   -->
+    <!-- ----------------------------------------------------------------- -->
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <title>Novawko | News</title>
+    <meta name="title" content="Novawko | News" />
+    <meta name="type" content="website" />
+    <meta name="url" content="https://novawko.netlify.app/news.html" />
+    <meta name="image" content="assets/meta.png" />
+    <meta name="description" content="Stay up-to-date with Nova with the latest news!">
+    <!-- No AI scraping directives -->
+    <meta name="robots" content="noai">
+    <meta name="robots" content="noimageai">
+    <!-- ----------------------------------------------------------------- -->
+    <!-- Styles                                                            -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- Bootstrap CSS -->
+    <!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
+    <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Multiselect CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- ----------------------------------------------------------------- -->
+    <!-- Optional Styles                                                   -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
+  </head>
+  <body id="charadex-body">
+    <!-- --------------------------------------------------------------------
+      <-- Header
+      <-------------------------------------------------------------------- -->
+    <div class="load-html" id="header" data-source="includes/header.html"></div>
+    <!-- --------------------------------------------------------------------
+      <-- Main List
+      <-------------------------------------------------------------------- -->
+    <div class="container" id="main-container">
+      <div id="charadex-gallery">
+        <!-- Top Card Container
+          <!-- ----------------------------------------------------------------- -->
+        <div class="card p-md-5 p-4 mb-4">
+          <!-- Title
+            <!-- --------------------------------------------------------------- -->
+          <h3 class="mb-0"><a href="news.html">Announcements</a></h3>
+          <!-- Faux Folders
+            <!-- --------------------------------------------------------------- -->
+          <div style="display:none;" id="charadex-folder-container">
+            <hr>
+            <div class="row no-gutters m-n1" id="charadex-folders"></div>
+            <!-- Buttons -->
+            <div style="display:none;">
+              <div class="col-lg-3 col-md-4 col-sm-6 p-1" id="charadex-folder">
+                <a class="btn btn-primary d-block" href=""></a>
+              </div>
+            </div>
+          </div>
+          <!-- Filters
+            <!-- --------------------------------------------------------------- -->
+          <div style="display:none;" id="charadex-filter-container">
+            <hr>
+            <div class="row no-gutters m-n1" id="charadex-filters"></div>
+            <!-- Filters -->
+            <div style="display: none;">
+              <div class="col-md-4 col-12 p-1" id="charadex-filter">
+                <label class="px-2"></label>
+                <select class="form-control" multiple></select>
+              </div>
+            </div>
+          </div>
+          <!-- Search
+            <!-- --------------------------------------------------------------- -->
+          <div style="display:none;" id="charadex-search-container">
+            <hr>
+            <div class="row no-gutters m-n1">
+              <!-- Search Filter -->
+              <div class="col-md-4 col-6 p-1" style="display: none;">
+                <select class="form-control" id="charadex-search-filter"></select>
+              </div>
+              <!-- Search Bar -->
+              <div class="col d-flex p-1">
+                <input class="form-control search" type="search" placeholder="Search" id="charadex-search">
+              </div>
+            </div>
+          </div>
+          <!-- Pagination
+            <!-- --------------------------------------------------------------- -->
+          <div style="display: none;" class="charadex-pagination-container">
+            <hr class="mb-4 mt-4">
+            <div class="nav d-flex justify-content-center mb-n4">
+              <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+              <ul class="pagination charadex-pagination charadex-pagination-top justify-content-center m-0"></ul>
+              <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+            </div>
+          </div>
+          <!-- Prev & Next Topbar
+            <!-- --------------------------------------------------------------- -->
+          <div style="display: none;" id="charadex-prevnext-container">
+            <hr>
+            <div class="row no-gutters px-2 text-uppercase">
+              <div class="col-6 px-1">
+                <a id="entryPrev" href=""><i class="fas fa-chevron-left mr-2"></i><b><span></span></b></a>
+              </div>
+              <div class="col-6 px-1 text-right order-md-1">
+                <a id="entryNext" href=""><b><span></span></b><i class="fas fa-chevron-right ml-2"></i></a>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- Filters
-        <!-- --------------------------------------------------------------- -->
-        <div style="display:none;" id="charadex-filter-container">
-          <hr>
-          <div class="row no-gutters m-n1" id="charadex-filters"></div>
-          <!-- Filters -->
-          <div style="display: none;">
-            <div class="col-md-4 col-12 p-1" id="charadex-filter">
-              <label class="px-2"></label>
-              <select class="form-control" multiple></select>
-            </div>
-          </div>
-        </div>
-
-        <!-- Search
-        <!-- --------------------------------------------------------------- -->
-        <div style="display:none;" id="charadex-search-container">
-          <hr>
-          <div class="row no-gutters m-n1">
-            <!-- Search Filter -->
-            <div class="col-md-4 col-6 p-1" style="display: none;">
-              <select class="form-control" id="charadex-search-filter"></select>
-            </div>
-            <!-- Search Bar -->
-            <div class="col d-flex p-1">
-              <input class="form-control search" type="search" placeholder="Search" id="charadex-search">
-            </div>
-          </div>
-        </div>
-
+        <!-- List Items Render Here
+          <!-- --------------------------------------------------------------- -->
+        <div class="row no-gutters charadex-list softload m-n2"></div>
         <!-- Pagination
-        <!-- --------------------------------------------------------------- -->
+          <!-- --------------------------------------------------------------- -->
         <div style="display: none;" class="charadex-pagination-container">
-          <hr class="mb-4 mt-4">
-          <div class="nav d-flex justify-content-center mb-n4">
-            <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
-            <ul class="pagination charadex-pagination charadex-pagination-top justify-content-center m-0"></ul>
-            <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+          <div class="card px-3 py-1 mt-4">
+            <div class="nav d-flex justify-content-center">
+              <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+              <ul class="pagination charadex-pagination charadex-pagination-bottom justify-content-center m-0"></ul>
+              <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+            </div>
           </div>
         </div>
-
-        <!-- Prev & Next Topbar
+      </div>
+    </div>
+    <!-- --------------------------------------------------------------------
+      <-- Footer
+      <-------------------------------------------------------------------- -->
+    <div class="load-html" id="footer" data-source="includes/footer.html"></div>
+    <!-- --------------------------------------------------------------------
+      <-- Repeat Items
+      <-- Do not remove 'display:none;'
+      <-------------------------------------------------------------------- -->
+    <div style="display:none;">
+      <!-- Gallery Items
         <!-- --------------------------------------------------------------- -->
-        <div style="display: none;" id="charadex-prevnext-container">
-          <hr>
-          <div class="row no-gutters px-2 text-uppercase">
-            <div class="col-6 px-1">
-              <a id="entryPrev" href=""><i class="fas fa-chevron-left mr-2"></i><b><span></span></b></a>
-            </div>
-            <div class="col-6 px-1 text-right order-md-1">
-              <a id="entryNext" href=""><b><span></span></b><i class="fas fa-chevron-right ml-2"></i></a>
+      <div class="col-md-6 p-2" id="charadex-gallery-item">
+        <!-- Mini Pixel -->
+        <span class="newaddon"></span>
+        <!-- -- -->
+        <div class="card h-100">
+          <!-- Header -->
+          <h5 class="text-center mb-0 p-3">
+            <a class="profilelink profileid" href=""></a>
+          </h5>
+          <!-- Body -->
+          <div class="d-flex flex-column flex-fill">
+            <div class="row no-gutters text-muted mt-n3 mb-2 px-1 small">
+              <div class="col p-1 text-center"><b><span class="posteddate"></span>, <span class="time"></span> CST <i class="fa-solid fa-clock"></i></b></div>
             </div>
           </div>
         </div>
-
       </div>
-
-      <!-- List Items Render Here
-      <!-- --------------------------------------------------------------- -->
-      <div class="row no-gutters charadex-list softload m-n2"></div>
-
-      <!-- Pagination
-      <!-- --------------------------------------------------------------- -->
-      <div style="display: none;" class="charadex-pagination-container">
-        <div class="card px-3 py-1 mt-4">
-          <div class="nav d-flex justify-content-center">
-            <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
-            <ul class="pagination charadex-pagination charadex-pagination-bottom justify-content-center m-0"></ul>
-            <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- --------------------------------------------------------------------
-  <-- Footer
-  <-------------------------------------------------------------------- -->
-  <div class="load-html" id="footer" data-source="includes/footer.html"></div>
-
-  <!-- --------------------------------------------------------------------
-  <-- Repeat Items
-  <-- Do not remove 'display:none;'
-  <-------------------------------------------------------------------- -->
-  <div style="display:none;">
-
-
-    <!-- Gallery Items
-    <!-- --------------------------------------------------------------- -->
-    <div class="col-md-6 p-2" id="charadex-gallery-item">
-
-    <!-- Mini Pixel -->
-      <span class="newaddon"></span>
-    <!-- -- -->
-      
-      <div class="card h-100">
-
-        <!-- Header -->
-        <h5 class="text-center mb-0 p-3">
-          <a class="profilelink profileid" href=""></a>
-        </h5>
-
-        <!-- Body -->
-        <div class="d-flex flex-column flex-fill">
-          <div class="row no-gutters text-muted mt-n3 mb-2 px-1 small">
-            <div class="col p-1 text-center"><b><span class="posteddate"></span>, <span class="time"></span> CST <i class="fa-solid fa-clock"></i></b></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-    <!-- Gallery Profile
-    <!-- --------------------------------------------------------------- -->
-    <div id="charadex-profile">
-      
-
-  <div class="row justify-content-center" style="max-width: 1800px;">
-    <div class="col-md-3 p-2 mx-2 mb-2 bg-faded rounded">
-      <div class="flex-lg-column flex-row flex-wrap" style="position:sticky; top:10px">
-        <div class="p-3 card h-100">
-          <div class="py-lg-2 p-lg-3">
-            <!---- Side Icon ---->
-            <div id="sidebaricon" class="mx-auto rounded text-primary" style="min-height:220px; background-image:url('assets/side_icon.png');background-size:cover;border: 5px solid;">
-            </div>
-            <div class="px-lg-0">
-              <img class="img-fluid" src="assets/headers/welcomehome_header.png" style="width:500px;">
-              <!--- Bio ---->
-              <div class="bg-faded d-block rounded text-center small p-1 mx-auto mt-1" style="letter-spacing:1px;">Nova <img src="https://img-l.ink/img/14HpXp18xC_J9oNw2EGD-9VQzxCY6ryKF.png" style="width:20px;"> She/They/Kit • 25+ </div>
-              <div class="text-center"><img src="assets/decor/furry_pride.png" style="width:25px;"> <span class="small">ASD/GAD/OCD/ADHD</span> <img src="assets/decor/furry_pride.png" style="width:25px;"></div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <a class="btn btn-primary text-small d-block p-1 mt-1 w-100" href="/characters">Characters</a>
+      <!-- Gallery Profile
+        <!-- --------------------------------------------------------------- -->
+      <div id="charadex-profile">
+        <div class="row justify-content-center" style="max-width: 1800px;">
+          <div class="col-md-3 p-2 mx-2 mb-2 bg-faded rounded">
+            <div class="flex-lg-column flex-row flex-wrap" style="position:sticky; top:10px">
+              <div class="p-3 card h-100">
+                <div class="py-lg-2 p-lg-3">
+                  <!---- Side Icon ---->
+                  <div id="sidebaricon" class="mx-auto rounded text-primary" style="min-height:220px; background-image:url('assets/side_icon.png');background-size:cover;border: 5px solid;">
+                  </div>
+                  <div class="px-lg-0">
+                    <img class="img-fluid" src="assets/headers/welcomehome_header.png" style="width:500px;">
+                    <!--- Bio ---->
+                    <div class="bg-faded d-block rounded text-center small p-1 mx-auto mt-1" style="letter-spacing:1px;">Nova <img src="https://img-l.ink/img/14HpXp18xC_J9oNw2EGD-9VQzxCY6ryKF.png" style="width:20px;"> She/They/Kit • 25+ </div>
+                    <div class="text-center"><img src="assets/decor/furry_pride.png" style="width:25px;"> <span class="small">ASD/GAD/OCD/ADHD</span> <img src="assets/decor/furry_pride.png" style="width:25px;"></div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <a class="btn btn-primary text-small d-block p-1 mt-1 w-100" href="/characters">Characters</a>
+                      </div>
+                    </div>
+                  </div>
+                  <img class="img-fluid" src="assets/headers/links_header.png" style="width:500px;">
+                  <div class="row no-gutters">
+                    <!--- Socials/Links ---->
+                    <div class="col-6">
+                      <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://www.youtube.com/@novawko">YouTube</a>
+                    </div>
+                    <div class="col-6">
+                      <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://artfight.net/~Novawko">Art Fight</a>
+                    </div>
+                    <div class="col-6">
+                      <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://cara.app/novawko">Cara</a>
+                    </div>
+                    <div class="col-6">
+                      <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://www.roblox.com/users/2710900495/profile">Roblox</a>
+                    </div>
+                    <div class="col-6">
+                      <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://discordid.netlify.app/?id=836430381212893194">Discord</a>
+                    </div>
+                    <div class="col-6">
+                      <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="mailto:novawko@gmail.com">Email</a>
+                    </div>
+                    <div class="col-12">
+                      <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://github.com/novawko">Github</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <img class="img-fluid" src="assets/headers/links_header.png" style="width:500px;">
-            <div class="row no-gutters">
-              <!--- Socials/Links ---->
-              <div class="col-6">
-                <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://www.youtube.com/@novawko">YouTube</a>
+          </div>
+          <div class="col-md-8 p-2 mx-2 mb-2 bg-faded rounded">
+            <div class="card p-3 h-100">
+              <div class="row">
+                <div class="col-3"><img class="newsicon img-fluid" src="" style="min-height: 200px; max-width: 200px;"></div>
+                <div class="col-9 mt-3"><a class="profilelink profileid" style="font-size: 24px;"></a><br><span class="posteddate text-muted"></span>, <span class="time text-muted"></span> <span class="text-muted">CST</span> <i class="fa-solid fa-clock text-muted"></i></div>
               </div>
-              <div class="col-6">
-                <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://artfight.net/~Novawko">Art Fight</a>
-              </div>
-              <div class="col-6">
-                <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://cara.app/novawko">Cara</a>
-              </div>
-              <div class="col-6">
-                <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://www.roblox.com/users/2710900495/profile">Roblox</a>
-              </div>
-              <div class="col-6">
-                <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://discordid.netlify.app/?id=836430381212893194">Discord</a>
-              </div>
-              <div class="col-6">
-                <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="mailto:novawko@gmail.com">Email</a>
-              </div>
-              <div class="col-12">
-                <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://github.com/novawko">Github</a>
-              </div>
+              <!--THE ACTUAL POST-->
+              <div class="container-fluid mx-auto p-3 bg-faded h-100" style="border-radius: 1rem;">
+                <span class="description"></span>
+              </div> <!--actual post end-->
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-8 p-2 mx-2 mb-2 bg-faded rounded">
-        <div class="card p-3 h-100">
-          <div class="row">
-            <div class="col-3"><img class="newsicon img-fluid" src="" style="min-height: 200px; max-width: 200px;"></div>
-            <div class="col-9 mt-3"><a class="profilelink profileid" style="font-size: 24px;"></a><br><span class="posteddate text-muted"></span>, <span class="time text-muted"></span> <span class="text-muted">CST</span> <i class="fa-solid fa-clock text-muted"></i></div>
-          </div>
-          <!--THE ACTUAL POST-->
-          <div class="container-fluid mx-auto p-3 bg-faded h-100" style="border-radius: 1rem;">
-            <span class="description"></span>
-          </div>
-          <!--actual post end-->
-      </div>
-    </div>
-  </div>
-
-      
-    </div>
-
-
-  </div>
-
-  <!-- ----------------------------------------------------------------- -->
-  <!-- JS                                                                -->
-  <!-- ----------------------------------------------------------------- -->
-
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-  <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  
-  <!-- Bootstrap Multiselect -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-
-  <!-- Charadex Script -->
-  <script src="styles/js/pages/base.js" type="module"></script>
-  <script src="styles/js/pages/news.js" type="module"></script>
-
-
-</body>
-
+    </div></div>
+    <!-- ----------------------------------------------------------------- -->
+    <!-- JS                                                                -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- Bootstrap Multiselect -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <!-- Charadex Script -->
+    <script src="styles/js/pages/base.js" type="module"></script>
+    <script src="styles/js/pages/news.js" type="module"></script>
+  </body>
 </html>
