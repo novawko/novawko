@@ -109,7 +109,7 @@ charadex.page.news = {
   },
 
   prevNext: {
-    toggle: true,
+    toggle: false,
   },
 
 };
