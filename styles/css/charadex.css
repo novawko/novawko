@@ -808,12 +808,6 @@ p:last-child {
 }
 
 @media only screen and (max-width: 600px) {
-  h1#artexamples, h1#customexamples {
-  font-size: 2rem !important;
-  }
-}
-
-@media only screen and (max-width: 600px) {
 #sidebaricon {
   max-width: 320px !important;
   min-height: 320px !important;
