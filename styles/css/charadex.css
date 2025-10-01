@@ -808,7 +808,7 @@ p:last-child {
 }
 
 @media only screen and (max-width: 600px) {
-  #artsamples, #customexamples {
+  h1#artsamples, h1#customexamples {
   font-size: 1.5rem !important;
   }
 }
