@@ -808,8 +808,8 @@ p:last-child {
 }
 
 @media only screen and (max-width: 600px) {
-  h1#artsamples, h1#customexamples {
-  font-size: 1.5rem !important;
+  h1#artexamples, h1#customexamples {
+  font-size: 2rem !important;
   }
 }
 
