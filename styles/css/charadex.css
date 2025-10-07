@@ -798,8 +798,14 @@ p:last-child {
 }
 
 @media only screen and (max-width: 600px) {
-  #commissionspage_title, #bookmarkspage_title, #jovalancustoms_header {
+  #commissionspage_title, #bookmarkspage_title {
   font-size: 2.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #jovalancustoms_header {
+  font-size: 1.5rem !important;
   }
 }
 
