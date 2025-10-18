@@ -49,7 +49,7 @@ charadex.sheet = {
     statuses: ['All', 'Resell', 'Trade', 'Offer', 'Pending', 'For Sale', 'Do Not Offer', 'Auction'],
     privacyStatuses: ['All', 'Public', 'Unlisted', 'Authorized Only', 'Logged In Users Only'],
     nubreolanStatuses: ['All', 'Resell', 'Trade', 'Offer', 'Pending', 'For Sale', 'Do Not Offer', 'Auction', 'Voided'],
-    nubreolanSpecies: ['All', 'Kitiguar', 'Fluffy Worm'],
+    nubreolanSpecies: ['All', 'Kitiguar', 'Fluffy Worm', 'Naa'],
     anatomyTypes: ['All', 'Feral', 'Anthro', 'Humanoid'],
     novawkoArtOnlyToggle: ['Enable'],
     resourceTypes: ['All', 'Blinkie', 'GIF', 'Illustration', 'Pattern', 'Photo', 'Pixel', 'PNG', 'Stamp', 'Texture', 'Emoji', 'Sticker', 'Moodboard', 'Palette', 'Divider', 'Flag', 'Art Fight'],
