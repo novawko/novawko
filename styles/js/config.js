@@ -332,7 +332,9 @@ charadex.page.resources = {
 
   filters: {
     toggle: true,
-    parameters: ['All', 'Birthday', 'Halloween', 'Christmas', 'Winter']
+    parameters: {
+      'Seasonal Types': ['Halloween', 'Christmas', 'Winter', 'Birthday'],
+    }
   },
 
   fauxFolder: {
