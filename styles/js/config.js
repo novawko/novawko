@@ -385,14 +385,13 @@ charadex.page.characters = {
       'Design Type': charadex.sheet.options.designTypes,
       'Trade Status': charadex.sheet.options.statuses,
       'Fandom': charadex.sheet.options.worlds,
-      'Anatomy Type': charadex.sheet.options.anatomyTypes,
     }
   },
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Favorite',
-    parameters: charadex.sheet.options.favorite,
+    folderProperty: 'Anatomy Type',
+    parameters: charadex.sheet.options.anatomyTypes,
   },
 
   search: {
