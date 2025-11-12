@@ -34,7 +34,7 @@ charadex.sheet = {
     imageGallery:  "image gallery",
     news:          "news",
     faq:           "faq",
-    connections:   "connections",
+    myCards:       "my cards",
     nubreolanMasterlist:   "nubreolan masterlist",
     nubreolanLog:  "nubreolan log",
     resources:     "resources",
@@ -164,45 +164,45 @@ charadex.page.prompts = {
 };
 
 
-/* Connections
+/* My Cards
 /* --------------------------------------------------------------- */
-charadex.page.connections = {
+charadex.page.myCards = {
 
-  sheetPage: charadex.sheet.pages.connections,
-  sitePage: 'connections',
+  sheetPage: charadex.sheet.pages.myCards,
+  sitePage: 'mycards',
   dexSelector: 'charadex',
-  profileProperty: 'username',
+  profileProperty: 'dex',
 
   sort: {
     toggle: false,
-    key: "username",
+    key: "dex",
     order: "asc",
     parameters: []
   },
 
   pagination: {
-    toggle: false,
-    bottomToggle: false,
-    amount: 12,
+    toggle: true,
+    bottomToggle: true,
+    amount: 9,
   },
 
   filters: {
-    toggle: false,
+    toggle: true,
     parameters: {
-      'TBA': [],
+      'Effect Type': ['Normal', 'Normal Holo', 'Cosmos Holo', 'Mirror Holo', 'Cracked Ice Holo', 'Tinsel Holo', 'Reverse', 'Reverse Pokéball', 'Reverse Masterball', 'Stamp'],
     }
   },
 
   fauxFolder: {
-    toggle: false,
-    folderProperty: '',
-    parameters: [],
+    toggle: true,
+    folderProperty: 'Graded',
+    parameters: ['Graded'],
   },
 
   search: {
     toggle: true,
-    filterToggle: false,
-    parameters: ['Username']
+    filterToggle: true,
+    parameters: ['All', 'Dex', 'Effect']
   },
 
   prevNext: {
