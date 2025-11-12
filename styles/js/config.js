@@ -197,7 +197,7 @@ charadex.page.myCards = {
   fauxFolder: {
     toggle: true,
     folderProperty: 'Fandom',
-    parameters: ['Pokémon', 'One Piece', 'Spider Man', 'Webkinz', 'Sonic the Hedgehog', 'Sanrio', 'Littlest Pet Shop', 'Re:Zero', 'Unsorted'],
+    parameters: ['Pokémon', 'One Piece', 'Spider Man', 'Webkinz', 'Sonic the Hedgehog', 'Sanrio', 'Littlest Pet Shop', 'Re Zero', 'Unsorted'],
   },
 
   search: {
