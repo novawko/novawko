@@ -177,7 +177,7 @@ charadex.page.myCards = {
   profileProperty: 'id',
 
   sort: {
-    toggle: false,
+    toggle: true,
     key: "id",
     order: "asc",
     parameters: []
