@@ -177,7 +177,7 @@ charadex.page.myCards = {
   profileProperty: 'id',
 
   sort: {
-    toggle: true,
+    toggle: false,
     key: "id",
     order: "asc",
     parameters: []
@@ -207,7 +207,7 @@ charadex.page.myCards = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Card Number', 'Effect Type']
+    parameters: ['All', 'Card Number']
   },
 
   prevNext: {
