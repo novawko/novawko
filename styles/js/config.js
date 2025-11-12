@@ -189,7 +189,7 @@ charadex.page.myCards = {
   filters: {
     toggle: true,
     parameters: {
-      'Effect Type': ['Normal', 'Normal Holo', 'Cosmos Holo', 'Mirror Holo', 'Cracked Ice Holo', 'Tinsel Holo', 'Reverse', 'Reverse Pokéball', 'Reverse Masterball', 'Stamp'],
+      'Effect Type': ['Normal', 'Normal Holo', 'Cosmos Holo', 'Mirror Holo', 'Cracked Ice Holo', 'Tinsel Holo', 'Reverse', 'Reverse Pokéball', 'Reverse Masterball', 'Stamp', 'Graded'],
       'Region': ['English', 'Japanese', 'Chinese'],
     }
   },
