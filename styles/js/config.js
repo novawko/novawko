@@ -190,13 +190,14 @@ charadex.page.myCards = {
     toggle: true,
     parameters: {
       'Effect Type': ['Normal', 'Normal Holo', 'Cosmos Holo', 'Mirror Holo', 'Cracked Ice Holo', 'Tinsel Holo', 'Reverse', 'Reverse Pokéball', 'Reverse Masterball', 'Stamp'],
+      'Region': ['English', 'Japanese', 'Chinese'],
     }
   },
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Graded',
-    parameters: ['Graded'],
+    folderProperty: 'Fandom',
+    parameters: ['Pokémon', 'One Piece', 'Spider Man', 'Webkinz', 'Sonic the Hedgehog', 'Sanrio', 'Littlest Pet Shop', 'Re:Zero', 'Unsorted'],
   },
 
   search: {
