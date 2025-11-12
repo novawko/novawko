@@ -56,7 +56,7 @@ charadex.sheet = {
     resourceTypes: ['All', 'Blinkie', 'GIF', 'Illustration', 'Pattern', 'Photo', 'Pixel', 'PNG', 'Stamp', 'Texture', 'Emoji', 'Sticker', 'Moodboard', 'Palette', 'Divider', 'Flag', 'Art Fight', 'Animal Jam', 'Minecraft', 'Pokémon', 'Disability'],
     species: ['All', 'Cat', 'Dog', 'Hamster', 'Kitiguar', 'Human', 'Kanpolo', 'Deep Sea Kanpolo', 'Hyper Kanpolo', 'Kumiyaa', 'Noodle Moth', 'Heavian', 'Burgvoir', 'Sylvarian', 'Woobar', 'Chubbö', 'Yuecoatl', 'Protogen', 'Puffball', 'Yukin', 'Tauyn', 'Eevee', 'Leafeon', 'Sylveon', 'Sprigatito', 'Care Bear', 'Care Bear Cousin', 'Wolf', 'Dragon', 'Rabbit', 'Mecha', 'Fluffy Worm', 'Fox', 'Sparkle Cat', 'Arctic Fox', 'Arctic Wolf', 'Senri', 'Jackalope', 'Flareon', 'Tiger'],
     cardFandoms: ['Pokémon', 'One Piece', 'Spider Man', 'Webkinz', 'Littlest Pet Shop', 'Sonic the Hedgehog', 'Sanrio', 'Re Zero', 'Minecraft', 'Dandadan'],
-    effectTypes: ['Normal', 'Normal Holo', 'Cosmos Holo', 'Mirror Holo', 'Cracked Ice Holo', 'Tinsel Holo', 'Reverse', 'Reverse Pokéball', 'Reverse Masterball', 'Stamp (Left Side)', 'Stamp (Right Side)'],
+    effectTypes: ['Normal', 'Normal Holo', 'Cosmos Holo', 'Mirror Holo', 'Cracked Ice Holo', 'Tinsel Holo', 'Reverse', 'Reverse Pokéball', 'Reverse Masterball', 'Stamp Left Side', 'Stamp Right Side'],
     cardRegions: ['English', 'Japanese', 'Chinese'],
 
   }
