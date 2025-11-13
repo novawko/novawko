@@ -207,7 +207,7 @@ charadex.page.myCards = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Card Number']
+    parameters: ['All', 'Card Number', 'Artist']
   },
 
   prevNext: {
