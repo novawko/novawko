@@ -37,17 +37,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   );
 
 
-  /* Connections
-  ===================================================================== */
-  let connections = await charadex.initialize.page(null, charadex.page.index.connections, (arr) => {
-    
-    // Splice the silly little array
-    let sliceAmount = charadex.page.index.connections.amount || 6;
-    arr.splice(sliceAmount, arr.length);
-
-  });
-
-
   /* Characters
   ===================================================================== */
   let designs = await charadex.initialize.page(null, charadex.page.index.designs, (arr) => {
