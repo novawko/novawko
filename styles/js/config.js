@@ -193,7 +193,7 @@ charadex.page.myCards = {
     toggle: true,
     parameters: {
       'Effect Type': charadex.sheet.options.effectTypes,
-      'Region': charadex.sheet.options.cardRegions,
+      'Card Region': charadex.sheet.options.cardRegions,
       'Graded': ['Yes'],
     }
   },
