@@ -39,6 +39,7 @@ charadex.sheet = {
     nubreolanLog:  "nubreolan log",
     resources:     "resources",
     prompts:       "prompts",
+    wishlist:      "wishlist",
   },
 
   options: {
@@ -208,6 +209,55 @@ charadex.page.myCards = {
     toggle: true,
     filterToggle: true,
     parameters: ['All', 'Card Number', 'Artist']
+  },
+
+  prevNext: {
+    toggle: false,
+  },
+
+};
+
+
+/* Wishlist
+/* --------------------------------------------------------------- */
+charadex.page.wishlist = {
+
+  sheetPage: charadex.sheet.pages.wishlist,
+  sitePage: 'wishlist',
+  dexSelector: 'charadex',
+  profileProperty: 'id',
+
+  sort: {
+    toggle: false,
+    key: "id",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 4,
+  },
+
+  filters: {
+    toggle: true,
+    parameters: {
+      'Effect Type': charadex.sheet.options.effectTypes,
+      'Card Region': charadex.sheet.options.cardRegions,
+    }
+  },
+
+  fauxFolder: {
+    toggle: false,
+    folderProperty: '',
+    parameters: [],
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: true,
+    parameters: ['All', 'Card Fandom', 'Card Number', 'Artist']
   },
 
   prevNext: {
