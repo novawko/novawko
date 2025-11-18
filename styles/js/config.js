@@ -244,7 +244,7 @@ charadex.page.wishlist = {
   filters: {
     toggle: true,
     parameters: {
-      'Effect Type': charadex.sheet.options.effectTypes,
+      'Card Type': charadex.sheet.options.cardTypes,
       'Card Region': charadex.sheet.options.cardRegions,
     }
   },
