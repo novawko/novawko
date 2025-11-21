@@ -804,7 +804,7 @@ p:last-child {
 }
 
 @media only screen and (max-width: 600px) {
-  #jovalancustoms_header {
+  #jovalancustoms_header, #jovalanform_header {
   font-size: 1.5rem !important;
   }
 }
