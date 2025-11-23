@@ -828,6 +828,7 @@ p:last-child {
 
 @media (min-width: 768px) {
 #sidebaricon {
+  max-width: 320px !important;
   min-height: 350px !important;
 }
 }
