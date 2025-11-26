@@ -40,6 +40,7 @@ charadex.sheet = {
     resources:     "resources",
     prompts:       "prompts",
     wishlist:      "wishlist",
+    novawkoCards:  "novawko cards",
   },
 
   options: {
@@ -60,6 +61,8 @@ charadex.sheet = {
     cardVariations: ['Normal', 'Normal Holo', 'Cosmos Holo', 'Mirror Holo', 'Cracked Ice Holo', 'Tinsel Holo', 'Reverse', 'Reverse Pokéball', 'Reverse Masterball', 'Stamp Left Side', 'Stamp Right Side', 'Build a Bear', 'Common', 'Rare', 'Super Rare', 'Ultra Rare', 'EX', 'GX', 'V', 'VMAX', 'VSTAR', 'Promo', 'Holo', 'Illustration Rare', 'McDonalds', 'Not Specified'],
     cardRegions: ['English', 'Japanese', 'Chinese'],
     subtypes: ['Energy', 'Code Card', 'Graded', 'Stadium', 'Supporter', 'Special Energy', 'Item', 'Pokémon Tool', 'Shiny Pokémon'],
+    novawkoCardVariations: ['Normal', 'Sparkle Holo'],
+    novawkoCardSubtypes: ['Energy', 'EX'],
 
   }
 
@@ -259,6 +262,55 @@ charadex.page.wishlist = {
     toggle: true,
     filterToggle: true,
     parameters: ['All', 'Card Fandom', 'Card Number', 'Artist']
+  },
+
+  prevNext: {
+    toggle: false,
+  },
+
+};
+
+
+/* Novawko Cards
+/* --------------------------------------------------------------- */
+charadex.page.novawkoCards = {
+
+  sheetPage: charadex.sheet.pages.novawkoCards,
+  sitePage: 'novawkocards',
+  dexSelector: 'charadex',
+  profileProperty: 'id',
+
+  sort: {
+    toggle: false,
+    key: "id",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 4,
+  },
+
+  filters: {
+    toggle: true,
+    parameters: {
+      'Novawko Card Variation': charadex.sheet.options.novawkoCardVariations,
+      'Novawko Card Subtype': charadex.sheet.options.novawkoCardSubtypes,
+    }
+  },
+
+  fauxFolder: {
+    toggle: false,
+    folderProperty: '',
+    parameters: [],
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: true,
+    parameters: ['All', 'Card Number', 'Artist']
   },
 
   prevNext: {
