@@ -191,7 +191,7 @@ charadex.page.myCards = {
   pagination: {
     toggle: true,
     bottomToggle: true,
-    amount: 4,
+    amount: 9,
   },
 
   filters: {
