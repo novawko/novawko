@@ -132,7 +132,7 @@ charadex.page.binders = {
   sheetPage: charadex.sheet.pages.binders,
   sitePage: 'binders',
   dexSelector: 'charadex',
-  profileProperty: 'title',
+  profileProperty: 'bindertitle',
 
   sort: {
     toggle: true,
@@ -144,7 +144,7 @@ charadex.page.binders = {
   pagination: {
     toggle: true,
     bottomToggle: true,
-    amount: 4,
+    amount: 6,
   },
 
   filters: {
