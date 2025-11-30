@@ -162,8 +162,8 @@ charadex.page.binders = {
 
   search: {
     toggle: true,
-    filterToggle: true,
-    parameters: ['Title']
+    filterToggle: false,
+    parameters: ['Binder Title']
   },
 
   prevNext: {
