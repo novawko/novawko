@@ -41,6 +41,7 @@ charadex.sheet = {
     prompts:       "prompts",
     wishlist:      "wishlist",
     novawkoCards:  "novawko cards",
+    binders:       "binders",
   },
 
   options: {
@@ -122,6 +123,55 @@ charadex.page.news = {
   },
 
 };
+
+
+/* Binders
+/* --------------------------------------------------------------- */
+charadex.page.binders = {
+
+  sheetPage: charadex.sheet.pages.binders,
+  sitePage: 'binders',
+  dexSelector: 'charadex',
+  profileProperty: 'title',
+
+  sort: {
+    toggle: true,
+    key: "editdate",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 4,
+  },
+
+  filters: {
+    toggle: false,
+    parameters: {
+      'TBA': [],
+    }
+  },
+
+  fauxFolder: {
+    toggle: false,
+    folderProperty: '',
+    parameters: [],
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: false,
+    parameters: ['Title']
+  },
+
+  prevNext: {
+    toggle: false,
+  },
+
+};
+
 
 
 /* Prompts
