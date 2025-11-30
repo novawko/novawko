@@ -60,7 +60,7 @@ charadex.sheet = {
     cardFandoms: ['Pokémon', 'One Piece', 'Spider Man', 'Webkinz', 'Littlest Pet Shop', 'Sonic the Hedgehog', 'Sanrio', 'Re Zero', 'Minecraft', 'Dandadan', 'My Hero Academia', 'FNAF', 'Kuromis Cryptid Carnival'],
     cardVariations: ['Normal', 'Normal Holo', 'Cosmos Holo', 'Mirror Holo', 'Cracked Ice Holo', 'Tinsel Holo', 'Reverse', 'Reverse Pokéball', 'Reverse Masterball', 'Stamp Left Side', 'Stamp Right Side', 'Build a Bear', 'Common', 'Rare', 'Super Rare', 'Ultra Rare', 'EX', 'GX', 'V', 'VMAX', 'VSTAR', 'Promo', 'Holo', 'Illustration Rare', 'McDonalds', 'Not Specified'],
     cardRegions: ['English', 'Japanese', 'Chinese'],
-    subtypes: ['Favorited', 'Energy', 'Code Card', 'Graded', 'Stadium', 'Supporter', 'Special Energy', 'Item', 'Pokémon Tool', 'Shiny Pokémon'],
+    subtypes: ['Energy', 'Code Card', 'Graded', 'Stadium', 'Supporter', 'Special Energy', 'Item', 'Pokémon Tool', 'Shiny Pokémon'],
     novawkoCardVariations: ['Normal', 'Sparkle Holo'],
     novawkoCardSubtypes: ['Energy', 'EX'],
 
