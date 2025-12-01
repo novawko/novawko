@@ -42,6 +42,7 @@ charadex.sheet = {
     wishlist:      "wishlist",
     novawkoCards:  "novawko cards",
     binders:       "binders",
+    favoriteCards: "favorite cards",
   },
 
   options: {
@@ -263,6 +264,54 @@ charadex.page.myCards = {
     toggle: true,
     filterToggle: true,
     parameters: ['All', 'Card Number', 'Artist']
+  },
+
+  prevNext: {
+    toggle: false,
+  },
+
+};
+
+
+/* Favorite Cards
+/* --------------------------------------------------------------- */
+charadex.page.favoriteCards = {
+
+  sheetPage: charadex.sheet.pages.favoriteCards,
+  sitePage: 'favoritecards',
+  dexSelector: 'charadex',
+  profileProperty: 'id',
+
+  sort: {
+    toggle: false,
+    key: "id",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 9,
+  },
+
+  filters: {
+    toggle: true,
+    parameters: {
+      'Card Region': charadex.sheet.options.cardRegions,
+    }
+  },
+
+  fauxFolder: {
+    toggle: true,
+    folderProperty: 'Card Fandom',
+    parameters: ['All', 'Pokémon', 'One Piece', 'Sonic the Hedgehog', 'Littlest Pet Shop', 'Re Zero', 'Kuromis Cryptid Carnival']
+  },
+
+  search: {
+    toggle: false,
+    filterToggle: true,
+    parameters: []
   },
 
   prevNext: {
