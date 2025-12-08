@@ -609,7 +609,7 @@ charadex.page.characters = {
   },
 
   prevNext: {
-    toggle: true,
+    toggle: false,
   },
 
   relatedData: {
