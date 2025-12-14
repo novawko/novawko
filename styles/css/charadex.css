@@ -837,14 +837,6 @@ p:last-child {
 /* ============================================================= */
 /* Dark Mode
 /* ============================================================= */
-
-a.darkmodetoggle {
-  position: absolute;
-  top: 1%;
-  right: 0;
-  font-size: 1.5rem;
-}
-
 body {
   transition: 
     background-color 0.4s ease,
@@ -892,6 +884,7 @@ body.alt-palette {
   --cd-input-border-color: #55557a;
   --cd-input-border-color-hover: var(--cd-link-text-color);
 
-  --cd-body-background-image: url(/assets/wallpaper2.png);
+  .cd-body-background-image > img {
   background-blend-mode: darken;
+}
 }
