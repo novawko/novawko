@@ -866,40 +866,41 @@ body.dark {
   /* Borders
   ================================================================ */
   --cd-border-color:                     rgba(232, 237, 250, 0.125);
+}
 
 .checkbox {
-  opacity: 0 !important;
-  position: absolute !important;
+  opacity: 0;
+  position: absolute;
 }
 
 .checkbox-label {
-  background-color: #111 !important;
-  width: 50px !important;
-  height: 26px !important;
-  border-radius: 50px !important;
-  position: relative !important;
-  padding: 5px !important;
-  cursor: pointer !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.fa-moon {color: #f1c40f !important;}
+.fa-moon {color: #f1c40f;}
 
-.fa-sun {color: #f39c12 !important;}
+.fa-sun {color: #f39c12;}
 
 .checkbox-label .ball {
-  background-color: #fff !important;
-  width: 22px !important;
-  height: 22px !important;
-  position: absolute !important;
-  left: 2px !important;
-  top: 2px !important;
-  border-radius: 50% !important;
-  transition: transform 0.2s linear !important;
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
 }
 
 .checkbox:checked + .checkbox-label .ball {
-  transform: translateX(24px) !important;
+  transform: translateX(24px);
 }
