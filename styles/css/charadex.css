@@ -845,16 +845,28 @@ body {
 body.dark {
 
   color-scheme: dark;
-  background-blend-mode: darken;
 
-  --cd-body-background-color: #1e1e2f;
-  --cd-content-background-color: #2c2c44;
-  --cd-faded-background-color: #26263a;
+  /* ============================================================= */
+  /* Backgrounds
+  ================================================================ */
+  --cd-body-background-color:            #333337;
+  --cd-content-background-color:         #3f3f44;
+  --cd-faded-background-color:           #4d4c51;
+  --cd-navbar-background-color:          #201f22;
 
-  --cd-body-text-color: #f4f4f4;
-  --cd-faded-text-color: #b3b3b3;
+  /* ============================================================= */
+  /* Text
+  ================================================================ */
+  --cd-body-text-color:                  #fafafa;
+  --cd-faded-text-color:                 #b5c8d8;
+  --cd-navbar-text-color:                var(--cd-faded-text-color);
+  --cd-link-text-color:                  var(--cd-primary-color);
 
-  --cd-border-color: rgba(255, 255, 255, 0.15);
+  /* ============================================================= */
+  /* Borders
+  ================================================================ */
+  --cd-border-color:                     rgba(232, 237, 250, 0.125);
+
 }
 
 .checkbox {
