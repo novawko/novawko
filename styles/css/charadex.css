@@ -845,7 +845,7 @@ body {
     background-image 0.4s ease;
 }
 
-body.alt-palette {
+body.paletteToggle {
   --cd-primary-color: var(--cd-primary-color);
   --cd-primary-text-color: #1a1a1a;
 
