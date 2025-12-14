@@ -44,7 +44,7 @@ $(function() {
 /* ==================================================================== */
 /* Dark Mode Toggle
 ======================================================================= */
-const checkbox = document.getElementById("checkbox")
+const checkbox = document.getElementById("darkmodetoggle")
 checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 })
