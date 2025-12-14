@@ -845,7 +845,9 @@ body {
     background-image 0.4s ease;
 }
 
-body.paletteToggle {
+body.dark {
+  color-scheme: dark;
+  
   --cd-primary-color: var(--cd-primary-color);
   --cd-primary-text-color: #1a1a1a;
 
