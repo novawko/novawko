@@ -44,21 +44,21 @@ $(function() {
 /* ==================================================================== */
 /* Dark Mode Toggle
 ======================================================================= */
-$(function () {
+  $(function () {
 
     const bodyClass = document.body.classList;
 
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem('checkbox') == null) {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem('toggle') == null) {
       bodyClass.add('dark');
-    } if (localStorage.getItem('checkbox') == 'true') {
+    } if (localStorage.getItem('toggle') == 'true') {
       bodyClass.add('dark');
     }
 
-    $(document).on("click", "checkbox", function () {
+    $(document).on("click", "#checkbox", function () {
       bodyClass.contains('dark')
         ? (bodyClass.remove('dark'))
         : (bodyClass.add('dark'));
-      localStorage.setItem('checkbox', bodyClass.contains('dark'));
+      localStorage.setItem('toggle', bodyClass.contains('dark'));
     });
 
   });
