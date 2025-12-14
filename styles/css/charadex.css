@@ -845,7 +845,7 @@ body {
     background-image 0.4s ease;
 }
 
-body.dark {
+body.alt-palette {
   color-scheme: dark;
   
   --cd-primary-color: var(--cd-primary-color);
