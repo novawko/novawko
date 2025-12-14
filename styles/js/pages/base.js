@@ -40,3 +40,11 @@ $(function() {
     $(`a[href="${hash}"]`).tab('show'); // Show the tab linked to the hash
   }
 });
+
+/* ==================================================================== */
+/* Dark Mode Toggle
+======================================================================= */
+const checkbox = document.getElementById("checkbox")
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("dark")
+})
