@@ -40,25 +40,3 @@ $(function() {
     $(`a[href="${hash}"]`).tab('show'); // Show the tab linked to the hash
   }
 });
-
-/* ==================================================================== */
-/* Dark Mode Toggle
-======================================================================= */
-  $(function () {
-
-    const bodyClass = document.body.classList;
-
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem('toggle') == null) {
-      bodyClass.add('dark');
-    } if (localStorage.getItem('toggle') == 'true') {
-      bodyClass.add('dark');
-    }
-
-    $(document).on("click", "#checkbox", function () {
-      bodyClass.contains('dark')
-        ? (bodyClass.remove('dark'))
-        : (bodyClass.add('dark'));
-      localStorage.setItem('toggle', bodyClass.contains('dark'));
-    });
-
-  });
