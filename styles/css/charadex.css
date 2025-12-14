@@ -847,12 +847,6 @@ body.dark {
   color-scheme: dark;
   background-blend-mode: darken;
 
-  --cd-primary-color: var(--cd-primary-color);
-  --cd-primary-text-color: #1a1a1a;
-
-  --cd-secondary-color: var(--cd-secondary-color);
-  --cd-secondary-text-color: #fdfdfd;
-
   --cd-body-background-color: #1e1e2f;
   --cd-content-background-color: #2c2c44;
   --cd-faded-background-color: #26263a;
@@ -861,29 +855,6 @@ body.dark {
   --cd-faded-text-color: #b3b3b3;
 
   --cd-border-color: rgba(255, 255, 255, 0.15);
-
-  --cd-navbar-background-color: #12121c;
-  --cd-navbar-brand-color: var(--cd-primary-color);
-  --cd-navbar-brand-color-hover: var(--cd-secondary-color);
-  --cd-navbar-text-color: var(--cd-secondary-text-color);
-  --cd-navbar-link-color: var(--cd-secondary-text-color);
-  --cd-navbar-link-color-hover: var(--cd-primary-color);
-
-  --cd-footer-background-color: var(--cd-navbar-background-color);
-  --cd-footer-text-color: #e1e1e1;
-
-  --cd-link-text-color: var(--cd-primary-color);
-  --cd-link-text-color-hover: var(--cd-secondary-color);
-
-  --cd-button-background-color: var(--cd-link-text-color);
-  --cd-button-background-color-hover: var(--cd-link-text-color-hover);
-  --cd-button-text-color: var(--cd-primary-text-color);
-  --cd-button-text-color-hover: #000;
-
-  --cd-input-background-color: #33334d;
-  --cd-input-text-color: var(--cd-secondary-text-color);
-  --cd-input-border-color: #55557a;
-  --cd-input-border-color-hover: var(--cd-link-text-color);
 }
 
 .checkbox {
