@@ -229,12 +229,3 @@ charadex.initialize.groupGallery = async function (config, dataArray, groupBy, c
 };
 
 export { charadex };
-
-
-/* ==================================================================== */
-/* Dark Mode Toggle (drop at end of page / after charadex export)
-======================================================================= */
-const checkbox = document.getElementById("checkbox")
-checkbox.addEventListener("change", () => {
-  document.body.classList.toggle("dark")
-})
