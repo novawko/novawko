@@ -66,7 +66,7 @@ charadex.sheet = {
     subtypes: ['Energy', 'Code Card', 'Graded', 'Stadium', 'Supporter', 'Special Energy', 'Item', 'Pokémon Tool', 'Shiny Pokémon'],
     novawkoCardVariations: ['Normal', 'Sparkle Holo'],
     novawkoCardSubtypes: ['Energy', 'EX'],
-    traitTypes: ['All', 'Ears', 'Eyes', 'Tails', 'Paws', 'Tongues', 'Teeth', 'Horns', 'Muzzle', 'Muzzle'],
+    traitTypes: ['All', 'Ears', 'Eyes', 'Tails', 'Paws', 'Tongues', 'Teeth', 'Horns', 'Muzzle', 'Misc'],
     rarity: ['All', 'Standard', 'Unusual', 'Rare', 'Epic', 'Mutation'],
 
   }
