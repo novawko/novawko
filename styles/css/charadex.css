@@ -69,21 +69,20 @@ body {
   /* Rarities
   ================================================================ */
 
-  --cd-rarity-common-bg: #d58353;
-  --cd-rarity-common-txt: #fcf4ed;
+  --cd-rarity-standard-bg: #d58353;
+  --cd-rarity-standard-txt: #fcf4ed;
 
-  --cd-rarity-uncommon-bg: #e0bb68;
-  --cd-rarity-uncommon-txt: var(--cd-rarity-common-txt);
+  --cd-rarity-unusual-bg: #e0bb68;
+  --cd-rarity-unusual-txt: var(--cd-rarity-standard-txt);
   
   --cd-rarity-rare-bg: #97b34e;
-  --cd-rarity-rare-txt: var(--cd-rarity-common-txt);
+  --cd-rarity-rare-txt: var(--cd-rarity-standard-txt);
 
-  --cd-rarity-veryrare-bg: #548b71;
-  --cd-rarity-veryrare-txt: var(--cd-rarity-common-txt);
+  --cd-rarity-mutation-bg: #36454F;
+  --cd-rarity-mutation-txt: #FAF9F6;
 
-  /* Legendary & Mythic */
-  --cd-rarity-legendary-bg: #5a473e;
-  --cd-rarity-legendary-txt: var(--cd-rarity-common-txt);
+  --cd-rarity-epic-bg: #5a473e;
+  --cd-rarity-epic-txt: var(--cd-rarity-standard-txt);
 
 
   /* ============================================================= */
@@ -709,7 +708,7 @@ p:last-child {
   max-height: 175px !important;
 }
 
-.cd-profile-image-container > img{
+.cd-profile-image-container > img {
   max-height: 700px;
 }
 
@@ -725,13 +724,6 @@ p:last-child {
   background-size: contain;
   background-repeat:no-repeat;
   min-height: 200px;
-}
-
-/* News */
-.cd-news-background {
-  background-position: center;
-  background-size: cover;
-  min-height: 150px;
 }
 
 /* Makes sure your text formatting is preserved from the sheet */
@@ -771,14 +763,14 @@ p:last-child {
 /* Rarity
 /* ============================================================= */
 
-.badge-common {
-  background-color: var(--cd-rarity-common-bg);
-  color: var(--cd-rarity-common-txt);
+.badge-standard {
+  background-color: var(--cd-rarity-standard-bg);
+  color: var(--cd-rarity-standard-txt);
 }
 
-.badge-uncommon {
-  background-color: var(--cd-rarity-uncommon-bg);
-  color: var(--cd-rarity-uncommon-txt);
+.badge-unusual {
+  background-color: var(--cd-rarity-unusual-bg);
+  color: var(--cd-rarity-unusual-txt);
 }
 
 .badge-rare {
@@ -786,16 +778,20 @@ p:last-child {
   color: var(--cd-rarity-rare-txt);
 }
 
-.badge-veryrare {
-  background-color: var(--cd-rarity-veryrare-bg);
-  color: var(--cd-rarity-veryrare-txt);
+.badge-mutation {
+  background-color: var(--cd-rarity-mutation-bg);
+  color: var(--cd-rarity-mutation-txt);
 }
 
-.badge-legendary,
-.badge-mythic {
-  background-color: var(--cd-rarity-legendary-bg);
-  color: var(--cd-rarity-legendary-txt);
+.badge-epic {
+  background-color: var(--cd-rarity-epic-bg);
+  color: var(--cd-rarity-epic-txt);
 }
+
+
+/* ============================================================= */
+/* Nova's Tweeks
+/* ============================================================= */
 
 @media only screen and (max-width: 600px) {
   #commissionspage_title, #bookmarkspage_title, #todopage_title {
