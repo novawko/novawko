@@ -124,7 +124,7 @@ charadex.page.kitiguarTraits = {
   },
 
   prevNext: {
-    toggle: true,
+    toggle: false,
   },
 
 };
