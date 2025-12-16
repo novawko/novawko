@@ -43,6 +43,7 @@ charadex.sheet = {
     novawkoCards:  "novawko cards",
     binders:       "binders",
     favoriteCards: "favorite cards",
+    kitiguarTraits: "kitiguar traits",
   },
 
   options: {
@@ -59,12 +60,14 @@ charadex.sheet = {
     novawkoArtOnlyToggle: ['Enable'],
     resourceTypes: ['All', 'Blinkie', 'GIF', 'Illustration', 'Pattern', 'Photo', 'Pixel', 'PNG', 'Stamp', 'Texture', 'Emoji', 'Sticker', 'Moodboard', 'Palette', 'Divider', 'Flag', 'Art Fight', 'Animal Jam', 'Minecraft', 'Pokémon', 'Disability'],
     species: ['All', 'Cat', 'Dog', 'Hamster', 'Kitiguar', 'Human', 'Kanpolo', 'Deep Sea Kanpolo', 'Hyper Kanpolo', 'Kumiyaa', 'Noodle Moth', 'Heavian', 'Burgvoir', 'Sylvarian', 'Woobar', 'Chubbö', 'Yuecoatl', 'Protogen', 'Puffball', 'Yukin', 'Tauyn', 'Eevee', 'Leafeon', 'Sylveon', 'Sprigatito', 'Care Bear', 'Care Bear Cousin', 'Wolf', 'Dragon', 'Rabbit', 'Mecha', 'Fluffy Worm', 'Fox', 'Sparkle Cat', 'Arctic Fox', 'Arctic Wolf', 'Senri', 'Jackalope', 'Flareon', 'Tiger'],
-    cardFandoms: ['Pokémon', 'One Piece', 'Spider Man', 'Webkinz', 'Littlest Pet Shop', 'Sonic the Hedgehog', 'Sanrio', 'Re Zero', 'Dandadan', 'My Hero Academia', 'FNAF', 'Kuromis Cryptid Carnival', 'One-Offs'],
+    cardFandoms: ['All', 'Pokémon', 'One Piece', 'Spider Man', 'Webkinz', 'Littlest Pet Shop', 'Sonic the Hedgehog', 'Sanrio', 'Re Zero', 'Dandadan', 'My Hero Academia', 'FNAF', 'Kuromis Cryptid Carnival', 'One-Offs'],
     cardVariations: ['Normal', 'Normal Holo', 'Cosmos Holo', 'Mirror Holo', 'Cracked Ice Holo', 'Tinsel Holo', 'Reverse', 'Reverse Pokéball', 'Reverse Masterball', 'Stamp Left Side', 'Stamp Right Side', 'Build a Bear', 'Common', 'Rare', 'Super Rare', 'Ultra Rare', 'EX', 'GX', 'V', 'VMAX', 'VSTAR', 'Promo', 'Holo', 'Illustration Rare', 'McDonalds', 'Not Specified'],
     cardRegions: ['English', 'Japanese', 'Chinese'],
     subtypes: ['Energy', 'Code Card', 'Graded', 'Stadium', 'Supporter', 'Special Energy', 'Item', 'Pokémon Tool', 'Shiny Pokémon'],
     novawkoCardVariations: ['Normal', 'Sparkle Holo'],
     novawkoCardSubtypes: ['Energy', 'EX'],
+    traitTypes: ['All', 'Ears', 'Eyes', 'Tails', 'Paws', 'Tongues', 'Teeth', 'Horns', 'Muzzle', 'Muzzle'],
+    rarity: ['All', 'Standard', 'Unusual', 'Rare', 'Epic', 'Mutation'],
 
   }
 
@@ -76,6 +79,55 @@ charadex.sheet = {
 /* ==================================================================== */
 charadex.page = {};
 
+
+
+/* Traits
+/* --------------------------------------------------------------- */
+charadex.page.kitiguartTraits = {
+
+  sheetPage: charadex.sheet.pages.kitiguarTraits,
+  sitePage: 'kitiguartraits',
+  dexSelector: 'charadex',
+  profileProperty: 'trait',
+
+  sort: {
+    toggle: true,
+    key: "id",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 24,
+  },
+
+  filters: {
+    toggle: true,
+    parameters: {
+      'Type': charadex.sheet.options.traitTypes,
+      'Rarity': charadex.sheet.options.rarity,
+    }
+  },
+
+  fauxFolder: {
+    toggle: true,
+    folderProperty: 'Type',
+    parameters: charadex.sheet.options.traitTypes,
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: true,
+    parameters: ['All', 'Trait', 'Rarity']
+  },
+
+  prevNext: {
+    toggle: true,
+  },
+
+};
 
 
 /* News
@@ -172,7 +224,6 @@ charadex.page.binders = {
   },
 
 };
-
 
 
 /* Prompts
@@ -755,12 +806,6 @@ charadex.page.index = {
     ... charadex.page.news,
     dexSelector: 'announcement',
     amount: 3,
-  },
-
-  connections: {
-    ... charadex.page.connections,
-    dexSelector: 'connection',
-    amount: 6,
   },
 
   designs: {
