@@ -75,7 +75,7 @@ body {
   --cd-rarity-unusual-bg: #e0bb68;
   --cd-rarity-unusual-txt: var(--cd-rarity-standard-txt);
   
-  --cd-rarity-rare-bg: #97b34e;
+  --cd-rarity-rare-bg: #964eb3;
   --cd-rarity-rare-txt: var(--cd-rarity-standard-txt);
 
   --cd-rarity-mutation-bg: #36454F;
