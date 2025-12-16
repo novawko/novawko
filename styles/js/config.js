@@ -83,7 +83,7 @@ charadex.page = {};
 
 /* Traits
 /* --------------------------------------------------------------- */
-charadex.page.kitiguartTraits = {
+charadex.page.kitiguarTraits = {
 
   sheetPage: charadex.sheet.pages.kitiguarTraits,
   sitePage: 'kitiguartraits',
