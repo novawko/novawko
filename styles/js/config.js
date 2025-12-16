@@ -727,7 +727,7 @@ charadex.page.nubreolanMasterlist = {
   sheetPage: charadex.sheet.pages.nubreolanMasterlist,
   sitePage: 'nubreolanmasterlist',
   dexSelector: 'charadex',
-  profileProperty: 'id',
+  profileProperty: 'listing',
 
   sort: {
     toggle: true,
@@ -746,7 +746,6 @@ charadex.page.nubreolanMasterlist = {
     toggle: true,
     parameters: {
       'Design Type': charadex.sheet.options.nubreolanTypes,
-      'Privacy Status': charadex.sheet.options.privacyStatuses,
       'Trade Status': charadex.sheet.options.nubreolanStatuses,
     }
   },
