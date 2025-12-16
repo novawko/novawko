@@ -75,13 +75,13 @@ body {
   --cd-rarity-unusual-bg: #e0bb68;
   --cd-rarity-unusual-txt: var(--cd-rarity-standard-txt);
   
-  --cd-rarity-rare-bg: #964eb3;
+  --cd-rarity-rare-bg: #69b34e;
   --cd-rarity-rare-txt: var(--cd-rarity-standard-txt);
 
   --cd-rarity-mutation-bg: #36454F;
-  --cd-rarity-mutation-txt: #FAF9F6;
+  --cd-rarity-mutation-txt: var(--cd-rarity-standard-txt);
 
-  --cd-rarity-epic-bg: #5a473e;
+  --cd-rarity-epic-bg: #8c4eb3;
   --cd-rarity-epic-txt: var(--cd-rarity-standard-txt);
 
 
