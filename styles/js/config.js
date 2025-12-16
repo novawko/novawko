@@ -188,7 +188,7 @@ charadex.page.binders = {
   profileProperty: 'bindertitle',
 
   sort: {
-    toggle: true,
+    toggle: false,
     key: "date",
     order: "asc",
     parameters: []
