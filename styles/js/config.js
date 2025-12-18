@@ -102,7 +102,7 @@ charadex.page.games = {
   pagination: {
     toggle: true,
     bottomToggle: true,
-    amount: 8,
+    amount: 6,
   },
 
   filters: {
