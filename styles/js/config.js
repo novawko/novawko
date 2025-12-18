@@ -68,7 +68,7 @@ charadex.sheet = {
     novawkoCardSubtypes: ['Energy', 'EX'],
     traitTypes: ['All', 'Ears', 'Eyes', 'Tails', 'Paws', 'Tongues', 'Teeth', 'Horns', 'Muzzle', 'Misc'],
     rarity: ['All', 'Standard', 'Unusual', 'Rare', 'Epic', 'Mutation'],
-    gameTypes: ['All', 'Match 3', 'Shooter', 'Art', 'Fidget', 'Cards'],
+    gameTypes: ['All', 'Match 3', 'Shooters', 'Art', 'Fidgets', 'Cards'],
     mobileFriendlyToggle: ['Enable'],
 
   }
