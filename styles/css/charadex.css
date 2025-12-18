@@ -89,11 +89,11 @@ body {
   /* Compatibilites
   ================================================================ */
 
-  --cd-compatibility-mobile-bg: #69b34e;
-  --cd-compatibility-mobile-txt: #fcf4ed;
+  --cd-compatibility-mobilefriendly-bg: #69b34e;
+  --cd-compatibility-mobilefriendly-txt: #fcf4ed;
 
-  --cd-compatibility-desktop-bg: #e0bb68;
-  --cd-compatibility-desktop-txt: var(--cd-compatibility-mobile-txt);
+  --cd-compatibility-browseronly-bg: #e0bb68;
+  --cd-compatibility-browseronly-txt: var(--cd-compatibility-mobilefriendly-txt);
 
 
   /* ============================================================= */
@@ -804,14 +804,14 @@ p:last-child {
 /* Compatibility
 /* ============================================================= */
 
-.badge-mobile {
-  background-color: var(--cd-compatibility-mobile-bg);
-  color: var(--cd-compatibility-mobile-txt);
+.badge-mobilefriendly {
+  background-color: var(--cd-compatibility-mobilefriendly-bg);
+  color: var(--cd-compatibility-mobilefriendly-txt);
 }
 
-.badge-desktop {
-  background-color: var(--cd-compatibility-desktop-bg);
-  color: var(--cd-compatibility-desktop-txt);
+.badge-browseronly {
+  background-color: var(--cd-compatibility-browseronly-bg);
+  color: var(--cd-compatibility-browseronly-txt);
 }
 
 
