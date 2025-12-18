@@ -44,6 +44,7 @@ charadex.sheet = {
     binders:       "binders",
     favoriteCards: "favorite cards",
     kitiguarTraits: "kitiguar traits",
+    games:          "games",
   },
 
   options: {
@@ -67,6 +68,8 @@ charadex.sheet = {
     novawkoCardSubtypes: ['Energy', 'EX'],
     traitTypes: ['All', 'Ears', 'Eyes', 'Tails', 'Paws', 'Tongues', 'Teeth', 'Horns', 'Muzzle', 'Misc'],
     rarity: ['All', 'Standard', 'Unusual', 'Rare', 'Epic', 'Mutation'],
+    gameTypes: ['All', 'Match 3', 'Shooter', 'Art', 'Fidget', 'Cards'],
+    mobileFriendly: ['Enable'],
 
   }
 
@@ -78,6 +81,54 @@ charadex.sheet = {
 /* ==================================================================== */
 charadex.page = {};
 
+
+
+/* Minigames
+/* --------------------------------------------------------------- */
+charadex.page.games = {
+
+  sheetPage: charadex.sheet.pages.games,
+  sitePage: 'games',
+  dexSelector: 'charadex',
+  profileProperty: 'title',
+
+  sort: {
+    toggle: true,
+    key: "id",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 8,
+  },
+
+  filters: {
+    toggle: true,
+    parameters: {
+      'Mobile Friendly': charadex.sheet.options.mobilefriendly,
+    }
+  },
+
+  fauxFolder: {
+    toggle: true,
+    folderProperty: 'Type',
+    parameters: charadex.sheet.options.gameTypes,
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: false,
+    parameters: ['Title']
+  },
+
+  prevNext: {
+    toggle: false,
+  },
+
+};
 
 
 /* Traits
