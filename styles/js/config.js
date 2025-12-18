@@ -69,7 +69,7 @@ charadex.sheet = {
     traitTypes: ['All', 'Ears', 'Eyes', 'Tails', 'Paws', 'Tongues', 'Teeth', 'Horns', 'Muzzle', 'Misc'],
     rarity: ['All', 'Standard', 'Unusual', 'Rare', 'Epic', 'Mutation'],
     gameTypes: ['All', 'Match 3', 'Shooter', 'Art', 'Fidget', 'Cards'],
-    mobileFriendly: ['Enable'],
+    mobileFriendlyToggle: ['Enable'],
 
   }
 
@@ -108,7 +108,7 @@ charadex.page.games = {
   filters: {
     toggle: true,
     parameters: {
-      'Mobile Friendly': charadex.sheet.options.mobilefriendly,
+      'Mobile Friendly': charadex.sheet.options.mobileFriendlyToggle,
     }
   },
 
