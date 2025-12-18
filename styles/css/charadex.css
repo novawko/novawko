@@ -86,6 +86,17 @@ body {
 
 
   /* ============================================================= */
+  /* Compatibilites
+  ================================================================ */
+
+  --cd-compatibility-mobile-bg: #69b34e;
+  --cd-compatibility-mobile-txt: #fcf4ed;
+
+  --cd-compatibility-desktop-bg: #e0bb68;
+  --cd-compatibility-desktop-txt: var(--cd-compatibility-mobile-txt);
+
+
+  /* ============================================================= */
   /*
   /* Optional Styles
   /* These are just for extra easy styling
@@ -790,6 +801,21 @@ p:last-child {
 
 
 /* ============================================================= */
+/* Compatibility
+/* ============================================================= */
+
+.badge-mobile {
+  background-color: var(--cd-compatibility-mobile-bg);
+  color: var(--cd-compatibility-mobile-txt);
+}
+
+.badge-desktop {
+  background-color: var(--cd-compatibility-desktop-bg);
+  color: var(--cd-compatibility-desktop-txt);
+}
+
+
+/* ============================================================= */
 /* Nova's Tweeks
 /* ============================================================= */
 
@@ -816,15 +842,15 @@ p:last-child {
 }
 
 @media only screen and (max-width: 600px) {
-#sidebaricon {
+  #sidebaricon {
   max-width: 320px !important;
   min-height: 320px !important;
-}
+  }
 }
 
 @media (min-width: 768px) {
-#sidebaricon {
+  #sidebaricon {
   max-width: 210px !important;
   min-height: 210px !important;
-}
+  }
 }
