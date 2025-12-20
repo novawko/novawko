@@ -115,7 +115,7 @@ charadex.page.codes = {
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Type',
+    folderProperty: 'Code Type',
     parameters: charadex.sheet.options.codeTypes,
   },
 
