@@ -70,6 +70,7 @@ charadex.sheet = {
     rarity: ['All', 'Standard', 'Unusual', 'Rare', 'Epic', 'Mutation'],
     gameTypes: ['All', 'Match 3', 'Shooters', 'Art', 'Fidgets', 'Cards'],
     mobileFriendlyToggle: ['Enable'],
+    codeTypes: ['All', 'HTML', 'CSS', 'JS'],
 
   }
 
@@ -81,6 +82,54 @@ charadex.sheet = {
 /* ==================================================================== */
 charadex.page = {};
 
+
+
+/* Codes
+/* --------------------------------------------------------------- */
+charadex.page.codes = {
+
+  sheetPage: charadex.sheet.pages.codes,
+  sitePage: 'codes',
+  dexSelector: 'charadex',
+  profileProperty: 'title',
+
+  sort: {
+    toggle: true,
+    key: "id",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 6,
+  },
+
+  filters: {
+    toggle: false,
+    parameters: {
+      'TBA': [],
+    }
+  },
+
+  fauxFolder: {
+    toggle: true,
+    folderProperty: 'Type',
+    parameters: charadex.sheet.options.codeTypes,
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: false,
+    parameters: ['Title']
+  },
+
+  prevNext: {
+    toggle: false,
+  },
+
+};
 
 
 /* Minigames
