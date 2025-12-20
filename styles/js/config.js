@@ -45,6 +45,7 @@ charadex.sheet = {
     favoriteCards: "favorite cards",
     kitiguarTraits: "kitiguar traits",
     games:          "games",
+    codes:          "codes",
   },
 
   options: {
