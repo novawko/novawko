@@ -97,6 +97,20 @@ body {
 
 
   /* ============================================================= */
+  /* Code Types
+  ================================================================ */
+
+  --cd-codetype-html-bg: #4eaeb3;
+  --cd-codetype-html-txt: #fcf4ed;
+
+  --cd-codetype-css-bg: #b34e9d;
+  --cd-codetype-css-txt: var(--cd-codetype-html-txt);
+
+  --cd-codetype-js-bg: #b3704e;
+  --cd-codetype-js-txt: var(--cd-codetype-html-txt);
+
+
+  /* ============================================================= */
   /*
   /* Optional Styles
   /* These are just for extra easy styling
@@ -812,6 +826,26 @@ p:last-child {
 .badge-browseronly {
   background-color: var(--cd-compatibility-browseronly-bg);
   color: var(--cd-compatibility-browseronly-txt);
+}
+
+
+/* ============================================================= */
+/* Code Type
+/* ============================================================= */
+
+.badge-html {
+  background-color: var(--cd-codetype-html-bg);
+  color: var(--cd-codetype-html-txt);
+}
+
+.badge-css {
+  background-color: var(--cd-codetype-css-bg);
+  color: var(--cd-codetype-css-txt);
+}
+
+.badge-js {
+  background-color: var(--cd-codetype-js-bg);
+  color: var(--cd-codetype-js-txt);
 }
 
 
