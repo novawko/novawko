@@ -889,7 +889,7 @@ p:last-child {
   }
 }
 
-@media (max-width: 600px) {
+@media only screen (max-width: 600px) {
     #main-container {
         display: flex;
         flex-direction: column; /* Stacks items vertically */
