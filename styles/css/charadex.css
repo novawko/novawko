@@ -888,3 +888,18 @@ p:last-child {
   min-height: 210px !important;
   }
 }
+
+@media (max-width: 600px) {
+    #main-container {
+        display: flex;
+        flex-direction: column; /* Stacks items vertically */
+    }
+    #nubreolansidebar {
+        order: 1; /* Puts sidebar first */
+        width: 100%; /* Ensures it takes full width */
+    }
+    .nubreolancontent {
+        order: 2; /* Puts main content second */
+        width: 100%; /* Ensures it takes full width */
+    }
+}
