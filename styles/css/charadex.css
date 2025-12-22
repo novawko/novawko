@@ -888,12 +888,3 @@ p:last-child {
   min-height: 210px !important;
   }
 }
-
-@media only screen (max-width: 600px) {
-    #nubreolansidebar {
-        order: 1;
-    }
-    #nubreolancontent {
-        order: 2;
-    }
-}
