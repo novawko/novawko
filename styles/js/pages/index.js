@@ -48,22 +48,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
 
-  /* Nubreolan Masterlist
-  ===================================================================== */
-  let listings = await charadex.initialize.page(null, charadex.page.index.listings, (arr) => {
-  // Force sliceAmount to 4
-  let sliceAmount = 4;
-
-  // Get the last 4 (or fewer if less than 4 exist)
-  let recent = arr.slice(-sliceAmount);
-
-  // Overwrite original array in-place
-  arr.length = 0;
-  arr.push(...recent);
-
-  });
-
-
   /* Resources
   ===================================================================== */
   let resources = await charadex.initialize.page(null, charadex.page.index.resources, (arr) => {
