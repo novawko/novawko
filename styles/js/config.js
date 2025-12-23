@@ -913,17 +913,24 @@ charadex.page.index = {
     amount: 5,
   },
 
-  listings: {
-    ... charadex.page.nubreolanMasterlist,
-    dexSelector: 'listing',
-    amount: 4,
-  },
-
   resources: {
     ... charadex.page.resources,
     dexSelector: 'resource',
     amount: 4,
   }
+
+};
+
+
+/* Nubreolan Page
+/* --------------------------------------------------------------- */
+charadex.page.nubreolan = {
+
+  listings: {
+    ... charadex.page.nubreolanMasterlist,
+    dexSelector: 'listing',
+    amount: 5,
+  },
 
 };
 
