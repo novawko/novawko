@@ -894,3 +894,7 @@ p:last-child {
   min-height: 210px !important;
   }
 }
+
+.biggercardimage.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
