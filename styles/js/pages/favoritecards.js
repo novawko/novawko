@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* ==================================================================== */
 /* Flipping Card
 ======================================================================= */
-var biggercardimages = document.querySelectorAll('.biggercardimage');
+var wonkers = document.querySelectorAll('.wonker');
 
-[...biggercardimages].forEach((biggercardimage)=>{
-  biggercardimage.addEventListener( 'click', function() {
-    biggercardimage.classList.toggle('is-flipped');
+[...wonkers].forEach((wonker)=>{
+  wonker.addEventListener( 'click', function() {
+    wonker.classList.toggle('is-flipped');
   });
 });
