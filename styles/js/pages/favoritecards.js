@@ -15,11 +15,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* ==================================================================== */
 /* Flipping Card
 ======================================================================= */
-// Select the card element
-const card = document.querySelector('.flip-card-inner');
+// Select the element
+const flip-card = document.querySelector('.flip-card-inner');
 
 // Add a click event listener
-card.addEventListener('click', function() {
+flip-card.addEventListener('click', function() {
   // Toggle the 'is-flipped' class
-  card.classList.toggle('is-flipped');
+  flip-card.classList.toggle('is-flipped');
 });
