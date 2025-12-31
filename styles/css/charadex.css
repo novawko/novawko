@@ -928,10 +928,10 @@ p:last-child {
 }
 
 .wonker__face--front {
-  background: black;
+  background: transparent;
 }
 
 .wonker__face--back {
-  background: gray;
+  background: transparent;
   transform: rotateY(180deg);
 }
