@@ -15,7 +15,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* ==================================================================== */
 /* Flipping Card
 ======================================================================= */
-var wonker = document.querySelector('.wonker');
-		wonker.addEventListener('click', function() {
- 			wonker.classList.toggle('is-flipped');
+var wonkers = document.querySelectorAll('.wonker');
+
+[...wonkers].forEach((wonker)=>{
+  wonker.addEventListener( 'click', function() {
+    wonker.classList.toggle('is-flipped');
+  });
 });
