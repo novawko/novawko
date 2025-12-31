@@ -929,6 +929,7 @@ p:last-child {
 
 .wonker__face--front {
   background: transparent;
+  transform: rotateY(0deg)
 }
 
 .wonker__face--back {
