@@ -9,7 +9,7 @@ import { charadex } from '../charadex.js';
 ======================================================================= */
 document.addEventListener("DOMContentLoaded", async () => {
   let dex = await charadex.initialize.page(null, charadex.page.favoriteCards);
-  charadex.tools.loadPage('.softload', 500);
+  charadex.tools.loadPage('.softload', 0);
 });
 
 /* ==================================================================== */
