@@ -901,8 +901,8 @@ p:last-child {
 
 .eep {
   display: inline-block;
-  width: auto;
-  height: auto;
+  width: 500px;
+  height: 650px;
   perspective: 600px;
 }
 
