@@ -934,8 +934,3 @@ p:last-child {
 .back {
     transform: rotateY(180deg);
 }
-
-/* Optional: Ensure images fill their containers regardless of rotation */
-.front img, .back img {
-    object-fit: contain;
-}
