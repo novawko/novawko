@@ -934,3 +934,11 @@ p:last-child {
 .back {
     transform: rotateY(180deg);
 }
+
+/* Style the images inside the containers */
+.front img, .back img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: scale-down; /* Ensures images cover the area nicely */
+}
