@@ -902,7 +902,7 @@ p:last-child {
 
 /* The flip container sets the stage for the 3D space */
 .flip-container {
-    min-width: 500px; /* Set desired width */
+    width: 500px; /* Set desired width */
     height: 650px; /* Set desired height */
     perspective: 1000px; /* Adds a 3D effect perspective */
 }
@@ -940,4 +940,5 @@ p:last-child {
     width: 100%;
     height: 100%;
     display: block;
+    object-fit: contain;
 }
