@@ -894,3 +894,50 @@ p:last-child {
   min-height: 210px !important;
   }
 }
+
+
+/* ============================================================= */
+/* Flipping Cards
+/* ============================================================= */
+
+/* The flip container sets the stage for the 3D space */
+.flip-container {
+    width: 500px; /* Set desired width */
+    height: 650px; /* Set desired height */
+    perspective: 1000px; /* Adds a 3D effect perspective */
+}
+
+/* The inner element that is flipped */
+.flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s; /* Smooth animation over 0.6 seconds */
+    transform-style: preserve-3d; /* Crucial for 3D rotation of children */
+}
+
+/* The flip container:hover will trigger the rotation of the flipper */
+.flip-container:hover .flipper {
+    transform: rotateY(180deg); /* Flips the entire inner container horizontally */
+}
+
+/* Position the front and back side images */
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Hide the back of the element when facing away from the viewer */
+    backface-visibility: hidden; 
+}
+
+/* The back image is rotated 180deg initially so it is hidden and faces the correct way when flipped */
+.back {
+    transform: rotateY(180deg);
+}
+
+/* Optional: Ensure images fill their containers */
+.front img, .back img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
