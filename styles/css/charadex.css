@@ -903,9 +903,9 @@ p:last-child {
 /* The flip container sets the stage for the 3D space */
 .flip-container {
     width: 500px; /* Set desired width */
-    height: 650px; /* Set desired height */
+    max-height: 650px; /* Set desired portrait height */
+    min-height: 350px; /* Set desired landscape height */
     perspective: 1000px; /* Adds a 3D effect perspective */
-    display: flex; /* Required for expanding the height of the main card if image height is bigger */
 }
 
 /* The inner element that is flipped */
@@ -927,8 +927,6 @@ p:last-child {
     width: 100%;
     /* Hide the back of the element when facing away from the viewer */
     backface-visibility: hidden;
-    /* Force the main container to expand the height if image height is bigger */
-    flex-grow: 1;
 }
 
 /* The back image is rotated 180deg initially so it is hidden and faces the correct way when flipped */
