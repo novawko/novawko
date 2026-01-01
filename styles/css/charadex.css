@@ -903,8 +903,8 @@ p:last-child {
 /* The flip container sets the stage for the 3D space */
 .flip-container {
     width: 500px; /* Set desired width */
-    max-height: 650px !important; /* Set desired portrait height */
-    min-height: 350px !important; /* Set desired landscape height */
+    height: 650px; /* Set desired portrait height */
+    min-height: 350px; /* Set desired landscape height */
     perspective: 1000px; /* Adds a 3D effect perspective */
 }
 
