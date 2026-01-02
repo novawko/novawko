@@ -47,7 +47,7 @@ $(function() {
 var wonkers = document.querySelectorAll('.wonker');
 
 [...wonkers].forEach((wonker)=>{
-  wonker.addEventListener( 'click', function() {
-    wonker.classList.toggle('is-flipped');
-  });
+  wonker.addEventListener('click', () => {
+  wonker.classList.toggle('is-flipped');
+});
 });
