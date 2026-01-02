@@ -894,3 +894,46 @@ p:last-child {
   min-height: 210px !important;
   }
 }
+
+/* ============================================================= */
+/* Flipping Card Classes
+/* ============================================================= */
+
+/* Container */
+.eep {
+  display: inline-block;
+  width: 500px;
+  height: 650px;
+  perspective: 600px;
+}
+
+/* Actual Card */
+.wonker {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 0.3s;
+}
+
+.wonker.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.wonker__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.wonker__face--front {
+  background: transparent;
+}
+
+.wonker__face--back {
+  background: transparent;
+  transform: rotateY(180deg);
+}
