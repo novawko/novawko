@@ -40,3 +40,14 @@ $(function() {
     $(`a[href="${hash}"]`).tab('show'); // Show the tab linked to the hash
   }
 });
+
+/* ==================================================================== */
+/* Make the trading cards flip on click or tap
+======================================================================= */
+var wonkers = document.querySelectorAll('.wonker');
+
+[...wonkers].forEach((wonker)=>{
+  wonker.addEventListener( 'click', function() {
+    wonker.classList.toggle('is-flipped');
+  });
+});
