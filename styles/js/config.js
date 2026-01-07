@@ -46,6 +46,7 @@ charadex.sheet = {
     kitiguarTraits: "kitiguar traits",
     games:          "games",
     codes:          "codes",
+    eeveeCards:     "eevee cards",
   },
 
   options: {
@@ -369,6 +370,55 @@ charadex.page.prompts = {
 
   prevNext: {
     toggle: true,
+  },
+
+};
+
+
+/* Eevee Cards
+/* --------------------------------------------------------------- */
+charadex.page.eeveeCards = {
+
+  sheetPage: charadex.sheet.pages.eeveeCards,
+  sitePage: 'eeveecards',
+  dexSelector: 'charadex',
+  profileProperty: 'id',
+
+  sort: {
+    toggle: false,
+    key: "id",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 9,
+  },
+
+  filters: {
+    toggle: true,
+    parameters: {
+      'Card Variation': charadex.sheet.options.cardVariations,
+      'Subtype': charadex.sheet.options.subtypes,
+    }
+  },
+
+  fauxFolder: {
+    toggle: true,
+    folderProperty: 'Card Region',
+    parameters: charadex.sheet.options.cardRegions,
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: true,
+    parameters: ['All', 'Card Number', 'Artist']
+  },
+
+  prevNext: {
+    toggle: false,
   },
 
 };
