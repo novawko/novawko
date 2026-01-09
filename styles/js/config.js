@@ -47,6 +47,7 @@ charadex.sheet = {
     games:          "games",
     codes:          "codes",
     eeveeCards:     "eevee cards",
+    queue:          "queue",
   },
 
   options: {
@@ -125,6 +126,54 @@ charadex.page.codes = {
     toggle: true,
     filterToggle: false,
     parameters: ['Title']
+  },
+
+  prevNext: {
+    toggle: false,
+  },
+
+};
+
+
+/* Queue
+/* --------------------------------------------------------------- */
+charadex.page.queue = {
+
+  sheetPage: charadex.sheet.pages.queue,
+  sitePage: 'queue',
+  dexSelector: 'charadex',
+  profileProperty: 'id',
+
+  sort: {
+    toggle: false,
+    key: "id",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 9,
+  },
+
+  filters: {
+    toggle: false,
+    parameters: {
+      'TBA': [],
+    }
+  },
+
+  fauxFolder: {
+    toggle: false,
+    folderProperty: '',
+    parameters: [],
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: false,
+    parameters: ['Username']
   },
 
   prevNext: {
