@@ -54,7 +54,7 @@ charadex.sheet = {
 
     designTypes: ['All', 'Original Character', 'Fan Character', 'Original Species', 'Kinsona'],
     nubreolanTypes: ['All', 'Founder Design', 'Staff Design', 'Mascot', 'AU Design', 'MYO', 'Event', 'Custom', 'Bred'],
-    worlds: ['All', 'Jovalan', 'Nubreolan', 'Warriors', 'Harry Potter', 'Pokémon', 'Territory', 'Siderios', 'Lunamor', 'Zenith', 'Care Bears', 'Turning Red', 'Indigo Park', 'Animal Jam', 'Hazbin Hotel', 'FNAF', 'Others'],
+    worlds: ['All', 'Jovalan', 'Nubreolan', 'Warriors', 'Shining Stars', 'Harry Potter', 'Pokémon', 'Siderios', 'Lunamor', 'Zenith', 'Care Bears', 'Animal Jam', 'Hazbin Hotel', 'FNAF', 'Others'],
     statuses: ['All', 'Sell', 'Trade', 'Offer', 'Pending', 'Free', 'Do Not Offer', 'Auction'],
     nubreolanStatuses: ['All', 'Sell', 'Trade', 'Offer', 'Pending', 'Free', 'Do Not Offer', 'Auction', 'Voided'],
     nubreolanSpecies: ['All', 'Kitiguar', 'Fluffy Worm', 'Naa'],
@@ -842,14 +842,13 @@ charadex.page.characters = {
     parameters: {
       'Design Type': charadex.sheet.options.designTypes,
       'Trade Status': charadex.sheet.options.statuses,
-      'Fandom': charadex.sheet.options.worlds,
     }
   },
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Folder Type',
-    parameters: charadex.sheet.options.folderTypes,
+    folderProperty: 'Fandom',
+    parameters: charadex.sheet.options.worlds,
   },
 
   search: {
