@@ -650,9 +650,9 @@ charadex.page.novawkoCards = {
   },
 
   fauxFolder: {
-    toggle: false,
-    folderProperty: '',
-    parameters: [],
+    toggle: true,
+    folderProperty: 'Novawko Card Folder',
+    parameters: ['All', 'Retired'],
   },
 
   search: {
