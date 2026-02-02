@@ -66,7 +66,7 @@ charadex.sheet = {
     cardVariations: ['Normal', 'Normal Holo', 'Cosmos Holo', 'Mirror Holo', 'Cracked Ice Holo', 'Tinsel Holo', 'Reverse', 'Pokéball', 'Masterball', 'Stamp Left Side', 'Stamp Right Side', 'Build a Bear', 'Common', 'Rare', 'Super Rare', 'Ultra Rare', 'EX', 'GX', 'V', 'VMAX', 'VSTAR', 'Promo', 'Holo', 'Illustration Rare', 'McDonalds', 'Type Specific', 'Confetti Holo', 'Glitter Foil', 'Gem Pack Stamp', 'Not Specified'],
     cardRegions: ['English', 'Japanese', 'Chinese'],
     subtypes: ['Energy', 'Code Card', 'Graded', 'Stadium', 'Supporter', 'Special Energy', 'Item', 'Pokémon Tool', 'Shiny Pokémon', 'Wrapper', 'Sleeve'],
-    novawkoCardVariations: ['Sparkle Holo', 'Illustration Rare'],
+    novawkoCardVariations: ['Normal', 'Sparkle Holo', 'Illustration Rare'],
     novawkoCardSubtypes: ['Energy', 'EX'],
     traitTypes: ['All', 'Ears', 'Eyes', 'Tails', 'Paws', 'Tongues', 'Teeth', 'Horns', 'Muzzle', 'Misc'],
     rarity: ['All', 'Standard', 'Unusual', 'Rare', 'Epic', 'Mutation'],
