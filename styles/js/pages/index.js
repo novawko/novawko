@@ -21,20 +21,21 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
 
-  /* Pop-Up
-  ===================================================================== */
-  const closeBtn = document.getElementById('close');
-  const modalMenu = document.getElementById('modal');
-
-  setTimeout(() => {
-      modalMenu.classList.add('show');
-  }, 1000);
-
-  closeBtn.addEventListener('click', () => { modalMenu.classList.remove('show') });
-
-
   /* Load Page
   ===================================================================== */
   charadex.tools.loadPage('.softload', 0);
 
 });
+
+
+/* ==================================================================== */
+/* Pop-Up
+======================================================================= */
+  const closeBtn = document.getElementById('close');
+  const modalMenu = document.getElementById('modal');
+
+  setTimeout(() => {
+      modalMenu.classList.add('show');
+  }, 100);
+
+  closeBtn.addEventListener('click', () => { modalMenu.classList.remove('show') });
