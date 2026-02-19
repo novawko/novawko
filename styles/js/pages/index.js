@@ -9,33 +9,6 @@ import { charadex } from '../charadex.js';
 ======================================================================= */
 document.addEventListener("DOMContentLoaded", async () => {
 
-  /* News
-  ===================================================================== */
-  let news = await charadex.initialize.page(null, charadex.page.index.news, (arr) => {
-
-  // Force sliceAmount to 3
-  let sliceAmount = 3;
-
-  // Get the last 3 (or fewer if less than 3 exist)
-  let recent = arr.slice(-sliceAmount);
-
-  // Overwrite original array in-place
-  arr.length = 0;
-  arr.push(...recent);
-
-    }, (data) => {
-
-      // Add the silly little news stuff here too
-      $('.cd-prompt-background').each(function(i) {
-        const element = $(this);
-        const image = data.array[i]?.image;
-        element.attr('style', `background-image: url(${image})`);
-      });
-      
-    }
-    
-  );
-
 
   /* Characters
   ===================================================================== */
@@ -48,20 +21,16 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
 
-  /* Resources
+  /* Pop-Up
   ===================================================================== */
-  let resources = await charadex.initialize.page(null, charadex.page.index.resources, (arr) => {
-  // Force sliceAmount to 4
-  let sliceAmount = 4;
+  const closeBtn = document.getElementById('close');
+  const modalMenu = document.getElementById('modal');
 
-  // Get the last 4 (or fewer if less than 4 exist)
-  let recent = arr.slice(-sliceAmount);
+  setTimeout(() => {
+      modalMenu.classList.add('show');
+  }, 1000);
 
-  // Overwrite original array in-place
-  arr.length = 0;
-  arr.push(...recent);
-
-  });
+  closeBtn.addEventListener('click', () => { modalMenu.classList.remove('show') });
 
 
   /* Load Page
