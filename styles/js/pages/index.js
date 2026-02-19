@@ -21,13 +21,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
 
-  /* Load Page
-  ===================================================================== */
-  charadex.tools.loadPage('.softload', 0);
-
-});
-
-
 /* ==================================================================== */
 /* Pop-Up
 ======================================================================= */
@@ -36,6 +29,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   setTimeout(() => {
       modalMenu.classList.add('show');
-  }, 100);
+  }, 500);
 
   closeBtn.addEventListener('click', () => { modalMenu.classList.remove('show') });
+
+
+  /* Load Page
+  ===================================================================== */
+  charadex.tools.loadPage('.softload', 0);
+
+});
