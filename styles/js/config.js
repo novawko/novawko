@@ -998,23 +998,11 @@ charadex.page.nubreolanMasterlist = {
 /* --------------------------------------------------------------- */
 charadex.page.index = {
 
-  news: {
-    ... charadex.page.news,
-    dexSelector: 'announcement',
-    amount: 3,
-  },
-
   designs: {
     ... charadex.page.characters,
     dexSelector: 'design',
     amount: 5,
   },
-
-  resources: {
-    ... charadex.page.resources,
-    dexSelector: 'resource',
-    amount: 4,
-  }
 
 };
 
