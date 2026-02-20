@@ -904,6 +904,7 @@ p:last-child {
     max-width: 60%;
     height: auto;
     display: block;
+    margin-right: auto;
 }
 
 .modal {
