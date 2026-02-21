@@ -48,6 +48,7 @@ charadex.sheet = {
     codes:          "codes",
     eeveeCards:     "eevee cards",
     queue:          "queue",
+    updates:        "updates",
   },
 
   options: {
@@ -130,6 +131,33 @@ charadex.page.codes = {
   prevNext: {
     toggle: false,
   },
+
+};
+
+
+/* Changelog
+/* --------------------------------------------------------------- */
+charadex.page.updates = {
+
+      sheetPage: charadex.sheet.pages.updates,
+      primaryProperty: 'id',
+      relatedProperty: 'id',
+      dexSelector: 'log',
+      profileProperty: 'update',
+      profileToggle: false,
+
+      sort: {
+        toggle: true,
+        key: "timestamp",
+        order: "desc",
+        parameters: []
+      },
+
+      pagination: {
+        toggle: true,
+        bottomToggle: false,
+        amount: 20,
+      },
 
 };
 
