@@ -910,7 +910,7 @@ p:last-child {
 .modal {
     max-width: 700px;
     width: 85%;
-    height: 400px;
+    height: auto;
     position: fixed;
     top: 50%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -927,7 +927,7 @@ p:last-child {
 
 #close {
     cursor: pointer;
-    color: #42333f;
+    color: #000000;
     position: absolute;
     top: 0;
     font-size: 25px;
@@ -937,6 +937,7 @@ p:last-child {
 }
 
 .modal__title {
+    margin-top: 12px;
     font-size: 2rem;
 }
 
@@ -975,7 +976,7 @@ p:last-child {
     .modal__img {
         max-width: 80%
     }
-    .modal {
-        height: 500px;
+    .modal__container {
+    padding: 1.5rem;
     }
 }
