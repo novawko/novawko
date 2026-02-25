@@ -200,7 +200,7 @@ charadex.page.queue = {
   search: {
     toggle: true,
     filterToggle: false,
-    parameters: ['Username']
+    parameters: ['Username', 'Art Type']
   },
 
   prevNext: {
