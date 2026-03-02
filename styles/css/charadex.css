@@ -866,7 +866,7 @@ p:last-child {
 }
 
 @media only screen and (max-width: 600px) {
-  #jovalanform_header {
+  #jovalanform_header, #tradingcards_header {
   font-size: 2rem !important;
   }
 }
