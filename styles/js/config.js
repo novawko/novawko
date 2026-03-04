@@ -476,8 +476,8 @@ charadex.page.eeveeCards = {
   filters: {
     toggle: true,
     parameters: {
-      'Card Variation': charadex.sheet.options.cardVariations,
-      'Subtype': charadex.sheet.options.subtypes,
+      'Card Variation': ['Normal', 'Reverse', 'Pokéball', 'Masterball', 'Confetti Holo', 'Type Specific', 'Gem Pack Stamp', 'Glitter Foil', 'V', 'VMAX', 'Promo', 'Illustration Rare', 'EX', 'Stamp Left Side', 'McDonalds', 'Build a Bear'],
+      'Subtype': ['Graded', 'Shiny Pokémon'],
     }
   },
 
@@ -623,7 +623,7 @@ charadex.page.wishlist = {
   filters: {
     toggle: true,
     parameters: {
-      'Card Variation': charadex.sheet.options.cardVariations,
+      'Card Variation': ['Common', 'Ultra Rare', 'Rare', 'Normal', 'Promo', 'GX', 'V', 'VMAX', 'EX', 'Full Art', 'Cosmos Holo', 'Not Specified'],
       'Card Region': charadex.sheet.options.cardRegions,
     }
   },
