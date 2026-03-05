@@ -779,6 +779,11 @@ charadex.page.imageGallery = {
     parameters: [],
   },
 
+  tags: {
+    toggle: true,
+    parameters: ['icon', 'bust', 'animaljam', 'fullbody', 'refsheet', 'jovalancustom', 'discordemoji', 'emoji', 'headshot', 'complexrefsheet', 'sketch', 'warriorcats', 'fanart', 'tradingcard', 'giftart', 'celshading', 'softshading', 'halfbody', 'banner', 'header', 'pixel', 'pixelshading', 'warriorminis', 'arttrade', 'lineart', 'matchingicons', 'scene', 'commission', 'speciessheet', 'pattern', 'traditional', 'photo', 'freebie', 'map', 'trade', 'artfight', 'collab', 'pagedoll', 'cover', 'event', 'wallpaper', 'animated', 'screenshot', 'doodlepage', 'outfit', 'logo', 'moodboard', 'realism', 'vent', 'birthdaygift', 'key', '2018', '2019', '2021', '2022', '2023', '2024', '2025', '2026', 'novawko'],
+  },
+
   search: {
     toggle: true,
     filterToggle: true,
