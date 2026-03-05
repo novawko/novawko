@@ -193,6 +193,57 @@ charadex.listFeatures.filters = (parameters, selector = 'charadex') => {
 }
 
 /* ==================================================================== */
+/* Tags
+======================================================================= */
+charadex.listFeatures.tags = (pageUrl, parameters, selector = 'charadex') => {
+
+  if (!pageUrl || !parameters) return false;
+
+  const tagContainer = $(`#${selector}-tags`);
+  const paramObj = charadex.url.getUrlParametersObject();
+  let tagParams = paramObj?.tags || false;
+
+  // Add tag buttons
+  parameters.forEach(key => {
+    const button = $(`#${selector}-tag`).clone().removeAttr('id');
+    button.find(`.${selector}-tag-link`)
+      .text(`#${key}`)
+      .attr('val', charadex.tools.scrub(key))
+      .toggleClass('active', tagParams && tagParams.includes(charadex.tools.scrub(key)));
+    tagContainer.append(button);
+  });
+
+  // Tag click handler
+  tagContainer.on('click', `.${selector}-tag-link`, function (e) {
+    e.preventDefault();
+    const val = $(this).attr('val');
+    let newTags;
+    if (!tagParams) {
+      newTags = [val];
+    } else if (!tagParams.includes(val)) {
+      newTags = [...tagParams, val];
+    } else {
+      newTags = tagParams.filter(i => i !== val);
+    }
+    window.location.href = charadex.url.addUrlParameters(pageUrl, { tags: newTags });
+  });
+
+  // Show the tags container
+  tagContainer.parents(`#${selector}-tag-container`).show();
+
+  // Add tags to entry
+  const addTags = (entry) => {
+    entry.tags = entry.tags ? entry.tags.split(',').map(tag => tag.trim()) : [];
+    entry.fancytags = entry.tags.map(tag =>
+      `<a class="tag" href="${charadex.url.addUrlParameters(pageUrl, { tags: tag })}">#${tag}</a>`
+    ).join(' ');
+  };
+
+  return addTags;
+
+};
+
+/* ==================================================================== */
 /* Faux Folders
 ======================================================================= */
 charadex.listFeatures.fauxFolders = (pageUrl, folderParameters, selector = 'charadex') => {
