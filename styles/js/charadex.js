@@ -28,6 +28,7 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
   let folders = config.fauxFolder?.toggle ?? false ? charadex.listFeatures.fauxFolders(pageUrl, config.fauxFolder.parameters, selector) : false;
   let filters = config.filters?.toggle ?? false ? charadex.listFeatures.filters(config.filters.parameters, selector) : false;
   let search = config.search?.toggle ?? false ? charadex.listFeatures.search(config.search.parameters, config.search.filterToggle, selector) : false;
+  let tags = config.tags?.toggle ?? false ? charadex.listFeatures.tags(pageUrl, config.tags.parameters, selector) : false;
 
   // Get our data
   let charadexData = dataArr || await charadex.importSheet(config.sheetPage);
