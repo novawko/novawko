@@ -10,6 +10,17 @@ import { charadex } from '../charadex.js';
 document.addEventListener("DOMContentLoaded", async () => {
 
 
+  /* News
+  ===================================================================== */
+  let announcements = await charadex.initialize.page(null, charadex.page.index.news, (arr) => {
+
+  // Splice the silly little array
+  let sliceAmount = charadex.page.index.news.amount || 4;
+  arr.splice(sliceAmount, arr.length); 
+      
+  });
+
+
   /* Characters
   ===================================================================== */
   let designs = await charadex.initialize.page(null, charadex.page.index.designs, (arr) => {
