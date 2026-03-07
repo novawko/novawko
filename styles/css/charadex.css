@@ -897,13 +897,13 @@ p:last-child {
 
 @media only screen and (max-width: 600px) {
   #recentposts_namedate {
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
   #recentposts_icon {
-  margin-right: -10px;
+  margin-right: -20px;
   }
 }
 
