@@ -907,6 +907,12 @@ p:last-child {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  #recentposts_text {
+  font-size: 0.7rem;
+  }
+}
+
 
 /* ============================================================= */
 /* Pop-Up Magic
