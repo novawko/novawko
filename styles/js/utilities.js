@@ -202,14 +202,14 @@ charadex.url = {
     return url + params;
   },
 
+}
+
   // Clean the weird encoded ampersands to display links nicer
   document.querySelectorAll('a').forEach(link => {
   if (link.href.includes('%26')) {
     link.href = link.href.replace(/%26/g, '');
   }
 });
-
-}
 
 
 
