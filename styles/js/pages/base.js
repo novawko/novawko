@@ -40,3 +40,12 @@ $(function() {
     $(`a[href="${hash}"]`).tab('show'); // Show the tab linked to the hash
   }
 });
+
+/* ==================================================================== */
+/* Clean the weird encoded ampersands to display links nicer
+======================================================================= */
+document.querySelectorAll('a').forEach(link => {
+  if (link.href.includes('%26')) {
+    link.href = link.href.replace(/%26/g, '');
+  }
+});
