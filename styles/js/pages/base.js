@@ -40,23 +40,3 @@ $(function() {
     $(`a[href="${hash}"]`).tab('show'); // Show the tab linked to the hash
   }
 });
-
-
-/* ==================================================================== */
-/* Clean the weird encoded ampersands to display links nicer
-======================================================================= */
-document.addEventListener("DOMContentLoaded", function() {
-    // Select all anchor tags
-    var links = document.querySelectorAll('a');
-    
-    links.forEach(function(link) {
-        var href = link.getAttribute('href');
-        if (href) {
-            // Replace "%26" with "&" or completely remove specific unwanted parts
-            var cleanedHref = href.replace(/%26/g, ''); 
-            
-            // Update the link
-            link.setAttribute('href', cleanedHref);
-        }
-    });
-});
