@@ -1034,7 +1034,7 @@ charadex.page.index = {
   news: {
     ... charadex.page.news,
     dexSelector: 'announcement',
-    amount: 4,
+    amount: 6,
   },
 
   designs: {
