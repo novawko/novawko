@@ -909,8 +909,8 @@ p:last-child {
 
 @media only screen and (max-width: 600px) {
   #recentposts_icon > div {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   }
 }
 
