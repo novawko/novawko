@@ -906,7 +906,13 @@ p:last-child {
   margin-right: -15px;
   width: 45px;
   height: 45px;
-  padding-right: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #recentposts_icon > .card {
+  width: 45px;
+  height: 45px;
   }
 }
 
