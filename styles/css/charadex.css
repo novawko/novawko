@@ -929,8 +929,8 @@ p:last-child {
 /* ============================================================= */
 
 .commission-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -943,7 +943,6 @@ p:last-child {
   height: 100%;
   object-fit: contain;
   aspect-ratio: 1 / 1;
-  border-radius: 8px;
 }
 
 
