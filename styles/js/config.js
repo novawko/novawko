@@ -49,6 +49,7 @@ charadex.sheet = {
     eeveeCards:     "eevee cards",
     queue:          "queue",
     updates:        "updates",
+    commissions:    "commissions",
   },
 
   options: {
@@ -201,6 +202,54 @@ charadex.page.queue = {
     toggle: true,
     filterToggle: false,
     parameters: ['Username', 'Art Type']
+  },
+
+  prevNext: {
+    toggle: false,
+  },
+
+};
+
+
+/* Commissions
+/* --------------------------------------------------------------- */
+charadex.page.commissions = {
+
+  sheetPage: charadex.sheet.pages.commissions,
+  sitePage: 'commissions',
+  dexSelector: 'charadex',
+  profileProperty: 'title',
+
+  sort: {
+    toggle: false,
+    key: "id",
+    order: "desc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 6,
+  },
+
+  filters: {
+    toggle: false,
+    parameters: {
+      'TBA': [],
+    }
+  },
+
+  fauxFolder: {
+    toggle: true,
+    folderProperty: 'Type',
+    parameters: ['Art', 'Code'],
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: false,
+    parameters: ['Title']
   },
 
   prevNext: {
