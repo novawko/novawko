@@ -928,22 +928,24 @@ p:last-child {
 /* Commission Gallery
 /* ============================================================= */
 
-.commissiongallery {
-  flex: 50%;
-  max-width: 50%;
+.commission-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
 }
 
-.commissiongallery img {
-  vertical-align: middle;
+.commission-gallery-item {
+  flex: 1 1 calc(33.333% - 16px);
+}
+
+.commission-gallery-item img {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
 }
 
-@media only screen and (max-width: 600px) {
-  .commissiongallery {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
 
 /* ============================================================= */
 /* Pop-Up Magic
