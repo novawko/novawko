@@ -925,6 +925,37 @@ p:last-child {
 
 
 /* ============================================================= */
+/* Commission Gallery
+/* ============================================================= */
+
+/* Create four equal columns that sits next to each other */
+.commissiongallery {
+  flex: 25%;
+  max-width: 25%;
+}
+
+.commissiongallery img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .commissiongallery {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .commissiongallery {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ============================================================= */
 /* Pop-Up Magic
 /* ============================================================= */
 
