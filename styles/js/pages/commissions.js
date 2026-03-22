@@ -19,7 +19,6 @@ const images = document.querySelectorAll('img');
 
 images.forEach(img => {
   img.addEventListener('error', function handleError() {
-    this.parentNode.removeChild(this);
-    // or simply this.remove();
+    this.remove();
   });
 });
