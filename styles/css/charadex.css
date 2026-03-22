@@ -923,6 +923,9 @@ p:last-child {
   }
 }
 
+img[src=""] {
+  display: none;
+}
 
 /* ============================================================= */
 /* Commission Gallery
