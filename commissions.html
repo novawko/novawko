@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- ----------------------------------------------------------------- -->
+      <!-- About Your Site                                                   -->
+      <!-- ----------------------------------------------------------------- -->
+      <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+      <title>Novawko | Commissions</title>
+      <meta name="title" content="Novawko | Commissions" />
+      <meta name="type" content="website" />
+      <meta name="url" content="https://novawko.netlify.app/commissions.html" />
+      <meta name="image" content="assets/meta.png" />
+      <meta name="description" content="Interested in Nova's works? Order now!">
+      <!-- No AI scraping directives -->
+      <meta name="robots" content="noai">
+      <meta name="robots" content="noimageai">
+      <!-- ----------------------------------------------------------------- -->
+      <!-- Styles                                                            -->
+      <!-- ----------------------------------------------------------------- -->
+      <!-- Bootstrap CSS -->
+      <!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
+      <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <!-- Multiselect CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+      <!-- Font Awesome Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+      <!-- ----------------------------------------------------------------- -->
+      <!-- Optional Styles                                                   -->
+      <!-- ----------------------------------------------------------------- -->
+      <!-- Custom CSS -->
+      <link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
+      <!-- Google Font -->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
+   </head>
+   <body id="charadex-body">
+      <!-- --------------------------------------------------------------------
+      <-- Header
+      <-------------------------------------------------------------------- -->
+      <div class="load-html" id="header" data-source="includes/header.html"></div>
+      <!-- --------------------------------------------------------------------
+      <-- Main List
+      <-------------------------------------------------------------------- -->
+      <div class="container" id="main-container">
+         <div id="charadex-gallery">
+            <!-- Top Card Container
+            <!-- ----------------------------------------------------------------- -->
+            <div class="card p-4 mb-4">
+               <!-- Title
+               <!-- --------------------------------------------------------------- -->
+               <h3 class="mb-0 text-center"><a href="commissions.html">Commission Info</a></h3>
+               <!-- Faux Folders
+               <!-- --------------------------------------------------------------- -->
+               <div style="display:none;" id="charadex-folder-container">
+                  <hr>
+                  <div class="row no-gutters m-n1" id="charadex-folders"></div>
+                  <!-- Buttons -->
+                  <div style="display:none;">
+                     <div class="col-lg-3 col-md-4 col-sm-6 p-1" id="charadex-folder">
+                        <a class="btn btn-primary d-block" href=""></a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Filters
+               <!-- --------------------------------------------------------------- -->
+               <div style="display:none;" id="charadex-filter-container">
+                  <hr>
+                  <div class="row no-gutters m-n1" id="charadex-filters"></div>
+                  <!-- Filters -->
+                  <div style="display: none;">
+                     <div class="col-md-4 col-12 p-1" id="charadex-filter">
+                        <label class="px-2"></label>
+                        <select class="form-control" multiple></select>
+                     </div>
+                  </div>
+               </div>
+               <!-- Search
+               <!-- --------------------------------------------------------------- -->
+               <div style="display:none;" id="charadex-search-container">
+                  <hr>
+                  <div class="row no-gutters m-n1">
+                     <!-- Search Filter -->
+                     <div class="col-md-4 col-6 p-1" style="display: none;">
+                        <select class="form-control" id="charadex-search-filter"></select>
+                     </div>
+                     <!-- Search Bar -->
+                     <div class="col d-flex p-1">
+                        <input class="form-control search" type="search" placeholder="Search" id="charadex-search">
+                     </div>
+                  </div>
+               </div>
+               <!-- Pagination
+               <!-- --------------------------------------------------------------- -->
+               <div style="display: none;" class="charadex-pagination-container">
+                  <hr class="mb-4 mt-4">
+                  <div class="nav d-flex justify-content-center mb-n4">
+                     <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+                     <ul class="pagination charadex-pagination charadex-pagination-top justify-content-center m-0"></ul>
+                     <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+                  </div>
+               </div>
+               <!-- Prev & Next Topbar
+               <!-- --------------------------------------------------------------- -->
+               <div style="display: none;" id="charadex-prevnext-container">
+                  <hr>
+                  <div class="row no-gutters px-2 text-uppercase">
+                     <div class="col-6 px-1">
+                        <a id="entryPrev" href=""><i class="fas fa-chevron-left mr-2"></i><b><span></span></b></a>
+                     </div>
+                     <div class="col-6 px-1 text-right order-md-1">
+                        <a id="entryNext" href=""><b><span></span></b><i class="fas fa-chevron-right ml-2"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- List Items Render Here
+            <!-- --------------------------------------------------------------- -->
+            <div class="row no-gutters charadex-list softload m-n2"></div>
+            <!-- Pagination
+            <!-- --------------------------------------------------------------- -->
+            <div style="display: none;" class="charadex-pagination-container">
+               <div class="card px-3 py-1 mt-4">
+                  <div class="nav d-flex justify-content-center">
+                     <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+                     <ul class="pagination charadex-pagination charadex-pagination-bottom justify-content-center m-0"></ul>
+                     <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- --------------------------------------------------------------------
+      <-- Footer
+      <-------------------------------------------------------------------- -->
+      <div class="load-html" id="footer" data-source="includes/footer.html"></div>
+      <!-- --------------------------------------------------------------------
+      <-- Repeat Items
+      <-- Do not remove 'display:none;'
+      <-------------------------------------------------------------------- -->
+      <div style="display:none;">
+         <div class="col-md-4 p-2" id="charadex-gallery-item">
+            <div class="card h-100">
+               <div class="card-header text-center">
+                  <a class="profilelink" href="">
+                  <span class="title"></span>
+                  </a>
+               </div>
+               <div class="card-body">
+                  <div class="container mt-md-5 mt-4 text-center" style="display: flex;">
+                     <div class="row no-gutters flex-fill">
+                        <img class="sampleimage img-fluid" src="" style="flex-grow: 1;">
+                        <img class="sample2image img-fluid" src="" style="flex-grow: 1;">
+                        <img class="sample3image img-fluid" src="" style="flex-grow: 1;">
+                     </div>
+                  </div>
+               </div>
+               <div class="card-footer">
+                  <div class="small text-right m-n2"><span class="currentavailability"></span></div>
+               </div>
+            </div>
+         </div>
+         <!-- Individual Profile
+            <!-- --------------------------------------------------------------- -->
+         <div class="col-12 p-2" id="charadex-profile">
+            <div class="card p-md-5 p-4">
+               <!-- Samples -->
+               <div class="cd-profile-image-container mt-md-5 mt-4 text-center" style="display: flex;">
+                  <div class="row no-gutters flex-fill">
+                     <img class="sampleimage img-fluid" src="" style="flex-grow: 1;">
+                     <img class="sample2image img-fluid" src="" style="flex-grow: 1;">
+                     <img class="sample3image img-fluid" src="" style="flex-grow: 1;">
+                  </div>
+               </div>
+               <div class="card bg-faded p-4 h-100">
+                  <h3>About Commission</h3>
+                  <h4>Pricing <i class="fa-solid fa-circle fa-2xs"></i> <span class="price"></span></h4>
+                  <span class="description"></span>
+                  <hr>
+                  <h6 class="d-flex justify-content-end" style="font-size: .9rem;">
+                     <div>ETA <span class="eta"></span></div>
+                     <span class="mx-2 text-muted"><i class="fa-solid fa-circle fa-2xs"></i></span>
+                     <div class="currentavailability"></div>
+                     <span class="ml-2 mr-1 text-muted"><i class="fa-solid fa-circle fa-2xs"></i></span>
+                     <a class="kofi" target="_blank" href="">
+                     Order Now <i class="fas fa-circle-arrow-right fa-fw ml-1" aria-hidden="true"></i>
+                     </a>
+                  </h6>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- ----------------------------------------------------------------- -->
+      <!-- JS                                                                -->
+      <!-- ----------------------------------------------------------------- -->
+      <!-- JQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <!-- Bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      <!-- Bootstrap Multiselect -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+      <!-- Charadex Script -->
+      <script src="styles/js/pages/base.js" type="module"></script>
+      <script src="styles/js/pages/commissions.js" type="module"></script>
+   </body>
+</html>
