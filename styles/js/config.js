@@ -41,11 +41,9 @@ charadex.sheet = {
     prompts:       "prompts",
     wishlist:      "wishlist",
     binders:       "binders",
-    favoriteCards: "favorite cards",
     kitiguarTraits: "kitiguar traits",
     games:          "games",
     codes:          "codes",
-    eeveeCards:     "eevee cards",
     queue:          "queue",
     updates:        "updates",
     commissions:    "commissions",
@@ -497,55 +495,6 @@ charadex.page.prompts = {
 };
 
 
-/* Eevee Cards
-/* --------------------------------------------------------------- */
-charadex.page.eeveeCards = {
-
-  sheetPage: charadex.sheet.pages.eeveeCards,
-  sitePage: 'eeveecards',
-  dexSelector: 'charadex',
-  profileProperty: 'id',
-
-  sort: {
-    toggle: false,
-    key: "id",
-    order: "asc",
-    parameters: []
-  },
-
-  pagination: {
-    toggle: true,
-    bottomToggle: true,
-    amount: 9,
-  },
-
-  filters: {
-    toggle: true,
-    parameters: {
-      'Card Variation': ['Normal', 'Reverse', 'Pokéball', 'Masterball', 'Confetti Holo', 'Type Specific', 'Gem Pack Stamp', 'Glitter Foil', 'V', 'VMAX', 'Promo', 'Illustration Rare', 'EX', 'Stamp Left Side', 'McDonalds', 'Build a Bear'],
-      'Subtype': ['Graded', 'Shiny Pokémon'],
-    }
-  },
-
-  fauxFolder: {
-    toggle: true,
-    folderProperty: 'Card Region',
-    parameters: charadex.sheet.options.cardRegions,
-  },
-
-  search: {
-    toggle: true,
-    filterToggle: true,
-    parameters: ['All', 'Card Number', 'Artist']
-  },
-
-  prevNext: {
-    toggle: false,
-  },
-
-};
-
-
 /* My Cards
 /* --------------------------------------------------------------- */
 charadex.page.myCards = {
@@ -592,54 +541,6 @@ charadex.page.myCards = {
     toggle: true,
     filterToggle: true,
     parameters: ['All', 'Card Name', 'Card Number', 'Artist']
-  },
-
-  prevNext: {
-    toggle: false,
-  },
-
-};
-
-
-/* Favorite Cards
-/* --------------------------------------------------------------- */
-charadex.page.favoriteCards = {
-
-  sheetPage: charadex.sheet.pages.favoriteCards,
-  sitePage: 'favoritecards',
-  dexSelector: 'charadex',
-  profileProperty: 'id',
-
-  sort: {
-    toggle: false,
-    key: "id",
-    order: "asc",
-    parameters: []
-  },
-
-  pagination: {
-    toggle: true,
-    bottomToggle: true,
-    amount: 9,
-  },
-
-  filters: {
-    toggle: true,
-    parameters: {
-      'Card Region': charadex.sheet.options.cardRegions,
-    }
-  },
-
-  fauxFolder: {
-    toggle: true,
-    folderProperty: 'Card Fandom',
-    parameters: ['All', 'Pokémon', 'One Piece', 'Sonic the Hedgehog', 'Littlest Pet Shop', 'Re Zero', 'Kuromis Cryptid Carnival']
-  },
-
-  search: {
-    toggle: false,
-    filterToggle: true,
-    parameters: []
   },
 
   prevNext: {
