@@ -584,6 +584,7 @@ charadex.page.myCards = {
       'Card Fandom': [`Pokémon`, `One Piece`, `Spider Man`, `Webkinz`, `Littlest Pet Shop`, `Sonic the Hedgehog`, `Sanrio`, `Re Zero`, `League Of Legends`, `Kuromis Cryptid Carnival`, `Novawko`, `One-Offs`,],
       'Eevee Tag': [`Eevee`,],
       'Favorites Tag': [`Favorites`,],
+    }
   },
 
   search: {
