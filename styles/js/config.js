@@ -40,7 +40,6 @@ charadex.sheet = {
     resources:     "resources",
     prompts:       "prompts",
     wishlist:      "wishlist",
-    novawkoCards:  "novawko cards",
     binders:       "binders",
     favoriteCards: "favorite cards",
     kitiguarTraits: "kitiguar traits",
@@ -64,12 +63,10 @@ charadex.sheet = {
     novawkoArtOnlyToggle: ['Enable'],
     resourceTypes: ['All', 'Blinkie', 'GIF', 'Illustration', 'Pattern', 'Photo', 'Pixel', 'Base', 'PNG', 'Stamp', 'Texture', 'Emoji', 'Sticker', 'Moodboard', 'Palette', 'Divider', 'Flag', 'Art Fight', 'Animal Jam', 'Minecraft', 'Pokémon', 'Disability', 'Jovalan'],
     species: ['All', 'Cat', 'Dog', 'Hamster', 'Kitiguar', 'Human', 'Kanpolo', 'Deep Sea Kanpolo', 'Hyper Kanpolo', 'Kumiyaa', 'Noodle Moth', 'Heavian', 'Burgvoir', 'Sylvarian', 'Woobar', 'Chubbö', 'Yuecoatl', 'Protogen', 'Puffball', 'Yukin', 'Tauyn', 'Eevee', 'Leafeon', 'Sylveon', 'Sprigatito', 'Care Bear', 'Care Bear Cousin', 'Wolf', 'Dragon', 'Rabbit', 'Mecha', 'Fluffy Worm', 'Fox', 'Sparkle Cat', 'Arctic Fox', 'Arctic Wolf', 'Senri', 'Jackalope', 'Flareon', 'Tiger'],
-    cardFandoms: ['All', 'Pokémon', 'One Piece', 'Spider Man', 'Webkinz', 'Littlest Pet Shop', 'Sonic the Hedgehog', 'Sanrio', 'Re Zero', 'League Of Legends', 'My Hero Academia', 'FNAF', 'Kuromis Cryptid Carnival', 'One-Offs'],
-    cardVariations: ['Normal', 'Normal Holo', 'Cosmos Holo', 'Mirror Holo', 'Cracked Ice Holo', 'Tinsel Holo', 'Reverse', 'Pokéball', 'Masterball', 'Stamp Left Side', 'Stamp Right Side', 'Build a Bear', 'Common', 'Rare', 'Super Rare', 'Ultra Rare', 'EX', 'GX', 'V', 'VMAX', 'VSTAR', 'Promo', 'Holo', 'Illustration Rare', 'McDonalds', 'Type Specific', 'Confetti Holo', 'Glitter Foil', 'Gem Pack Stamp', 'Full Art', 'Not Specified'],
+    cardFandoms: ['All', 'Pokémon', 'One Piece', 'Spider Man', 'Webkinz', 'Littlest Pet Shop', 'Sonic the Hedgehog', 'Sanrio', 'Re Zero', 'League Of Legends', 'My Hero Academia', 'FNAF', 'Kuromis Cryptid Carnival', 'Novawko', 'One-Offs'],
+    cardVariations: ['Normal', 'Normal Holo', 'Cosmos Holo', 'Mirror Holo', 'Cracked Ice Holo', 'Tinsel Holo', 'Reverse', 'Pokéball', 'Masterball', 'Stamp Left Side', 'Stamp Right Side', 'Build a Bear', 'Common', 'Rare', 'Super Rare', 'Ultra Rare', 'EX', 'GX', 'V', 'VMAX', 'VSTAR', 'Promo', 'Holo', 'Illustration Rare', 'McDonalds', 'Type Specific', 'Confetti Holo', 'Glitter Foil', 'Gem Pack Stamp', 'Full Art', 'Not Specified', 'N/A'],
     cardRegions: ['English', 'Japanese', 'Chinese'],
     subtypes: ['Energy', 'Code Card', 'Graded', 'Stadium', 'Supporter', 'Special Energy', 'Item', 'Pokémon Tool', 'Shiny Pokémon', 'Wrapper', 'Sleeve'],
-    novawkoCardVariations: ['Normal', 'Sparkle Holo', 'Illustration Rare'],
-    novawkoCardSubtypes: ['Energy', 'EX'],
     traitTypes: ['All', 'Ears', 'Eyes', 'Tails', 'Paws', 'Tongues', 'Teeth', 'Horns', 'Muzzle', 'Misc'],
     rarity: ['All', 'Standard', 'Unusual', 'Rare', 'Epic', 'Mutation'],
     gameTypes: ['All', 'Match 3', 'Shooters', 'Art', 'Fidgets', 'Cards'],
@@ -583,7 +580,7 @@ charadex.page.myCards = {
   fauxFolder: {
     toggle: true,
     folderProperty: 'Card Fandom',
-    parameters: ['All', 'Pokémon', 'One Piece', 'Spider Man', 'Webkinz', 'Littlest Pet Shop', 'Sonic the Hedgehog', 'Sanrio', 'Re Zero', 'League Of Legends', 'Kuromis Cryptid Carnival', 'One-Offs']
+    parameters: ['All', 'Pokémon', 'One Piece', 'Spider Man', 'Webkinz', 'Littlest Pet Shop', 'Sonic the Hedgehog', 'Sanrio', 'Re Zero', 'League Of Legends', 'Kuromis Cryptid Carnival', 'Novawko', 'One-Offs']
   },
 
   search: {
@@ -687,55 +684,6 @@ charadex.page.wishlist = {
     toggle: true,
     filterToggle: true,
     parameters: ['All', 'Card Fandom', 'Card Number', 'Artist']
-  },
-
-  prevNext: {
-    toggle: false,
-  },
-
-};
-
-
-/* Novawko Cards
-/* --------------------------------------------------------------- */
-charadex.page.novawkoCards = {
-
-  sheetPage: charadex.sheet.pages.novawkoCards,
-  sitePage: 'novawkocards',
-  dexSelector: 'charadex',
-  profileProperty: 'id',
-
-  sort: {
-    toggle: false,
-    key: "id",
-    order: "asc",
-    parameters: []
-  },
-
-  pagination: {
-    toggle: true,
-    bottomToggle: true,
-    amount: 4,
-  },
-
-  filters: {
-    toggle: true,
-    parameters: {
-      'Novawko Card Variation': charadex.sheet.options.novawkoCardVariations,
-      'Novawko Card Subtype': charadex.sheet.options.novawkoCardSubtypes,
-    }
-  },
-
-  fauxFolder: {
-    toggle: true,
-    folderProperty: 'Novawko Card Folder',
-    parameters: ['All', 'Retired'],
-  },
-
-  search: {
-    toggle: true,
-    filterToggle: true,
-    parameters: ['All', 'Card Number', 'Artist']
   },
 
   prevNext: {
