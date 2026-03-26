@@ -246,43 +246,32 @@ charadex.listFeatures.tags = (pageUrl, parameters, selector = 'charadex') => {
 /* ==================================================================== */
 /* Faux Folders
 ======================================================================= */
-charadex.listFeatures.fauxFolders = (pageUrl, folderConfig, selector = 'charadex') => {
+charadex.listFeatures.fauxFolders = (pageUrl, folderParameters, selector = 'charadex') => {
 
-  // Check if we have the config object and the parameters inside it
-  if (!pageUrl || !folderConfig.parameters || !selector) return false;
+  if (!pageUrl || !charadex.tools.checkArray(folderParameters) || !selector) return false;
 
+  // Get the elements
   const folderElement = $(`#${selector}-folders`);
-  
-  // 1. Flatten all categories from all properties into one list
-  // This takes ['Pokémon', 'One Piece', 'Eevee', 'Favorites'] and puts them in one array
-  const allFolderNames = Object.values(folderConfig.parameters).flat();
 
-  // 2. Loop through that flattened list
-  for (let key of allFolderNames) {
-    const buttonElement = $(`#${selector}-folder`).clone().removeAttr('id'); // Remove ID to prevent duplicates
-    
+  // Loop through parameters and add them to the folder element
+  for (let key of folderParameters) {
+    const buttonElement = $(`#${selector}-folder`).clone();
     buttonElement.find('.btn')
       .text(key)
-      .attr('href', charadex.url.addUrlParameters(pageUrl, { folder: charadex.tools.scrub(key) }));
-    
+      .attr('href', charadex.url.addUrlParameters(pageUrl, { folder: key }));
     folderElement.append(buttonElement);
   }
 
   // Show the folders
   folderElement.parents(`#${selector}-folder-container`).show();
 
-  // 3. Logic to tag the entry with a folder name
-  // This checks if the entry matches any of the properties defined in your config
-  const addFolder = (entry) => {
-    for (let prop of folderConfig.folderProperty) {
-      if (entry[charadex.tools.scrub(prop)]) {
-        entry.folder = entry[charadex.tools.scrub(prop)];
-        break; // Stop at the first match found
-      }
-    }
+  // Return a lil thing that'll add folders to entries
+  const addFolder = (entry, key) => {
+    entry.folder = entry[charadex.tools.scrub(key)];
   };
 
   return addFolder;
+
 }
 
 
