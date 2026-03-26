@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         let fancyTagArr = [];
         if (entry.tags.length >= 1) {
           for (let tag of entry.tags) {
-            fancyTagArr.push(`<a href="${charadex.url.addUrlParameters(charadex.url.getPageUrl(charadex.page.imageGallery.sitePage), {tags: tag})}">#${tag.trim()}</a>`);
+            fancyTagArr.push(`<a href="${charadex.url.addUrlParameters(charadex.url.getPageUrl(charadex.page.myCards.sitePage), {tags: tag})}">#${tag.trim()}</a>`);
           }
         }
         entry.fancytags = fancyTagArr.join(' ');
