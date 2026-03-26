@@ -579,8 +579,8 @@ charadex.page.myCards = {
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Card Fandom',
-    parameters: ['All', 'Pokémon', 'One Piece', 'Spider Man', 'Webkinz', 'Littlest Pet Shop', 'Sonic the Hedgehog', 'Sanrio', 'Re Zero', 'League Of Legends', 'Kuromis Cryptid Carnival', 'Novawko', 'One-Offs']
+    folderProperty: 'Card Fandom', 'Eevee Tag', 'Favorites Tag',
+    parameters: ['All', 'Pokémon', 'One Piece', 'Spider Man', 'Webkinz', 'Littlest Pet Shop', 'Sonic the Hedgehog', 'Sanrio', 'Re Zero', 'League Of Legends', 'Kuromis Cryptid Carnival', 'Novawko', 'One-Offs', 'Eevee', 'Favorites']
   },
 
   search: {
