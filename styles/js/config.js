@@ -583,6 +583,11 @@ charadex.page.myCards = {
     parameters: ['All', 'Pokémon', 'One Piece', 'Spider Man', 'Webkinz', 'Littlest Pet Shop', 'Sonic the Hedgehog', 'Sanrio', 'Re Zero', 'League Of Legends', 'Kuromis Cryptid Carnival', 'Novawko', 'One-Offs']
   },
 
+  tags: {
+    toggle: true,
+    parameters: ['eevee', 'favorite'],
+  },
+
   search: {
     toggle: true,
     filterToggle: true,
