@@ -925,7 +925,9 @@ p:last-child {
 
 @media only screen and (max-width: 600px) {
   .artwork-gallery-item img {
-  height: 50px;
+  max-width: 100%;
+  height: auto;
+  display: block; /* Removes unwanted bottom gaps */
   }
 }
 
