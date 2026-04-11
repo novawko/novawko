@@ -925,8 +925,7 @@ p:last-child {
 
 @media only screen and (max-width: 600px) {
   .artwork-gallery-item img {
-  height: 100px;
-  aspect-ratio: 1 / 1;
+  height: 100px !important;
   }
 }
 
