@@ -943,7 +943,7 @@ charadex.page.index = {
   art: {
     ... charadex.page.imageGallery,
     dexSelector: 'artwork',
-    amount: 8,
+    amount: 12,
   },
 
   designs: {
