@@ -940,6 +940,12 @@ charadex.page.index = {
     amount: 6,
   },
 
+  art: {
+    ... charadex.page.gallery,
+    dexSelector: 'artwork',
+    amount: 8,
+  },
+
   designs: {
     ... charadex.page.characters,
     dexSelector: 'design',
