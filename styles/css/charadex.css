@@ -924,7 +924,7 @@ p:last-child {
 }
 
 @media only screen and (max-width: 600px) {
-  #artwork-gallery img {
+  #artwork-gallery-item {
   max-width: 100%;
   height: auto;
   }
