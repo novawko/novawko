@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let artwork = await charadex.initialize.page(null, charadex.page.index.art, (arr) => {
 
   // Splice the silly little array
-  let sliceAmount = charadex.page.index.art.amount || 8;
+  let sliceAmount = charadex.page.index.art.amount || 12;
   arr.splice(sliceAmount, arr.length); 
       
   });
