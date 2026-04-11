@@ -924,7 +924,7 @@ p:last-child {
 }
 
 @media only screen and (max-width: 600px) {
-  #artwork-gallery-item img {
+  #artwork-gallery-item > img {
   height: 100px !important;
   }
 }
