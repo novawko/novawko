@@ -939,6 +939,12 @@ img[src=""] {
   display: none;
 }
 
+@media only screen and (max-width: 600px) {
+  #about_stamps > img {
+  max-width: 200px;
+  }
+}
+
 /* ============================================================= */
 /* Commission Gallery
 /* ============================================================= */
