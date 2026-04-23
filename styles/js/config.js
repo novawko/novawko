@@ -634,6 +634,11 @@ charadex.page.faq = {
     parameters: [],
   },
 
+  tags: {
+    toggle: true,
+    parameters: ['about', 'coding', 'toyhouse', 'shiningstars', 'nubreolan', 'kitiguars', 'naa', 'fluffyworms', 'nubreolanmyo', 'nubreolantraits', 'nubreolanabout', 'nubreolangeneral', 'nubreolancontent', 'nubreolanadopts', 'general', 'artwork', 'social', 'characters'],
+  },
+
   search: {
     toggle: true,
     filterToggle: true,
