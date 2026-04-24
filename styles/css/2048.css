@@ -1,5 +1,6 @@
 body {
-  background-color: #eee4da !important;
+  --cd-body-background-color: #eee4da !important;
+  --cd-body-background-image: none !important;
 }
 
 .above-board {
