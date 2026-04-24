@@ -329,6 +329,10 @@ figure {
 ================================================================ */
 
 @media only screen and (max-width: 600px) {
+.below-board, .above-board {
+  max-width: auto;
+}
+      
 .board {
     max-width: 400px;
     height: 400px;
