@@ -67,7 +67,7 @@ charadex.sheet = {
     subtypes: ['Energy', 'Code Card', 'Graded', 'Stadium', 'Supporter', 'Special Energy', 'Item', 'Pokémon Tool', 'Shiny Pokémon', 'Wrapper', 'Sleeve'],
     traitTypes: ['All', 'Ears', 'Eyes', 'Tails', 'Paws', 'Tongues', 'Teeth', 'Horns', 'Muzzle', 'Misc'],
     rarity: ['All', 'Standard', 'Unusual', 'Rare', 'Epic', 'Mutation'],
-    gameTypes: ['All', 'Match 3', 'Shooters', 'Art', 'Fidgets', 'Cards'],
+    gameTypes: ['All', 'Puzzles', 'Shooters', 'Art', 'Fidgets', 'Cards'],
     mobileFriendlyToggle: ['Enable'],
     codeTypes: ['All', 'HTML', 'CSS', 'JS'],
 
