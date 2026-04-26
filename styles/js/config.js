@@ -409,10 +409,10 @@ charadex.page.binders = {
   profileProperty: 'bindertitle',
 
   sort: {
-    toggle: true,
+    toggle: false,
     key: "editeddate",
-    order: "desc",
-    parameters: ['2026-04-25', '2026-04-23', '2026-03-26', '2025-12-04', '2025-12-03', '2025-11-30']
+    order: "asc",
+    parameters: []
   },
 
   pagination: {
