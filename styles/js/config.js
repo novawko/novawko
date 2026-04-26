@@ -410,7 +410,7 @@ charadex.page.binders = {
 
   sort: {
     toggle: false,
-    key: "date",
+    key: "editeddate",
     order: "asc",
     parameters: []
   },
