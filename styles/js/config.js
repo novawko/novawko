@@ -418,7 +418,7 @@ charadex.page.binders = {
   pagination: {
     toggle: true,
     bottomToggle: true,
-    amount: 6,
+    amount: 8,
   },
 
   filters: {
