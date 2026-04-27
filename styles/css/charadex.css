@@ -947,15 +947,12 @@ img[src=""] {
 }
 
 @media only screen and (max-width: 600px) {
+  .cd-mewwo-background {
+  min-height: 250px;
+  background-size: 100px;
+  }
   #about_stamps > img {
   width: 75px !important;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .cd-mewwo-background {
-  min-height: 200px;
-  background-size: 100px;
   }
 }
 
