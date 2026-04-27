@@ -489,7 +489,7 @@ charadex.page.prompts = {
   },
 
   prevNext: {
-    toggle: true,
+    toggle: false,
   },
 
 };
