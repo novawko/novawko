@@ -751,6 +751,13 @@ p:last-child {
   min-height: 200px;
 }
 
+/* Prompts Individual Profiles */
+.cd-mewwo-background {
+  background-position: center;
+  background-size: cover;
+  min-height: 200px;
+}
+
 /* Makes sure your text formatting is preserved from the sheet */
 /* Best for large areas like notes */
 .cd-text-pre {
