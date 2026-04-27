@@ -860,93 +860,40 @@ p:last-child {
 /* Nova's Tweeks
 /* ============================================================= */
 
+/* Phones */
 @media only screen and (max-width: 600px) {
   #commissionspage_title, #bookmarkspage_title, #todopage_title, #tonetagsmasterlist_title, #tonetags_title, #statuses_title {
   font-size: 2.5rem !important;
   }
-}
-
-@media only screen and (max-width: 600px) {
-  #jovalancustoms_header {
-  font-size: 1.5rem !important;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #jovalanform_header, #tradingcards_header {
-  font-size: 2rem !important;
-  }
-}
-
-#nubreolanbtn { 
-  border-radius:100% !important;
-}
-
-@media only screen and (max-width: 600px) {
   #sidebaricon {
   max-width: 320px !important;
   min-height: 320px !important;
   }
-}
-
-@media only screen and (max-width: 600px) {
   #mewwo {
   height: 50px !important;
   }
-}
-
-@media (min-width: 768px) {
-  #sidebaricon {
-  max-width: 210px !important;
-  min-height: 210px !important;
-  }
-}
-
-@media only screen and (max-width: 600px) {
   #recentposts_namedate {
   font-size: 0.63rem;
   }
-}
-
-@media only screen and (max-width: 600px) {
   #recentposts_icon {
   margin-right: 15px;
   margin-left: -3px;
   width: 40px;
   height: 40px;
   }
-}
-
-@media only screen and (max-width: 600px) {
   #recentposts_icon > .card {
   width: 40px !important;
   height: 40px !important;
   }
-}
-
-@media only screen and (max-width: 600px) {
   #recentposts_text {
   font-size: 0.7rem;
   }
-}
-
-@media only screen and (max-width: 600px) {
   #silly {
   height: 100px !important;
   }
-}
-
-@media only screen and (max-width: 600px) {
   #charadex-tags {
   font-size: 12px;
   }
-}
-
-img[src=""] {
-  display: none;
-}
-
-@media only screen and (max-width: 600px) {
   .cd-mewwo-background {
   min-height: 250px;
   background-size: 100px;
@@ -954,6 +901,22 @@ img[src=""] {
   #about_stamps > img {
   width: 75px !important;
   }
+}
+
+/* Tablets & Medium-Sized Computers */
+@media (min-width: 768px) {
+  #sidebaricon {
+  max-width: 210px !important;
+  min-height: 210px !important;
+  }
+}
+
+/* Defaults */
+#nubreolanbtn { 
+  border-radius:100% !important;
+}
+img[src=""] {
+  display: none;
 }
 
 /* ============================================================= */
@@ -1037,9 +1000,7 @@ img[src=""] {
     position: relative;
 }
 
-
 /* styling modal on them smaller screens */
-
 @media only screen and (min-width: 768px) {
     .modal__container {
         flex-direction: row;
