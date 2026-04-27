@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         $(this).attr('style', `background-image: url(${image})`);
       });
     };
-    let backgroundElement = $('.cd-mewwo-background');
+    backgroundElement = $('.cd-mewwo-background');
     if (listData.type == 'profile') {
       backgroundElement.attr('style', `background-image: url(${listData.profileArray[0].bannerimage})`);
     } else {
