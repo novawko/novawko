@@ -755,7 +755,7 @@ p:last-child {
 .cd-mewwo-background {
   background-position: center;
   background-size: cover;
-  min-height: 200px;
+  min-height: 500px;
 }
 
 /* Makes sure your text formatting is preserved from the sheet */
