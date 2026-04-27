@@ -754,7 +754,7 @@ p:last-child {
 /* Prompts Individual Profiles */
 .cd-mewwo-background {
   background-position: center;
-  background-size: contain;
+  background-size: 200px;
   min-height: 500px;
 }
 
