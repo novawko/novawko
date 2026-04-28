@@ -663,10 +663,18 @@ img {
 
 /* Specifically for the body */
 #charadex-body {
-  opacity: 0;
+  display: none;
 }
 
 #charadex-body.active {
+  display: block;
+}
+
+#main-container {
+  opacity: 0;
+}
+
+#main-container.active {
   opacity: 1;
   transition: opacity 2.5s ease;
 }
