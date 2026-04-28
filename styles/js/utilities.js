@@ -57,6 +57,17 @@ charadex.tools = {
       $(loadAreaSelector).addClass('active');
     }, timeout);
   },
+
+  loadData() {
+    const el = $("#parsing-data");
+    if (el.length) {
+      el.hide();
+    } else {
+      $(document).on('loaded', '#parsing-data', function () {
+        $("#parsing-data").hide();
+      });
+    }
+  },
   
   // Change meta information
   updateMeta() {
