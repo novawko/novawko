@@ -668,6 +668,8 @@ img {
 
 #charadex-body.active {
   display: block;
+  opacity: 1;
+  transition: opacity 2.5s ease;
 }
 
 
