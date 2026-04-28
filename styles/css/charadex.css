@@ -663,11 +663,10 @@ img {
 
 /* Specifically for the body */
 #charadex-body {
-  display: none;
+  opacity: 0;
 }
 
 #charadex-body.active {
-  display: block;
   opacity: 1;
   transition: opacity 2.5s ease;
 }
