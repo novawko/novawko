@@ -928,13 +928,10 @@ img[src=""] {
   display: none;
 }
 .contentwarning { 
-    opacity: 0; 
-    animation: fadein 1s; 
-    animation-delay:10s; 
+    display: none;
 }
-@keyframes fadein { 
-    from { opacity: 0; }
-    to { opacity: 1;} 
+.contentwarning.show { 
+    display: block;
 }
 
 /* ============================================================= */
