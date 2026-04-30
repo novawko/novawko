@@ -286,7 +286,7 @@ a:active {
 .navbar {
   background-color: var(--cd-navbar-background-color) !important;
   font-family: var(--cd-navbar-font-family) !important;
-  z-index: 2000;
+  z-index: 1000;
 }
 
 .navbar .navbar-brand {
