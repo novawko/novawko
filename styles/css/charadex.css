@@ -648,10 +648,10 @@ img {
 
 .softload.active {
   opacity: 1;
-  transition: opacity 1s ease;
+  transition: opacity .1s ease;
 }
 
-/* Fades container in on load so its not as jarring */
+/* Fades container in on load so its not as jarring BUT WON'T WORKKK */
 .hardload {
   opacity: 0;
 }
