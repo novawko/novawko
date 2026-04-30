@@ -801,12 +801,8 @@ p:last-child {
 
 /* For the content warnings on my characters to load first */
 .transition-fast {
-  opacity: 0;
-  transition: opacity 0.15s ease-in-out;
-}
-
-.transition-fast.active {
   opacity: 1;
+  transition: opacity 0.15s ease-in-out;
 }
 
 
