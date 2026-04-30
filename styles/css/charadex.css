@@ -679,15 +679,6 @@ img {
   transition: opacity 2.5s ease;
 }
 
-#header {
-  opacity: 0;
-}
-
-#header.active {
-  opacity: 1;
-  transition: opacity 0.15s ease;
-}
-
 
 /* ============================================================= */
 /* Chee's Tweaks
