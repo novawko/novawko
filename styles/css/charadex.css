@@ -928,9 +928,6 @@ img[src=""] {
   display: none;
 }
 .contentwarning { 
-    display: none;
-}
-.contentwarning.show { 
     display: block;
 }
 
