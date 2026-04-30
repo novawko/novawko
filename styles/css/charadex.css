@@ -188,10 +188,10 @@ body {
 
   /* Background */
   --cd-card-background-color: var(--cd-content-background-color);
-  --cd-card-header-background-color: var(--cd-card-background-color);
+  --cd-card--background-color: var(--cd-card-background-color);
 
   /* Text */
-  --cd-card-header-font-family: var(--cd-header-font-family);
+  --cd-card--font-family: var(--cd--font-family);
 
   /* Border */
   --cd-card-border-width: var(--cd-border-width);
@@ -366,7 +366,7 @@ a:active {
   background-color: var(--cd-navbar-dropdown-background-hover) !important;
 }
 
-.navbar .dropdown-header {
+.navbar .dropdown- {
   color: var(--cd-navbar-dropdown-link-color-hover) !important;
 }
 
@@ -488,21 +488,21 @@ a:active {
   border-radius: var(--cd-border-radius) !important;
 }
 
-.card-header {
-  background-color: var(--cd-card-header-background-color) !important;
+.card- {
+  background-color: var(--cd-card--background-color) !important;
   border-bottom-color: var(--cd-card-border-color) !important;
   border-bottom-width: var(--cd-card-border-width) !important;
   border-bottom-style: var(--cd-card-border-style) !important;
-  font-family: var(--cd-card-header-font-family) !important;
+  font-family: var(--cd-card--font-family) !important;
   border-radius: calc(var(--cd-border-radius) - 1px) calc(var(--cd-border-radius) - 1px) 0 0 !important;
 }
 
 .card-footer {
-  background-color: var(--cd-card-header-background-color) !important;
+  background-color: var(--cd-card--background-color) !important;
   border-top-color: var(--cd-card-border-color) !important;
   border-top-width: var(--cd-card-border-width) !important;
   border-top-style: var(--cd-card-border-style) !important;
-  font-family: var(--cd-card-header-font-family) !important;
+  font-family: var(--cd-card--font-family) !important;
   border-radius: 0 0  calc(var(--cd-border-radius) - 1px) calc(var(--cd-border-radius) - 1px) !important;
 }
 
@@ -778,7 +778,7 @@ p:last-child {
   color: var(--cd-primary-color);
   background-color: var(--cd-faded-background-color);
   border-radius: var(--cd-border-radius);
-  font-family: var(--cd-header-font-family);
+  font-family: var(--cd--font-family);
   display: flex;
   padding: 1.5rem;
   min-height: 250px;
@@ -797,12 +797,6 @@ p:last-child {
 .cd-hero-title {
   min-height: 120px;
 }
-}
-
-/* For the content warnings on my characters to load first */
-.transition-fast {
-  opacity: 1;
-  transition: opacity 0.15s ease-in-out;
 }
 
 
