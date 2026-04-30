@@ -927,9 +927,6 @@ p:last-child {
 img[src=""] {
   display: none;
 }
-.contentwarning {
-  display: block;
-}
 
 /* ============================================================= */
 /* Commission Gallery
