@@ -918,6 +918,9 @@ p:last-child {
   max-width: 210px !important;
   min-height: 210px !important;
   }
+  #log-gallery > div.log-list > div > div.col-md-9 > span > div {
+    margin-left: -330px;
+  }
 }
 
 /* Defaults */
