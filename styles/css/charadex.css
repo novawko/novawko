@@ -676,7 +676,7 @@ img {
 
 #main-container.active {
   opacity: 1;
-  transition: opacity 2.5s ease;
+  transition: opacity 1s ease;
 }
 
 
@@ -926,9 +926,6 @@ p:last-child {
 }
 img[src=""] {
   display: none;
-}
-.contentwarning { 
-    display: block !important;
 }
 
 /* ============================================================= */
