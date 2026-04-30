@@ -928,7 +928,7 @@ img[src=""] {
   display: none;
 }
 .contentwarning { 
-    display: block;
+    display: block !important;
 }
 
 /* ============================================================= */
