@@ -35,28 +35,22 @@ charadex.sheet = {
     news:          "news",
     faq:           "faq",
     myCards:       "my cards",
-    nubreolanMasterlist:   "nubreolan masterlist",
-    nubreolanLog:  "nubreolan log",
     resources:     "resources",
     prompts:       "prompts",
     wishlist:      "wishlist",
     binders:       "binders",
-    kitiguarTraits: "kitiguar traits",
-    games:          "games",
-    codes:          "codes",
-    queue:          "queue",
-    updates:        "updates",
-    commissions:    "commissions",
+    games:         "games",
+    codes:         "codes",
+    queue:         "queue",
+    updates:       "updates",
+    commissions:   "commissions",
   },
 
   options: {
 
     designTypes: ['All', 'Original Character', 'Fan Character', 'Original Species', 'Kinsona'],
-    nubreolanTypes: ['All', 'Founder Design', 'Staff Design', 'Mascot', 'AU Design', 'MYO', 'Event', 'Custom', 'Bred'],
-    worlds: ['All', 'Jovalan', 'Nubreolan', 'Warriors', 'Shining Stars', 'Harry Potter', 'Pokémon', 'Siderios', 'Lunamor', 'Zenith', 'Care Bears', 'Animal Jam', 'Hazbin Hotel', 'FNAF', 'Others'],
+    worlds: ['All', 'Jovalan', 'Warriors', 'Shining Stars', 'Harry Potter', 'Pokémon', 'Siderios', 'Lunamor', 'Zenith', 'Care Bears', 'Animal Jam', 'Hazbin Hotel', 'FNAF', 'Others'],
     statuses: ['All', 'Sell', 'Trade', 'Offer', 'Pending', 'Free', 'Do Not Offer', 'Auction'],
-    nubreolanStatuses: ['All', 'Sell', 'Trade', 'Offer', 'Pending', 'Free', 'Do Not Offer', 'Auction', 'Voided'],
-    nubreolanSpecies: ['All', 'Kitiguar', 'Fluffy Worm', 'Naa'],
     anatomyTypes: ['All', 'Feral', 'Anthro', 'Humanoid'],
     novawkoArtOnlyToggle: ['Enable'],
     resourceTypes: ['All', 'Blinkie', 'GIF', 'Illustration', 'Pattern', 'Photo', 'Pixel', 'Base', 'PNG', 'Stamp', 'Texture', 'Emoji', 'Sticker', 'Moodboard', 'Palette', 'Divider', 'Flag', 'Art Fight', 'Animal Jam', 'Minecraft', 'Pokémon', 'Tone Indicator', 'Disability', 'Jovalan'],
@@ -293,55 +287,6 @@ charadex.page.games = {
     toggle: true,
     filterToggle: false,
     parameters: ['Title']
-  },
-
-  prevNext: {
-    toggle: false,
-  },
-
-};
-
-
-/* Traits
-/* --------------------------------------------------------------- */
-charadex.page.kitiguarTraits = {
-
-  sheetPage: charadex.sheet.pages.kitiguarTraits,
-  sitePage: 'kitiguartraits',
-  dexSelector: 'charadex',
-  profileProperty: 'trait',
-
-  sort: {
-    toggle: true,
-    key: "id",
-    order: "asc",
-    parameters: []
-  },
-
-  pagination: {
-    toggle: true,
-    bottomToggle: true,
-    amount: 24,
-  },
-
-  filters: {
-    toggle: true,
-    parameters: {
-      'Type': charadex.sheet.options.traitTypes,
-      'Rarity': charadex.sheet.options.rarity,
-    }
-  },
-
-  fauxFolder: {
-    toggle: true,
-    folderProperty: 'Type',
-    parameters: charadex.sheet.options.traitTypes,
-  },
-
-  search: {
-    toggle: true,
-    filterToggle: true,
-    parameters: ['All', 'Trait', 'Rarity']
   },
 
   prevNext: {
@@ -636,7 +581,7 @@ charadex.page.faq = {
 
   tags: {
     toggle: true,
-    parameters: ['about', 'coding', 'toyhouse', 'shiningstars', 'nubreolan', 'kitiguars', 'naa', 'fluffyworms', 'nubreolanmyo', 'nubreolantraits', 'nubreolanabout', 'nubreolangeneral', 'nubreolancontent', 'nubreolanadopts', 'general', 'artwork', 'social', 'characters'],
+    parameters: ['about', 'coding', 'toyhouse', 'shiningstars', 'general', 'artwork', 'social', 'characters'],
   },
 
   search: {
@@ -689,7 +634,7 @@ charadex.page.imageGallery = {
 
   tags: {
     toggle: true,
-    parameters: ['icon', 'bust', 'animaljam', 'fullbody', 'refsheet', 'jovalancustom', 'discordemoji', 'emoji', 'headshot', 'complexrefsheet', 'sketch', 'warriorcats', 'fanart', 'custom', 'tradingcard', 'giftart', 'celshading', 'softshading', 'halfbody', 'banner', 'header', 'pixel', 'pixelshading', 'warriorminis', 'arttrade', 'lineart', 'matchingicons', 'scene', 'jovalan', 'nubreolan', 'lunamor', 'siderios', 'birthdayevent', 'commission', 'speciessheet', 'pattern', 'traditional', 'photo', 'freebie', 'map', 'trade', 'artfight', 'collab', 'pagedoll', 'cover', 'event', 'wallpaper', 'animated', 'screenshot', 'doodlepage', 'outfit', 'logo', 'moodboard', 'realism', 'vent', 'birthdaygift', 'key', '2018', '2019', '2021', '2022', '2023', '2024', '2025', '2026', 'novawko', 'novawkochibi', 'novawkoemoji', 'novawkoscene', 'novawkooccard', 'novawkonubreolan', 'novawkonubreolancustom', 'novawkocoupleart', 'novawkofullbody', 'novawkojovalan', 'novawkojovalancustom', 'novawkojovalanpetpixel', 'novawkojovalanredraw', 'novawkoicon', 'novawkolinkedicons', 'novawkoheadshot', 'novawkocomplexrefsheet', 'novawkodesign', 'wip'],
+    parameters: ['icon', 'bust', 'animaljam', 'fullbody', 'refsheet', 'jovalancustom', 'discordemoji', 'emoji', 'headshot', 'complexrefsheet', 'sketch', 'warriorcats', 'fanart', 'custom', 'tradingcard', 'giftart', 'celshading', 'softshading', 'halfbody', 'banner', 'header', 'pixel', 'pixelshading', 'warriorminis', 'arttrade', 'lineart', 'matchingicons', 'scene', 'jovalan', 'kitiguars', 'lunamor', 'siderios', 'birthdayevent', 'commission', 'speciessheet', 'pattern', 'traditional', 'photo', 'freebie', 'map', 'trade', 'artfight', 'collab', 'pagedoll', 'cover', 'event', 'wallpaper', 'animated', 'screenshot', 'doodlepage', 'outfit', 'logo', 'moodboard', 'realism', 'vent', 'birthdaygift', 'key', '2018', '2019', '2021', '2022', '2023', '2024', '2025', '2026', 'novawko', 'novawkochibi', 'novawkoemoji', 'novawkoscene', 'novawkooccard', 'novawkonubreolan', 'novawkonubreolancustom', 'novawkocoupleart', 'novawkofullbody', 'novawkojovalan', 'novawkojovalancustom', 'novawkojovalanpetpixel', 'novawkojovalanredraw', 'novawkoicon', 'novawkolinkedicons', 'novawkoheadshot', 'novawkocomplexrefsheet', 'novawkodesign', 'wip'],
   },
 
   search: {
@@ -856,83 +801,6 @@ charadex.page.characters = {
   }
 
 };
-    
-
-/* Nubreolan Masterlist
-/* --------------------------------------------------------------- */
-charadex.page.nubreolanMasterlist = {
-
-  sheetPage: charadex.sheet.pages.nubreolanMasterlist,
-  sitePage: 'nubreolanmasterlist',
-  dexSelector: 'charadex',
-  profileProperty: 'listing',
-
-  sort: {
-    toggle: true,
-    key: "id",
-    order: "asc",
-    parameters: []
-  },
-
-  pagination: {
-    toggle: true,
-    bottomToggle: true,
-    amount: 12,
-  },
-
-  filters: {
-    toggle: true,
-    parameters: {
-      'Design Type': charadex.sheet.options.nubreolanTypes,
-      'Trade Status': charadex.sheet.options.nubreolanStatuses,
-    }
-  },
-
-  fauxFolder: {
-    toggle: true,
-    folderProperty: 'Species',
-    parameters: charadex.sheet.options.nubreolanSpecies,
-  },
-
-  search: {
-    toggle: true,
-    filterToggle: true,
-    parameters: ['All', 'ID', 'Owner', 'Designer', 'Artist']
-  },
-
-  prevNext: {
-    toggle: true,
-  },
-
-  relatedData: {
-
-    [charadex.sheet.pages.nubreolanLog]: {
-
-      sheetPage: charadex.sheet.pages.nubreolanLog,
-      primaryProperty: 'id',
-      relatedProperty: 'id',
-      dexSelector: 'log',
-      profileProperty: 'id',
-      profileToggle: false,
-
-      sort: {
-        toggle: true,
-        key: "timestamp",
-        order: "desc",
-        parameters: []
-      },
-
-      pagination: {
-        toggle: true,
-        bottomToggle: false,
-        amount: 12,
-      },
-
-    },
-
-  }
-
-};
 
 
 /* Index
@@ -954,19 +822,6 @@ charadex.page.index = {
   designs: {
     ... charadex.page.characters,
     dexSelector: 'design',
-    amount: 5,
-  },
-
-};
-
-
-/* Nubreolan Page
-/* --------------------------------------------------------------- */
-charadex.page.nubreolan = {
-
-  listings: {
-    ... charadex.page.nubreolanMasterlist,
-    dexSelector: 'listing',
     amount: 5,
   },
 
