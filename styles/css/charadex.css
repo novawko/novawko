@@ -64,25 +64,6 @@ body {
   ================================================================ */
   --cd-body-font-family: 'Montserrat', sans-serif;
   --cd-header-font-family: 'Comfortaa', sans-serif;
-  
-  /* ============================================================= */
-  /* Rarities
-  ================================================================ */
-
-  --cd-rarity-standard-bg: #d58353;
-  --cd-rarity-standard-txt: #fcf4ed;
-
-  --cd-rarity-unusual-bg: #e0bb68;
-  --cd-rarity-unusual-txt: var(--cd-rarity-standard-txt);
-  
-  --cd-rarity-rare-bg: #69b34e;
-  --cd-rarity-rare-txt: var(--cd-rarity-standard-txt);
-
-  --cd-rarity-mutation-bg: #36454F;
-  --cd-rarity-mutation-txt: var(--cd-rarity-standard-txt);
-
-  --cd-rarity-epic-bg: #8c4eb3;
-  --cd-rarity-epic-txt: var(--cd-rarity-standard-txt);
 
 
   /* ============================================================= */
@@ -773,62 +754,6 @@ p:last-child {
   white-space: break-spaces;
 }
 
-/* For the hero image in the index */
-.cd-hero-title {
-  color: var(--cd-primary-color);
-  background-color: var(--cd-faded-background-color);
-  border-radius: var(--cd-border-radius);
-  font-family: var(--cd--font-family);
-  display: flex;
-  padding: 1.5rem;
-  min-height: 250px;
-  font-weight: 800;
-  font-size: 2.5rem;
-}
-
-@media (min-width: 768px) {
-  .cd-hero-title {
-    letter-spacing: 2px;
-    font-size: 5rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-.cd-hero-title {
-  min-height: 120px;
-}
-}
-
-
-/* ============================================================= */
-/* Rarity
-/* ============================================================= */
-
-.badge-standard {
-  background-color: var(--cd-rarity-standard-bg);
-  color: var(--cd-rarity-standard-txt);
-}
-
-.badge-unusual {
-  background-color: var(--cd-rarity-unusual-bg);
-  color: var(--cd-rarity-unusual-txt);
-}
-
-.badge-rare {
-  background-color: var(--cd-rarity-rare-bg);
-  color: var(--cd-rarity-rare-txt);
-}
-
-.badge-mutation {
-  background-color: var(--cd-rarity-mutation-bg);
-  color: var(--cd-rarity-mutation-txt);
-}
-
-.badge-epic {
-  background-color: var(--cd-rarity-epic-bg);
-  color: var(--cd-rarity-epic-txt);
-}
-
 
 /* ============================================================= */
 /* Compatibility
@@ -924,9 +849,6 @@ p:last-child {
 }
 
 /* Defaults */
-#nubreolanbtn { 
-  border-radius:100% !important;
-}
 img[src=""] {
   display: none;
 }
