@@ -819,6 +819,9 @@ p:last-child {
   #commissionspage_title, #bookmarkspage_title, #todopage_title, #tonetagsmasterlist_title, #tonetags_title, #statuses_title {
   font-size: 2.5rem !important;
   }
+  .cd-footer-contents {
+    display: none;
+  }
   .cd-hero-title {
     min-height: 150px;
   }
