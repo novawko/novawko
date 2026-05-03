@@ -819,6 +819,9 @@ p:last-child {
   #commissionspage_title, #bookmarkspage_title, #privacy_title, #todopage_title, #tonetagsmasterlist_title, #tonetags_title, #statuses_title {
   font-size: 2.5rem !important;
   }
+  #index_byi_title, #index_cw_title {
+    font-size: 2rem !important;
+  }
   .cd-footer-contents {
     display: none;
   }
