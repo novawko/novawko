@@ -727,8 +727,8 @@ p:last-child {
   max-height: 700px;
 }
 
-/* Traits */
-.cd-traits-scroll {
+/* Traits & Permissions */
+.cd-traits-scroll, .cd-permissions-scroll {
   max-height: 200px;
   overflow-y: auto;
 }
