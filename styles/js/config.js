@@ -49,7 +49,7 @@ charadex.sheet = {
   options: {
 
     designTypes: ['All', 'Original Character', 'Fan Character', 'Original Species', 'Kinsona'],
-    worlds: ['All', 'Jovalan', 'Warriors', 'Shining Stars', 'Harry Potter', 'Pokémon', 'Siderios', 'Lunamor', 'Zenith', 'Care Bears', 'Animal Jam', 'Hazbin Hotel', 'FNAF', 'Others'],
+    worlds: ['All', 'Jovalan', 'Warriors', 'Kitiguars', 'Shining Stars', 'Harry Potter', 'Pokémon', 'Siderios', 'Lunamor', 'Zenith', 'Care Bears', 'Animal Jam', 'Hazbin Hotel', 'FNAF', 'Others'],
     statuses: ['All', 'Sell', 'Trade', 'Offer', 'Pending', 'Free', 'Do Not Offer', 'Auction'],
     anatomyTypes: ['All', 'Feral', 'Anthro', 'Humanoid'],
     novawkoArtOnlyToggle: ['Enable'],
