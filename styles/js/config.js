@@ -50,8 +50,7 @@ charadex.sheet = {
 
     designTypes: ['All', 'Original Character', 'Fan Character', 'Original Species', 'Kinsona'],
     worlds: ['All', 'Jovalan', 'Warriors', 'Kitiguars', 'Shining Stars', 'Harry Potter', 'Pokémon', 'Siderios', 'Lunamor', 'Zenith', 'Care Bears', 'Animal Jam', 'Hazbin Hotel', 'FNAF', 'Others'],
-    statuses: ['All', 'Sell', 'Trade', 'Offer', 'Pending', 'Free', 'Do Not Offer', 'Auction'],
-    anatomyTypes: ['All', 'Feral', 'Anthro', 'Humanoid'],
+    statuses: ['All', 'UFS', 'UFT', 'UFO', 'Pending', 'Free', 'Auction', 'NFS/T/O'],
     novawkoArtOnlyToggle: ['Enable'],
     resourceTypes: ['All', 'Blinkie', 'GIF', 'Illustration', 'Pattern', 'Photo', 'Pixel', 'Base', 'PNG', 'Stamp', 'Texture', 'Emoji', 'Sticker', 'Moodboard', 'Palette', 'Divider', 'Flag', 'Art Fight', 'Animal Jam', 'Minecraft', 'Pokémon', 'Tone Indicator', 'Disability', 'Jovalan'],
     species: ['All', 'Cat', 'Dog', 'Hamster', 'Kitiguar', 'Human', 'Kanpolo', 'Deep Sea Kanpolo', 'Hyper Kanpolo', 'Kumiyaa', 'Noodle Moth', 'Heavian', 'Burgvoir', 'Sylvarian', 'Woobar', 'Chubbö', 'Yuecoatl', 'Protogen', 'Puffball', 'Yukin', 'Tauyn', 'Eevee', 'Leafeon', 'Sylveon', 'Sprigatito', 'Care Bear', 'Care Bear Cousin', 'Wolf', 'Dragon', 'Rabbit', 'Mecha', 'Fluffy Worm', 'Fox', 'Sparkle Cat', 'Arctic Fox', 'Arctic Wolf', 'Senri', 'Jackalope', 'Flareon', 'Tiger'],
@@ -59,8 +58,6 @@ charadex.sheet = {
     cardVariations: ['Normal', 'Normal Holo', 'Cosmos Holo', 'Mirror Holo', 'Cracked Ice Holo', 'Tinsel Holo', 'Reverse', 'Pokéball', 'Masterball', 'Stamp Left Side', 'Stamp Right Side', 'Build a Bear', 'Common', 'Rare', 'Super Rare', 'Ultra Rare', 'EX', 'GX', 'V', 'VMAX', 'VSTAR', 'Promo', 'Holo', 'Illustration Rare', 'McDonalds', 'Type Specific', 'Confetti Holo', 'Glitter Foil', 'Gem Pack Stamp', 'Full Art', 'Not Specified', 'N/A'],
     cardRegions: ['English', 'Japanese', 'Chinese'],
     subtypes: ['Energy', 'Code Card', 'Graded', 'Stadium', 'Supporter', 'Special Energy', 'Item', 'Pokémon Tool', 'Shiny Pokémon', 'Wrapper', 'Sleeve'],
-    traitTypes: ['All', 'Ears', 'Eyes', 'Tails', 'Paws', 'Tongues', 'Teeth', 'Horns', 'Muzzle', 'Misc'],
-    rarity: ['All', 'Standard', 'Unusual', 'Rare', 'Epic', 'Mutation'],
     gameTypes: ['All', 'Puzzles', 'Shooters', 'Art', 'Fidgets', 'Cards'],
     mobileFriendlyToggle: ['Enable'],
     codeTypes: ['All', 'HTML', 'CSS', 'JS'],
