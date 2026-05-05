@@ -875,6 +875,10 @@ p:last-child {
   #log-gallery > div.log-list > div > div.col-md-9 > span > div {
     margin-left: -330px;
   }
+  #header {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* Defaults */
