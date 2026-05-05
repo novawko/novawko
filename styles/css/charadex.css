@@ -875,7 +875,7 @@ p:last-child {
   #log-gallery > div.log-list > div > div.col-md-9 > span > div {
     margin-left: -330px;
   }
-  #header {
+  #charadexnav > ul {
     display: flex;
     align-items: center;
   }
