@@ -662,7 +662,7 @@ img {
 
 
 /* ============================================================= */
-/* Chee's Tweaks
+/* Tweaks
 /* ============================================================= */
 
 body {
@@ -670,18 +670,14 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 #main-container {
   min-height: calc(100vh - 105px);
   padding: 1rem;
   -ml-flex: 1 1 auto !important;
   flex: 1 1 auto !important;
 }
-
-@media (min-width: 768px) {
-  #main-container {
-    padding: 5rem 1.5rem;
-  }
+img[src=""] {
+  display: none;
 }
 
 /* Remove ugly box shadow */
@@ -701,6 +697,77 @@ p:last-child {
 .container {
   max-width: 1800px !important;
 }
+
+/* Tablets & Medium-Sized Computers */
+@media (min-width: 768px) {
+  #main-container {
+    padding: 5rem 1.5rem;
+  }
+  #sidebaricon {
+  max-width: 210px !important;
+  min-height: 210px !important;
+  }
+  #log-gallery > div.log-list > div > div.col-md-9 > span > div {
+    margin-left: -330px;
+  }
+  #charadexnav > ul {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Phones */
+@media only screen and (max-width: 600px) {
+  #commissionspage_title, #bookmarkspage_title, #privacy_title, #todopage_title, #tonetagsmasterlist_title, #tonetags_title, #statuses_title {
+  font-size: 2.5rem !important;
+  }
+  #index_byi_title, #index_cw_title {
+    font-size: 1.7rem !important;
+  }
+  .cd-footer-contents {
+    display: none;
+  }
+  .cd-hero-title {
+    min-height: 150px;
+  }
+  #sidebaricon {
+  max-width: 320px !important;
+  min-height: 320px !important;
+  }
+  #mewwo {
+  height: 50px !important;
+  }
+  #recentposts_namedate {
+  font-size: 0.63rem;
+  }
+  #recentposts_icon {
+  margin-right: 15px;
+  margin-left: -3px;
+  width: 40px;
+  height: 40px;
+  }
+  #recentposts_icon > .card {
+  width: 40px !important;
+  height: 40px !important;
+  }
+  #recentposts_text {
+  font-size: 0.7rem;
+  }
+  #silly {
+  height: 100px !important;
+  }
+  #charadex-tags {
+  font-size: 12px;
+  }
+  .cd-mewwo-background {
+  min-height: 250px;
+  background-size: 100px;
+  }
+  #about_stamps > img {
+  width: 75px !important;
+  }
+}
+
 
 /* ============================================================= */
 /* Custom Classes
@@ -809,82 +876,6 @@ p:last-child {
   color: var(--cd-codetype-js-txt);
 }
 
-
-/* ============================================================= */
-/* Nova's Tweeks
-/* ============================================================= */
-
-/* Phones */
-@media only screen and (max-width: 600px) {
-  #commissionspage_title, #bookmarkspage_title, #privacy_title, #todopage_title, #tonetagsmasterlist_title, #tonetags_title, #statuses_title {
-  font-size: 2.5rem !important;
-  }
-  #index_byi_title, #index_cw_title {
-    font-size: 1.7rem !important;
-  }
-  .cd-footer-contents {
-    display: none;
-  }
-  .cd-hero-title {
-    min-height: 150px;
-  }
-  #sidebaricon {
-  max-width: 320px !important;
-  min-height: 320px !important;
-  }
-  #mewwo {
-  height: 50px !important;
-  }
-  #recentposts_namedate {
-  font-size: 0.63rem;
-  }
-  #recentposts_icon {
-  margin-right: 15px;
-  margin-left: -3px;
-  width: 40px;
-  height: 40px;
-  }
-  #recentposts_icon > .card {
-  width: 40px !important;
-  height: 40px !important;
-  }
-  #recentposts_text {
-  font-size: 0.7rem;
-  }
-  #silly {
-  height: 100px !important;
-  }
-  #charadex-tags {
-  font-size: 12px;
-  }
-  .cd-mewwo-background {
-  min-height: 250px;
-  background-size: 100px;
-  }
-  #about_stamps > img {
-  width: 75px !important;
-  }
-}
-
-/* Tablets & Medium-Sized Computers */
-@media (min-width: 768px) {
-  #sidebaricon {
-  max-width: 210px !important;
-  min-height: 210px !important;
-  }
-  #log-gallery > div.log-list > div > div.col-md-9 > span > div {
-    margin-left: -330px;
-  }
-  #charadexnav > ul {
-    display: flex;
-    align-items: center;
-  }
-}
-
-/* Defaults */
-img[src=""] {
-  display: none;
-}
 
 /* ============================================================= */
 /* Commission Gallery
