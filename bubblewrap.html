@@ -1,453 +1,413 @@
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ----------------------------------------------------------------- -->
-  <!-- About Your Site                                                   -->
-  <!-- ----------------------------------------------------------------- -->
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
-  <title>Novawko | Bubble Wrap</title>
-  <meta name="title" content="Novawko | Bubble Wrap" />
-  <meta name="type" content="website" />
-  <meta name="url" content="https://novawko.netlify.app/bubblewrap.html" />
-  <meta name="image" content="assets/meta.png" />
-  <meta name="description" content="A fidget toy!">
-  <!-- No AI scraping directives -->
-  <meta name="robots" content="noai">
-  <meta name="robots" content="noimageai">
-  <!-- ----------------------------------------------------------------- -->
-  <!-- Styles                                                            -->
-  <!-- ----------------------------------------------------------------- -->
-  <!-- Bootstrap CSS -->
-  <!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
-  <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <!-- ----------------------------------------------------------------- -->
-  <!-- Optional Styles                                                   -->
-  <!-- ----------------------------------------------------------------- -->
-  <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- ----------------------------------------------------------------- -->
+	<!-- About Your Site                                                   -->
+	<!-- ----------------------------------------------------------------- -->
+	<link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+	<title>Novawko | Bubble Wrap</title>
+	<meta name="title" content="Novawko | Bubble Wrap" />
+	<meta name="type" content="website" />
+	<meta name="url" content="https://novawko.netlify.app/bubblewrap.html" />
+	<meta name="image" content="assets/meta.png" />
+	<meta name="description" content="A fidget toy!">
+	<!-- No AI scraping directives -->
+	<meta name="robots" content="noai">
+	<meta name="robots" content="noimageai">
+	<!-- ----------------------------------------------------------------- -->
+	<!-- Styles                                                            -->
+	<!-- ----------------------------------------------------------------- -->
+	<!-- Bootstrap CSS -->
+	<!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
+	<!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	<!-- ----------------------------------------------------------------- -->
+	<!-- Optional Styles                                                   -->
+	<!-- ----------------------------------------------------------------- -->
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
 </head>
 <body id="charadex-body">
-  <!-- --------------------------------------------------------------------
-  <-- Header
-  <-------------------------------------------------------------------- -->
-  <div class="load-html" id="header" data-source="includes/header.html"></div>
-  <div class="container" id="main-container">
-    <!-- --------------------------------------------------------------------
-    <-- Main List
-    <-------------------------------------------------------------------- -->
-    <div class="row justify-content-center" style="max-width: 1800px;">
-      <div class="col-md-3 p-2 mx-2 mb-2 bg-faded rounded">
-        <div class="flex-lg-column flex-row flex-wrap" style="position:sticky; top:10px">
-          <div class="p-3 card">
-            <div class="py-lg-2 p-lg-3">
-              <!---- Side Icon ---->
-              <div id="sidebaricon" class="mx-auto rounded text-primary" style="min-height:220px; background-image:url('assets/side_icon.png');background-size:cover;border: 5px solid;">
-              </div>
-              <div class="px-lg-0">
-                <img class="img-fluid" src="assets/headers/welcomehome_header.png" style="width:500px;">
-                <!--- Bio ---->
-                <div class="bg-faded d-block rounded text-center small p-1 mx-auto mt-1" style="letter-spacing:1px;">Nova <img src="https://img-l.ink/img/14HpXp18xC_J9oNw2EGD-9VQzxCY6ryKF.png" style="width:20px;"> She/They/Kit • 25+ </div>
-                <div class="text-center"><img src="assets/decor/furry_pride.png" style="width:25px;"> <span class="small">ASD/GAD/OCD/ADHD</span> <img src="assets/decor/furry_pride.png" style="width:25px;"></div>
-                <div class="row">
-                  <div class="col-lg-12">
-                    <a class="btn btn-primary text-small d-block p-1 mt-1 w-100" href="/characters">Characters</a>
-                  </div>
-                </div>
-              </div>
-              <img class="img-fluid" src="assets/headers/links_header.png" style="width:500px;">
-              <div class="row no-gutters">
-                <!--- Socials/Links ---->
-                <div class="col-6">
-                  <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://www.youtube.com/@novawko">YouTube</a>
-                </div>
-                <div class="col-6">
-                  <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://artfight.net/~Novawko">Art Fight</a>
-                </div>
-                <div class="col-6">
-                  <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://cara.app/novawko">Cara</a>
-                </div>
-                <div class="col-6">
-                  <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://www.roblox.com/users/2710900495/profile">Roblox</a>
-                </div>
-                <div class="col-6">
-                  <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://discordid.netlify.app/?id=836430381212893194">Discord</a>
-                </div>
-                <div class="col-6">
-                  <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="mailto:novawko@gmail.com">Email</a>
-                </div>
-                <div class="col-12">
-                  <a class="btn btn-primary text-small d-block p-1 mb-1 mr-1" href="https://github.com/novawko">Github</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-8 p-2 mx-2 mb-2 bg-faded rounded">
-        <div class="card p-3 h-100">
-          <!-- --------------------------------------------------------------------
-          <-- The Bubble Wrap
-          <-------------------------------------------------------------------- -->
-          <p class="text-center text-muted mt-md-5 mt-2 mb-2">Pop the bubble wrap by clicking/tapping on them!</p>
-          <div class="d-flex flex-row flex-wrap mx-auto" id="bubblewrap" style="max-width:300px;">
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-001"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-001" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-002"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-002" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-003"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-003" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-004"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-004" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-005"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-005" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-006"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-006" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-007"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-007" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-008"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-008" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-009"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-009" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-010"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-010" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-011"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-011" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-012"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-012" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-013"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-013" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-014"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-014" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-015"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-015" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-016"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-016" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-017"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-017" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-018"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-018" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-019"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-019" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-020"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-020" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-021"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-021" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-022"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-022" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-023"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-023" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-024"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-024" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-025"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-025" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-026"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-026" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-027"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-027" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-028"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-028" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-029"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-029" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-030"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-030" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-031"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-031" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-032"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-032" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-033"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-033" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-034"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-034" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-035"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-035" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-            <!--BUBBLE-->
-            <div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
-              <a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
-                data-target=".BUBBLE-036"></a> <!--toggle-->
-              <div class="collapse card-img-overlay p-0 fade BUBBLE-036" style="z-index:1; transition:ease-in .05s;">
-                <div class="card h-100 border-0 rounded-circle"></div>
-              </div>
-            </div>
-            <!--bubble end-->
-          </div>
-          <p class="text-center mt-1"><a class="text-muted" href="/bubblewrap.html">RESET</a></p>
-          <!--CREDIT-->
-          <div class="row no-gutters align-items-center mx-auto mt-1" style="max-width:300px;">
-            <div class="col">
-              <hr class="m-0" style="border-top: 1px rgba(0, 0, 0, 0.1); width: 130px;">
-            </div>
-            <div class="col-auto"><a class="btn text-muted bg-transparent p-2 rounded-circle tooltipster" title="Code by Aurorean" style="opacity:.45; letter-spacing:.09rem; font-size:65%;" href="https://toyhou.se/30057453.snippet-bubble-wrap"><i class="fa-fw fa-fw fa-solid fa-code"></i></a></div>
-            <div class="col">
-              <hr class="m-0" style="border-top: 1px rgba(0, 0, 0, 0.1); width: 130px;">
-            </div>
-          </div>
-          <!--credit end-->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- --------------------------------------------------------------------
-  <-- Footer
-  <-------------------------------------------------------------------- -->
-  <div class="load-html" id="footer" data-source="includes/footer.html"></div>
-  <!-- ----------------------------------------------------------------- -->
-  <!-- JS                                                                -->
-  <!-- ----------------------------------------------------------------- -->
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  <!-- Charadex Script -->
-  <script src="styles/js/pages/base.js" type="module"></script>
+	<!-- --------------------------------------------------------------------
+	<-- Header
+	<-------------------------------------------------------------------- -->
+	<div class="load-html" id="header" data-source="includes/header.html"></div>
+	<div class="container" id="main-container">
+		<!-- --------------------------------------------------------------------
+		<-- Main Container
+		<-------------------------------------------------------------------- -->
+		<div class="row justify-content-center" style="max-width: 1800px;">
+			<!-- --------------------------------------------------------------------
+			<-- Sidebar
+			<-------------------------------------------------------------------- -->
+			<div class="load-html" id="sidebar" data-source="includes/sidebar.html"></div>
+			<!-- --------------------------------------------------------------------
+			<-- Main List
+			<-------------------------------------------------------------------- -->
+			<div class="col-md-8 p-2 mx-2 mb-2 bg-faded rounded">
+				<div class="card p-3 h-100">
+					<!-- --------------------------------------------------------------------
+					<-- The Bubble Wrap
+					<-------------------------------------------------------------------- -->
+					<p class="text-center text-muted mt-md-5 mt-2 mb-2">Pop the bubble wrap by clicking/tapping on them!</p>
+					<div class="d-flex flex-row flex-wrap mx-auto" id="bubblewrap" style="max-width:300px;">
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-001"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-001" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-002"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-002" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-003"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-003" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-004"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-004" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-005"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-005" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-006"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-006" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-007"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-007" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-008"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-008" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-009"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-009" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-010"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-010" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-011"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-011" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-012"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-012" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-013"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-013" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-014"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-014" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-015"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-015" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-016"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-016" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-017"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-017" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-018"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-018" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-019"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-019" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-020"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-020" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-021"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-021" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-022"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-022" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-023"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-023" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-024"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-024" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-025"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-025" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-026"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-026" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-027"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-027" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-028"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-028" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-029"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-029" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-030"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-030" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-031"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-031" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-032"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-032" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-033"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-033" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-034"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-034" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-035"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-035" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+						<!--BUBBLE-->
+						<div class="card bg-faded rounded-circle" style="width:50px; height:50px; box-shadow:inset 0 0 .65rem rgba(0,0,0,0.15), inset -.15rem .15rem .5rem rgba(255,255,255,0.15);">
+							<a class="rounded-circle stretched-link" data-toggle="collapse" href="#" 
+								data-target=".BUBBLE-036"></a> <!--toggle-->
+							<div class="collapse card-img-overlay p-0 fade BUBBLE-036" style="z-index:1; transition:ease-in .05s;">
+								<div class="card h-100 border-0 rounded-circle"></div>
+							</div>
+						</div>
+						<!--bubble end-->
+					</div>
+					<p class="text-center mt-1"><a class="text-muted" href="/bubblewrap.html">RESET</a></p>
+					<!--CREDIT-->
+					<div class="row no-gutters align-items-center mx-auto mt-1" style="max-width:300px;">
+						<div class="col">
+							<hr class="m-0" style="border-top: 1px rgba(0, 0, 0, 0.1); width: 130px;">
+						</div>
+						<div class="col-auto"><a class="btn text-muted bg-transparent p-2 rounded-circle tooltipster" title="Code by Aurorean" style="opacity:.45; letter-spacing:.09rem; font-size:65%;" href="https://toyhou.se/30057453.snippet-bubble-wrap"><i class="fa-fw fa-fw fa-solid fa-code"></i></a></div>
+						<div class="col">
+							<hr class="m-0" style="border-top: 1px rgba(0, 0, 0, 0.1); width: 130px;">
+						</div>
+					</div>
+					<!--credit end-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- --------------------------------------------------------------------
+	<-- Footer
+	<-------------------------------------------------------------------- -->
+	<div class="load-html" id="footer" data-source="includes/footer.html"></div>
+	<!-- ----------------------------------------------------------------- -->
+	<!-- JS                                                                -->
+	<!-- ----------------------------------------------------------------- -->
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<!-- Charadex Script -->
+	<script src="styles/js/pages/base.js" type="module"></script>
 </body>
 </html>
