@@ -753,11 +753,6 @@ p:last-child {
   overflow-y: auto;
 }
 
-/* Right side container only when the sidebar is present */
-.dirt {
-  min-height: 493px;
-}
-
 /* Prompts */
 .cd-prompt-background {
   background-position: center;
