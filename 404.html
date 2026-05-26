@@ -46,6 +46,21 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
 
+  <!-- ----------------------------------------------------------------- -->
+  <!-- Silent Fixes                                                      -->
+  <!-- ----------------------------------------------------------------- -->
+  <script type="text/javascript">
+    var l = window.location;
+    // This takes the path and query string and packs them into a single query parameter 'p'
+    l.replace(
+      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+      l.pathname.split('/').slice(0, 1 + (l.pathname.slice(1).indexOf('/') !== -1)).join('/') +
+      '/?p=' + l.pathname.slice(1).replace(/&/g, '~and~') +
+      (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      l.hash
+    );
+  </script>
+
 
 </head>
 
