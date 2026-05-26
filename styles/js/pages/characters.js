@@ -46,6 +46,21 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 /* ==================================================================== */
+/* Fixed Automatic Scroll
+======================================================================= */
+  window.addEventListener("load", () => {
+    const hash = window.location.hash;
+    if (hash) {
+      const target = document.querySelector(hash);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: "auto" });
+        }, 650);
+      }
+    }
+  });
+
+/* ==================================================================== */
 /* Load any specific navtabs
 ======================================================================= */
 $(function() {
