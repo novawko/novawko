@@ -49,30 +49,6 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
 
-  <!-- ----------------------------------------------------------------- -->
-  <!-- Silent Fixes                                   	                 -->
-  <!-- ----------------------------------------------------------------- -->
-  <script type="text/javascript">
-  // Check if the URL has the special 'p' parameter packed by 404.html
-  (function(l) {
-    if (l.search[1] === 'p') {
-      var decoded = l.search.slice(1).split('&').reduce(function(q, v) {
-        var a = v.split('=');
-        q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
-        return q;
-      }, {});
-      if (decoded.p !== undefined) {
-        // Reconstruct the clean URL right before the router executes
-        window.history.replaceState(null, null,
-          l.pathname.slice(0, -1) + (decoded.p || '') +
-          (decoded.q ? ('?' + decoded.q) : '') +
-          l.hash
-        );
-      }
-    }
-  }(window.location));
-</script>
-
 </head>
 
 <body id="charadex-body">
