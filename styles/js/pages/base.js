@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const target = document.querySelector(hash);
       if (target) {
         setTimeout(() => {
-          target.scrollIntoView({ behavior: "smooth" });
+          target.scrollIntoView({ behavior: "auto" });
         }, 100);
       }
     }
