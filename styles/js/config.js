@@ -49,7 +49,7 @@ charadex.sheet = {
   options: {
 
     designTypes: ['All', 'Original Character', 'Fan Character', 'Original Species', 'Kinsona'],
-    worlds: ['All', 'Jovalan', 'Warriors', 'Kitiguars', 'Shining Stars', 'Harry Potter', 'Pokémon', 'Siderios', 'Lunamor', 'Zenith', 'Care Bears', 'Animal Jam', 'Hazbin Hotel', 'FNAF', 'Others'],
+    worlds: ['All', 'Jovalan', 'Warriors', 'Kitiguars', 'Shining Stars', 'Harry Potter', 'Pokémon', 'Zenith', 'Care Bears', 'Animal Jam', 'Hazbin Hotel', 'FNAF', 'Others'],
     statuses: ['All', 'UFS', 'UFT', 'UFO', 'Pending', 'Free', 'Auction', 'NFS/T/O'],
     novawkoArtOnlyToggle: ['Enable'],
     resourceTypes: ['All', 'Blinkie', 'GIF', 'Illustration', 'Pattern', 'Photo', 'Pixel', 'Base', 'PNG', 'Stamp', 'Texture', 'Emoji', 'Sticker', 'Moodboard', 'Palette', 'Divider', 'Flag', 'Art Fight', 'Animal Jam', 'Minecraft', 'Pokémon', 'Tone Indicator', 'Disability', 'Jovalan'],
@@ -702,7 +702,7 @@ charadex.page.characters = {
   sheetPage: charadex.sheet.pages.characters,
   sitePage: 'characters',
   dexSelector: 'charadex',
-  profileProperty: 'name',
+  profileProperty: 'id',
 
   sort: {
     toggle: true,
