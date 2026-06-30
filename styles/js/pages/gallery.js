@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         entry.nameBadges = [];
         for (let id of entry.picturedcharacters) {
           entry.nameBadges.push(
-            `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('characters'), {profile: id})}">${name.trim()}</a>`
+            `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('characters'), {profile: id})}">${id.trim()}</a>`
           );
         }
         entry.nameBadges = entry.nameBadges.join(' ');
