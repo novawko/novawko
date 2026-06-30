@@ -772,7 +772,7 @@ charadex.page.characters = {
       ... charadex.page.imageGallery,
 
       sheetPage: charadex.sheet.pages.imageGallery,
-      primaryProperty: 'id',
+      primaryProperty: 'name',
       relatedProperty: 'picturedcharacters',
       dexSelector: 'gallery',
       profileProperty: 'id',
