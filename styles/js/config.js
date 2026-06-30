@@ -702,7 +702,7 @@ charadex.page.characters = {
   sheetPage: charadex.sheet.pages.characters,
   sitePage: 'characters',
   dexSelector: 'charadex',
-  profileProperty: 'id',
+  profileProperty: 'name',
 
   sort: {
     toggle: true,
@@ -772,7 +772,7 @@ charadex.page.characters = {
       ... charadex.page.imageGallery,
 
       sheetPage: charadex.sheet.pages.imageGallery,
-      primaryProperty: 'id',
+      primaryProperty: 'name',
       relatedProperty: 'picturedcharacters',
       dexSelector: 'gallery',
       profileProperty: 'id',
