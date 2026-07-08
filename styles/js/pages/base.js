@@ -43,14 +43,24 @@ $(function() {
 });
 
 /* ==================================================================== */
-/* Load sidebar on mobile
+/* Toggle sidebar on mobile
 ======================================================================= */
-/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-function openNav() {
-  document.getElementById("mobileSidebar").style.width = "300px";
-}
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileSidebar = document.getElementById("mobileSidebar");
+  const overlay = document.getElementById("sidebarOverlay");
 
-/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-function closeNav() {
-  document.getElementById("mobileSidebar").style.width = "0";
-}
+  // Main interaction handler to toggle menu states
+  const toggleMenu = () => {
+    menuBtn.classList.toggle("open");
+    mobileSidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+    
+    // Prevent background document scrolling when menu panel is active
+    document.body.style.overflow = mobileSidebar.classList.contains("active") ? "hidden" : "";
+  };
+
+  // Bind actions to both the hamburger icon and backdrop region
+  menuBtn.addEventListener("click", toggleMenu);
+  overlay.addEventListener("click", toggleMenu);
+});
