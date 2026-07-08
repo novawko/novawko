@@ -50,12 +50,12 @@ const toggleBtn = document.getElementById('toggleBtn');
 const closeBtn = document.getElementById('closeBtn');
 
 // Function to open sidebar
-function openSidebar() {
+function openMobileSidebar() {
   mobileSidebar.classList.add('active');
 }
 
 // Function to close sidebar
-function closeSidebar() {
+function closeMobileSidebar() {
   mobileSidebar.classList.remove('active');
 }
 
