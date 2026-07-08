@@ -701,7 +701,7 @@ charadex.page.characters = {
   sheetPage: charadex.sheet.pages.characters,
   sitePage: 'characters',
   dexSelector: 'charadex',
-  profileProperty: 'name',
+  profileProperty: 'id',
 
   sort: {
     toggle: true,
