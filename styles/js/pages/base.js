@@ -45,17 +45,20 @@ $(function() {
 /* ==================================================================== */
 /* Load sidebar on mobile
 ======================================================================= */
-// Get DOM Element references
-const mobileSidebar = document.getElementById('mobilesidebar');
-const openBtn = document.getElementById('openBtn');
+const mobilesidebar = document.getElementById('mobilesidebar');
+const toggleBtn = document.getElementById('toggleBtn');
 const closeBtn = document.getElementById('closeBtn');
 
-// Add active class to slide the sidebar out
-openBtn.addEventListener('click', () => {
-  mobileSidebar.classList.add('active');
-});
+// Function to open sidebar
+function openSidebar() {
+  mobilesidebar.classList.add('active');
+}
 
-// Remove active class to hide it away
-closeBtn.addEventListener('click', () => {
-  mobileSidebar.classList.remove('active');
-});
+// Function to close sidebar
+function closeSidebar() {
+  mobilesidebar.classList.remove('active');
+}
+
+// Event Listeners
+toggleBtn.addEventListener('click', openSidebar);
+closeBtn.addEventListener('click', closeSidebar);
