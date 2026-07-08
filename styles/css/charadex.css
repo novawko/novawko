@@ -665,13 +665,14 @@ p:last-child {
 }
 
 #mobileSidebar {
-  transform: translateX(-100%); /* Push completely off-screen to the left */
-  transition: transform 0.3s ease-in-out; /* Smooth slide transition */
+  left: -300px; /* Adjust based on your sidebar width */
+  transition: left 0.3s ease;
+  z-index: 1000;
 }
 
 /* Sidebar Pull-Out State (Triggered by JS) */
 #mobileSidebar.active {
-  transform: translateX(0);
+  left: 0;
 }
 
 .nav-mobile-menu {
@@ -681,7 +682,7 @@ p:last-child {
     display: block;
     padding: .5rem 1rem;
     position: relative;
-    z-index: 75
+    z-index: 75;
 }
 
 /* Tablets & Medium-Sized Computers */
