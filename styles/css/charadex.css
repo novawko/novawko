@@ -664,6 +664,11 @@ p:last-child {
   top: 5px;
 }
 
+/* Hidden Mobile Only Sidebar Button */
+.toggle-btn {
+  display: none;
+}
+
 /* Tablets & Medium-Sized Computers */
 @media (min-width: 768px) {
   #main-container {
@@ -697,8 +702,8 @@ p:last-child {
     min-height: 150px;
   }
   #sidebaricon {
-  max-width: 320px !important;
-  min-height: 320px !important;
+  max-width: 210px !important;
+  min-height: 210px !important;
   }
   #mewwo {
   height: 50px !important;
@@ -731,6 +736,23 @@ p:last-child {
   }
   #about_stamps > img {
   width: 75px !important;
+  }
+  .toggle-btn {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+  }
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%); /* Hide sidebar off-screen initially */
+    z-index: 999;
+  }
+  .sidebar.sidebar-active {
+    transform: translateX(0);
   }
 }
 
