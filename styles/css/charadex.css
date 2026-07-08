@@ -665,7 +665,13 @@ p:last-child {
 }
 
 #mobilesidebar {
-  display: none;
+  transform: translateX(-100%); /* Push completely off-screen to the left */
+  transition: transform 0.3s ease-in-out; /* Smooth slide transition */
+}
+
+/* Sidebar Pull-Out State (Triggered by JS) */
+#mobilesidebar.active {
+  transform: translateX(0);
 }
 
 .nav-mobile-menu {
@@ -676,11 +682,6 @@ p:last-child {
     padding: .5rem 1rem;
     position: relative;
     z-index: 75
-}
-
-/* Hidden Mobile Only Sidebar Button */
-.toggle-btn {
-  display: none;
 }
 
 /* Tablets & Medium-Sized Computers */
