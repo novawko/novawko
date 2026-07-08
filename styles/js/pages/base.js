@@ -41,3 +41,13 @@ $(function() {
     $(`a[href="${hash}"]`).tab('show'); // Show the tab linked to the hash
   }
 });
+
+/* ==================================================================== */
+/* Load sidebar on mobile
+======================================================================= */
+const toggleBtn = document.getElementById('sidebarToggle');
+const sidebar = document.getElementById('sidebar');
+
+toggleBtn.addEventListener('click', () => {
+  sidebar.classList.toggle('sidebar-active');
+});
