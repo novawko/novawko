@@ -665,14 +665,14 @@ p:last-child {
 }
 
 #mobileSidebar {
-  left: -300px; /* Adjust based on your sidebar width */
-  transition: left 0.3s ease;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
   z-index: 1000;
 }
 
 /* Sidebar Pull-Out State (Triggered by JS) */
-#mobileSidebar.active {
-  left: 0;
+#mobileSidebar.open {
+  transform: translateX(0);
 }
 
 .nav-mobile-menu {
