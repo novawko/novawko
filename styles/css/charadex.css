@@ -664,12 +664,6 @@ p:last-child {
   top: 5px;
 }
 
-.mobileSidebar {
-  z-index: 1000;
-  transition: 0.5s;
-  width: 0; /* 0 width - changes with JavaScript */
-}
-
 .nav-mobile-menu {
     background-color: #252526;
     border: solid #1e1e1e;
@@ -712,8 +706,19 @@ p:last-child {
   .cd-hero-title {
     min-height: 150px;
   }
-  #mobilesidebar {
-    display: block;
+  .mobileSidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Fully hidden off-screen by default */
+    width: 300px;
+    height: 100vh;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .mobileSidebar.active {
+    transform: translateX(280px);
   }
   #sidebaricon {
   max-width: 210px !important;
@@ -751,22 +756,22 @@ p:last-child {
   #about_stamps > img {
   width: 75px !important;
   }
-  .toggle-btn {
-    display: block;
+  .sidebar-overlay {
     position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1000;
-  }
-  .sidebar {
-    position: fixed;
-    left: 0;
     top: 0;
-    transform: translateX(-100%); /* Hide sidebar off-screen initially */
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
     z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
   }
-  .sidebar.sidebar-active {
-    transform: translateX(0);
+  .sidebar-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 
