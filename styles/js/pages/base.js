@@ -45,18 +45,18 @@ $(function() {
 /* ==================================================================== */
 /* Load sidebar on mobile
 ======================================================================= */
-const mobileSidebar = document.getElementById('mobileSidebar');
-const toggleBtn = document.getElementById('toggleBtn');
-const closeBtn = document.getElementById('closeBtn');
+const mobileSidebar = document.getElementById('mobile-sidebar');
+const toggleBtn = document.getElementById('sidebar-toggle');
+const closeBtn = document.getElementById('sidebar-close');
 
 // Function to open sidebar
 function openMobileSidebar() {
-  mobileSidebar.classList.add('active');
+  mobileSidebar.classList.add('open');
 }
 
 // Function to close sidebar
 function closeMobileSidebar() {
-  mobileSidebar.classList.remove('active');
+  mobileSidebar.classList.remove('open');
 }
 
 // Event Listeners
