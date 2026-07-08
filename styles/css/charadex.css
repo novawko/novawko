@@ -668,6 +668,16 @@ p:last-child {
   display: none;
 }
 
+.nav-mobile-menu {
+    background-color: #252526;
+    border: solid #1e1e1e;
+    border-width: 0 0 3px;
+    display: block;
+    padding: .5rem 1rem;
+    position: relative;
+    z-index: 75
+}
+
 /* Hidden Mobile Only Sidebar Button */
 .toggle-btn {
   display: none;
