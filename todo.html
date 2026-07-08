@@ -2,139 +2,125 @@
 <html lang="en">
 
 <head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <!-- ----------------------------------------------------------------- -->
-  <!-- About Your Site                                                   -->
-  <!-- ----------------------------------------------------------------- -->
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
-  <title>Novawko | To-Do List</title>
-  <meta name="title" content="Novawko | To-Do List" />
-  <meta name="type" content="website" />
-  <meta name="url" content="https://novawko.netlify.app/todo.html" />
-  <meta name="image" content="assets/meta.png" />
-  <meta name="description" content="View Nova's to-do list of things that need to be done!">
-
-  <!-- No AI scraping directives -->
-  <meta name="robots" content="noai">
-  <meta name="robots" content="noimageai">
-
-
-  <!-- ----------------------------------------------------------------- -->
-  <!-- Styles                                                            -->
-  <!-- ----------------------------------------------------------------- -->
-
-  <!-- Bootstrap CSS -->
-  <!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
-  <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-
-  <!-- ----------------------------------------------------------------- -->
-  <!-- Optional Styles                                                   -->
-  <!-- ----------------------------------------------------------------- -->
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
-
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- ----------------------------------------------------------------- -->
+	<!-- About Your Site                                                   -->
+	<!-- ----------------------------------------------------------------- -->
+	<link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+	<title>Novawko | To-Do List</title>
+	<meta name="title" content="Novawko | To-Do List" />
+	<meta name="type" content="website" />
+	<meta name="url" content="https://novawko.netlify.app/todo" />
+	<meta name="image" content="assets/meta.png" />
+	<meta name="description" content="View Nova's list of things that need to be done!">
+	<!-- No AI scraping directives -->
+	<meta name="robots" content="noai">
+	<meta name="robots" content="noimageai">
+	<!-- ----------------------------------------------------------------- -->
+	<!-- Styles                                                            -->
+	<!-- ----------------------------------------------------------------- -->
+	<!-- Bootstrap CSS -->
+	<!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
+	<!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	<!-- ----------------------------------------------------------------- -->
+	<!-- Optional Styles                                                   -->
+	<!-- ----------------------------------------------------------------- -->
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
 </head>
 
 <body id="charadex-body">
-
-
-  <!-- --------------------------------------------------------------------
+	<!-- --------------------------------------------------------------------
   <-- Header
   <-------------------------------------------------------------------- -->
-  <div class="load-html" id="header" data-source="includes/header.html"></div>
-
-
-  <!-- --------------------------------------------------------------------
+	<div class="load-html" id="header" data-source="includes/header.html"></div>
+	<!-- --------------------------------------------------------------------
   <-- Main List
   <-------------------------------------------------------------------- -->
-  <div class="container" id="main-container">
-  <div class="row justify-content-center" style="max-width: 1800px;">
-    <!-- --------------------------------------------------------------------
+	<div class="container" id="main-container">
+		<div class="row justify-content-center" style="max-width: 1800px;">
+		<!-- --------------------------------------------------------------------
     <-- Sidebar
     <-------------------------------------------------------------------- -->
-    <div class="load-html" id="sidebar" data-source="includes/sidebar.html"></div>
-    
-    <div class="col-md-8 p-2 mx-2 mb-2 bg-faded rounded">
-      <div class="flex-column h-100">
-        <div class="card p-3 h-100">
-          <h1 class="display-4 mb-1 text-center text-uppercase" id="todopage_title"><a href="/todo">TO-DO LIST</a></h1>
-          <div class="card rounded-0 mb-3"></div>
-          <!--THE LIST-->
-          <ul class="fa-ul">
-            <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Redo the layout for this to-do list.</li>
-            <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Add a new page for a word and abbreviation guide for OG species, characters, art, etc.</li>
-            <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Add the notice thingy for the default pet sprites used for Jovalan.</li>
-            <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Add the sidebar to all of the pages of my site if possible.</li>
-            <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Add a tags list system on the Jovalan site like my site... mainly for the Species Sheets where the tags exist.</li>
-            <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Try and maybe make the remaining pages on the Jovalan site match like the Wiki code... or add a sidebar instead if doesn't work?</li>
-            <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Redo the overall code to the Jovalan Toyhou.se world version.</li>
-            <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Add the DND stuff to the Jovalan site.</li>
-            <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Add the remaining Jovalan species and their info to the Jovalan site: Vanguard, Sylvarian, Cuttle-Poddl, Cuid, Cooinowee, Chubbö, Gorwahna, Jovian Sea Serpent, Kiutu, Narrasael, Maambacor, Wottlepoddl, Yuecoatl, Quecko, Taurs</li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Maybe merge or just delete the Eevee Cards page. If merging with the my Cards page, make a special folder?</span></li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Merge the Favorite Cards page with the My Cards page somehow with a unique filter. Try to make a special folder too?</span></li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Once the Commissions Google Sheet page is done, start making the Commissions page for my site.</span></li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Make the Commissions page for my Google Sheet and start filling it out.</span></li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Make new icons for the game covers.</span></li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Make new icons for the prompt covers.</span></li>
-            <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Try and see if my sidebar can be put onto the resources page while tidying it up.</li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Tidy up the games page with a better layout for the listings after making a new sheet for it to sync with.</span></li>
-            <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Add a changelog page to the Jovalan site.</li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Find a better HTML code for the world info page for the Jovalan site.</span></li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Find a better default HTML layout for the species info profiles on the Jovalan site.</span></li>
-            <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Redo the layout of the Boodwormies/Dangvoirs site, but keep it simple.</li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Add all of the individual species info onto the Jovalan site: Kanpolo, Kumiyaa, Cracke'D, Burgvoir, Liz'ae, Bood Shark, Tech-Alipo, Cedave, Heavian, Noodle Moth, Woobar.</span></li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Add the remaining Halloween 2025 designs to the Jovalan site once the event is over.</span></li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Add <a href="https://jovalan.netlify.app/mainmasterlist?profile=bo0409">this entry</a> to the masterlist with ownership to <a href="https://toyhou.se/Clowny">Clowny</a>.</span></li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Add <a href="https://jovalan.netlify.app/mainmasterlist?profile=ya0410">this entry</a> to the masterlist with ownership to <a href="https://toyhou.se/Mnyaaa">Mnyaaa</a>.</span></li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Add <a href="https://jovalan.netlify.app/mainmasterlist?profile=ya0411">this entry</a> to the masterlist with ownership to <a href="https://toyhou.se/VivianAverille">VivianAverille</a>.</span></li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Redo the staff page on the Jovalan site a little bit with icons next to our usernames.</span></li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Use the TOS HTML code that's used on my personal site onto the Jovalan site as well for the terms page.</span></li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Add all of the carnival traits sheets onto the Jovalan site: Kanpolo, Kumiyaa, Burgvoir, Cedave, Woobar, Bood Shark.</span></li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Add the new Bood Shark sheets onto the Jovalan site.</span></li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Add some folders to the Jovalan site for the Species List called: Open Species, Semi-Closed Species, Closed Species, and Pet Species.</span></li>
-            <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Check to see if the pet species sheets are on the Jovalan site. If not, add them.</li>
-            <li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Replace any Reverses, Reverse Pokeballs, and Reverse Masterball cards with the correct images in my Card Inventory.</span></li>
-</ul>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <!-- --------------------------------------------------------------------
+			<div class="load-html" id="sidebar" data-source="includes/sidebar.html"></div>
+		<!-- --------------------------------------------------------------------
+    <-- Main Content
+    <-------------------------------------------------------------------- -->
+			<div class="col-md-8 p-2 mx-2 mb-2 bg-faded rounded">
+				<div class="flex-column h-100">
+					<div class="card p-3 h-100">
+						<h1 class="display-4 mb-1 text-center text-uppercase" id="todopage_title"><a href="/todo">TO-DO LIST</a></h1>
+						<div class="card rounded-0 mb-3"></div>
+						<!-- Needs To Be Done
+            <!-- ----------------------------------------------------------------- -->
+						<ul class="fa-ul">
+							<li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Redo the layout for this to-do list.</li>
+							<li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Add a new page for a word and abbreviation guide for OG species, characters, art, etc.</li>
+							<li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Add the notice thingy for the default pet sprites used for Jovalan.</li>
+							<li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Add the sidebar to all of the pages of my site if possible.</li>
+							<li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Add a tags list system on the Jovalan site like my site... mainly for the Species Sheets where the tags exist.</li>
+							<li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Try and maybe make the remaining pages on the Jovalan site match like the Wiki code... or add a sidebar instead if doesn't work?</li>
+							<li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Redo the overall code to the Jovalan Toyhou.se world version.</li>
+							<li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Add the DND stuff to the Jovalan site.</li>
+							<li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Add the remaining Jovalan species and their info to the Jovalan site: Vanguard, Sylvarian, Cuttle-Poddl, Cuid, Cooinowee, Chubbö, Gorwahna, Jovian Sea Serpent, Kiutu, Narrasael, Maambacor, Wottlepoddl, Yuecoatl, Quecko, Taurs</li>
+							<li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Try and see if my sidebar can be put onto the resources page while tidying it up.</li>
+							<li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Add a changelog page to the Jovalan site.</li>
+							<li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Redo the layout of the Boodwormies/Dangvoirs site, but keep it simple.</li>
+							<li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Check to see if the pet species sheets are on the Jovalan site. If not, add them.</li>
+						</ul>
+						<!-- Finished Tasks
+            <!-- ----------------------------------------------------------------- -->
+						<a class="btn btn-success" data-toggle="collapse" href="#done" role="button" aria-expanded="false" aria-controls="done"> Done </a>
+						<div class="collapse" id="done">
+							<div class="mt-2">
+								<ul class="fa-ul">
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Maybe merge or just delete the Eevee Cards page. If merging with the my Cards page, make a special folder?</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Merge the Favorite Cards page with the My Cards page somehow with a unique filter. Try to make a special folder too?</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Once the Commissions Google Sheet page is done, start making the Commissions page for my site.</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Make the Commissions page for my Google Sheet and start filling it out.</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Make new icons for the game covers.</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Make new icons for the prompt covers.</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Tidy up the games page with a better layout for the listings after making a new sheet for it to sync with.</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Find a better HTML code for the world info page for the Jovalan site.</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Find a better default HTML layout for the species info profiles on the Jovalan site.</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Add all of the individual species info onto the Jovalan site: Kanpolo, Kumiyaa, Cracke'D, Burgvoir, Liz'ae, Bood Shark, Tech-Alipo, Cedave, Heavian, Noodle Moth, Woobar.</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Add the remaining Halloween 2025 designs to the Jovalan site once the event is over.</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Add <a href="https://jovalan.netlify.app/mainmasterlist?profile=bo0409">this entry</a> to the masterlist with ownership to <a href="https://toyhou.se/Clowny">Clowny</a>.</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Add <a href="https://jovalan.netlify.app/mainmasterlist?profile=ya0410">this entry</a> to the masterlist with ownership to <a href="https://toyhou.se/Mnyaaa">Mnyaaa</a>.</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Add <a href="https://jovalan.netlify.app/mainmasterlist?profile=ya0411">this entry</a> to the masterlist with ownership to <a href="https://toyhou.se/VivianAverille">VivianAverille</a>.</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Redo the staff page on the Jovalan site a little bit with icons next to our usernames.</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Use the TOS HTML code that's used on my personal site onto the Jovalan site as well for the terms page.</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Add all of the carnival traits sheets onto the Jovalan site: Kanpolo, Kumiyaa, Burgvoir, Cedave, Woobar, Bood Shark.</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Add the new Bood Shark sheets onto the Jovalan site.</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Add some folders to the Jovalan site for the Species List called: Open Species, Semi-Closed Species, Closed Species, and Pet Species.</span></li>
+									<li class="text-success"><span class="fa-li"><i class="fa-solid fa-check-square"></i></span><span style="text-decoration: line-through;">Replace any Reverses, Reverse Pokeballs, and Reverse Masterball cards with the correct images in my Card Inventory.</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- --------------------------------------------------------------------
   <-- Footer
   <-------------------------------------------------------------------- -->
-  <div class="load-html" id="footer" data-source="includes/footer.html"></div>
-
-  <!-- ----------------------------------------------------------------- -->
-  <!-- JS                                                                -->
-  <!-- ----------------------------------------------------------------- -->
-
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-  <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-  <!-- Charadex Script -->
-  <script src="styles/js/pages/base.js" type="module"></script>
-
-
+	<div class="load-html" id="footer" data-source="includes/footer.html"></div>
+	<!-- ----------------------------------------------------------------- -->
+	<!-- JS                                                                -->
+	<!-- ----------------------------------------------------------------- -->
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<!-- Charadex Script -->
+	<script src="styles/js/pages/base.js" type="module"></script>
 </body>
 
 </html>
