@@ -664,6 +664,10 @@ p:last-child {
   top: 5px;
 }
 
+#mobilesidebar {
+  display: none;
+}
+
 /* Hidden Mobile Only Sidebar Button */
 .toggle-btn {
   display: none;
@@ -700,6 +704,9 @@ p:last-child {
   }
   .cd-hero-title {
     min-height: 150px;
+  }
+  #mobilesidebar {
+    display: block;
   }
   #sidebaricon {
   max-width: 210px !important;
