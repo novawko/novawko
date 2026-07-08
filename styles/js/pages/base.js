@@ -46,17 +46,17 @@ $(function() {
 /* Load sidebar on mobile
 ======================================================================= */
 const mobileSidebar = document.getElementById('mobile-sidebar');
-const toggleBtn = document.getElementById('sidebar-toggle');
-const closeBtn = document.getElementById('sidebar-close');
+const toggleBtn = document.getElementById('nav-mobile-menu-toggle');
+const closeBtn = document.getElementById('mobile-sidebar-close');
 
 // Function to open sidebar
 function openMobileSidebar() {
-  mobileSidebar.classList.add('open');
+  mobileSidebar.classList.add('active');
 }
 
 // Function to close sidebar
 function closeMobileSidebar() {
-  mobileSidebar.classList.remove('open');
+  mobileSidebar.classList.remove('active');
 }
 
 // Event Listeners
