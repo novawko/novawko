@@ -664,14 +664,14 @@ p:last-child {
   top: 5px;
 }
 
-#mobileSidebar {
+.mobileSidebar {
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
 }
 
 /* Sidebar Pull-Out State (Triggered by JS) */
-#mobileSidebar.open {
+.mobileSidebar.open {
   transform: translateX(0);
 }
 
