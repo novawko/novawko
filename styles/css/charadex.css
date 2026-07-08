@@ -661,8 +661,8 @@ p:last-child {
     padding: 5rem 1.5rem;
   }
   #sidebaricon {
-  max-width: 210px !important;
-  min-height: 210px !important;
+  max-width: 120px !important;
+  min-height: 120px !important;
   }
   #log-gallery > div.log-list > div > div.col-md-9 > span > div {
     margin-left: -330px;
