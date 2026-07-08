@@ -685,6 +685,11 @@ p:last-child {
     z-index: 75;
 }
 
+.nav-mobile-menu-toggle {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
 /* Tablets & Medium-Sized Computers */
 @media (min-width: 768px) {
   #main-container {
