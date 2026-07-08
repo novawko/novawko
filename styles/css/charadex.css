@@ -664,16 +664,6 @@ p:last-child {
   top: 5px;
 }
 
-.nav-mobile-menu {
-    background-color: #252526;
-    border: solid #1e1e1e;
-    border-width: 0 0 3px;
-    display: block;
-    padding: .5rem 1rem;
-    position: relative;
-    z-index: 75;
-}
-
 /* Tablets & Medium-Sized Computers */
 @media (min-width: 768px) {
   #main-container {
@@ -705,20 +695,6 @@ p:last-child {
   }
   .cd-hero-title {
     min-height: 150px;
-  }
-  .mobileSidebar {
-    position: fixed;
-    top: 0;
-    left: -300px; /* Fully hidden off-screen by default */
-    width: 300px;
-    height: 100vh;
-    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    display: flex;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  .mobileSidebar.active {
-    transform: translateX(280px);
   }
   #sidebaricon {
   max-width: 210px !important;
@@ -755,23 +731,6 @@ p:last-child {
   }
   #about_stamps > img {
   width: 75px !important;
-  }
-  .sidebar-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(4px);
-    z-index: 999;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.4s ease;
-  }
-  .sidebar-overlay.active {
-    opacity: 1;
-    pointer-events: auto;
   }
 }
 
