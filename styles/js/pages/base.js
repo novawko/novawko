@@ -45,7 +45,7 @@ $(function() {
 /* ==================================================================== */
 /* Load sidebar on mobile
 ======================================================================= */
-const mobileSidebar = document.getElementById('mobilesidebar');
+const mobileSidebar = document.getElementById('mobileSidebar');
 const toggleBtn = document.getElementById('toggleBtn');
 const closeBtn = document.getElementById('closeBtn');
 
