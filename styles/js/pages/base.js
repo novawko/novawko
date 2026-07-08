@@ -45,20 +45,12 @@ $(function() {
 /* ==================================================================== */
 /* Load sidebar on mobile
 ======================================================================= */
-const mobileSidebar = document.getElementById('mobile-sidebar');
-const toggleBtn = document.getElementById('nav-mobile-menu-toggle');
-const closeBtn = document.getElementById('mobile-sidebar-close');
-
-// Function to open sidebar
-function openMobileSidebar() {
-  mobileSidebar.classList.add('active');
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mobileSidebar").style.width = "300px";
 }
 
-// Function to close sidebar
-function closeMobileSidebar() {
-  mobileSidebar.classList.remove('active');
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mobileSidebar").style.width = "0";
 }
-
-// Event Listeners
-toggleBtn.addEventListener('click', openMobileSidebar);
-closeBtn.addEventListener('click', closeMobileSidebar);
