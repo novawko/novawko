@@ -15,12 +15,23 @@ document.addEventListener("DOMContentLoaded", async () => {
     (arr) => {
       for (let entry of arr) {
 
-        // We're gonna make some badges but you dont have to use them
-        entry.picturedcharacters = entry.picturedcharacters.split(',');
+        // 1. Split the IDs listed in picturedcharacters
+        entry.picturedcharacters = entry.picturedcharacters ? entry.picturedcharacters.split(',') : [];
         entry.nameBadges = [];
-        for (let name of entry.picturedcharacters) {
+
+        for (let id of entry.picturedcharacters) {
+          let charId = id.trim();
+          if (!charId) continue;
+
+          // 2. Find the character in Charadex's master list ('characters' sheet) matching this ID
+          // (Adjust 'charadex.data.characters' if your master sheet has a different name)
+          let charData = charadex.data.characters ? charadex.data.characters.find(c => String(c.id) === charId) : null;
+          
+          // 3. Fallback to the ID if the character isn't found in the master sheet yet
+          let displayName = charData ? charData.name : charId;
+
           entry.nameBadges.push(
-            `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('characters'), {profile: id})}">${name.trim()}</a>`
+            `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('characters'), {profile: charId})}">${displayName}</a>`
           );
         }
         entry.nameBadges = entry.nameBadges.join(' ');
