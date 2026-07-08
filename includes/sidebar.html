@@ -92,12 +92,15 @@
    </div>
 </div>
 
-<div id="mobileSidebar" class="d-block d-md-none col-md-3 p-2 mx-2 mb-2 bg-faded rounded h-100">
+<!-- Overlay on Mobile Only -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<aside id="mobileSidebar" class="mobileSidebar d-block d-md-none col-md-3 p-2 mx-2 mb-2 bg-faded rounded h-100">
    <div class="flex-lg-column flex-row flex-wrap">
       <div class="p-3 card">
          <div class="py-lg-2 p-lg-1">
             <!--- Close Button --->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu"><i class="fa-solid fa-xmark"></i></button>
             <!--- Side Icon --->
             <div id="sidebaricon" class="mx-auto rounded text-primary" style="background-image:url('assets/side_icon.png');background-size:cover;border: 5px solid;">
             </div>
@@ -186,4 +189,4 @@
          </div>
       </div>
    </div>
-</div>
+</aside>
