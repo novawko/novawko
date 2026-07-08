@@ -687,6 +687,10 @@ p:last-child {
   #commissionspage_title, #bookmarkspage_title, #privacy_title, #todopage_title, #tonetagsmasterlist_title, #tonetags_title, #statuses_title {
   font-size: 2.5rem !important;
   }
+  #sidebar {
+  max-width: 500px;
+  position: static;
+  }
   #index_byi_title, #index_cw_title {
     font-size: 1.7rem !important;
   }
