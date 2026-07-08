@@ -659,10 +659,9 @@ p:last-child {
 #sidebar {
   max-width: 300px;
   height: 400vh;
-  overflow: auto;
   position: -webkit-sticky;
   position: sticky;
-  top: 5%;
+  top: 5px;
 }
 
 /* Tablets & Medium-Sized Computers */
