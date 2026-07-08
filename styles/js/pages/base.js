@@ -45,20 +45,20 @@ $(function() {
 /* ==================================================================== */
 /* Load sidebar on mobile
 ======================================================================= */
-const mobilesidebar = document.getElementById('mobilesidebar');
+const mobileSidebar = document.getElementById('mobilesidebar');
 const toggleBtn = document.getElementById('toggleBtn');
 const closeBtn = document.getElementById('closeBtn');
 
 // Function to open sidebar
 function openSidebar() {
-  mobilesidebar.classList.add('active');
+  mobileSidebar.classList.add('active');
 }
 
 // Function to close sidebar
 function closeSidebar() {
-  mobilesidebar.classList.remove('active');
+  mobileSidebar.classList.remove('active');
 }
 
 // Event Listeners
-toggleBtn.addEventListener('click', openSidebar);
-closeBtn.addEventListener('click', closeSidebar);
+toggleBtn.addEventListener('click', openMobileSidebar);
+closeBtn.addEventListener('click', closeMobileSidebar);
