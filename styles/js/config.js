@@ -16,7 +16,7 @@ let charadex = {};
 /* ==================================================================== */
 charadex.site = {
   title: "Novawko",
-  url: "https://novawko.netlify.app/",
+  url: "https://novawko.com/",
   description: `Digital drawing since 2008.`
 }
 
