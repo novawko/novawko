@@ -701,7 +701,7 @@ charadex.page.characters = {
   sheetPage: charadex.sheet.pages.characters,
   sitePage: 'characters',
   dexSelector: 'charadex',
-  profileProperty: 'name',
+  profileProperty: 'id',
 
   sort: {
     toggle: true,
@@ -745,8 +745,8 @@ charadex.page.characters = {
     [charadex.sheet.pages.characterLog]: {
 
       sheetPage: charadex.sheet.pages.characterLog,
-      primaryProperty: 'name',
-      relatedProperty: 'name',
+      primaryProperty: 'id',
+      relatedProperty: 'id',
       dexSelector: 'log',
       profileProperty: 'id',
       profileToggle: false,
@@ -771,7 +771,7 @@ charadex.page.characters = {
       ... charadex.page.imageGallery,
 
       sheetPage: charadex.sheet.pages.imageGallery,
-      primaryProperty: 'name',
+      primaryProperty: 'id',
       relatedProperty: 'picturedcharacters',
       dexSelector: 'gallery',
       profileProperty: 'id',
