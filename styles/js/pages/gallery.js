@@ -22,7 +22,7 @@ entry.nameBadges = [];
 for (let id of entry.picturedcharacters) {
     // 1. Find the character object that matches this ID
     // Replace 'characters' with the variable that holds your full character list
-    const character = characters.find(c => c.id == id);
+    const character = name.find(c => c.id == id);
     
     // 2. Use the character's name if found, otherwise fallback to the ID
     const displayName = character ? character.name : id;
