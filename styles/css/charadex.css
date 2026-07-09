@@ -667,7 +667,7 @@ p:last-child {
 /* Tablets & Medium-Sized Computers */
 @media (min-width: 768px) {
   #main-container {
-    padding: 5rem 1.5rem;
+    padding: 2rem 1.5rem;
   }
   #sidebaricon {
   max-width: 120px !important;
