@@ -16,23 +16,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       for (let entry of arr) {
 
         // We're gonna make some badges but you dont have to use them
-entry.picturedcharacters = entry.picturedcharacters.split(',');
-entry.nameBadges = [];
-
-for (let id of entry.picturedcharacters) {
-    // 1. Find the character object that matches this ID
-    // Replace 'characters' with the variable that holds your full character list
-    const character = name.find(c => c.id == id);
-    
-    // 2. Use the character's name if found, otherwise fallback to the ID
-    const displayName = character ? character.name : id;
-
-    entry.nameBadges.push(
-        `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('characters'), {profile: id})}">${displayName.trim()}</a>`
-    );
-}
-
-entry.nameBadges = entry.nameBadges.join(' ');
+        entry.picturedcharacters = entry.picturedcharacters.split(',');
+        entry.nameBadges = [];
+        for (let id of entry.picturedcharacters) {
+          entry.nameBadges.push(
+            `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('characters'), {profile: id})}">${id.trim()}</a>`
+          );
+        }
+        entry.nameBadges = entry.nameBadges.join(' ');
 
         // Make the tags pretty and actually work
         entry.tags = entry.tags ? entry.tags.split(',') : [];
