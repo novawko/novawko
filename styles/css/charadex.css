@@ -687,6 +687,9 @@ p:last-child {
   #commissionspage_title, #bookmarkspage_title, #privacy_title, #todopage_title, #tonetagsmasterlist_title, #tonetags_title, #statuses_title {
   font-size: 2.5rem !important;
   }
+  #charadex-gallery > div.row.no-gutters.charadex-list.softload.active > div:nth-child(1) > span.heart > span {
+    right: -10px;
+  }
   #sidebar {
   max-width: 500px;
   position: static;
