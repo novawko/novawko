@@ -689,6 +689,7 @@ p:last-child {
   #sidebaricon {
   max-width: 120px !important;
   min-height: 120px !important;
+  position: relative; 
   }
   .dumbie {
   position: absolute;
