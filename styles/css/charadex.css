@@ -688,7 +688,8 @@ p:last-child {
   font-size: 2.5rem !important;
   }
   #wonkyheart {
-    right: -10px !important;
+    position: absolute !important;
+    right: -30px !important;
   }
   #sidebar {
   max-width: 500px;
