@@ -671,7 +671,7 @@ p:last-child {
   opacity: 0;
   transition: opacity 0.1s ease-in-out;
 }
-.dumb:hover .coolio {
+.dumb:hover .dumbie {
   opacity: 1;
 }
 
