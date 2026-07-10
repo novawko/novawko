@@ -54,7 +54,6 @@ charadex.sheet = {
     resourceTypes: ['All', 'Blinkie', 'GIF', 'Illustration', 'Pattern', 'Photo', 'Pixel', 'Base', 'PNG', 'Stamp', 'Texture', 'Emoji', 'Sticker', 'Moodboard', 'Palette', 'Divider', 'Flag', 'Art Fight', 'Animal Jam', 'Minecraft', 'Pokémon', 'Tone Indicator', 'Disability', 'Jovalan'],
     cardVariations: ['Normal', 'Normal Holo', 'Cosmos Holo', 'Mirror Holo', 'Cracked Ice Holo', 'Tinsel Holo', 'Reverse', 'Pokéball', 'Masterball', 'Stamp Left Side', 'Stamp Right Side', 'Build a Bear', 'Common', 'Rare', 'Super Rare', 'Ultra Rare', 'EX', 'GX', 'V', 'VMAX', 'VSTAR', 'Promo', 'Holo', 'Illustration Rare', 'McDonalds', 'Type Specific', 'Confetti Holo', 'Glitter Foil', 'Gem Pack Stamp', 'Full Art', 'Not Specified', 'N/A'],
     cardRegions: ['English', 'Japanese', 'Chinese'],
-    subtypes: ['Energy', 'Code Card', 'Graded', 'Stadium', 'Supporter', 'Special Energy', 'Item', 'Pokémon Tool', 'Shiny Pokémon', 'Wrapper', 'Sleeve'],
     gameTypes: ['All', 'Puzzles', 'Shooters', 'Art', 'Fidgets', 'Cards'],
     mobileFriendlyToggle: ['Enable'],
     codeTypes: ['All', 'HTML', 'CSS', 'JS'],
@@ -461,7 +460,6 @@ charadex.page.myCards = {
     parameters: {
       'Card Variation': charadex.sheet.options.cardVariations,
       'Card Region': charadex.sheet.options.cardRegions,
-      'Subtype': charadex.sheet.options.subtypes,
     }
   },
 
