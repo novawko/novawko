@@ -800,6 +800,9 @@ p:last-child {
 .craziness {
   max-width: 100%;
   }
+.hiss {
+  grid-column: 1 / -1;
+  }
 }
 
 /* Makes sure your text formatting is preserved from the sheet */
