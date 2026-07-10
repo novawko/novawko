@@ -695,6 +695,7 @@ p:last-child {
   }
   #crazy {
     display: block;
+    gap: 3px;
   }
   #wonkyheart {
     position: absolute !important;
