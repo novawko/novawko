@@ -689,7 +689,9 @@ p:last-child {
   #sidebaricon {
   max-width: 120px !important;
   min-height: 120px !important;
-  position: relative; 
+  position: relative;
+  line-height: 0;
+  font-size: 0;
   }
   .dumbie {
   position: absolute;
@@ -755,6 +757,8 @@ p:last-child {
   #sidebaricon {
   max-width: 210px !important;
   min-height: 210px !important;
+  line-height: 0;
+  font-size: 0;
   }
   #mewwo {
   height: 50px !important;
