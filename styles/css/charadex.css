@@ -680,12 +680,21 @@ p:last-child {
     display: flex;
     align-items: center;
   }
+  /* Codes Columns Fix */
+  #crazy {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+  }
 }
 
 /* Phones */
 @media only screen and (max-width: 600px) {
   #commissionspage_title, #bookmarkspage_title, #privacy_title, #todopage_title, #tonetagsmasterlist_title, #tonetags_title, #statuses_title {
   font-size: 2.5rem !important;
+  }
+  #crazy {
+    display: block;
   }
   #wonkyheart {
     position: absolute !important;
@@ -783,6 +792,13 @@ p:last-child {
   background-position: center;
   background-size: 200px;
   min-height: 500px;
+}
+
+/* Codes Columns */
+@media (min-width: 768px) {
+.craziness {
+  max-width: 100%;
+  }
 }
 
 /* Makes sure your text formatting is preserved from the sheet */
