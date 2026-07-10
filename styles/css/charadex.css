@@ -655,6 +655,26 @@ p:last-child {
   max-width: 1800px !important;
 }
 
+/* Sidebar Hover Overlay */
+.dumb {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.dumbie {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+.dumb:hover .coolio {
+  opacity: 1;
+}
+
 /* Sticky Sidebar */
 #sidebar {
   max-width: 300px;
