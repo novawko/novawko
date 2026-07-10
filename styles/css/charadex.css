@@ -660,9 +660,16 @@ p:last-child {
   display: block;
   position: relative;
   overflow: hidden;
+  border: none !important;
 }
 .dumb:hover .dumbie {
   opacity: 1;
+}
+.dumb:focus,
+.dumb:active,
+.dumb:hover {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 /* Sticky Sidebar */
