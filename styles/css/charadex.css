@@ -687,7 +687,6 @@ p:last-child {
   font-size: 0;
   }
   .dumb {
-  display: inline-block;
   position: relative;
   overflow: hidden;
   border: none !important;
@@ -706,7 +705,7 @@ p:last-child {
   background-color: rgba(217, 180, 255, 0.52);
   opacity: 0;
   transition: opacity 0.1s ease-in-out;
-  pointer-events: none;
+  pointer-events: none !important;
 }
   #log-gallery > div.log-list > div > div.col-md-9 > span > div {
     margin-left: -330px;
@@ -729,7 +728,6 @@ p:last-child {
   font-size: 2.5rem !important;
   }
   .dumb {
-  display: inline-block;
   position: relative;
   overflow: hidden;
   border: none !important;
@@ -748,7 +746,7 @@ p:last-child {
   background-color: rgba(217, 180, 255, 0.52);
   opacity: 0;
   transition: opacity 0.1s ease-in-out;
-  pointer-events: none;
+  pointer-events: none !important;
 }
   #crazy {
     display: block;
