@@ -705,6 +705,7 @@ p:last-child {
   background-color: rgba(217, 180, 255, 0.52);
   opacity: 0;
   transition: opacity 0.1s ease-in-out;
+  pointer-events: none;
 }
   #log-gallery > div.log-list > div > div.col-md-9 > span > div {
     margin-left: -330px;
@@ -745,6 +746,7 @@ p:last-child {
   background-color: rgba(217, 180, 255, 0.52);
   opacity: 0;
   transition: opacity 0.1s ease-in-out;
+  pointer-events: none;
 }
   #crazy {
     display: block;
