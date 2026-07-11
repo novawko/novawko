@@ -701,6 +701,7 @@ p:last-child {
   left: 0;
   width: 120px;
   height: 120px;
+  border-radius: 1rem;
   background-color: rgba(217, 180, 255, 0.52);
   opacity: 0;
   transition: opacity 0.1s ease-in-out;
@@ -740,6 +741,7 @@ p:last-child {
   left: 0;
   width: 210px;
   height: 210px;
+  border-radius: 1rem;
   background-color: rgba(217, 180, 255, 0.52);
   opacity: 0;
   transition: opacity 0.1s ease-in-out;
