@@ -573,7 +573,7 @@ charadex.page.faq = {
 
   tags: {
     toggle: true,
-    parameters: ['about', 'coding', 'toyhouse', 'shiningstars', 'general', 'artwork', 'social', 'characters'],
+    parameters: ['about', 'coding', 'kitiguars', 'toyhouse', 'shiningstars', 'general', 'artwork', 'social', 'characters', 'site'],
   },
 
   search: {
