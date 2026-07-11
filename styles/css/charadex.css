@@ -687,6 +687,7 @@ p:last-child {
   font-size: 0;
   }
   .dumb {
+  display: inline-block;
   position: relative;
   overflow: hidden;
   border: none !important;
@@ -728,6 +729,7 @@ p:last-child {
   font-size: 2.5rem !important;
   }
   .dumb {
+  display: inline-block;
   position: relative;
   overflow: hidden;
   border: none !important;
