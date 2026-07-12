@@ -43,6 +43,16 @@ $(function() {
 });
 
 /* ==================================================================== */
+/* Reload any active classes regardless of hash change
+======================================================================= */
+window.addEventListener('hashchange', () => {
+    // Reapply active class to whatever element(s) should ALWAYS stay active
+    document.querySelectorAll('.always-active').forEach(el => {
+        el.classList.add('active');
+    });
+});
+
+/* ==================================================================== */
 /* Open any linked collapses
 ======================================================================= */
 document.addEventListener('DOMContentLoaded', () => {
