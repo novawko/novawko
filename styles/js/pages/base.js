@@ -42,13 +42,6 @@ $(function() {
   }
 });
 
-document.querySelectorAll('[data-toggle="pill"]').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        $(this).tab('show');
-    });
-});
-
 /* ==================================================================== */
 /* Open any linked collapses
 ======================================================================= */
