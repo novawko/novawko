@@ -93,26 +93,28 @@ document.addEventListener("DOMContentLoaded", () => {
     outline: "none",
     backgroundColor: "#333",
     color: "white",
-    cursor: "pointer",
     padding: "15px",
     borderRadius: "50%",
     fontSize: "32px",
-    display: "none", // Hidden by default
+    opacity: "0",          // start invisible
+    pointerEvents: "none", // prevent clicking while hidden
     transition: "opacity 0.3s ease-in-out",
     width: "50px",
     height: "50px",
-    lineHeight: "0px", // vertically centers the arrow
+    lineHeight: "0px",     // vertically centers the arrow
     boxShadow: "0px 4px 6px rgba(0,0,0,0.5)"
   });
 
   // 3. Show button when user scrolls down 300px
   window.addEventListener("scroll", () => {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      topBtn.style.display = "block";
-    } else {
-      topBtn.style.display = "none";
-    }
-  });
+  if (document.documentElement.scrollTop > 300) {
+    topBtn.style.opacity = "1";
+    topBtn.style.pointerEvents = "auto";
+  } else {
+    topBtn.style.opacity = "0";
+    topBtn.style.pointerEvents = "none";
+  }
+});
 
   // 4. Smooth scroll back to the top on click
   topBtn.addEventListener("click", () => {
