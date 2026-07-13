@@ -93,3 +93,8 @@
 - Maybe Nova holding a baby brown and fluffy tabby kitten representing an Eevee while wearing a brown and khaki outfit?
 - Or maybe Nova looking into the sunset wishing for hope and peace in her life...
 - ...maybe drinking diet cola with headphones on along with a cottagecore aesthetic?
+# Extra Stuff
+## The Naa Info
+The Naa are the size of a golden/Syrian hamster that have horns or antlers to help defend themselves with. Unlike hamsters, the Naa can be with other Naa of the same gender without fights. The Naa have a feathery coat and have either a long rat long or no tail. They run very fast and have slit pupils and razor sharp teeth. The Naa cannot fly but are very short and stubby.
+
+The Naa are the most common pets for the Kitiguars to have but they usually start off shy and very skittish. Overtime, the Naa do eventually warm up to their owner and will love them. The Naa enjoy crawling on a Kitiguar's fur because it's very soft to them since they don't have fur.
