@@ -71,3 +71,53 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+/* ==================================================================== */
+/* Back To Top Button
+======================================================================= */
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Create the button element dynamically
+  const topBtn = document.createElement("button");
+  topBtn.innerHTML = "&#8593;"; // Up arrow icon
+  topBtn.setAttribute("id", "globalBackToTop");
+  topBtn.setAttribute("title", "Go to top");
+  document.body.appendChild(topBtn);
+
+  // 2. Inline styles to keep it fixed in the corner
+  Object.assign(topBtn.style, {
+    position: "fixed",
+    bottom: "30px",
+    right: "30px",
+    zIndex: "99999",
+    border: "none",
+    outline: "none",
+    backgroundColor: "#333",
+    color: "white",
+    cursor: "pointer",
+    padding: "15px",
+    borderRadius: "50%",
+    fontSize: "18px",
+    display: "none", // Hidden by default
+    transition: "opacity 0.3s ease",
+    width: "50px",
+    height: "50px",
+    boxShadow: "0px 4px 6px rgba(0,0,0,0.1)"
+  });
+
+  // 3. Show button when user scrolls down 300px
+  window.addEventListener("scroll", () => {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
+  });
+
+  // 4. Smooth scroll back to the top on click
+  topBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
