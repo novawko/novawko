@@ -96,8 +96,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // 2. Inline styles to keep it fixed in the corner
   Object.assign(topBtn.style, {
     position: "fixed",
-    bottom: "30px",
-    right: "30px",
+    bottom: "10px",
+    right: "10px",
     zIndex: "99999",
     border: "none",
     outline: "none",
