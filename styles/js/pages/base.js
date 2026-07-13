@@ -30,16 +30,26 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 /* ==================================================================== */
-/* Load any specific navtabs
+/* Active Classes Fix
 ======================================================================= */
-$(function() {
-  var hash = window.location.hash;
+window.addEventListener('DOMContentLoaded', () => {
+    // Find all Bootstrap tab links on the page
+    const tabs = document.querySelectorAll('.nav-link[data-toggle="pill"]');
+    if (!tabs.length) return; // No tabs → do nothing
 
-  if (hash != '') {
-    $('.tab-pane').removeClass('active in'); // Remove 'active' from all tab panes
-    $(hash).addClass('active in'); // Add 'active' to the target tab pane
-    $(`a[href="${hash}"]`).tab('show'); // Show the tab linked to the hash
-  }
+    const hash = location.hash.replace('#', '');
+
+    // Check if the hash matches a real tab-pane
+    const tabPane = document.getElementById(hash);
+
+    if (tabPane && tabPane.classList.contains('tab-pane')) {
+        // Hash matches a tab → activate it
+        $('.nav-link[href="#' + hash + '"]').tab('show');
+    } else {
+        // Hash does NOT match a tab → restore the default tab
+        const defaultTab = document.querySelector('.nav-link.active') || tabs[0];
+        if (defaultTab) $(defaultTab).tab('show');
+    }
 });
 
 /* ==================================================================== */
