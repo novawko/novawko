@@ -73,6 +73,26 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==================================================================== */
+/* Always Active Class
+======================================================================= */
+window.addEventListener('DOMContentLoaded', () => {
+    const hash = location.hash;
+
+    if (hash) {
+        const tabLink = document.querySelector(`a[href="${hash}"]`);
+        if (tabLink) {
+            tabLink.classList.add('active');
+            $(tabLink).tab('show');
+        }
+    }
+
+    // Keep your persistent tab active
+    document.querySelectorAll('.nav-link.active').forEach(el => {
+        el.classList.add('active');
+    });
+});
+
+/* ==================================================================== */
 /* Back To Top Button
 ======================================================================= */
 document.addEventListener("DOMContentLoaded", () => {
