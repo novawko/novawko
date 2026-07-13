@@ -75,22 +75,25 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ==================================================================== */
 /* Always Active Class
 ======================================================================= */
-function activateTabFromHash() {
+window.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.tab[data-target]');
+    if (!tabs.length) return; // No tabs on this page → do nothing
+
     const hash = location.hash.replace('#', '');
-    const target = document.querySelector(`[data-target="${hash}"]`);
 
-    if (target) {
-        // Remove active from all tabs except the persistent one
-        document.querySelectorAll('.tab').forEach(tab => {
-            if (!tab.classList.contains('keep-active')) {
-                tab.classList.remove('active');
-            }
-        });
+    // Try to find a tab that matches the hash
+    const tabLink = document.querySelector(`.tab[data-target="${hash}"]`);
 
-        // Activate the tab that matches the hash
-        target.classList.add('active');
+    if (tabLink) {
+        // Normal tab activation
+        tabs.forEach(tab => tab.classList.remove('active'));
+        tabLink.classList.add('active');
+    } else {
+        // Hash does NOT match a tab → keep the default tab active
+        const defaultTab = document.querySelector('.tab.active') || tabs[0];
+        if (defaultTab) defaultTab.classList.add('active');
     }
-};
+});
 
 /* ==================================================================== */
 /* Back To Top Button
