@@ -96,12 +96,12 @@ document.addEventListener("DOMContentLoaded", () => {
     cursor: "pointer",
     padding: "15px",
     borderRadius: "50%",
-    fontSize: "18px",
+    fontSize: "32px",
     display: "none", // Hidden by default
-    transition: "opacity 0.3s ease",
+    transition: "opacity 0.3s ease-in-out",
     width: "50px",
     height: "50px",
-    boxShadow: "0px 4px 6px rgba(0,0,0,0.1)"
+    boxShadow: "0px 4px 6px rgba(0,0,0,0.5)"
   });
 
   // 3. Show button when user scrolls down 300px
