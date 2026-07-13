@@ -76,22 +76,22 @@ document.addEventListener('DOMContentLoaded', () => {
 /* Always Active Class
 ======================================================================= */
 window.addEventListener('DOMContentLoaded', () => {
-    const tabs = document.querySelectorAll('.tab[data-target]');
-    if (!tabs.length) return; // No tabs on this page → do nothing
+    // Find all Bootstrap tab links on the page
+    const tabs = document.querySelectorAll('.nav-link[data-toggle="pill"]');
+    if (!tabs.length) return; // No tabs → do nothing
 
     const hash = location.hash.replace('#', '');
 
-    // Try to find a tab that matches the hash
-    const tabLink = document.querySelector(`.tab[data-target="${hash}"]`);
+    // Check if the hash matches a real tab-pane
+    const tabPane = document.getElementById(hash);
 
-    if (tabLink) {
-        // Normal tab activation
-        tabs.forEach(tab => tab.classList.remove('active'));
-        tabLink.classList.add('active');
+    if (tabPane && tabPane.classList.contains('tab-pane')) {
+        // Hash matches a tab → activate it
+        $('.nav-link[href="#' + hash + '"]').tab('show');
     } else {
-        // Hash does NOT match a tab → keep the default tab active
-        const defaultTab = document.querySelector('.tab.active') || tabs[0];
-        if (defaultTab) defaultTab.classList.add('active');
+        // Hash does NOT match a tab → restore the default tab
+        const defaultTab = document.querySelector('.nav-link.active') || tabs[0];
+        if (defaultTab) $(defaultTab).tab('show');
     }
 });
 
