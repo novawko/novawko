@@ -138,6 +138,11 @@ document.addEventListener("DOMContentLoaded", () => {
 /* ==================================================================== */
 /* Pull Out Sidebar
 ======================================================================= */
-document.getElementById('sidebarToggle').addEventListener('click', () => {
-  document.getElementById('sidebar').classList.toggle('open');
-});
+const toggle = document.getElementById('sidebarToggle');
+const sidebar = document.getElementById('sidebar');
+
+if (toggle && sidebar) {
+  toggle.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+  });
+}
