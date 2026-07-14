@@ -13,11 +13,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     null,
     charadex.page.characters,
     null, 
-    async (listData) => {
+    (listData) => {
 
       if (listData.type == 'profile') {
 
-        console.log(listData.profileArray[0]);
+        const profile = listData.profileArray[0];
 
         // Create the log dex
         if (charadex.tools.checkArray(listData.profileArray[0].characterlog)) {
