@@ -134,3 +134,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+/* ==================================================================== */
+/* Pull Out Sidebar
+======================================================================= */
+document.getElementById('sidebarToggle').addEventListener('click', () => {
+  document.getElementById('sidebar').classList.toggle('open');
+});
