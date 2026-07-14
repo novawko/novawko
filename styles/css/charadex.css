@@ -1045,8 +1045,6 @@ p:last-child {
 @media (max-width: 600px) {
   #sidebar {
     position: fixed;
-    top: 0;
-    left: 0;
     transform: translateX(-100%); /* hidden */
     transition: transform 0.3s ease;
     z-index: 99999;
@@ -1058,17 +1056,19 @@ p:last-child {
 
   .sidebar-mobile-toggle {
     display: block;
-    position: fixed;
-    top: 15px;
-    left: 15px;
+    position: relative;
+    top: 0;
+    left: 0;
     z-index: 99999;
     background: #262226;
+    width: 100%;
     color: var(--cd-content-background-color);
     border-color: #000;
     border-style: solid;
-    border-width: 2px 0px 2px 0px !important;
+    border-width: 0px 0px 2px 0px !important;
     padding: 10px 14px;
-    border-radius: 5px !important;
+    border-radius: 0px !important;
+    text-align: left;
   }
 }
 
