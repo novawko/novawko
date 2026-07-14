@@ -138,9 +138,17 @@ document.addEventListener("DOMContentLoaded", () => {
 /* ==================================================================== */
 /* Pull Out Sidebar
 ======================================================================= */
-const sidebarToggle = document.getElementById('sidebarToggle');
-const sidebar = document.getElementById('sidebar');
-
-sidebarToggle.addEventListener('click', () => {
-    sidebar.classList.toggle('open');
+document.addEventListener('DOMContentLoaded', () => {
+    initSidebarToggle();
 });
+
+function initSidebarToggle() {
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const sidebar = document.getElementById('sidebar');
+
+    if (!sidebarToggle || !sidebar) return;
+
+    sidebarToggle.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+    });
+}
