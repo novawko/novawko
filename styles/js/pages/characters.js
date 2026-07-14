@@ -35,6 +35,8 @@ document.addEventListener("DOMContentLoaded", async () => {
           );
         }
 
+        if (profile.tags.length > 0) $("#charadex-profile-tags").show();
+
       }
 
     }
