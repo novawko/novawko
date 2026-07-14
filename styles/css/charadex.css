@@ -1045,13 +1045,13 @@ p:last-child {
 @media (max-width: 600px) {
   #sidebar {
     position: fixed;
-    transform: translateX(-100%); /* hidden */
-    transition: transform 0.3s ease;
+    right: -500px; /* hidden */
+    transition: right 0.5s ease;
     z-index: 99999;
   }
 
   #sidebar.open {
-    transform: translateX(0); /* slide in */
+    right: 0;
   }
 
   .sidebar-mobile-toggle {
