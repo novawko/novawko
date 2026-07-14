@@ -35,7 +35,15 @@ document.addEventListener("DOMContentLoaded", async () => {
           );
         }
 
-        if (profile.tags.length > 0) $("#charadex-profile-tags").show();
+        // Make the tags pretty and actually work
+        entry.tags = entry.tags ? entry.tags.split(',') : [];
+        let fancyTagArr = [];
+        if (entry.tags.length >= 1) {
+          for (let tag of entry.tags) {
+            fancyTagArr.push(`<a href="${charadex.url.addUrlParameters(charadex.url.getPageUrl(charadex.page.characters.sitePage), {tags: tag})}">#${tag.trim()}</a>`);
+          }
+        }
+        entry.fancytags = fancyTagArr.join(' ');
 
       }
 
