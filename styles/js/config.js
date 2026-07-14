@@ -728,6 +728,11 @@ charadex.page.characters = {
     parameters: ['All', 'Warriors', 'Animal Jam', 'Kitiguars', 'Jovalan', 'FNAF', 'Pokémon', 'Adoptables', 'Unsorted']
   },
 
+  tags: {
+    toggle: true,
+    parameters: ['favorite', 'feral', 'anthro', 'human', 'humanoid', 'needsnewref'],
+  },
+
   search: {
     toggle: true,
     filterToggle: true,
