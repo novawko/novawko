@@ -201,14 +201,7 @@ charadex.listFeatures.tags = (pageUrl, parameters, selector = 'charadex') => {
 
   const tagContainer = $(`#${selector}-tags`);
   const paramObj = charadex.url.getUrlParametersObject();
-  let tagParams = false;
-
-  if (paramObj?.tags) {
-    tagParams = String(paramObj.tags)
-        .split(/[, ]+/)     // split by commas OR spaces
-        .filter(Boolean);   // remove empty values
-  }
-
+  let tagParams = paramObj?.tags || false;
 
   // Add tag buttons
   parameters.forEach(key => {
