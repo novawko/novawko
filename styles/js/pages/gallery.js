@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         entry.nameBadges = entry.nameBadges.join(' ');
 
         // Make the tags pretty and actually work
-        entry.tags = entry.tags ? entry.tags.split(',') : [];
+        profile.tags = profile.tags ? profile.tags.split(',') : [];
         let fancyTagArr = [];
-        if (entry.tags.length >= 1) {
-          for (let tag of entry.tags) {
+        if (profile.tags.length >= 1) {
+          for (let tag of profile.tags) {
             fancyTagArr.push(`<a href="${charadex.url.addUrlParameters(charadex.url.getPageUrl(charadex.page.imageGallery.sitePage), {tags: tag})}">#${tag.trim()}</a>`);
           }
         }
