@@ -729,7 +729,7 @@ charadex.page.characters = {
   },
 
   tags: {
-    toggle: false,
+    toggle: true,
     parameters: ['favorite', 'feral', 'anthro', 'human', 'humanoid', 'needsnewref'],
   },
 
