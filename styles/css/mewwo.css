@@ -722,6 +722,13 @@ p:last-child {
   min-height: 150px;
 }
 
+/* Footer Links */
+@media only screen and (max-width: 600px) {
+  .cd-footer-contents {
+    display: none;
+  }
+}
+
 /* Makes sure your text formatting is preserved from the sheet */
 /* Best for large areas like notes */
 .cd-text-pre {
