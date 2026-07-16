@@ -201,13 +201,16 @@ charadex.listFeatures.tags = (pageUrl, parameters, selector = 'charadex') => {
 
   const tagContainer = $(`#${selector}-tags`);
   const paramObj = charadex.url.getUrlParametersObject();
-  let tagParams = false;
+  let tagParams = paramObj?.tags || false;
 
-  if (paramObj?.tags) {
-      tagParams = String(paramObj.tags)
-          .split(/[, ]+/)     // split by commas OR spaces
-          .filter(Boolean);   // remove empty values
+  let tagArray = [];
+
+  if (tagParams) {
+      tagArray = String(tagParams)
+          .split(/[, ]+/)
+          .filter(Boolean);
   }
+
 
   // Add tag buttons
   parameters.forEach(key => {
@@ -215,7 +218,7 @@ charadex.listFeatures.tags = (pageUrl, parameters, selector = 'charadex') => {
     button.find(`.${selector}-tag-link`)
       .text(`#${key}`)
       .attr('val', charadex.tools.scrub(key))
-      .toggleClass('active', tagParams && tagParams.includes(charadex.tools.scrub(key)));
+      .toggleClass('active', tagArray.includes(charadex.tools.scrub(key)));
     tagContainer.append(button);
   });
 
@@ -224,14 +227,17 @@ charadex.listFeatures.tags = (pageUrl, parameters, selector = 'charadex') => {
     e.preventDefault();
     const val = $(this).attr('val');
     let newTags;
-    if (!tagParams) {
-      newTags = [val];
-    } else if (!tagParams.includes(val)) {
-      newTags = [...tagParams, val];
+
+    if (!tagArray.length) {
+        newTags = [val];
+    } else if (!tagArray.includes(val)) {
+        newTags = [...tagArray, val];
     } else {
-      newTags = tagParams.filter(i => i !== val);
+        newTags = tagArray.filter(i => i !== val);
     }
-    window.location.href = charadex.url.addUrlParameters(pageUrl, { tags: newTags });
+
+    window.location.href = charadex.url.addUrlParameters(pageUrl, { tags: newTags.join(',') });
+
   });
 
   // Show the tags container
