@@ -34,23 +34,6 @@ document.addEventListener("DOMContentLoaded", async () => {
                   charadex.page.characters.relatedData['image gallery']);
             }
 
-            // Make the tags pretty and actually work on profile pages
-            const entry = listData.profileArray[0];
-
-            if (entry.tags) {
-               const rawTags = entry.tags
-                  .split(',')
-                  .map(t => t.trim())
-                  .filter(t => t.length);
-
-               entry.fancytags = rawTags.map(tag =>
-                  `<a href="${charadex.url.addUrlParameters(
-            charadex.url.getPageUrl(charadex.page.characters.sitePage),
-            { tags: tag }
-        )}">#${tag}</a>`
-               ).join(' ');
-            }
-
          }
 
       });
