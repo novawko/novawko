@@ -341,10 +341,6 @@ a:active {
   background-color: var(--cd-navbar-dropdown-background-hover) !important;
 }
 
-.navbar .dropdown-header {
-  color: var(--cd-navbar-dropdown-link-color-hover) !important;
-}
-
 
 /* ============================================================= */
 /* Footer
