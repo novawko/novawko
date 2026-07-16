@@ -18,8 +18,15 @@ document.addEventListener("DOMContentLoaded", async () => {
       null,
       async (listData) => {
 
-         if (listData.type == 'profile') {
+         // List Mode
+         if (listData.type == 'list') {
+            document.getElementById("charadex-tag-container").style.display = "";
+            console.log("List mode active — tags should appear.");
+         }
 
+         // Profile Mode
+         if (listData.type == 'profile') {
+            document.getElementById("charadex-tag-container").style.display = "none";
             console.log(listData.profileArray[0]);
 
             // Create the log dex
