@@ -750,9 +750,11 @@ p:last-child {
 
 /* Alignment fix for the navbar's right side */
 /* Exclusive to Nova's header */
-.navbar-expand-md .navbar-nav {
-  display: flex;
-  align-items: center;
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
 }
 
 
