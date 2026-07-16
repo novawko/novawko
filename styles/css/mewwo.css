@@ -788,3 +788,80 @@ p:last-child {
   background-color: var(--cd-rarity-legendary-bg);
   color: var(--cd-rarity-legendary-txt);
 }
+
+/* ============================================================= */
+/* Pop-Up Magic
+/* ============================================================= */
+
+.modal__img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+}
+.modal {
+    max-width: 700px;
+    width: 85%;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    background: #ffffff;
+    display: none;
+}
+.modal.show {
+    display: block
+}
+#close {
+    cursor: pointer;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    font-size: 25px;
+    right: 0;
+    padding: 1rem;
+    margin-right: 10px;
+}
+.modal__title {
+    margin-top: 12px;
+    font-size: 2rem;
+}
+.modal__paragraph {
+    font-size: 16px;
+    font-weight: 400;
+}
+.modal__container {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* styling modal on them smaller screens */
+@media only screen and (min-width: 768px) {
+    .modal__container {
+        flex-direction: row;
+        padding: 2rem;
+        text-align: left;
+    }
+    .modal__img {
+        max-width: 50%
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .modal__title {
+        font-size: 1.5rem;
+    }
+    .modal__img {
+        max-width: 80%
+    }
+    .modal__container {
+    padding: 1.5rem;
+    }
+}
