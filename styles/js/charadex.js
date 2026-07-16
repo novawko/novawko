@@ -40,26 +40,6 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
     if (entry.rarity) entry.raritybadge = `<span class="badge badge-${charadex.tools.scrub(entry.rarity)}">${entry.rarity}</span>`; // Adds a rarity badge
     if (entry.compatibility) entry.compatibilitybadge = `<span class="badge badge-${charadex.tools.scrub(entry.compatibility)}">${entry.compatibility}</span>`; // Adds a compatibility badge
     if (entry.codetype) entry.codetypebadge = `<span class="badge badge-${charadex.tools.scrub(entry.codetype)}">${entry.codetype}</span>`; // Adds a code type badge
-
-    // Add fancy tag links globally
-    if (entry.tags) {
-        const tagArray = String(entry.tags)
-            .split(/[, ]+/)     // commas OR spaces
-            .filter(Boolean);   // remove empty values
-
-        const fancyTagArr = tagArray.map(tag => {
-            const url = charadex.url.addUrlParameters(
-                charadex.url.getPageUrl(config.sitePage),
-                { tags: tag }
-            );
-            return `<a href="${url}">#${tag.trim()}</a>`;
-        });
-
-        entry.fancytags = fancyTagArr.join(' ');
-    } else {
-        entry.fancytags = "";
-    }
-    
   }
 
   // If there's related data, add it
