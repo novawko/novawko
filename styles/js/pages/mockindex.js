@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /* Prompts
   ===================================================================== */
-  let mockPrompts = await charadex.initialize.page(null, charadex.page.index.mockPrompts, (arr) => {
+  let mockPrompts = await charadex.initialize.page(null, charadex.page.mockIndex.mockPrompts, (arr) => {
 
       // Splice the silly little array
       let sliceAmount = charadex.page.index.mockPrompts.amount || 4;
