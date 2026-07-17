@@ -121,11 +121,9 @@ charadex.page.codes = {
 charadex.page.updatesCodeV2 = {
 
       sheetPage: charadex.sheet.pages.updatesCodeV2,
-      primaryProperty: 'id',
-      relatedProperty: 'id',
+      sitePage: 'updates-v2',
       dexSelector: 'log',
-      profileProperty: 'updatev2',
-      profileToggle: false,
+      profileProperty: 'id',
 
       sort: {
         toggle: true,
@@ -148,11 +146,9 @@ charadex.page.updatesCodeV2 = {
 charadex.page.updates = {
 
       sheetPage: charadex.sheet.pages.updates,
-      primaryProperty: 'id',
-      relatedProperty: 'id',
+      sitePage: 'updates',
       dexSelector: 'log',
-      profileProperty: 'update',
-      profileToggle: false,
+      profileProperty: 'id',
 
       sort: {
         toggle: true,
