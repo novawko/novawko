@@ -869,7 +869,7 @@ charadex.page.characters = {
 /* --------------------------------------------------------------- */
 charadex.page.mockIndex = {
 
-  mockPrompts: {
+  mockprompts: {
     ... charadex.page.mockPrompts,
     dexSelector: 'mockprompt',
     amount: 3,
