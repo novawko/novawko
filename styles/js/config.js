@@ -17,7 +17,8 @@ let charadex = {};
 charadex.site = {
   title: "Novawko",
   url: "https://novawko.com/",
-  description: `Digital drawing since 2008.`
+  description: `Digital drawing since 2008.`,
+  image: "https://novawko.com" 
 }
 
 /* ==================================================================== */
