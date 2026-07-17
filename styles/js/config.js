@@ -45,6 +45,7 @@ charadex.sheet = {
     updates:             "updates",
     commissions:         "commissions",
     updatesCodeV2:       "updates code v2",
+    mockPrompts:         "mock prompts",
   },
 
   options: {
@@ -56,6 +57,7 @@ charadex.sheet = {
     cardRegions: ['English', 'Japanese', 'Chinese'],
     gameTypes: ['All', 'Puzzles', 'Shooters', 'Art', 'Fidgets', 'Cards'],
     codeTypes: ['All', 'HTML', 'CSS', 'JS'],
+    mockPromptTypes: ['All', 'Permanent', 'Monthly', 'Seasonal', 'Birthday'],
 
   }
 
@@ -112,6 +114,53 @@ charadex.page.codes = {
 
   prevNext: {
     toggle: false,
+  },
+
+};
+
+/* Mock Prompts
+/* --------------------------------------------------------------- */
+charadex.page.mockPrompts = {
+
+  sheetPage: charadex.sheet.pages.mockPrompts,
+  sitePage: 'mockprompts',
+  dexSelector: 'charadex',
+  profileProperty: 'title',
+
+  sort: {
+    toggle: true,
+    key: "enddate",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 12,
+  },
+
+  filters: {
+    toggle: false,
+    parameters: {
+      'TBA': [],
+    }
+  },
+
+  fauxFolder: {
+    toggle: true,
+    folderProperty: 'Mock Prompt Type',
+    parameters: charadex.sheet.options.mockPromptTypes,
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: false,
+    parameters: ['Title']
+  },
+
+  prevNext: {
+    toggle: true,
   },
 
 };
@@ -812,6 +861,19 @@ charadex.page.characters = {
     }
 
   }
+
+};
+
+
+/* Mock Index
+/* --------------------------------------------------------------- */
+charadex.page.mockIndex = {
+
+  mockPrompts: {
+    ... charadex.page.mockPrompts,
+    dexSelector: 'mockprompt',
+    amount: 3,
+  },
 
 };
 
