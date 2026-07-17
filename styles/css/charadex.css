@@ -762,8 +762,8 @@ p:last-child {
   pointer-events: none !important;
 }
   #crazy {
-    display: block;
-    gap: 3px;
+    display: flex;
+    gap: 0.625rem;
   }
   #wonkyheart {
     position: absolute !important;
