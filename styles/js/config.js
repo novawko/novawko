@@ -124,7 +124,7 @@ charadex.page.updatesCodeV2 = {
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'id',
+      profileProperty: 'updatev2',
       profileToggle: false,
 
       sort: {
