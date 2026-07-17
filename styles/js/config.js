@@ -287,7 +287,7 @@ charadex.page.games = {
   filters: {
     toggle: true,
     parameters: {
-      'Mobile Friendly': charadex.sheet.options.mobileFriendlyToggle,
+      'Mobile Friendly': ['Enable'],
     }
   },
 
@@ -635,7 +635,7 @@ charadex.page.imageGallery = {
   filters: {
     toggle: true,
     parameters:  {
-      'View Novawko Art Only': charadex.sheet.options.novawkoArtOnlyToggle,
+      'View Novawko Art Only': ['Enable'],
     }
   },
 
