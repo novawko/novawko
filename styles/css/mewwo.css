@@ -718,8 +718,10 @@ p:last-child {
 /* Prompts */
 .cd-prompt-background {
   background-position: center;
-  background-size: cover;
-  min-height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  margin-top: 1rem;
 }
 
 /* Footer Links */
