@@ -638,7 +638,7 @@ img[src=""] {
 }
 
 /* Remove ugly box shadow */
-button:focus,
+:focus,
 .page-link:focus,
 .form-control:focus {
   outline: none !important;
@@ -850,6 +850,15 @@ p:last-child {
   cursor: default;
   color: #888888 !important;
   text-decoration: none;
+}
+
+/* Secret Disabled Buttons */
+.secret-disabled-button {
+  pointer-events: none;
+  cursor: default;
+  transition: none !important;
+  background-color: var(--cd-button-background-color) !important;
+  color: var(--cd-button-text-color) !important;
 }
 
 /* Traits & Permissions */
