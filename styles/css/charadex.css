@@ -920,7 +920,7 @@ p:last-child {
 /* Mobile Friendly Characters List */
 @media only screen and (max-width: 600px) {
   .character-card {
-    height: unset !important;
+    height: auto !important;
   }
   .character-card img {
     height: 150px !important;
