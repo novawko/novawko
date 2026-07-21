@@ -920,14 +920,14 @@ p:last-child {
 /* Mobile Friendly Characters List */
 @media only screen and (max-width: 600px) {
   .character-card {
-    height: auto !important;
+    height: 150px !important;
   }
   .character-card img {
     height: 150px !important;
     object-fit: cover !important;
   }
   .character-list-container {
-    height: 150px !important;
+    height: auto !important;
   }
 }
 
