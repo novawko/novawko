@@ -919,9 +919,15 @@ p:last-child {
 
 /* Mobile Friendly Characters List */
 @media only screen and (max-width: 600px) {
+  .character-card {
+    height: 150px;
+  }
   .character-card img {
-    aspect-ratio: 1 / 1;
+    height: 150px;
     object-fit: cover;
+  }
+  .character-list-container {
+    height: auto;
   }
 }
 
