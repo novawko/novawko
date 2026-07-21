@@ -721,7 +721,7 @@ p:last-child {
   pointer-events: none !important;
 }
   #log-gallery > div.log-list > div > div.col-md-9 > span > div {
-    margin-left: -330px;
+    margin-left: -200px;
   }
   #charadexnav > ul {
     display: flex;
