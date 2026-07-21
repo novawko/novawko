@@ -917,6 +917,29 @@ p:last-child {
   }
 }
 
+/* Mobile Friendly Characters List */
+@media only screen and (max-width: 600px) {
+  /* 1. Target the parent container to create a 2-column layout */
+  .character-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+    gap: 5px; /* Adjust spacing between icons as needed */
+  }
+
+  /* 2. Target the individual character icon/image wrappers to make them square */
+  .character-card {
+    aspect-ratio: 1 / 1; /* Forces the box to be a perfect square */
+    width: 100%;
+  }
+
+  /* 3. Ensure the actual image fills the square container properly */
+  .character-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crops the image nicely to fit the square without distortion */
+  }
+}
+
 
 /* ============================================================= */
 /* Compatibility
