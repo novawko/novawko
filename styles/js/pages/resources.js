@@ -33,4 +33,4 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* ==================================================================== */
 /* Hide the mobile sidebar toggle until I add the sidebar fully
 ======================================================================= */
-document.getElementById(".nav-mobile-menu").style.display = "none"; 
+document.getElementById(".nav-mobile-menu").style.display = "none";
