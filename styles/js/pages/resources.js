@@ -29,10 +29,3 @@ document.addEventListener("DOMContentLoaded", async () => {
   charadex.tools.loadPage('.softload', 0);
   
 });
-
-/* ==================================================================== */
-/* Hide the mobile sidebar toggle until I add the sidebar fully
-======================================================================= */
-document.querySelectorAll('.nav-mobile-menu').forEach(element => {
-  element.style.display = 'none';
-});
