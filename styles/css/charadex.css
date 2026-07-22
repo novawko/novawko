@@ -644,11 +644,9 @@ img[src=""] {
     border: solid #000;
     border-width: 0 0 3px;
     width: 100%;
-    left: 0;
-    top: 0;
     display: block;
     padding: .5rem 1rem;
-    position: absolute;
+    position: relative;
     z-index: 9999;
   }
 
