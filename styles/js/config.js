@@ -576,7 +576,7 @@ charadex.page.wishlist = {
   pagination: {
     toggle: true,
     bottomToggle: true,
-    amount: 4,
+    amount: 8,
   },
 
   filters: {
