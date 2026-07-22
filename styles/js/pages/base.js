@@ -146,20 +146,3 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 500);
 
   closeBtn.addEventListener('click', () => { modalMenu.classList.remove('show') });
-
-/* ==================================================================== */
-/* Hide mobile sidebar toggle on specific pages until I add the sidebar
-======================================================================= */
-window.addEventListener('DOMContentLoaded', () => {
-  // Add the paths or filenames of the two pages where you want to hide the menu
-  const targetPages = ["/resources", "/gallery"];
-  
-  // Check if the current URL path includes any of the target pages
-  const isTargetPage = targetPages.some(page => window.location.pathname.includes(page));
-  
-  if (isTargetPage) {
-    const style = document.createElement('style');
-    style.innerHTML = '.nav-mobile-menu { display: none !important; }';
-    document.head.appendChild(style);
-  }
-});
