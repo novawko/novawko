@@ -642,7 +642,7 @@ img[src=""] {
   .nav-mobile-menu {
     background-color: #495057;
     border: solid #000;
-    border-width: 0 0 3px;
+    border-width: 0 0 2px;
     width: 100%;
     display: block;
     padding: .5rem 1rem;
@@ -662,8 +662,7 @@ img[src=""] {
   }
 
   #mobileSidebar {
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 5px;
     box-shadow: 1px 1px 10px black;
   }
