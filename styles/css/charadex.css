@@ -654,13 +654,13 @@ img[src=""] {
 
   .mobilesidebar {
     z-index: 99999;
-    width: 250px;
+    width: 300px;
     transition: transform 0.3s ease-in-out;
     transform: translateX(-100%);
   }
 
   .mobilesidebar.show {
-    transform: translateX(20%);
+    transform: translateX(0%);
   }
 
   #mobileSidebar {
