@@ -1099,3 +1099,10 @@ p:last-child {
     padding: 1.5rem;
     }
 }
+
+/* ============================================================= */
+/* Hide the mobile menu toggle only on certain pages without sidebar yet
+/* ============================================================= */
+body.page-resources .nav-mobile-menu, body.page-gallery .nav-mobile-menu {
+    display: none !important;
+}
