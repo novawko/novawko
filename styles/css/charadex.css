@@ -1103,6 +1103,6 @@ p:last-child {
 /* ============================================================= */
 /* Hide the mobile menu toggle only on certain pages without sidebar yet
 /* ============================================================= */
-body.page-resources .nav-mobile-menu, body.page-gallery .nav-mobile-menu {
+body.resources .nav-mobile-menu, body.gallery .nav-mobile-menu {
     display: none !important;
 }
