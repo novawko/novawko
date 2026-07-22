@@ -637,6 +637,47 @@ img[src=""] {
   display: none;
 }
 
+/* Mobile Only Sidebar */
+@media (max-width: 767.98px) {
+  .nav-mobile-menu {
+    background-color: #495057;
+    border: solid #000;
+    border-width: 0 0 3px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: block;
+    padding: .5rem 1rem;
+    position: absolute;
+    z-index: 9999;
+  }
+
+  .mobilesidebar {
+    z-index: 99999;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+  }
+
+  .mobilesidebar.show {
+    transform: translateX(20%);
+  }
+
+  #mobileSidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5px;
+    box-shadow: 1px 1px 10px black;
+  }
+  
+  .mobilesidebar-close {
+      background: none;
+      border: none;
+      box-shadow: none !important;
+      outline: 0 !important;
+  }
+}
+
 /* Remove ugly box shadow */
 :focus,
 .page-link:focus,
