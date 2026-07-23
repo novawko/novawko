@@ -958,14 +958,18 @@ p:last-child {
 
 /* Mobile Friendly Characters List */
 @media only screen and (max-width: 600px) {
-  .character-card {
+  .character-card, .resource-card {
     height: 150px !important;
   }
   .character-card img {
     height: 150px !important;
     object-fit: cover !important;
   }
-  .character-list-container {
+  .resource-card img {
+    height: 150px !important;
+    object-fit: contain !important;
+  }
+  .character-list-container, .resource-list-container {
     height: auto !important;
   }
 }
