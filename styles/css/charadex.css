@@ -772,6 +772,12 @@ p:last-child {
     grid-template-columns: repeat(3, 1fr);
     gap: 3px;
   }
+  /* Gallery Columns Fix */
+  #awesome {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+  }
 }
 
 /* Phones */
@@ -801,6 +807,10 @@ p:last-child {
   pointer-events: none !important;
 }
   #crazy {
+    display: flex;
+    gap: 0.625rem;
+  }
+  #awesome {
     display: flex;
     gap: 0.625rem;
   }
@@ -927,6 +937,16 @@ p:last-child {
   max-width: 100%;
   }
 .hiss {
+  grid-column: 1 / -1;
+  }
+}
+
+/* Gallery Columns */
+@media (min-width: 768px) {
+.pawsitive {
+  max-width: 100%;
+  }
+.purrfect {
   grid-column: 1 / -1;
   }
 }
