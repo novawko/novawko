@@ -966,7 +966,7 @@ p:last-child {
     object-fit: cover !important;
   }
   .resource-card img {
-    height: 150px !important;
+    max-height: 150px !important;
     object-fit: contain !important;
   }
   .character-list-container, .resource-list-container {
