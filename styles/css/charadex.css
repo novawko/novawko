@@ -782,7 +782,7 @@ p:last-child {
 
 /* Phones */
 @media only screen and (max-width: 600px) {
-  #commissionspage_title, #bookmarkspage_title, #privacy_title, #todopage_title, #tonetagsmasterlist_title, #tonetags_title, #statuses_title {
+  #commissionspage_title, #bookmarkspage_title, #privacy_title, #todopage_title, #tonetagsmasterlist_title, #tonetags_title, #statuses_title, #portfolio_title {
   font-size: 2.5rem !important;
   }
   .dumb {
