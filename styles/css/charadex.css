@@ -994,6 +994,35 @@ p:last-child {
   }
 }
 
+/* ============================================================= */
+/* Portfolio
+/* ============================================================= */
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-gallery-item img:hover {
+  transform: scale(1.05);
+}
 
 /* ============================================================= */
 /* Compatibility
