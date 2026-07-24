@@ -1023,6 +1023,12 @@ p:last-child {
   transform: scale(1.05);
 }
 
+@media only screen and (max-width: 600px) {
+  .portfolio-gallery {
+    width: auto;
+  }
+}
+
 /* ============================================================= */
 /* Compatibility
 /* ============================================================= */
