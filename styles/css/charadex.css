@@ -1025,7 +1025,7 @@ p:last-child {
 
 @media only screen and (max-width: 600px) {
   .portfolio-gallery {
-    width: auto;
+    width: 100%;
   }
 }
 
