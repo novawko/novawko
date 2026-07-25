@@ -30,17 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 /* ==================================================================== */
-/* Open any linked nav links
-======================================================================= */
-$(document).ready(function () {
-  var hash = window.location.hash;
-  if (hash) {
-    // Select the tab link by its href attribute and trigger Bootstrap's show event
-    $('.nav-tabs a[href="' + hash + '"]').tab('show');
-  }
-});
-
-/* ==================================================================== */
 /* Open any linked collapses
 ======================================================================= */
 document.addEventListener('DOMContentLoaded', () => {
@@ -68,6 +57,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+});
+
+/* ==================================================================== */
+/* Open any linked nav links
+======================================================================= */
+$(document).ready(function () {
+  var hash = window.location.hash;
+  if (hash) {
+    // Select the tab link by its href attribute and trigger Bootstrap's show event
+    $('.nav-tabs a[href="' + hash + '"]').tab('show');
+  }
 });
 
 /* ==================================================================== */
