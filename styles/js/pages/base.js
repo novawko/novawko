@@ -65,8 +65,21 @@ document.addEventListener('DOMContentLoaded', () => {
 $(document).ready(function () {
   var hash = window.location.hash;
   if (hash) {
-    // Select the tab link by its href attribute and trigger Bootstrap's show event
-    $('.nav-tabs a[href="' + hash + '"]').tab('show');
+    // 1. Select the specific nav link matching the URL hash
+    var $targetTab = $('.nav-tabs a[href="' + hash + '"], .nav-pills a[href="' + hash + '"]');
+
+    if ($targetTab.length) {
+      // 2. Clear active states from ALL links and panes in this container
+      $targetTab.closest('.nav').find('.nav-link').removeClass('active');
+      $(hash).parent().find('.tab-pane').removeClass('active show');
+
+      // 3. Trigger Bootstrap's built-in show method
+      $targetTab.tab('show');
+
+      // 4. Hard fallback: Explicitly add classes if Bootstrap fails
+      $targetTab.addClass('active');
+      $(hash).addClass('active show');
+    }
   }
 });
 
