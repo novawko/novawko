@@ -32,22 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
 /* ==================================================================== */
 /* Open any linked nav links
 ======================================================================= */
-jQuery(document).ready(function ($) {
-  // 1. Open the tab matching the URL hash on page load
-  var hash = window.location.hash;
+$(document).ready(function() {
+  let hash = window.location.hash;
   if (hash) {
-    $('.nav-tabs a[href="' + hash + '"], .nav-pills a[href="' + hash + '"]').tab('show');
+    $('.nav-tabs a[href="' + hash + '"]').tab('show');
   }
-
-  // 2. Update the URL hash automatically when a user clicks a tab
-  $('.nav-tabs a, .nav-pills a').on('shown.bs.tab', function (e) {
-    var currentHash = e.target.hash;
-    if (history.replaceState) {
-      history.replaceState(null, null, currentHash);
-    } else {
-      window.location.hash = currentHash;
-    }
-  });
 });
 
 /* ==================================================================== */
