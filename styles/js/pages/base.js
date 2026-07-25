@@ -33,23 +33,39 @@ document.addEventListener("DOMContentLoaded", () => {
 /* Active Classes Fix
 ======================================================================= */
 window.addEventListener('DOMContentLoaded', () => {
-    // Find all Bootstrap tab links on the page
-    const tabs = document.querySelectorAll('.nav-link[data-toggle="pill"]');
-    if (!tabs.length) return; // No tabs → do nothing
+    // Target the specific anchor links in any navigation list
+    const tabs = document.querySelectorAll('ul a[href^="#"]');
+    if (!tabs.length) return;
 
+    // Function to activate a tab and its corresponding pane
+    const activateTab = (hash) => {
+        const targetTab = document.querySelector(`a[href="#${hash}"]`);
+        const targetPane = document.getElementById(hash);
+
+        if (targetTab && targetPane) {
+            // Use Bootstrap's jQuery tab plugin if available
+            if (typeof $ === 'function' && $(targetTab).tab) {
+                $(targetTab).tab('show');
+            }
+        }
+    };
+
+    // 1. Handle initial page load with a hash in the URL
     const hash = location.hash.replace('#', '');
-
-    // Check if the hash matches a real tab-pane
-    const tabPane = document.getElementById(hash);
-
-    if (tabPane && tabPane.classList.contains('tab-pane')) {
-        // Hash matches a tab → activate it
-        $('.nav-link[href="#' + hash + '"]').tab('show');
-    } else {
-        // Hash does NOT match a tab → restore the default tab
-        const defaultTab = document.querySelector('.nav-link.active') || tabs[0];
-        if (defaultTab) $(defaultTab).tab('show');
+    if (hash) {
+        activateTab(hash);
     }
+
+    // 2. Listen for clicks on the tabs to update the URL hash smoothly
+    tabs.forEach(tab => {
+        tab.addEventListener('click', (e) => {
+            const targetHash = tab.getAttribute('href').replace('#', '');
+            // Let Bootstrap handle the toggle, just ensure the URL updates cleanly
+            setTimeout(() => {
+                history.pushState(null, null, `#${targetHash}`);
+            }, 50);
+        });
+    });
 });
 
 /* ==================================================================== */
