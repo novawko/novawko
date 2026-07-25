@@ -869,6 +869,9 @@ p:last-child {
   #about_stamps > img {
   width: 75px !important;
   }
+  #portfolio_header_icons, #portfolio_header {
+    font-size: 1.5rem;
+  }
 }
 
 
