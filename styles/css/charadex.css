@@ -995,7 +995,7 @@ p:last-child {
 }
 
 /* ============================================================= */
-/* Portfolio
+/* Old Portfolio
 /* ============================================================= */
 .portfolio-gallery {
   display: grid;
@@ -1026,6 +1026,23 @@ p:last-child {
 @media only screen and (max-width: 600px) {
   .portfolio-gallery {
     width: 100%;
+  }
+}
+
+/* ============================================================= */
+/* Old Portfolio
+/* ============================================================= */
+@media only screen and (max-width: 600px) {
+  .portfolio-tab-item {
+    margin-left: 0.313rem !important;
+    margin-right: 0.313rem !important;
+  }
+  .portfolio-tab-image {
+    height: 50px !important;
+    width: 50px !important;
+  }
+  .portfolio-tab-item p {
+    font-size: 12px;
   }
 }
 
