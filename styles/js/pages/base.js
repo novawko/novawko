@@ -33,10 +33,17 @@ document.addEventListener("DOMContentLoaded", () => {
 /* Open any linked nav links
 ======================================================================= */
 $(document).ready(function() {
-  let hash = window.location.hash;
-  if (hash) {
-    $('.nav-tabs a[href="' + hash + '"]').tab('show');
-  }
+    // Check if there is a hash in the URL on page load
+    var hash = window.location.hash;
+    if (hash) {
+        // Find the tab link with the matching href and trigger Bootstrap's show method
+        $('.nav-tabs a[href="' + hash + '"]').tab('show');
+    }
+
+    // Optional: Update the URL hash when a user clicks a tab manually
+    $('.nav-tabs a').on('click', function() {
+        window.location.hash = $(this).attr('href');
+    });
 });
 
 /* ==================================================================== */
