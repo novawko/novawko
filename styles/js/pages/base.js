@@ -30,45 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 /* ==================================================================== */
-/* Active Classes Fix
-======================================================================= */
-window.addEventListener('DOMContentLoaded', () => {
-    // Target the specific anchor links in any navigation list
-    const tabs = document.querySelectorAll('ul a[href^="#"]');
-    if (!tabs.length) return;
-
-    // Function to activate a tab and its corresponding pane
-    const activateTab = (hash) => {
-        const targetTab = document.querySelector(`a[href="#${hash}"]`);
-        const targetPane = document.getElementById(hash);
-
-        if (targetTab && targetPane) {
-            // Use Bootstrap's jQuery tab plugin if available
-            if (typeof $ === 'function' && $(targetTab).tab) {
-                $(targetTab).tab('show');
-            }
-        }
-    };
-
-    // 1. Handle initial page load with a hash in the URL
-    const hash = location.hash.replace('#', '');
-    if (hash) {
-        activateTab(hash);
-    }
-
-    // 2. Listen for clicks on the tabs to update the URL hash smoothly
-    tabs.forEach(tab => {
-        tab.addEventListener('click', (e) => {
-            const targetHash = tab.getAttribute('href').replace('#', '');
-            // Let Bootstrap handle the toggle, just ensure the URL updates cleanly
-            setTimeout(() => {
-                history.pushState(null, null, `#${targetHash}`);
-            }, 50);
-        });
-    });
-});
-
-/* ==================================================================== */
 /* Open any linked collapses
 ======================================================================= */
 document.addEventListener('DOMContentLoaded', () => {
