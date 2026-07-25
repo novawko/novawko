@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* ==================================================================== */
-/* Fixed Automatic Scroll
+/* Automatic Scroll
 ======================================================================= */
   window.addEventListener("load", () => {
     const hash = window.location.hash;
@@ -28,6 +28,27 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   });
+
+/* ==================================================================== */
+/* Open any linked nav links
+======================================================================= */
+jQuery(document).ready(function ($) {
+  // 1. Open the tab matching the URL hash on page load
+  var hash = window.location.hash;
+  if (hash) {
+    $('.nav-tabs a[href="' + hash + '"], .nav-pills a[href="' + hash + '"]').tab('show');
+  }
+
+  // 2. Update the URL hash automatically when a user clicks a tab
+  $('.nav-tabs a, .nav-pills a').on('shown.bs.tab', function (e) {
+    var currentHash = e.target.hash;
+    if (history.replaceState) {
+      history.replaceState(null, null, currentHash);
+    } else {
+      window.location.hash = currentHash;
+    }
+  });
+});
 
 /* ==================================================================== */
 /* Open any linked collapses
@@ -107,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
   topBtn.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "auto"
     });
   });
 });
