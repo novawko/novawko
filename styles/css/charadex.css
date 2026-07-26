@@ -558,7 +558,7 @@ a.badge.badge-primary:active {
 /* Misc
 /* ============================================================= */
 
-.text-primary {
+.text-primary, .btn-outline-primary {
   color: var(--cd-primary-color) !important;
 }
 .bg-faded {
