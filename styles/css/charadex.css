@@ -536,10 +536,29 @@ a.badge.badge-primary:active {
 
 
 /* ============================================================= */
+/* Active Nav Pills
+/* ============================================================= */
+
+/* Primary Modifier */
+.nav-pills .nav-link.primary-pill.active, 
+.nav-pills .nav-link.primary-pill.show {
+  background-color: var(--cd-primary-color) !important;
+  color: var(--cd-primary-text-color) !important;
+}
+
+/* Secondary Modifier */
+.nav-pills .nav-link.secondary-pill.active, 
+.nav-pills .nav-link.secondary-pill.show {
+  background-color: var(--cd-secondary-color) !important;
+  color: var(--cd-secondary-text-color) !important;
+}
+
+
+/* ============================================================= */
 /* Misc
 /* ============================================================= */
 
-.text-primary, .bg-primary {
+.text-primary {
   color: var(--cd-primary-color) !important;
 }
 .bg-faded {
@@ -694,6 +713,7 @@ p:last-child {
   max-width: 1800px !important;
 }
 
+/* Sidebar Icon */
 .dumb:hover .dumbie {
   opacity: 1;
 }
