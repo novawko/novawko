@@ -936,6 +936,9 @@ p:last-child {
   .posts-info {
       font-size: 12px;
   }
+  .twitterpills {
+    margin-bottom: 0.75rem;
+  }
 }
 
 /* Disabled Links */
