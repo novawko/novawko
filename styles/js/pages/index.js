@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /* Characters
   ===================================================================== */
-  let oc = await charadex.initialize.page(null, charadex.page.index.ocs, (arr) => {
+  let designs = await charadex.initialize.page(null, charadex.page.index.ocs, (arr) => {
 
   // Splice the silly little array
   let sliceAmount = charadex.page.index.ocs.amount || 10;
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /* Updates
   ===================================================================== */
-  let notifications = await charadex.initialize.page(null, charadex.page.index.changelog, (arr) => {
+  let revisions = await charadex.initialize.page(null, charadex.page.index.changelog, (arr) => {
 
   // Splice the silly little array
   let sliceAmount = charadex.page.index.changelog.amount || 20;
