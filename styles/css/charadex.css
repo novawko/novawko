@@ -130,7 +130,7 @@ body {
   /* Link
   ================================================================ */
 
-  --cd-link-text-color: #4c8ebd;
+  --cd-link-text-color: #d48fa9;
   --cd-link-text-color-hover: var(--cd-secondary-color);
 
 
@@ -1223,12 +1223,18 @@ button[aria-expanded="true"] .display-tags {
 /* ============================================================= */
 /* Fancy Brand
 /* ============================================================= */
-
+@font-palette-values --pink-and-white {
+	font-family: "Kalnia Glaze";
+	base-palette: 0;
+	override-colors:
+		0 #FFF0F5, /* Index 0: Main font body  */
+		1 #FFFFFF; /* Index 1: Thin internal lines */
+}
 .kalnia-glaze-brand {
-  font-family: "Kalnia Glaze", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+	font-family: "Kalnia Glaze", serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+	font-palette: --pink-and-white;
 }
