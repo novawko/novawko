@@ -78,28 +78,24 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ==================================================================== */
 /* Open any linked nav links
 ======================================================================= */
-$(document).ready(function () {
+$(window).on('load', function () {
   var hash = window.location.hash;
   if (hash) {
     var $targetTab = $('.nav-tabs a[href="' + hash + '"], .nav-pills a[href="' + hash + '"]');
 
     if ($targetTab.length) {
-      // 1. Remove active states from all sibling links and panes
+      // 1. Clear active states from all sibling links and panes
       $targetTab.closest('.nav').find('.nav-link, a').removeClass('active').attr('aria-selected', 'false');
-      $(hash).siblings('.tab-pane').removeClass('active show');
+      $(hash).siblings('.tab-pane').removeClass('active show').css('display', '');
 
-      // 2. Activate the target link
+      // 2. Activate the target link and pane
       $targetTab.addClass('active').attr('aria-selected', 'true');
+      $(hash).addClass('active show').css('display', 'block');
 
-      // 3. Activate the target content pane
-      $(hash).addClass('active show');
-
-      // 4. Safely trigger Bootstrap's tab method if available
+      // 3. Trigger Bootstrap's tab method safely
       try {
         $targetTab.tab('show');
-      } catch (e) {
-        // Fallback if plugin method fails
-      }
+      } catch (e) {}
     }
   }
 });
