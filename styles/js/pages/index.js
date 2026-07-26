@@ -34,10 +34,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /* Characters
   ===================================================================== */
-  let designs = await charadex.initialize.page(null, charadex.page.index.designs, (arr) => {
+  let designs = await charadex.initialize.page(null, charadex.page.index.ocs, (arr) => {
 
   // Splice the silly little array
-  let sliceAmount = charadex.page.index.designs.amount || 10;
+  let sliceAmount = charadex.page.index.ocs.amount || 10;
   arr.splice(sliceAmount, arr.length);
     
   });
@@ -45,10 +45,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /* Updates
   ===================================================================== */
-  let updates = await charadex.initialize.page(null, charadex.page.index.updates, (arr) => {
+  let updates = await charadex.initialize.page(null, charadex.page.index.changelog, (arr) => {
 
   // Splice the silly little array
-  let sliceAmount = charadex.page.index.updates.amount || 20;
+  let sliceAmount = charadex.page.index.changelog.amount || 20;
   arr.splice(sliceAmount, arr.length);
     
   });
