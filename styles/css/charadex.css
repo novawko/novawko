@@ -1058,6 +1058,7 @@ p:last-child {
 /* ============================================================= */
 /* Tags Toggle
 /* ============================================================= */
+
 /* Enable transitions for the Font Awesome icon */
 .display-tags {
     display: inline-block;
@@ -1073,6 +1074,7 @@ button[aria-expanded="true"] .display-tags {
 /* ============================================================= */
 /* Portfolio
 /* ============================================================= */
+
 @media only screen and (max-width: 600px) {
   .portfolio-tab-item {
     margin-left: 0.313rem !important;
@@ -1215,4 +1217,18 @@ button[aria-expanded="true"] .display-tags {
     .modal__container {
     padding: 1.5rem;
     }
+}
+
+
+/* ============================================================= */
+/* Fancy Brand
+/* ============================================================= */
+
+.kalnia-glaze-brand {
+  font-family: "Kalnia Glaze", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
