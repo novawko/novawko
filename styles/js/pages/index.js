@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let announcements = await charadex.initialize.page(null, charadex.page.index.news, (arr) => {
 
   // Splice the silly little array
-  let sliceAmount = charadex.page.index.news.amount || 6;
+  let sliceAmount = charadex.page.index.news.amount || 12;
   arr.splice(sliceAmount, arr.length); 
       
   });
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let artwork = await charadex.initialize.page(null, charadex.page.index.art, (arr) => {
 
   // Splice the silly little array
-  let sliceAmount = charadex.page.index.art.amount || 12;
+  let sliceAmount = charadex.page.index.art.amount || 14;
   arr.splice(sliceAmount, arr.length); 
       
   });
@@ -37,7 +37,18 @@ document.addEventListener("DOMContentLoaded", async () => {
   let designs = await charadex.initialize.page(null, charadex.page.index.designs, (arr) => {
 
   // Splice the silly little array
-  let sliceAmount = charadex.page.index.designs.amount || 5;
+  let sliceAmount = charadex.page.index.designs.amount || 10;
+  arr.splice(sliceAmount, arr.length);
+    
+  });
+
+
+  /* Updates
+  ===================================================================== */
+  let designs = await charadex.initialize.page(null, charadex.page.index.updates, (arr) => {
+
+  // Splice the silly little array
+  let sliceAmount = charadex.page.index.updates.amount || 20;
   arr.splice(sliceAmount, arr.length);
     
   });
