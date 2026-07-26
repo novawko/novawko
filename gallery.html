@@ -60,103 +60,111 @@
                   <!-- Top Card Container
                   <!-- ----------------------------------------------------------------- -->
                   <div class="col-md-auto bg-faded p-2 rounded mb-1">
-                  <div class="card p-4">
-                     <!-- Title
-                     <!-- --------------------------------------------------------------- -->
-                     <h3 class="text-center mb-0"><a href="/gallery">Image Gallery</a></h3>
-                     <!-- Faux Folders
-                     <!-- --------------------------------------------------------------- -->
-                     <div style="display:none;" id="charadex-folder-container">
-                        <hr>
-                        <div class="row no-gutters m-n1" id="charadex-folders"></div>
-                        <!-- Buttons -->
-                        <div style="display:none;">
-                           <div class="col-lg-3 col-md-4 col-sm-6 p-1" id="charadex-folder">
-                              <a class="btn btn-primary d-block" href=""></a>
+                     <div class="card p-4">
+                        <!-- Title
+                        <!-- --------------------------------------------------------------- -->
+                        <h3 class="text-center mb-0"><a href="/gallery">Image Gallery</a></h3>
+                        <!-- Faux Folders
+                        <!-- --------------------------------------------------------------- -->
+                        <div style="display:none;" id="charadex-folder-container">
+                           <hr>
+                           <div class="row no-gutters m-n1" id="charadex-folders"></div>
+                           <!-- Buttons -->
+                           <div style="display:none;">
+                              <div class="col-lg-3 col-md-4 col-sm-6 p-1" id="charadex-folder">
+                                 <a class="btn btn-primary d-block" href=""></a>
+                              </div>
                            </div>
                         </div>
-                     </div>
-                     <!-- Filters
-                     <!-- --------------------------------------------------------------- -->
-                     <div style="display:none;" id="charadex-filter-container">
-                        <hr>
-                        <div class="row no-gutters m-n1" id="charadex-filters"></div>
-                        <!-- Filters -->
-                        <div style="display: none;">
-                           <div class="col-md-4 col-12 p-1" id="charadex-filter">
-                              <label class="px-2"></label>
-                              <select class="form-control" multiple></select>
+                        <!-- Filters
+                        <!-- --------------------------------------------------------------- -->
+                        <div style="display:none;" id="charadex-filter-container">
+                           <hr>
+                           <div class="row no-gutters m-n1" id="charadex-filters"></div>
+                           <!-- Filters -->
+                           <div style="display: none;">
+                              <div class="col-md-4 col-12 p-1" id="charadex-filter">
+                                 <label class="px-2"></label>
+                                 <select class="form-control" multiple></select>
+                              </div>
                            </div>
                         </div>
-                     </div>
-                     <!-- Search
-                     <!-- --------------------------------------------------------------- -->
-                     <div style="display:none;" id="charadex-search-container">
-                        <hr>
-                        <div class="row no-gutters m-n1">
-                           <!-- Search Filter -->
-                           <div class="col-md-4 col-6 p-1" style="display: none;">
-                              <select class="form-control" id="charadex-search-filter"></select>
-                           </div>
-                           <!-- Search Bar -->
-                           <div class="col d-flex p-1">
-                              <input class="form-control search" type="search" placeholder="Search" id="charadex-search">
+                        <!-- Search
+                        <!-- --------------------------------------------------------------- -->
+                        <div style="display:none;" id="charadex-search-container">
+                           <hr>
+                           <div class="row no-gutters m-n1">
+                              <!-- Search Filter -->
+                              <div class="col-md-4 col-6 p-1" style="display: none;">
+                                 <select class="form-control" id="charadex-search-filter"></select>
+                              </div>
+                              <!-- Search Bar -->
+                              <div class="col d-flex p-1">
+                                 <input class="form-control search" type="search" placeholder="Search" id="charadex-search">
+                              </div>
                            </div>
                         </div>
-                     </div>
-                     <!-- Tags
-                     <!-- --------------------------------------------------------------- -->
-                     <div style="display:none;" id="charadex-tag-container">
-                        <h4 class="mb-2 mt-4 px-2"><i class="fa-solid fa-tags"></i> Tags</h4>
-                        <div class="container d-flex flex-wrap" id="charadex-tags"></div>
-                        <div style="display:none;">
-                           <div id="charadex-tag" class="mx-1"><a class="charadex-tag-link" href=""></a></div>
-                        </div>
-                     </div>
-                     <!-- Pagination
-                     <!-- --------------------------------------------------------------- -->
-                     <div style="display: none;" class="charadex-pagination-container">
-                        <hr class="mb-4 mt-4">
-                        <div class="nav d-flex justify-content-center mb-n4">
-                           <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
-                           <ul class="pagination charadex-pagination charadex-pagination-top justify-content-center m-0"></ul>
-                           <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
-                        </div>
-                     </div>
-                     <!-- Prev & Next Topbar
-                     <!-- --------------------------------------------------------------- -->
-                     <div style="display: none;" id="charadex-prevnext-container">
-                        <hr>
-                        <div class="row no-gutters px-2 text-uppercase">
-                           <div class="col-6 px-1">
-                              <a id="entryPrev" href=""><i class="fas fa-chevron-left mr-2"></i><b><span></span></b></a>
+                        <!-- Tags
+                        <!-- --------------------------------------------------------------- -->
+                        <div style="display:none;" id="charadex-tag-container">
+                           <!-- Title & Toggle -->
+                           <h4 class="mb-2 mt-4 px-2"><i class="fa-solid fa-tags"></i> Tags
+                              <button class="btn btn-sm bg-transparent" type="button" data-toggle="collapse" data-target="#tags" aria-expanded="false" aria-controls="tags">
+                              <i class="display-tags fa-solid fa-chevron-right"></i>
+                              </button>
+                           </h4>
+                           <!-- Collapsible Element -->
+                           <div class="collapse" id="tags">
+                              <div class="container d-flex flex-wrap" id="charadex-tags"></div>
+                              <div style="display:none;">
+                                 <div id="charadex-tag" class="mx-1"><a class="charadex-tag-link" href=""></a></div>
+                              </div>
                            </div>
-                           <div class="col-6 px-1 text-right order-md-1">
-                              <a id="entryNext" href=""><b><span></span></b><i class="fas fa-chevron-right ml-2"></i></a>
+                        </div>
+                        <!-- Pagination
+                        <!-- --------------------------------------------------------------- -->
+                        <div style="display: none;" class="charadex-pagination-container">
+                           <hr class="mb-4 mt-4">
+                           <div class="nav d-flex justify-content-center mb-n4">
+                              <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+                              <ul class="pagination charadex-pagination charadex-pagination-top justify-content-center m-0"></ul>
+                              <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+                           </div>
+                        </div>
+                        <!-- Prev & Next Topbar
+                        <!-- --------------------------------------------------------------- -->
+                        <div style="display: none;" id="charadex-prevnext-container">
+                           <hr>
+                           <div class="row no-gutters px-2 text-uppercase">
+                              <div class="col-6 px-1">
+                                 <a id="entryPrev" href=""><i class="fas fa-chevron-left mr-2"></i><b><span></span></b></a>
+                              </div>
+                              <div class="col-6 px-1 text-right order-md-1">
+                                 <a id="entryNext" href=""><b><span></span></b><i class="fas fa-chevron-right ml-2"></i></a>
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
-               </div>
-               <!-- List Items Render Here
-               <!-- --------------------------------------------------------------- -->
-               <div class="row no-gutters charadex-list softload" id="awesome"></div>
-               <!-- Pagination
-               <!-- --------------------------------------------------------------- -->
-               <div style="display: none;" class="charadex-pagination-container mt-1">
-                  <div class="bg-faded p-2 rounded">
-                     <div class="card px-3 py-1">
-                        <div class="nav d-flex justify-content-center">
-                           <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
-                           <ul class="pagination charadex-pagination charadex-pagination-bottom justify-content-center m-0"></ul>
-                           <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+                  <!-- List Items Render Here
+                  <!-- --------------------------------------------------------------- -->
+                  <div class="row no-gutters charadex-list softload" id="awesome"></div>
+                  <!-- Pagination
+                  <!-- --------------------------------------------------------------- -->
+                  <div style="display: none;" class="charadex-pagination-container mt-1">
+                     <div class="bg-faded p-2 rounded">
+                        <div class="card px-3 py-1">
+                           <div class="nav d-flex justify-content-center">
+                              <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+                              <ul class="pagination charadex-pagination charadex-pagination-bottom justify-content-center m-0"></ul>
+                              <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-      </div>
       </div>
       <!-- --------------------------------------------------------------------
       <-- Footer
@@ -186,12 +194,12 @@
          <!-- --------------------------------------------------------------- -->
          <div class="col-12 mb-n2 p-2 purrfect" id="charadex-profile">
             <div class="bg-faded p-2 rounded">
-               <div class="card p-4">
+               <div class="card p-3">
                   <!-- Image -->
-                  <div class="cd-profile-image-container p-md-5 p-4 text-center">
+                  <div class="cd-profile-image-container text-center">
                      <img class="image img-fluid" src="">
                   </div>
-                  <div class="card bg-faded p-4 h-100">
+                  <div class="card bg-faded mt-3 p-4 h-100">
                      <!-- Item -->
                      <div class="d-flex no-gutters mb-2">
                         <b class="text-muted col-md-4 col-6">Artist</b>
