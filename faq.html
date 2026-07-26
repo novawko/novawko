@@ -108,10 +108,18 @@
                         <!-- Tags
                         <!-- --------------------------------------------------------------- -->
                         <div style="display:none;" id="charadex-tag-container">
-                           <h4 class="mb-2 mt-4 px-2"><i class="fa-solid fa-tags"></i> Tags</h4>
-                           <div class="container d-flex flex-wrap" id="charadex-tags"></div>
-                           <div style="display:none;">
-                              <div id="charadex-tag" class="mx-1"><a class="charadex-tag-link" href=""></a></div>
+                           <!-- Title & Toggle -->
+                           <h4 class="mb-2 mt-4 px-2"><i class="fa-solid fa-tags"></i> Tags
+                              <button class="btn btn-sm bg-transparent" type="button" data-toggle="collapse" data-target="#tags" aria-expanded="false" aria-controls="tags">
+                              <i class="display-tags fa-solid fa-chevron-right"></i>
+                              </button>
+                           </h4>
+                           <!-- Collapsible Element -->
+                           <div class="collapse" id="tags">
+                              <div class="container d-flex flex-wrap" id="charadex-tags"></div>
+                              <div style="display:none;">
+                                 <div id="charadex-tag" class="mx-1"><a class="charadex-tag-link" href=""></a></div>
+                              </div>
                            </div>
                         </div>
                         <!-- Pagination
