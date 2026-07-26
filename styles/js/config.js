@@ -888,13 +888,13 @@ charadex.page.index = {
 
   ocs: {
     ... charadex.page.characters,
-    dexSelector: 'character',
+    dexSelector: 'oc',
     amount: 10,
   },
 
   changelog: {
     ... charadex.page.updates,
-    dexSelector: 'change',
+    dexSelector: 'notification',
     amount: 20,
   },
 
