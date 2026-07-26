@@ -85,16 +85,19 @@ $(document).ready(function () {
     var $targetTab = $('.nav-tabs a[href="' + hash + '"], .nav-pills a[href="' + hash + '"]');
 
     if ($targetTab.length) {
-      // 2. Clear active states from ALL links and panes in this container
-      $targetTab.closest('.nav').find('.nav-link').removeClass('active');
-      $(hash).parent().find('.tab-pane').removeClass('active show');
+      // 2. Clear active states from ALL nav links in the navigation container
+      $targetTab.closest('.nav').find('.nav-link, a').removeClass('active');
+      
+      // 3. Clear active/show states from the target pane AND its sibling panes
+      var $targetPane = $(hash);
+      $targetPane.siblings('.tab-pane').removeClass('active show');
 
-      // 3. Trigger Bootstrap's built-in show method
+      // 4. Trigger Bootstrap's built-in show method
       $targetTab.tab('show');
 
-      // 4. Hard fallback: Explicitly add classes if Bootstrap fails
+      // 5. Hard fallback: Explicitly add classes
       $targetTab.addClass('active');
-      $(hash).addClass('active show');
+      $targetPane.addClass('active show');
     }
   }
 });
