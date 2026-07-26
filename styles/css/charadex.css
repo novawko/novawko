@@ -924,7 +924,16 @@ p:last-child {
   display: block !important;
 }
 
-/* Index Feed */
+/* Twitter Pills */
+.twitterpill-item {
+  border-color: #8FB7D4;
+  color: #8FB7D4 !important;
+}
+.twitterpill-item:hover {
+  border-color: #8FB7D4;
+  color: #fff !important;
+  background-color: #8FB7D4;
+}
 @media only screen and (max-width: 600px) {
   .twitterpill-item {
       padding-top: 0.25rem;
@@ -934,7 +943,7 @@ p:last-child {
   }
 }
 
-/* Right Side Index Pills */
+/* Twitter Pills & Post User Info */
 @media only screen and (max-width: 600px) {
   .posts-info {
       font-size: 12px;
