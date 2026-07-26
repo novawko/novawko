@@ -539,7 +539,7 @@ a.badge.badge-primary:active {
 /* Misc
 /* ============================================================= */
 
-.text-primary {
+.text-primary, .bg-primary {
   color: var(--cd-primary-color) !important;
 }
 .bg-faded {
