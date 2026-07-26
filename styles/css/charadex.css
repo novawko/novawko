@@ -558,10 +558,10 @@ a.badge.badge-primary:active {
 /* Misc
 /* ============================================================= */
 
-.text-primary, .btn-outline-primary {
+.text-primary {
   color: var(--cd-primary-color) !important;
 }
-.btn-outline-primary:hover {
+.btn-outline-primary, .btn-outline-primary:hover, .btn-outline-primary:active {
   border-color: var(--cd-primary-color) !important;
 }
 .bg-faded {
