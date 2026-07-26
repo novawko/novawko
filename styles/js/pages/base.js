@@ -81,23 +81,25 @@ document.addEventListener('DOMContentLoaded', () => {
 $(document).ready(function () {
   var hash = window.location.hash;
   if (hash) {
-    // 1. Select the specific nav link matching the URL hash
     var $targetTab = $('.nav-tabs a[href="' + hash + '"], .nav-pills a[href="' + hash + '"]');
 
     if ($targetTab.length) {
-      // 2. Clear active states from ALL nav links in the navigation container
-      $targetTab.closest('.nav').find('.nav-link, a').removeClass('active');
-      
-      // 3. Clear active/show states from the target pane AND its sibling panes
-      var $targetPane = $(hash);
-      $targetPane.siblings('.tab-pane').removeClass('active show');
+      // 1. Remove active states from all sibling links and panes
+      $targetTab.closest('.nav').find('.nav-link, a').removeClass('active').attr('aria-selected', 'false');
+      $(hash).siblings('.tab-pane').removeClass('active show');
 
-      // 4. Trigger Bootstrap's built-in show method
-      $targetTab.tab('show');
+      // 2. Activate the target link
+      $targetTab.addClass('active').attr('aria-selected', 'true');
 
-      // 5. Hard fallback: Explicitly add classes
-      $targetTab.addClass('active');
-      $targetPane.addClass('active show');
+      // 3. Activate the target content pane
+      $(hash).addClass('active show');
+
+      // 4. Safely trigger Bootstrap's tab method if available
+      try {
+        $targetTab.tab('show');
+      } catch (e) {
+        // Fallback if plugin method fails
+      }
     }
   }
 });
