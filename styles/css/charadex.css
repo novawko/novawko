@@ -896,6 +896,13 @@ p:last-child {
   max-height: 700px;
 }
 
+/* Index Feed */
+@media only screen and (max-width: 600px) {
+  .posts-info {
+      font-size: 12px;
+  }
+}
+
 /* Disabled Links */
 .disabled-link {
   pointer-events: none;
