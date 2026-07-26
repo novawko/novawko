@@ -561,6 +561,9 @@ a.badge.badge-primary:active {
 .text-primary, .btn-outline-primary {
   color: var(--cd-primary-color) !important;
 }
+.btn-outline-primary:hover {
+  border-color: var(--cd-primary-color) !important;
+}
 .bg-faded {
   background-color: var(--cd-faded-background-color) !important;
 }
