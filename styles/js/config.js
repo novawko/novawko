@@ -886,13 +886,13 @@ charadex.page.index = {
     amount: 14,
   },
 
-  designs: {
+  ocs: {
     ... charadex.page.characters,
     dexSelector: 'design',
     amount: 10,
   },
 
-  updates: {
+  changelog: {
     ... charadex.page.updates,
     dexSelector: 'update',
     amount: 20,
