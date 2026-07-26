@@ -50,13 +50,6 @@ charadex.sheet = {
 
   options: {
 
-    designTypes: ['All', 'Original Character', 'Fan Character', 'Original Species', 'Kinsona'],
-    statuses: ['All', 'FH', 'UFS', 'UFT', 'UFO', 'EO', 'Pending', 'Free', 'Auction', 'NFS/T/O'],
-    resourceTypes: ['All', 'Blinkie', 'GIF', 'Illustration', 'Phone Wallpaper', 'Pattern', 'Photo', 'Ribbon', 'Pixel', 'Base', 'PNG', 'Icon', 'Stamp', 'Texture', 'Emoji', 'Sticker', 'Moodboard', 'Palette', 'Divider', 'Flag', 'Art Fight', 'Animal Jam', 'Minecraft', 'Pokémon', 'Tone Indicator', 'Disability', 'Jovalan'],
-    cardVariations: ['Normal', 'Normal Holo', 'Cosmos Holo', 'Mirror Holo', 'Cracked Ice Holo', 'Tinsel Holo', 'Reverse', 'Pokéball', 'Masterball', 'Stamp Left Side', 'Stamp Right Side', 'Build a Bear', 'Common', 'Rare', 'Super Rare', 'Ultra Rare', 'EX', 'GX', 'V', 'VMAX', 'VSTAR', 'Promo', 'Holo', 'Illustration Rare', 'McDonalds', 'Type Specific', 'Confetti Holo', 'Glitter Foil', 'Gem Pack Stamp', 'Full Art', 'Not Specified', 'N/A'],
-    cardRegions: ['English', 'Japanese', 'Chinese'],
-    gameTypes: ['All', 'Puzzles', 'Shooters', 'Art', 'Fidgets', 'Cards'],
-    codeTypes: ['All', 'HTML', 'CSS', 'JS'],
     mockPromptTypes: ['All', 'Permanent', 'Monthly', 'Seasonal', 'Birthday'],
 
   }
@@ -102,8 +95,8 @@ charadex.page.codes = {
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Code Type',
-    parameters: charadex.sheet.options.codeTypes,
+    folderProperty: 'Type',
+    parameters: ['All', 'HTML', 'CSS', 'JS'],
   },
 
   search: {
@@ -253,7 +246,7 @@ charadex.page.queue = {
   search: {
     toggle: true,
     filterToggle: false,
-    parameters: ['Username', 'Art Type']
+    parameters: ['Username', 'Type', 'Status']
   },
 
   prevNext: {
@@ -337,13 +330,14 @@ charadex.page.games = {
     toggle: true,
     parameters: {
       'Mobile Friendly': ['Enable'],
+      'Types': ['Art', 'Shooter', 'Puzzle', 'Cards', 'Fidget'],
     }
   },
 
   fauxFolder: {
-    toggle: true,
-    folderProperty: 'Type',
-    parameters: charadex.sheet.options.gameTypes,
+    toggle: false,
+    folderProperty: '',
+    parameters: [],
   },
 
   search: {
@@ -414,7 +408,7 @@ charadex.page.binders = {
   sheetPage: charadex.sheet.pages.binders,
   sitePage: 'binders',
   dexSelector: 'charadex',
-  profileProperty: 'bindertitle',
+  profileProperty: 'title',
 
   sort: {
     toggle: false,
@@ -445,7 +439,7 @@ charadex.page.binders = {
   search: {
     toggle: true,
     filterToggle: false,
-    parameters: ['Binder Title']
+    parameters: ['Title']
   },
 
   prevNext: {
@@ -526,16 +520,15 @@ charadex.page.myCards = {
   },
 
   filters: {
-    toggle: true,
+    toggle: false,
     parameters: {
-      'Card Variation': charadex.sheet.options.cardVariations,
-      'Card Region': charadex.sheet.options.cardRegions,
+      'TBA': [],
     }
   },
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Card Fandom',
+    folderProperty: 'Fandom',
     parameters: ['All', 'Pokémon', 'One Piece', 'Spider Man', 'Webkinz', 'Littlest Pet Shop', 'Sonic the Hedgehog', 'Sanrio', 'Re Zero', 'League Of Legends', 'Kuromis Cryptid Carnival', 'Novawko', 'Unsorted']
   },
 
@@ -547,7 +540,7 @@ charadex.page.myCards = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Card Name', 'Card Number', 'Artist']
+    parameters: ['All', 'Fandom', 'Character Name', 'Set Number', 'Finish Type', 'Region', 'Artist']
   },
 
   prevNext: {
@@ -580,10 +573,9 @@ charadex.page.wishlist = {
   },
 
   filters: {
-    toggle: true,
+    toggle: false,
     parameters: {
-      'Card Variation': ['Common', 'Ultra Rare', 'Rare', 'Normal', 'Promo', 'GX', 'V', 'VMAX', 'EX', 'Full Art', 'Cosmos Holo', 'Not Specified'],
-      'Card Region': charadex.sheet.options.cardRegions,
+      'TBA': [],
     }
   },
 
@@ -596,7 +588,7 @@ charadex.page.wishlist = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Card Fandom', 'Card Number', 'Artist']
+    parameters: ['All', 'Fandom', 'Set Number', 'Finish Type', 'Region', 'Artist']
   },
 
   prevNext: {
@@ -682,9 +674,9 @@ charadex.page.imageGallery = {
   },
 
   filters: {
-    toggle: true,
+    toggle: false,
     parameters:  {
-      'View Novawko Art Only': ['Enable'],
+      'TBA': [],
     }
   },
 
@@ -720,7 +712,7 @@ charadex.page.resources = {
   sheetPage: charadex.sheet.pages.resources,
   sitePage: 'resources',
   dexSelector: 'charadex',
-  profileProperty: 'resource',
+  profileProperty: 'id',
 
   sort: {
     toggle: true,
@@ -744,8 +736,8 @@ charadex.page.resources = {
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Resource Type',
-    parameters: charadex.sheet.options.resourceTypes,
+    folderProperty: 'Type',
+    parameters: ['All',  'Blinkie', 'GIF', 'Illustration', 'Phone Wallpaper', 'Pattern', 'Photo', 'Ribbon', 'Pixel', 'Base', 'PNG', 'Icon', 'Stamp', 'Texture', 'Emoji', 'Sticker', 'Moodboard', 'Palette', 'Divider', 'Flag', 'Art Fight', 'Animal Jam', 'Minecraft', 'Pokémon', 'Tone Indicator', 'Disability', 'Jovalan']
   },
 
   search: {
@@ -787,8 +779,8 @@ charadex.page.characters = {
   filters: {
     toggle: true,
     parameters: {
-      'Design Type': charadex.sheet.options.designTypes,
-      'Trade Status': charadex.sheet.options.statuses,
+      'Design Type': ['All', 'Original Character', 'Fan Character', 'Original Species', 'Kinsona'],
+      'Trade Status': ['All', 'FH', 'NFS/T/O'],
     }
   },
 
@@ -801,7 +793,7 @@ charadex.page.characters = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Name', 'Designer', 'Artist']
+    parameters: ['All', 'Name', 'ID', 'Designer', 'Artist']
   },
 
   prevNext: {
