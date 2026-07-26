@@ -46,37 +46,7 @@ document.getElementById('copyBtn').addEventListener('click', function() {
 });
 
 /* ==================================================================== */
-/* Open any linked collapses
-======================================================================= */
-document.addEventListener('DOMContentLoaded', () => {
-    // Grab the hash from the URL
-    const hash = window.location.hash;
-    
-    if (hash) {
-        // Find the trigger and the collapsible content (adjust selectors to your needs)
-        const trigger = document.querySelector(`a[href="${hash}"]`);
-        const targetElement = document.querySelector(hash);
-
-        if (trigger && targetElement) {
-            // Add 'active' class to the trigger
-            trigger.classList.add('active');
-            
-            // If using standard JS/CSS collapses
-            targetElement.classList.add('show'); 
-            
-            // If using Bootstrap (e.g., v5.3), initialize and show it
-            if (typeof bootstrap !== 'undefined') {
-                const bsCollapse = new bootstrap.Collapse(targetElement, {
-                    toggle: false
-                });
-                bsCollapse.show();
-            }
-        }
-    }
-});
-
-/* ==================================================================== */
-/* Open any linked nav links
+/* 1. Handle URL Hashes for Tabs / Pills
 ======================================================================= */
 $(document).ready(function () {
   var hash = window.location.hash;
@@ -85,13 +55,36 @@ $(document).ready(function () {
     var $targetPane = $(hash);
 
     if ($targetTab.length && $targetPane.length) {
-      // 1. Deactivate all tabs and hide all panes in the group
       $targetTab.closest('.nav').find('.nav-link, a').removeClass('active').attr('aria-selected', 'false');
       $targetPane.siblings('.tab-pane').removeClass('active show');
 
-      // 2. Activate the correct tab link and pane
       $targetTab.addClass('active').attr('aria-selected', 'true');
       $targetPane.addClass('active show');
+    }
+  }
+});
+
+/* ==================================================================== */
+/* 2. Handle URL Hashes for Collapses (Accordions/Cards)
+======================================================================= */
+document.addEventListener('DOMContentLoaded', () => {
+  const hash = window.location.hash;
+  
+  if (hash) {
+    const trigger = document.querySelector(`a[href="${hash}"]`);
+    const targetElement = document.querySelector(hash);
+
+    // Make sure this target is actually a collapse element before running collapse logic
+    if (trigger && targetElement && targetElement.classList.contains('collapse')) {
+      trigger.classList.add('active');
+      targetElement.classList.add('show');
+      
+      if (typeof bootstrap !== 'undefined') {
+        const bsCollapse = new bootstrap.Collapse(targetElement, {
+          toggle: false
+        });
+        bsCollapse.show();
+      }
     }
   }
 });
