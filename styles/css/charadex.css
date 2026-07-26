@@ -997,43 +997,24 @@ p:last-child {
   }
 }
 
-/* ============================================================= */
-/* Old Portfolio
-/* ============================================================= */
-.portfolio-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 16px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.portfolio-gallery-item {
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-gallery-item img {
-  min-width: 100%;
-  max-height: 250px;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.portfolio-gallery-item img:hover {
-  transform: scale(1.05);
-}
-
-@media only screen and (max-width: 600px) {
-  .portfolio-gallery {
-    width: 100%;
-  }
-}
 
 /* ============================================================= */
-/* Old Portfolio
+/* Tags Toggle
+/* ============================================================= */
+/* Enable transitions for the Font Awesome icon */
+.display-tags {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate the icon 90 degrees when the collapse is open */
+button[aria-expanded="true"] .display-tags {
+    transform: rotate(90deg);
+}
+
+
+/* ============================================================= */
+/* Portfolio
 /* ============================================================= */
 @media only screen and (max-width: 600px) {
   .portfolio-tab-item {
@@ -1048,6 +1029,7 @@ p:last-child {
     font-size: 12px;
   }
 }
+
 
 /* ============================================================= */
 /* Compatibility
