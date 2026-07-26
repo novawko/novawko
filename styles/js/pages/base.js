@@ -29,6 +29,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+
+/* ==================================================================== */
+/* Copy to Clipboard
+======================================================================= */
+document.getElementById('copyBtn').addEventListener('click', function() {
+    // 1. Retrieve the text directly from the data attribute
+    const textToCopy = this.getAttribute('data-copy-text');
+    
+    // 2. Write to the system clipboard
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        alert("Copied successfully!");
+    }).catch(err => {
+        console.error("Failed to copy text: ", err);
+    });
+});
+
 /* ==================================================================== */
 /* Open any linked collapses
 ======================================================================= */
