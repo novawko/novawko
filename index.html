@@ -60,38 +60,38 @@
                <div class="container-fluid px-0">
                   <div class="card p-2" style="border-radius:0px">
                      <!-- Banner -->
-                     <div class="py-2 rounded-0" style="background: url(https://img-l.ink/img/1xviDgW-Pl1riOWLeHiiZvRNjQ-l0XWmH.png) center; background-size:15%;">
+                     <div class="py-2 rounded-0" style="background: url(https://img-l.ink/img/1xviDgW-Pl1riOWLeHiiZvRNjQ-l0XWmH.png) center; background-size:15%; border-radius: 1rem 1rem 0 0 !important;">
                         <!-- Bullhorn, DM, Bookmark, Share -->
                         <div class="m-5 p-1"></div>
                      </div>
                      <div class="bg-faded px-3 rounded-0 h-100">
                         <div class="pt-4" align="center">
-                           <ul class="nav nav-pills pull-right">
+                           <ul class="nav nav-pills" style="float: right;">
                               <!-- Item -->
                               <li class="nav-item">
-                                 <a class="nav-link btn btn-outline-primary mx-1" style="border-radius:25px" href="/news"><i class="fa-solid fa-bullhorn"></i></a>
+                                 <a class="nav-link btn btn-outline-info mx-1" style="border-radius:25px" href="/news"><i class="fa-solid fa-bullhorn"></i></a>
                               </li>
                               <!-- Item -->
                               <li class="nav-item">
-                                 <a class="nav-link btn btn-outline-primary mx-1" style="border-radius:25px" href="mailto:novawko@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                                 <a class="nav-link btn btn-outline-info mx-1" style="border-radius:25px" href="mailto:novawko@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                               </li>
                               <!-- Item -->
                               <li class="nav-item">
-                                 <a class="nav-link btn btn-outline-primary mx-1" style="border-radius:25px" href="/bookmarks"><i class="fa-solid fa-bookmark"></i></a>
+                                 <a class="nav-link btn btn-outline-info mx-1" style="border-radius:25px" href="/bookmarks"><i class="fa-solid fa-bookmark"></i></a>
                               </li>
                               <!-- Item -->
-                              <button type="button" class="nav-link btn btn-outline-primary mx-1" style="border-radius:25px;" id="copyBtn" data-copy-text="https://novawko.com/">
+                              <button type="button" class="nav-link btn btn-outline-info mx-1" style="border-radius:25px;" id="copyBtn" data-copy-text="https://novawko.com/">
                               <i class="fa-solid fa-share-from-square"></i>
                               </button>
                            </ul>
                            <!-- Icon -->
-                           <img src="https://img-l.ink/img/1uhUfBray_4Vznd30ID8s5MBIlhvqAF_K.png" class="bg-faded p-1 pull-left" style="max-width: 110px; max-height: 110px; margin-top: -80px; border-radius: 100% !important;">
+                           <img src="https://img-l.ink/img/1uhUfBray_4Vznd30ID8s5MBIlhvqAF_K.png" class="bg-faded p-1" style="float: left; max-width: 110px; max-height: 110px; margin-top: -80px; border-radius: 100% !important;">
                         </div>
                      </div>
                      <!-- Description -->
                      <div class="row no-gutters">
                         <div class="col">
-                           <div class="card bg-faded border-0 px-4 py-2" align="left" style="border-radius: 0px;">
+                           <div class="card bg-faded px-4 py-2" style="border: none !important; border-radius: 0px;">
                               <!-- Display Name -->
                               <h3 style="line-height:5px;">Nova Wolfcreek <i class="fa-solid fa-shield-cat" style="line-height:5px;"></i></h3>
                               <!-- Username -->
@@ -116,26 +116,26 @@
                         </div>
                      </div>
                      <!-- Tabs -->
-                     <div class="card pb-2 px-2 border-left-0 border-right-0 border-top-0 bg-faded">
+                     <div class="pb-2 px-2 bg-faded" style="border-bottom: 1px solid;">
                         <ul class="nav nav-pills nav-justified" id="twittertablist" role="tablist">
-                           <li class="nav-item"><a class="nav-link active" data-toggle="pill" style="border-radius:0px" href="#posts" role="tab">Posts</a></li>
-                           <li class="nav-item"><a class="nav-link" data-toggle="pill" style="border-radius:0px" href="#media" role="tab">Media</a></li>
-                           <li class="nav-item"><a class="nav-link" data-toggle="pill" style="border-radius:0px" href="#characters" role="tab">Characters</a></li>
-                           <li class="nav-item"><a class="nav-link" data-toggle="pill" style="border-radius:0px" href="#updates" role="tab">Updates</a></li>
+                           <li class="nav-item"><a class="nav-link active" data-toggle="pill" style="border-radius:0px" href="#recentposts" role="tab">Posts</a></li>
+                           <li class="nav-item"><a class="nav-link" data-toggle="pill" style="border-radius:0px" href="#recentart" role="tab">Media</a></li>
+                           <li class="nav-item"><a class="nav-link" data-toggle="pill" style="border-radius:0px" href="#recentcharacters" role="tab">Characters</a></li>
+                           <li class="nav-item"><a class="nav-link" data-toggle="pill" style="border-radius:0px" href="#recentupdates" role="tab">Updates</a></li>
                         </ul>
                      </div>
                      <!-- Posts
                      -------------------------------------------------->
                      <div class="tab-content bg-faded" style="overflow:auto;height:350px;" align="left">
-                        <div class="tab-pane fade show active" id="posts" role="tabpanel">
+                        <div class="tab-pane fade show active" id="recentposts" role="tabpanel">
                            <!-- Pinned Post -->
-                           <div class="card pr-2 pl-2 pb-2 px-3 bg-faded border-top-0 border-left-0 border-right-0">
+                           <div class="card pr-2 pl-2 pb-2 px-3 bg-faded" style="border-bottom: 1px solid;">
                               <div class="row no-gutters">
                                  <div class="col ml-1"><sub class="text-muted ml-5 mb-1"><i class="fa-solid fa-thumbtack"></i> Pinned Post</sub></div>
                               </div>
                               <div class="row">
                                  <div class="col-sm-1">
-                                    <img src="https://img-l.ink/img/1uhUfBray_4Vznd30ID8s5MBIlhvqAF_K.png" class="fr-rounded bg-faded p-1 pull-left" style="max-width: 60px; max-height: 60px;">
+                                    <img src="https://img-l.ink/img/1uhUfBray_4Vznd30ID8s5MBIlhvqAF_K.png" class="bg-faded p-1" style="float: left; border-radius: 100%; max-width: 60px; max-height: 60px;">
                                  </div>
                                  <div class="col ml-3">
                                     <div class="posts-info d-inline-flex">
@@ -155,28 +155,28 @@
                               </div>
                            </div>
                            <!-- Posts -->
-                           <div id="announcement-gallery" class="card pr-2 pl-2 pb-2 px-3 bg-faded border-top-0 border-left-0 border-right-0">
+                           <div id="announcement-gallery" class="card pr-2 pl-2 pb-2 px-3 bg-faded" style="border-bottom: 1px solid;">
                               <div class="announcement-list softload"></div>
                            </div>
                         </div>
                         <!-- Media
                         -------------------------------------------------->
-                        <div class="tab-pane fade" id="media" role="tabpanel">
-                           <div id="artwork-gallery">
+                        <div class="tab-pane fade" id="recentart" role="tabpanel">
+                           <div id="artwork-gallery" class="card pr-2 pl-2 pb-2 px-3 bg-faded" style="border-bottom: 1px solid;">
                               <div class="artwork-list softload"></div>
                            </div>
                         </div>
                         <!-- Characters
                         -------------------------------------------------->
-                        <div class="tab-pane fade" id="characters" role="tabpanel">
-                           <div id="design-gallery">
+                        <div class="tab-pane fade" id="recentcharacters" role="tabpanel">
+                           <div id="design-gallery" class="card pr-2 pl-2 pb-2 px-3 bg-faded" style="border-bottom: 1px solid;">
                               <div class="design-list softload"></div>
                            </div>
                         </div>
                         <!-- Updates
                         -------------------------------------------------->
-                        <div class="tab-pane fade" id="updates" role="tabpanel">
-                           <div id="update-gallery">
+                        <div class="tab-pane fade" id="recentupdates" role="tabpanel">
+                           <div id="update-gallery" class="card pr-2 pl-2 pb-2 px-3 bg-faded" style="border-bottom: 1px solid;">
                               <div class="update-list softload"></div>
                            </div>
                         </div>
@@ -195,13 +195,13 @@
       <-- Do not remove 'display:none;'
       <-------------------------------------------------------------------- -->
       <div style="display:none;">
-         <!-- Feed
+         <!-- Posts
          <!-- --------------------------------------------------------------- -->
-         <div id="announcement-gallery-item" class="card pr-2 pl-2 pb-2 px-3 bg-faded border-top-0 border-left-0 border-right-0">
+         <div id="announcement-gallery-item" class="card pr-2 pl-2 pb-2 px-3 bg-faded" style="border-bottom: 1px solid;">
             <div class="row no-gutters mt-2"></div>
             <div class="row">
                <div class="col-sm-1">
-                  <img src="https://img-l.ink/img/1uhUfBray_4Vznd30ID8s5MBIlhvqAF_K.png" class="fr-rounded bg-faded p-1 pull-left" style="max-width: 60px; max-height: 60px;">
+                  <img src="https://img-l.ink/img/1uhUfBray_4Vznd30ID8s5MBIlhvqAF_K.png" class="bg-faded p-1" style="float: left; border-radius: 100% !important; max-width: 60px; max-height: 60px;">
                </div>
                <div class="col ml-3">
                   <div class="posts-info d-inline-flex">
@@ -221,11 +221,11 @@
          </div>
          <!-- Artwork
          <!-- --------------------------------------------------------------- -->
-         <div id="artwork-gallery-item" class="card pr-2 pl-2 pb-2 px-3 bg-faded border-top-0 border-left-0 border-right-0">
+         <div id="artwork-gallery-item" class="card pr-2 pl-2 pb-2 px-3 bg-faded" style="border-bottom: 1px solid;">
             <div class="row no-gutters mt-2"></div>
             <div class="row">
                <div class="col-sm-1">
-                  <img src="https://img-l.ink/img/1uhUfBray_4Vznd30ID8s5MBIlhvqAF_K.png" class="fr-rounded bg-faded p-1 pull-left" style="max-width: 60px; max-height: 60px;">
+                  <img src="https://img-l.ink/img/1uhUfBray_4Vznd30ID8s5MBIlhvqAF_K.png" class="bg-faded p-1" style="float: left; border-radius: 100% !important; max-width: 60px; max-height: 60px;">
                </div>
                <div class="col ml-3">
                   <div class="posts-info d-inline-flex">
@@ -251,11 +251,11 @@
          </div>
          <!-- Characters
          <!-- --------------------------------------------------------------- -->
-         <div id="design-gallery-item" class="card pr-2 pl-2 pb-2 px-3 bg-faded border-top-0 border-left-0 border-right-0">
+         <div id="design-gallery-item" class="card pr-2 pl-2 pb-2 px-3 bg-faded" style="border-bottom: 1px solid;">
             <div class="row no-gutters mt-2"></div>
             <div class="row">
                <div class="col-sm-1">
-                  <img src="https://img-l.ink/img/1uhUfBray_4Vznd30ID8s5MBIlhvqAF_K.png" class="fr-rounded bg-faded p-1 pull-left" style="max-width: 60px; max-height: 60px;">
+                  <img src="https://img-l.ink/img/1uhUfBray_4Vznd30ID8s5MBIlhvqAF_K.png" class="bg-faded p-1" style="float: left; border-radius: 100% !important; max-width: 60px; max-height: 60px;">
                </div>
                <div class="col ml-3">
                   <div class="posts-info d-inline-flex">
@@ -265,7 +265,6 @@
                   <div class="container mt-2">
                      <div class="row no-gutters" style="margin-left:-15px">
                         <div class="col mr-1">
-                           <span class="cw"></span>
                            <div class="image img-fluid" src="" style="object-fit:cover;background-repeat:no-repeat;height:190px"></div>
                         </div>
                      </div>
@@ -281,11 +280,11 @@
          </div>
          <!-- Updates
          <!-- --------------------------------------------------------------- -->
-         <div id="update-gallery-item" class="card pr-2 pl-2 pb-2 px-3 bg-faded border-top-0 border-left-0 border-right-0">
+         <div id="update-gallery-item" class="card pr-2 pl-2 pb-2 px-3 bg-faded" style="border-bottom: 1px solid;">
             <div class="row no-gutters mt-2"></div>
             <div class="row">
                <div class="col-sm-1">
-                  <img src="https://img-l.ink/img/1YK2DAfTPUOAF2AxcbBOFyGBpuEPOuVU8.png" class="fr-rounded bg-faded p-1 pull-left" style="max-width: 60px; max-height: 60px;">
+                  <img src="https://img-l.ink/img/1YK2DAfTPUOAF2AxcbBOFyGBpuEPOuVU8.png" class="bg-faded p-1" style="float: left; border-radius: 100% !important; max-width: 60px; max-height: 60px;">
                </div>
                <div class="col ml-3">
                   <div class="posts-info d-inline-flex">
@@ -298,7 +297,7 @@
                      <div class="col"><span class="text-muted"><i class="fa-solid fa-comment"></i> 0</span></div>
                      <div class="col"><span class="text-muted"><i class="fa-solid fa-retweet"></i> 0</span></div>
                      <div class="col"><span class="text-muted"><i class="fa-solid fa-heart"></i> 0</span></div>
-                     <div class="col"><a class="text-muted profilelink" href="/updates"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                     <div class="col"><a class="text-muted" href="/updates"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
                   </div>
                </div>
             </div>
