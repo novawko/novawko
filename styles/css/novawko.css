@@ -170,12 +170,12 @@ button[aria-expanded="true"] .display-tags {
 /* Compatibility Badges
 /* ============================================================= */
 
-.badge-mobilefriendly {
+.badge.badge-mobilefriendly {
   background-color: var(--cd-compatibility-mobilefriendly-bg) !important;
   color: var(--cd-compatibility-mobilefriendly-txt) !important;
 }
 
-.badge-browseronly {
+.badge.badge-browseronly {
   background-color: var(--cd-compatibility-browseronly-bg) !important;
   color: var(--cd-compatibility-browseronly-txt) !important;
 }
@@ -185,17 +185,17 @@ button[aria-expanded="true"] .display-tags {
 /* Code Type Badges
 /* ============================================================= */
 
-.badge-html {
+.badge.badge-html {
   background-color: var(--cd-codetype-html-bg) !important;
   color: var(--cd-codetype-html-txt) !important;
 }
 
-.badge-css {
+.badge.badge-css {
   background-color: var(--cd-codetype-css-bg) !important;
   color: var(--cd-codetype-css-txt) !important;
 }
 
-.badge-js {
+.badge.badge-js {
   background-color: var(--cd-codetype-js-bg) !important;
   color: var(--cd-codetype-js-txt) !important;
 }
