@@ -46,7 +46,7 @@ document.getElementById('copyBtn').addEventListener('click', function() {
 });
 
 /* ==================================================================== */
-/* 1. Handle URL Hashes for Tabs / Pills
+/* Handle URL Hashes for Tabs/Pills
 ======================================================================= */
 $(document).ready(function () {
   var hash = window.location.hash;
@@ -65,7 +65,7 @@ $(document).ready(function () {
 });
 
 /* ==================================================================== */
-/* 2. Handle URL Hashes for Collapses (Accordions/Cards)
+/* Handle URL Hashes for Collapses (Accordions/Cards)
 ======================================================================= */
 document.addEventListener('DOMContentLoaded', () => {
   const hash = window.location.hash;
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-  // 4. Smooth scroll back to the top on click
+  // 4. Scroll back to the top on click
   topBtn.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
@@ -141,15 +141,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
-/* ==================================================================== */
-/* Pop-Up
-======================================================================= */
-  const closeBtn = document.getElementById('close');
-  const modalMenu = document.getElementById('modal');
-
-  setTimeout(() => {
-      modalMenu.classList.add('show');
-  }, 500);
-
-  closeBtn.addEventListener('click', () => { modalMenu.classList.remove('show') });
