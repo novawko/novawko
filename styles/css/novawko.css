@@ -142,17 +142,6 @@ button[aria-expanded="true"] .display-tags {
 
 
 /* ============================================================= */
-/* Compatibilites
-/* ============================================================= */
-
-  --cd-compatibility-mobilefriendly-bg: #69b34e;
-  --cd-compatibility-mobilefriendly-txt: #fcf4ed;
-
-  --cd-compatibility-browseronly-bg: #e0bb68;
-  --cd-compatibility-browseronly-txt: var(--cd-compatibility-mobilefriendly-txt);
-
-
-/* ============================================================= */
 /* Code Types
 /* ============================================================= */
 
@@ -164,21 +153,6 @@ button[aria-expanded="true"] .display-tags {
 
   --cd-codetype-js-bg: #b3704e;
   --cd-codetype-js-txt: var(--cd-codetype-html-txt);
-
-
-/* ============================================================= */
-/* Compatibility Badges
-/* ============================================================= */
-
-.badge.badge-mobilefriendly {
-  background-color: var(--cd-compatibility-mobilefriendly-bg) !important;
-  color: var(--cd-compatibility-mobilefriendly-txt) !important;
-}
-
-.badge.badge-browseronly {
-  background-color: var(--cd-compatibility-browseronly-bg) !important;
-  color: var(--cd-compatibility-browseronly-txt) !important;
-}
 
 
 /* ============================================================= */
