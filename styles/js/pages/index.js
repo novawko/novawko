@@ -50,6 +50,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Splice the silly little array
   let sliceAmount = charadex.page.index.changelog.amount || 20;
   arr.splice(sliceAmount, arr.length);
+
+  // Reverse the thing
+  let revisions = arr.reverse();
     
   });
 
@@ -59,16 +62,3 @@ document.addEventListener("DOMContentLoaded", async () => {
   charadex.tools.loadPage('.softload', 100);
 
 });
-
-
-/* ==================================================================== */
-/* Pop-Up
-======================================================================= */
-  const closeBtn = document.getElementById('close');
-  const modalMenu = document.getElementById('modal');
-
-  setTimeout(() => {
-      modalMenu.classList.add('show');
-  }, 500);
-
-  closeBtn.addEventListener('click', () => { modalMenu.classList.remove('show') });
