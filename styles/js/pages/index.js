@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let announcements = await charadex.initialize.page(null, charadex.page.index.news, (arr) => {
 
   // Splice the silly little array
-  let sliceAmount = charadex.page.index.news.amount || 12;
+  let sliceAmount = charadex.page.index.news.amount || 10;
   arr.splice(sliceAmount, arr.length); 
       
   });
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let artwork = await charadex.initialize.page(null, charadex.page.index.art, (arr) => {
 
   // Splice the silly little array
-  let sliceAmount = charadex.page.index.art.amount || 14;
+  let sliceAmount = charadex.page.index.art.amount || 10;
   arr.splice(sliceAmount, arr.length); 
       
   });
@@ -34,10 +34,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /* Characters
   ===================================================================== */
-  let designs = await charadex.initialize.page(null, charadex.page.index.ocs, (arr) => {
+  let designs = await charadex.initialize.page(null, charadex.page.index.designs, (arr) => {
 
   // Splice the silly little array
-  let sliceAmount = charadex.page.index.ocs.amount || 10;
+  let sliceAmount = charadex.page.index.designs.amount || 10;
   arr.splice(sliceAmount, arr.length);
     
   });
@@ -45,14 +45,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /* Updates
   ===================================================================== */
-  let revisions = await charadex.initialize.page(null, charadex.page.index.changelog, (arr) => {
+  let updates = await charadex.initialize.page(null, charadex.page.index.updates, (arr) => {
 
   // Splice the silly little array
-  let sliceAmount = charadex.page.index.changelog.amount || 20;
+  let sliceAmount = charadex.page.index.updates.amount || 10;
   arr.splice(sliceAmount, arr.length);
 
   // Reverse the thing
-  let revisions = arr.reverse();
+  let updates = arr.reverse();
     
   });
 
