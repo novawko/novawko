@@ -446,12 +446,12 @@ a:active {
 }
 
 .card-header {
-  background-color: var(--cd-card-header-background-color) !important;
-  border-bottom-color: var(--cd-card-border-color) !important;
+  background-color: var(--cd-card-header-background-color);
+  border-bottom-color: var(--cd-card-border-color);
   border-bottom-width: var(--cd-card-border-width) !important;
-  border-bottom-style: var(--cd-card-border-style) !important;
+  border-bottom-style: var(--cd-card-border-style);
   font-family: var(--cd-card-header-font-family) !important;
-  border-radius: calc(var(--cd-border-radius) - 1px) calc(var(--cd-border-radius) - 1px) 0 0 !important;
+  border-radius: calc(var(--cd-border-radius) - 1px) calc(var(--cd-border-radius) - 1px) 0 0;
 }
 
 .card-footer {
