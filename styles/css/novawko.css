@@ -171,13 +171,13 @@ button[aria-expanded="true"] .display-tags {
 /* ============================================================= */
 
 .badge-mobilefriendly {
-  background-color: var(--cd-compatibility-mobilefriendly-bg);
-  color: var(--cd-compatibility-mobilefriendly-txt);
+  background-color: var(--cd-compatibility-mobilefriendly-bg) !important;
+  color: var(--cd-compatibility-mobilefriendly-txt) !important;
 }
 
 .badge-browseronly {
-  background-color: var(--cd-compatibility-browseronly-bg);
-  color: var(--cd-compatibility-browseronly-txt);
+  background-color: var(--cd-compatibility-browseronly-bg) !important;
+  color: var(--cd-compatibility-browseronly-txt) !important;
 }
 
 
@@ -186,18 +186,18 @@ button[aria-expanded="true"] .display-tags {
 /* ============================================================= */
 
 .badge-html {
-  background-color: var(--cd-codetype-html-bg);
-  color: var(--cd-codetype-html-txt);
+  background-color: var(--cd-codetype-html-bg) !important;
+  color: var(--cd-codetype-html-txt) !important;
 }
 
 .badge-css {
-  background-color: var(--cd-codetype-css-bg);
-  color: var(--cd-codetype-css-txt);
+  background-color: var(--cd-codetype-css-bg) !important;
+  color: var(--cd-codetype-css-txt) !important;
 }
 
 .badge-js {
-  background-color: var(--cd-codetype-js-bg);
-  color: var(--cd-codetype-js-txt);
+  background-color: var(--cd-codetype-js-bg) !important;
+  color: var(--cd-codetype-js-txt) !important;
 }
 
 
