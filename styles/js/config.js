@@ -877,25 +877,25 @@ charadex.page.index = {
   news: {
     ... charadex.page.news,
     dexSelector: 'announcement',
-    amount: 12,
+    amount: 10,
   },
 
   art: {
     ... charadex.page.imageGallery,
     dexSelector: 'artwork',
-    amount: 14,
+    amount: 10,
   },
 
-  ocs: {
+  designs: {
     ... charadex.page.characters,
     dexSelector: 'design',
     amount: 10,
   },
 
-  changelog: {
+  updates: {
     ... charadex.page.updates,
-    dexSelector: 'revision',
-    amount: 20,
+    dexSelector: 'update',
+    amount: 10,
   },
 
 };
