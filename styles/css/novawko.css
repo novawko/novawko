@@ -1,0 +1,523 @@
+/* ============================================================= */
+/*
+/* Nova's Tweaks
+/*
+/* ============================================================= */
+/* 
+/* This only styles my site exclusively.
+/* 
+/* I publicly share codes based on my entire site.
+/* However, I code in advance and try my best to provide clear
+/* instructions in every code I share.
+/*
+/* Please refrain on inspecting my code because excessive
+/* knowledge is required if you're trying to mimic my site.
+/*
+/* ============================================================= */
+/* General Styles
+/* ============================================================= */
+
+/* Sidebar Icon */
+.dumb:hover .dumbie {
+  opacity: 1;
+}
+
+.dumb:focus,
+.dumb:active,
+.dumb:hover {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Sticky Sidebar */
+#sidebar {
+  max-width: 300px;
+  height: 400vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+}
+
+/* Remove the broken image icons when no image data has been put */
+img[src=""] {
+  display: none;
+}
+
+/* Remove default primary BS color */
+.btn-outline-primary, .btn-outline-primary:hover, .btn-outline-primary:active {
+  border-color: var(--cd-primary-color) !important;
+}
+
+/* Tab Pane Active Fix */
+.tab-pane.active {
+  display: block !important;
+}
+
+/* Twitter Pills */
+.twitterpill-item {
+  border-color: #8FB7D4;
+  color: #8FB7D4 !important;
+}
+
+.twitterpill-item:hover {
+  border-color: #8FB7D4;
+  color: #fff !important;
+  background-color: #8FB7D4;
+}
+
+/* Disabled Links */
+.disabled-link {
+  pointer-events: none;
+  cursor: default;
+  color: #888888 !important;
+  text-decoration: none;
+}
+
+/* Secret Disabled Buttons */
+.secret-disabled-button {
+  pointer-events: none;
+  cursor: default;
+  transition: none !important;
+  background-color: var(--cd-button-background-color) !important;
+  color: var(--cd-button-text-color) !important;
+}
+
+/* Permissions */
+.cd-permissions-scroll {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Prompts */
+.cd-prompt-background {
+  background-position: center;
+  background-size: contain;
+  background-repeat:no-repeat;
+  min-height: 200px;
+}
+
+/* Prompts Individual Profiles */
+.cd-mewwo-background {
+  background-position: center;
+  background-size: 200px;
+  min-height: 500px;
+}
+
+
+/* ============================================================= */
+/* Tags Toggle
+/* ============================================================= */
+
+/* Enable transitions for the Font Awesome icon */
+.display-tags {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate the icon 90 degrees when the collapse is open */
+button[aria-expanded="true"] .display-tags {
+    transform: rotate(90deg);
+}
+
+
+/* ============================================================= */
+/* Portfolio
+/* ============================================================= */
+
+@media only screen and (max-width: 600px) {
+  .portfolio-tab-item {
+    margin-left: 0.313rem !important;
+    margin-right: 0.313rem !important;
+  }
+
+  .portfolio-tab-image {
+    height: 50px !important;
+    width: 50px !important;
+  }
+
+  .portfolio-tab-item p {
+    font-size: 12px;
+  }
+}
+
+
+/* ============================================================= */
+/* Compatibilites
+/* ============================================================= */
+
+  --cd-compatibility-mobilefriendly-bg: #69b34e;
+  --cd-compatibility-mobilefriendly-txt: #fcf4ed;
+
+  --cd-compatibility-browseronly-bg: #e0bb68;
+  --cd-compatibility-browseronly-txt: var(--cd-compatibility-mobilefriendly-txt);
+
+
+/* ============================================================= */
+/* Code Types
+/* ============================================================= */
+
+  --cd-codetype-html-bg: #4eaeb3;
+  --cd-codetype-html-txt: #fcf4ed;
+
+  --cd-codetype-css-bg: #b34e9d;
+  --cd-codetype-css-txt: var(--cd-codetype-html-txt);
+
+  --cd-codetype-js-bg: #b3704e;
+  --cd-codetype-js-txt: var(--cd-codetype-html-txt);
+
+
+/* ============================================================= */
+/* Compatibility Badges
+/* ============================================================= */
+
+.badge-mobilefriendly {
+  background-color: var(--cd-compatibility-mobilefriendly-bg);
+  color: var(--cd-compatibility-mobilefriendly-txt);
+}
+
+.badge-browseronly {
+  background-color: var(--cd-compatibility-browseronly-bg);
+  color: var(--cd-compatibility-browseronly-txt);
+}
+
+
+/* ============================================================= */
+/* Code Type Badges
+/* ============================================================= */
+
+.badge-html {
+  background-color: var(--cd-codetype-html-bg);
+  color: var(--cd-codetype-html-txt);
+}
+
+.badge-css {
+  background-color: var(--cd-codetype-css-bg);
+  color: var(--cd-codetype-css-txt);
+}
+
+.badge-js {
+  background-color: var(--cd-codetype-js-bg);
+  color: var(--cd-codetype-js-txt);
+}
+
+
+/* ============================================================= */
+/* Commission Gallery
+/* ============================================================= */
+
+.commission-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.commission-gallery-item {
+  flex: 1 1 calc(33.333% - 5px);
+}
+
+.commission-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  aspect-ratio: 1 / 1;
+}
+
+
+/* ============================================================= */
+/* Fancy Fonts
+/* ============================================================= */
+
+.kalnia-glaze-dirt {
+	font-family: "Kalnia Glaze", serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+
+.honk-brand {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+
+
+/* ============================================================= */
+/* Phones
+/* ============================================================= */
+@media only screen and (max-width: 600px) {
+
+  #commissionspage_title, #bookmarkspage_title, #privacy_title, #todopage_title, #tonetagsmasterlist_title, #tonetags_title, #statuses_title {
+  font-size: 2.5rem !important;
+  }
+
+  .dumb {
+  position: relative;
+  overflow: hidden;
+  border: none !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 210px;
+  height: 210px;
+}
+
+  .twitterpill-item {
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+  }
+
+  .dumbie {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 210px;
+  height: 210px;
+  border-radius: 1rem;
+  background-color: rgba(217, 180, 255, 0.52);
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+  pointer-events: none !important;
+}
+
+  #crazy {
+  display: flex;
+  gap: 0.625rem;
+  }
+
+  #awesome {
+    display: flex;
+    gap: 0.625rem;
+  }
+
+  #wonkyheart {
+    position: absolute !important;
+    right: -30px !important;
+  }
+
+  #sidebar {
+  max-width: 500px;
+  position: static;
+  }
+
+  .cd-footer-contents {
+  display: none;
+  }
+
+  #sidebaricon {
+  max-width: 210px !important;
+  min-height: 210px !important;
+  line-height: 0;
+  font-size: 0;
+  }
+
+  #mewwo {
+  height: 50px !important;
+  }
+
+  #silly {
+  height: 100px !important;
+  }
+
+  #charadex-tags {
+  font-size: 12px;
+  }
+
+  .cd-mewwo-background {
+  min-height: 250px;
+  background-size: 100px;
+  }
+
+  #portfolio_header_icons, #portfolio_header {
+    font-size: 1.5rem;
+  }
+
+  .posts-info {
+      font-size: 12px;
+  }
+
+  .twitterpills {
+    margin-bottom: 0.75rem;
+  }
+
+  .character-card, .resource-card {
+    height: 150px !important;
+  }
+
+  .character-card img {
+    height: 150px !important;
+    object-fit: cover !important;
+  }
+
+  .resource-card img {
+    max-height: 150px !important;
+    object-fit: contain !important;
+  }
+
+  .character-list-container, .resource-list-container {
+    height: auto !important;
+  }
+
+}
+
+
+/* ============================================================= */
+/* Tablets & Medium-Sized Computers
+/* ============================================================= */
+
+@media (min-width: 768px) {
+  #main-container {
+    padding: 2rem 1.5rem;
+  }
+
+  #sidebaricon {
+  max-width: 120px !important;
+  min-height: 120px !important;
+  position: relative;
+  line-height: 0;
+  font-size: 0;
+  }
+
+  .dumb {
+  position: relative;
+  overflow: hidden;
+  border: none !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  height: 120px;
+  }
+
+  .coolio {
+    position: absolute !important;
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    width: 100% !important;
+    height: 100vh !important;
+    z-index: 99999 !important;
+    position: fixed !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+  
+  .dumbie {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 1rem;
+  background-color: rgba(217, 180, 255, 0.52);
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+  pointer-events: none !important;
+}
+
+  #log-gallery > div.log-list > div > div.col-md-9 > span > div {
+    margin-left: -200px;
+  }
+
+  #charadexnav > ul {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Codes Columns Fix */
+  #crazy {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+  }
+
+  .craziness {
+  max-width: 100%;
+  }
+
+  .hiss {
+  grid-column: 1 / -1;
+  }
+
+  /* Gallery Columns Fix */
+  #awesome {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+  }
+
+  .pawsitive {
+  max-width: 100%;
+  }
+
+  .purrfect {
+  grid-column: 1 / -1;
+  }
+
+}
+
+
+/* ============================================================= */
+/* Active Nav Pills
+/* ============================================================= */
+
+/* Primary Color */
+.nav-pills .nav-link.primary-pill.active, 
+.nav-pills .nav-link.primary-pill.show {
+  background-color: var(--cd-primary-color) !important;
+  color: var(--cd-primary-text-color) !important;
+}
+
+/* Secondary Color */
+.nav-pills .nav-link.secondary-pill.active, 
+.nav-pills .nav-link.secondary-pill.show {
+  background-color: var(--cd-secondary-color) !important;
+  color: var(--cd-secondary-text-color) !important;
+}
+
+
+/* ============================================================= */
+/* Mobile Only Sidebar
+/* ============================================================= */
+
+@media (max-width: 767.98px) {
+  .nav-mobile-menu {
+    background-color: #495057;
+    border: solid #000;
+    border-width: 0 0 2px;
+    width: 100%;
+    display: block;
+    padding: .5rem 1rem;
+    position: relative;
+    z-index: 9999;
+  }
+
+  .mobilesidebar {
+    z-index: 99999;
+    height: auto !important;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+  }
+
+  .mobilesidebar.show {
+    transform: translateX(0%);
+  }
+
+  #mobileSidebar {
+    position: fixed;
+    top: 5px;
+    box-shadow: 1px 1px 10px black;
+  }
+  
+  .mobilesidebar-close {
+      background: none;
+      border: none;
+      box-shadow: none !important;
+      outline: 0 !important;
+  }
+}
