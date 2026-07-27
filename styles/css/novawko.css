@@ -142,40 +142,6 @@ button[aria-expanded="true"] .display-tags {
 
 
 /* ============================================================= */
-/* Code Types
-/* ============================================================= */
-
-  --cd-codetype-html-bg: #4eaeb3;
-  --cd-codetype-html-txt: #fcf4ed;
-
-  --cd-codetype-css-bg: #b34e9d;
-  --cd-codetype-css-txt: var(--cd-codetype-html-txt);
-
-  --cd-codetype-js-bg: #b3704e;
-  --cd-codetype-js-txt: var(--cd-codetype-html-txt);
-
-
-/* ============================================================= */
-/* Code Type Badges
-/* ============================================================= */
-
-.badge.badge-html {
-  background-color: var(--cd-codetype-html-bg) !important;
-  color: var(--cd-codetype-html-txt) !important;
-}
-
-.badge.badge-css {
-  background-color: var(--cd-codetype-css-bg) !important;
-  color: var(--cd-codetype-css-txt) !important;
-}
-
-.badge.badge-js {
-  background-color: var(--cd-codetype-js-bg) !important;
-  color: var(--cd-codetype-js-txt) !important;
-}
-
-
-/* ============================================================= */
 /* Commission Gallery
 /* ============================================================= */
 
