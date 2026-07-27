@@ -1,588 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ----------------------------------------------------------------- -->
-    <!-- About Your Site                                                   -->
-    <!-- ----------------------------------------------------------------- -->
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
-    <title>Novawko | Jovalan RPG Tracker</title>
-    <meta name="title" content="Novawko | Jovalan RPG Tracker" />
-    <meta name="type" content="website" />
-    <meta name="url" content="https://novawko.com/jovalantracker" />
-    <meta property="og:image" content="https://novawko.com/assets/meta.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta name="theme-color" content="#FFB6C1">
-    <meta name="description" content="View Nova's RPG tracker for Jovalan. Helps keep track of their pets, quests, and inventory.">
-    <!-- No AI scraping directives -->
-    <meta name="robots" content="noai">
-    <meta name="robots" content="noimageai">
-    <!-- ----------------------------------------------------------------- -->
-    <!-- Styles                                                            -->
-    <!-- ----------------------------------------------------------------- -->
-    <!-- Bootstrap CSS -->
-    <!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
-    <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <!-- ----------------------------------------------------------------- -->
-    <!-- Optional Styles                                                   -->
-    <!-- ----------------------------------------------------------------- -->
-    <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500|Kalnia+Glaze:700" rel="stylesheet">
-  </head>
-  <body id="charadex-body">
-    <!-- --------------------------------------------------------------------
-    <-- Header
-    <-------------------------------------------------------------------- -->
-    <div class="load-html" id="header" data-source="includes/header.html"></div>
-    <div class="container" id="main-container">
-      <!-- --------------------------------------------------------------------
-      <-- Main List
-      <-------------------------------------------------------------------- -->
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- ----------------------------------------------------------------- -->
+   <!-- About Your Site                                                   -->
+   <!-- ----------------------------------------------------------------- -->
+   <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+   <title>Novawko | Jovalan RPG Tracker</title>
+   <meta name="title" content="Novawko | Jovalan RPG Tracker" />
+   <meta name="type" content="website" />
+   <meta name="url" content="https://novawko.com/jovalantracker" />
+   <meta property="og:image" content="https://novawko.com/assets/meta.png">
+   <meta property="og:image:type" content="image/png">
+   <meta property="og:image:width" content="1200">
+   <meta property="og:image:height" content="630">
+   <meta name="theme-color" content="#FFB6C1">
+   <meta name="description" content="View Nova's RPG tracker for Jovalan. Helps keep track of their pets, quests, and inventory.">
+   <!-- No AI scraping directives -->
+   <meta name="robots" content="noai">
+   <meta name="robots" content="noimageai">
+   <!-- ----------------------------------------------------------------- -->
+   <!-- Styles                                                            -->
+   <!-- ----------------------------------------------------------------- -->
+   <!-- Bootstrap CSS -->
+   <!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
+   <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+   <!-- Font Awesome Icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <!-- ----------------------------------------------------------------- -->
+   <!-- Optional Styles                                                   -->
+   <!-- ----------------------------------------------------------------- -->
+   <!-- Custom CSS -->
+   <link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
+   <link rel="stylesheet" type="text/css" href="styles/css/novawko.css">
+   <!-- Google Font -->
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500|Kalnia+Glaze:700|Honk:MORF@15&display=swap" rel="stylesheet">
+</head>
+<body id="charadex-body">
+   <!-- --------------------------------------------------------------------
+   <-- Header
+   <-------------------------------------------------------------------- -->
+   <div class="load-html" id="header" data-source="includes/header.html"></div>
+   <!-- --------------------------------------------------------------------
+   <-- Main Container
+   <-------------------------------------------------------------------- -->
+   <div class="container" id="main-container">
       <div class="row justify-content-center" style="max-width: 1800px;">
       <!-- --------------------------------------------------------------------
       <-- Sidebar
       <-------------------------------------------------------------------- -->
-      <div class="load-html" id="sidebar" data-source="includes/sidebar.html"></div>
-
-        <div class="col-md-8 mx-2 p-0">
-          <img class="img-fluid" src="https://img-l.ink/img/10t-reZQJjOPmTToBU8Gz5b30_jxBtAoC.png" style="border-radius: 1rem 1rem 0px 0px;">
-          <div class="bg-faded p-1" style="overflow: visible !important; border-radius: 0px 0px 1rem 1rem !important;">
-            <!--BUTTONS-->
-            <ul class="nav nav-pills nav-fill d-flex flex-wrap mb-1">
-              <li class="nav-item bg-faded m-1">
-                <a class="nav-link active btn btn-outline-info border-0 text-uppercase" style="letter-spacing:.35em;" data-toggle="pill" href="#inventory" role="tab">INVENTORY</a>
-              </li>
-              <li class="nav-item bg-faded m-1">
-                <a class="nav-link btn btn-outline-info border-0 text-uppercase" style="letter-spacing:.35em;" data-toggle="pill" href="#quests" role="tab">QUESTS</a>
-              </li>
-              <li class="nav-item bg-faded m-1">
-                <a class="nav-link btn btn-outline-info border-0 text-uppercase" style="letter-spacing:.35em;" data-toggle="pill" href="#pets" role="tab">PETS</a>
-              </li>
-              <li class="nav-item bg-faded m-1">
-                <a class="nav-link btn btn-outline-info border-0 text-uppercase" style="letter-spacing:.35em;" data-toggle="pill" href="#logs" role="tab">LOGS</a>
-              </li>
-            </ul>
-            <!--buttons end-->
-            <!--TAB CONTENT-->
-            <div class="tab-content">
-              <!--INVENTORY SECTION-->
-              <div class="tab-pane fade show active" id="inventory">
-                <div class="container-fluid" style="max-width:1500px;">
-                  <div class="row">
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1tZwIc2wKKiTEUnJNFalX-2k-f-yOv8b4.png">
+         <div class="load-html" id="sidebar" data-source="includes/sidebar.html"></div>
+      <!-- --------------------------------------------------------------------
+      <-- Main Content
+      <-------------------------------------------------------------------- -->
+         <div class="col-md-8 mx-2 p-0">
+            <img class="img-fluid" src="https://img-l.ink/img/10t-reZQJjOPmTToBU8Gz5b30_jxBtAoC.png" style="border-radius: 1rem 1rem 0px 0px;">
+            <div class="bg-faded p-1" style="overflow: visible !important; border-radius: 0px 0px 1rem 1rem !important;">
+               <!-- Buttons -->
+               <ul class="nav nav-pills nav-fill d-flex flex-wrap mb-1">
+                  <li class="nav-item bg-faded m-1">
+                     <a class="nav-link active btn btn-outline-info border-0 text-uppercase" style="letter-spacing:.35em;" data-toggle="pill" href="#inventory" role="tab">INVENTORY</a>
+                  </li>
+                  <li class="nav-item bg-faded m-1">
+                     <a class="nav-link btn btn-outline-info border-0 text-uppercase" style="letter-spacing:.35em;" data-toggle="pill" href="#quests" role="tab">QUESTS</a>
+                  </li>
+                  <li class="nav-item bg-faded m-1">
+                     <a class="nav-link btn btn-outline-info border-0 text-uppercase" style="letter-spacing:.35em;" data-toggle="pill" href="#pets" role="tab">PETS</a>
+                  </li>
+                  <li class="nav-item bg-faded m-1">
+                     <a class="nav-link btn btn-outline-info border-0 text-uppercase" style="letter-spacing:.35em;" data-toggle="pill" href="#logs" role="tab">LOGS</a>
+                  </li>
+               </ul>
+               <!-- Tab Content -->
+               <div class="tab-content">
+                  <!-- Inventory -->
+                  <div class="tab-pane fade show active" id="inventory">
+                     <div class="container-fluid" style="max-width:1500px;">
+                        <div class="row">
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image-->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1tZwIc2wKKiTEUnJNFalX-2k-f-yOv8b4.png">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Coral</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x2,173,316</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image -->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1nfDsAPr2OulDZWwDRToTYli3Uz1Hi74v.png">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Snail</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x1</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image -->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1BD910djjWKoDwuisFG0vBoNsv48zQ5y3.png">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Hollow Pumpkin</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x50</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image-->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1o8wfQK6-CZqDY_DaPA4XikkW43gWCGKB.png">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Kumiyaa Upgrade</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x1</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Item-->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image -->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1sG8iBVYVr6wi8H82ooaNU91m7ZlR7iNa.gif">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Kumiyaa MYO</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x1</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image -->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1Bl6LAStK3v_QBWWhAAIhyFMlftF7PAmo.gif">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Halloween MYO</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x1</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image -->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1Bl6LAStK3v_QBWWhAAIhyFMlftF7PAmo.gif">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Halloween Trait</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x1</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image-->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/12TyPeePJ6csZtpCE0n0hzm0sJNid4uJs.gif">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Legendary Kanpolo Trait</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x1</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image -->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1fQkEWW1MaFP2z4jgenT-bLpCR6M_lUjr.gif">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Mythical Kumiyaa Trait</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x2</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image -->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1JwPm4d2ko5gZrVLLdncCRL2QJpEUpETb.gif">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Rare Burgvoir Trait</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x2</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image -->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1JwPm4d2ko5gZrVLLdncCRL2QJpEUpETb.gif">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Rare Heavian Trait</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x2</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image -->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/19vYu7z5iGxYGg166TNHCWF5XvAgCii5a.gif">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Chubbö</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x2</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image -->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/19vYu7z5iGxYGg166TNHCWF5XvAgCii5a.gif">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Yuecoatl</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x1</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image -->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1UWi7h2a8KFBUWhhhkr22QPfDm4nMONqO.png">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Prismatic Snowflake</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x700</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image -->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1o8wfQK6-CZqDY_DaPA4XikkW43gWCGKB.png">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Burgvoir Upgrade</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x1</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image -->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1s-7Vy5F6KWnfGhKj7pynEupACTfr_L4F.png">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Chilly Pack</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x1</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image -->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1fQkEWW1MaFP2z4jgenT-bLpCR6M_lUjr.gif">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Etherial Heavian Trait</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x1</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--item end-->
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image -->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1s-7Vy5F6KWnfGhKj7pynEupACTfr_L4F.png">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Springtime Pack</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x1</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Item -->
+                           <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
+                              <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
+                                 <!-- Image -->
+                                 <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
+                                    <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1sG8iBVYVr6wi8H82ooaNU91m7ZlR7iNa.gif">
+                                 </div>
+                                 <!-- Text -->
+                                 <div class="pt-3 pb-2 px-1 text-center">
+                                    <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Burgvoir MYO</h5>
+                                    <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
+                                    <p>x1</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Add More Above -->
                         </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Coral</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x2,173,316</p>
+                        <div class="row no-gutters align-items-center">
+                           <div class="col pr-1">
+                              <hr class="m-0" style="opacity:.75;">
+                           </div>
+                           <div class="col-auto px-1">
+                              <a class="p-1" style="font-size:.65rem; opacity:.50;" href="https://toyhou.se/19739030.inventory-table">
+                                 <i class="fa-solid fa-code text-muted"></i>
+                              </a>
+                           </div>
+                           <div class="col pl-1">
+                              <hr class="m-0" style="opacity:.75;">
+                           </div>
                         </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1nfDsAPr2OulDZWwDRToTYli3Uz1Hi74v.png">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Snail</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x1</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1BD910djjWKoDwuisFG0vBoNsv48zQ5y3.png">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Hollow Pumpkin</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x50</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1o8wfQK6-CZqDY_DaPA4XikkW43gWCGKB.png">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Kumiyaa Upgrade</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x1</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1sG8iBVYVr6wi8H82ooaNU91m7ZlR7iNa.gif">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Kumiyaa MYO</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x1</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1Bl6LAStK3v_QBWWhAAIhyFMlftF7PAmo.gif">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Halloween MYO</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x1</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1Bl6LAStK3v_QBWWhAAIhyFMlftF7PAmo.gif">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Halloween Trait</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x1</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/12TyPeePJ6csZtpCE0n0hzm0sJNid4uJs.gif">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Legendary Kanpolo Trait</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x1</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1fQkEWW1MaFP2z4jgenT-bLpCR6M_lUjr.gif">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Mythical Kumiyaa Trait</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x2</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1JwPm4d2ko5gZrVLLdncCRL2QJpEUpETb.gif">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Rare Burgvoir Trait</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x2</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1JwPm4d2ko5gZrVLLdncCRL2QJpEUpETb.gif">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Rare Heavian Trait</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x2</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/19vYu7z5iGxYGg166TNHCWF5XvAgCii5a.gif">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Chubbö</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x2</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/19vYu7z5iGxYGg166TNHCWF5XvAgCii5a.gif">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Yuecoatl</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x1</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1UWi7h2a8KFBUWhhhkr22QPfDm4nMONqO.png">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Prismatic Snowflake</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x700</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1o8wfQK6-CZqDY_DaPA4XikkW43gWCGKB.png">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Burgvoir Upgrade</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x1</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1s-7Vy5F6KWnfGhKj7pynEupACTfr_L4F.png">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Chilly Pack</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x1</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1fQkEWW1MaFP2z4jgenT-bLpCR6M_lUjr.gif">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Etherial Heavian Trait</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x1</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-<!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1s-7Vy5F6KWnfGhKj7pynEupACTfr_L4F.png">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Springtime Pack</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x1</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
-                    <!--ITEM-->
-                    <div class="col-sm-6 col-lg-4 col-xl-3 p-2">
-                      <div class="card bg-faded rounded-0 h-100 p-2" style="border-width:.35rem; border-style:groove;">
-                        <!--IMAGE-->
-                        <div class="card rounded-0 d-flex align-items-center justify-content-center" style="height:200px; border-width:.35rem; border-style:double;">
-                          <img class="d-block mx-auto" style="max-height:85%; max-width:85%;" src="https://img-l.ink/img/1sG8iBVYVr6wi8H82ooaNU91m7ZlR7iNa.gif">
-                        </div>
-                        <!--image end-->
-                        <!--TEXT CONTENT-->
-                        <div class="pt-3 pb-2 px-1 text-center">
-                          <h5 class="font-weight-lighter text-muted text-uppercase mb-0" style="letter-spacing:.09rem;">Burgvoir MYO</h5>
-                          <hr class="my-2" style="margin-left:-.15rem; margin-right:-.15rem;">
-                          <!--divider line-->
-                          <p>x1</p>
-                        </div>
-                        <!--text content end-->
-                      </div>
-                    </div>
-                    <!--item end-->
+                        <p class="text-center mt-1" style="letter-spacing: 2px; font-size: 10px;"><a href="#inventory">BACK TO TOP</a></p>
+                     </div>
                   </div>
-                  <div class="row no-gutters align-items-center">
-                    <div class="col pr-1">
-                      <hr class="m-0" style="opacity:.75;">
-                    </div>
-                    <div class="col-auto px-1">
-                      <a class="p-1" style="font-size:.65rem; opacity:.50;" href="https://toyhou.se/19739030.inventory-table">
-                      <i class="fa-solid fa-code text-muted"></i>
-                      </a>
-                    </div>
-                    <div class="col pl-1">
-                      <hr class="m-0" style="opacity:.75;">
-                    </div>
+                  <!-- Quests -->
+                  <div class="tab-pane fade" id="quests">
+                     <div class="card p-3 m-1" style="height: 315px; overflow-y: auto; border-radius: 0px 0px 1rem 1rem !important;">
+                        <p>
+                        <h5>Active Quest</h5>
+                        <i>This is my current quest that's incomplete and is in progress.</i>
+                        <ul>
+                           <li><b>Little Friends!</b> Catch 5 Cedave Nymph + 3 Burgvoir Fry!<br>
+                              <span class="small text-muted">
+                                 <b>Reward:</b> 52,000 Coral<br>
+                                 <b>Timeframe:</b> 11 March 2026–Current<br>
+                                 Quest #5<br>
+                                 Burgvoir Fry: 0/3 <i class="fa-regular fa-square"></i><br>
+                                 Cedave Nymph: 0/5 <i class="fa-regular fa-square"></i>
+                              </span>
+                           </li>
+                        </ul>
+                        </p>
+                        <p>
+                        <h5>Completed Quests</h5>
+                        <ul>
+                           <li><b>Hungry Hungry!</b> Catch 5 fish (any type)!<br>
+                              <span class="small text-muted">
+                                 <b>Reward:</b> 1,000 Coral<br>
+                                 <b>Timeframe:</b> 2 December 2025–6 December 2025<br>
+                                 Quest #3
+                              </span>
+                           </li>
+                           <li><b>Starving!</b> Catch 10 small fish + 5 large fish!<br>
+                              <span class="small text-muted">
+                                 <b>Reward:</b> 15,000 Coral<br>
+                                 <b>Timeframe:</b> Unknown<br>
+                                 Quest #1
+                              </span>
+                           </li>
+                        </ul>
+                        </p>
+                        <p>
+                        <h5>Cancelled Quests</h5>
+                        <i>These are my quests that are cancelled for a reason listed.</i>
+                        <ul>
+                           <li><b>Hungry Hungry!</b> Catch 5 fish (any type)!<br>
+                              <span class="small text-muted">
+                                 <b>Reward:</b> 1,000 Coral<br>
+                                 <b>Timeframe:</b> 16 December 2025–11 March 2026<br>
+                                 <b>Reason:</b> Accidentally deleted the thread where the proof of the quest was located<br>
+                                 Quest #4
+                              </span>
+                           </li>
+                           <li><b> Little Friends!</b> Catch 5 Cedave Nymphs + 3 Burgvoir Fry!<br>
+                              <span class="small text-muted">
+                                 <b>Reward:</b> 52,000 Coral<br>
+                                 <b>Timeframe:</b> Unknown–23 June 2025<br>
+                                 <b>Reason:</b> BotGhost potentially shutting down due to a breach<br>
+                                 Quest #2<br>
+                                 Burgvoir Fry: 7/3 <i class="fa-regular fa-square-check"></i><br>
+                                 Cedave Nymph: 3/5 <i class="fa-regular fa-square"></i>
+                              </span>
+                           </li>
+                        </ul>
+                        </p>
+                     </div>
                   </div>
-                  <p class="text-center mt-1" style="letter-spacing: 2px; font-size: 10px;"><a href="#inventory">BACK TO TOP</a></p>
-                </div>
-              </div>
-              <!--inventory section end-->
-              <!-------------------->
-              <!--QUESTS SECTION-->
-              <div class="tab-pane fade" id="quests">
-                <div class="card p-3 m-1" style="height: 315px; overflow-y: auto; border-radius: 0px 0px 1rem 1rem !important;">
-                  <p>
-                  <h5>Active Quest</h5>
-                  <i>This is my current quest that's incomplete and is in progress.</i>
-                  <ul>
-                    <li><b>Little Friends!</b> Catch 5 Cedave Nymph + 3 Burgvoir Fry!<br>
-                      <span class="small text-muted">
-                      <b>Reward:</b> 52,000 Coral<br>
-                      <b>Timeframe:</b> 11 March 2026–Current<br>
-                      Quest #5<br>
-                      Burgvoir Fry: 0/3 <i class="fa-regular fa-square"></i><br>
-                      Cedave Nymph: 0/5 <i class="fa-regular fa-square"></i>
-                      </span>
-                    </li>
-                  </ul>
-                  </p>
-                  <p>
-                  <h5>Completed Quests</h5>
-                  <ul>
-                    <li><b>Hungry Hungry!</b> Catch 5 fish (any type)!<br>
-                      <span class="small text-muted">
-                      <b>Reward:</b> 1,000 Coral<br>
-                      <b>Timeframe:</b> 2 December 2025–6 December 2025<br>
-                      Quest #3
-                      </span>
-                    </li>
-                    <li><b>Starving!</b> Catch 10 small fish + 5 large fish!<br>
-                      <span class="small text-muted">
-                      <b>Reward:</b> 15,000 Coral<br>
-                      <b>Timeframe:</b> Unknown<br>
-                      Quest #1
-                      </span>
-                    </li>
-                  </ul>
-                  </p>
-                  <p>
-                  <h5>Cancelled Quests</h5>
-                  <i>These are my quests that are cancelled for a reason listed.</i>
-                  <ul>
-                    <li><b>Hungry Hungry!</b> Catch 5 fish (any type)!<br>
-                      <span class="small text-muted">
-                      <b>Reward:</b> 1,000 Coral<br>
-                      <b>Timeframe:</b> 16 December 2025–11 March 2026<br>
-                      <b>Reason:</b> Accidentally deleted the thread where the proof of the quest was located<br>
-                      Quest #4
-                      </span>
-                    </li>
-                    <li><b> Little Friends!</b> Catch 5 Cedave Nymphs + 3 Burgvoir Fry!<br>
-                      <span class="small text-muted">
-                      <b>Reward:</b> 52,000 Coral<br>
-                      <b>Timeframe:</b> Unknown–23 June 2025<br>
-                      <b>Reason:</b> BotGhost potentially shutting down due to a breach<br>
-                      Quest #2<br>
-                      Burgvoir Fry: 7/3 <i class="fa-regular fa-square-check"></i><br>
-                      Cedave Nymph: 3/5 <i class="fa-regular fa-square"></i>
-                      </span>
-                    </li>
-                  </ul>
-                  </p>
-                </div>
-              </div>
-              <!--quests section end-->
-              <!-------------------->
-              <!--PETS SECTION-->
-              <div class="tab-pane fade" id="pets">
-                <div class="card p-3 m-1" style="height: 315px; overflow-y: auto; border-radius: 0px 0px 1rem 1rem !important;">
-                  <p>
-                  <h5>Active Pet</h5>
-                  <i>My current active pet to use in ⁠<b>#jovalan-pet-corner</b></i>
-                  <ul>
-                    <li><b>Sasha</b> aka a Chubbö<br>
-                      <span class="small text-muted">
-                      <b>Bought:</b> 10 May 2025<br>
-                      <b>Last Time Bonus Gained:</b> 11 March 2026 (Dropped 60,000 Coral)
-                      </span>
-                    </li>
-                  </ul>
-                  </p>
-                  <p>
-                  <h5>Inactive Pets</h5>
-                  <i>My pets that aren't currently being used.</i>
-                  <ul>
-                    <li><b>Fluffy</b> aka a Chubbö</li>
-                    <li><b>Boomer</b> aka a Yuecoatl</li>
-                  </ul>
-                  </p>
-                </div>
-              </div>
-              <!--pets section end-->
-              <!-------------------->
-              <!--LOGS SECTION-->
-              <div class="tab-pane fade" id="logs">
-                <div class="card p-3 m-1" style="height: 315px; overflow-y: auto; border-radius: 0px 0px 1rem 1rem !important;">
-                  <ul class="ml-n4">
-                    <li>(4/19/2026) Used 1 Rare Cedave MYO and 1 Chilly Trait Token for a new MYO.</li>
-                    <li>(4/12/2026) Removed some items for raffling.</li>
-                    <li>(3/11/2026) Sold everything I've caught after canceling quest #4.</li>
-                    <li>(12/6/2025) Sold everything I've caught after completing quest #3.</li>
-                    <li>(12/5/2025) Added a Back to Top button for the inventory section.</li>
-                    <li>(12/1/2025) Transferred my RPG tracker to my site.</li>
-                    <li>(8/23/2025) The NPCs are back but we'll never know if BotGhost will actually shut down... Forgot about this XD</li>
-                    <li>(7/25/2025) Currently the NPCs for these quests and interactions are disabled due to BotGhost highly likely shutting down. This is just for reference.</li>
-                  </ul>
-                </div>
-              </div>
-              <!--logs section end-->
+                  <!-- Pets -->
+                  <div class="tab-pane fade" id="pets">
+                     <div class="card p-3 m-1" style="height: 315px; overflow-y: auto; border-radius: 0px 0px 1rem 1rem !important;">
+                        <p>
+                        <h5>Active Pet</h5>
+                        <i>My current active pet to use in ⁠<b>#jovalan-pet-corner</b></i>
+                        <ul>
+                           <li><b>Sasha</b> aka a Chubbö<br>
+                              <span class="small text-muted">
+                                 <b>Bought:</b> 10 May 2025<br>
+                                 <b>Last Time Bonus Gained:</b> 11 March 2026 (Dropped 60,000 Coral)
+                              </span>
+                           </li>
+                        </ul>
+                        </p>
+                        <p>
+                        <h5>Inactive Pets</h5>
+                        <i>My pets that aren't currently being used.</i>
+                        <ul>
+                           <li><b>Fluffy</b> aka a Chubbö</li>
+                           <li><b>Boomer</b> aka a Yuecoatl</li>
+                        </ul>
+                        </p>
+                     </div>
+                  </div>
+                  <!-- Logs -->
+                  <div class="tab-pane fade" id="logs">
+                     <div class="card p-3 m-1" style="height: 315px; overflow-y: auto; border-radius: 0px 0px 1rem 1rem !important;">
+                        <ul class="ml-n4">
+                           <!-- Add More Below -->
+                           <li>(4/19/2026) Used 1 Rare Cedave MYO and 1 Chilly Trait Token for a new MYO.</li>
+                           <li>(4/12/2026) Removed some items for raffling.</li>
+                           <li>(3/11/2026) Sold everything I've caught after canceling quest #4.</li>
+                           <li>(12/6/2025) Sold everything I've caught after completing quest #3.</li>
+                           <li>(12/5/2025) Added a Back to Top button for the inventory section.</li>
+                           <li>(12/1/2025) Transferred my RPG tracker to my site.</li>
+                           <li>(8/23/2025) The NPCs are back but we'll never know if BotGhost will actually shut down... Forgot about this XD</li>
+                           <li>(7/25/2025) Currently the NPCs for these quests and interactions are disabled due to BotGhost highly likely shutting down. This is just for reference.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <!--tab content end-->
-          </div>
-        </div>
+         </div>
       </div>
-    </div>
-    <!-- --------------------------------------------------------------------
+   </div>
+   <!-- --------------------------------------------------------------------
     <-- Footer
     <-------------------------------------------------------------------- -->
-    <div class="load-html" id="footer" data-source="includes/footer.html"></div>
-    <!-- ----------------------------------------------------------------- -->
-    <!-- JS                                                                -->
-    <!-- ----------------------------------------------------------------- -->
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <!-- Charadex Script -->
-    <script src="styles/js/pages/base.js" type="module"></script>
-  </body>
+   <div class="load-html" id="footer" data-source="includes/footer.html"></div>
+   <!-- ----------------------------------------------------------------- -->
+   <!-- JS                                                                -->
+   <!-- ----------------------------------------------------------------- -->
+   <!-- JQuery -->
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+   <!-- Bootstrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+   <!-- Charadex Script -->
+   <script src="styles/js/pages/base.js" type="module"></script>
+</body>
 </html>
