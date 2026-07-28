@@ -15,25 +15,28 @@ document.addEventListener("DOMContentLoaded", async () => {
     (arr) => {
       for (let entry of arr) {
 
-        // We're gonna make some badges but you dont have to use them
-        entry.picturedcharacters = entry.picturedcharacters.split(',');
-        entry.nameBadges = [];
-        for (let id of entry.picturedcharacters) {
-          entry.nameBadges.push(
-            `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('characters'), {profile: id})}">${id.trim()}</a>`
-          );
-        }
-        entry.nameBadges = entry.nameBadges.join(' ');
+// We're gonna make some badges but you dont have to use them
+entry.picturedcharacters = entry.picturedcharacters.split(',');
+entry.nameBadges = [];
 
-        // Make the tags pretty and actually work
-        entry.tags = entry.tags ? entry.tags.split(',') : [];
-        let fancyTagArr = [];
-        if (entry.tags.length >= 1) {
-          for (let tag of entry.tags) {
-            fancyTagArr.push(`<a href="${charadex.url.addUrlParameters(charadex.url.getPageUrl(charadex.page.imageGallery.sitePage), {tags: tag})}">#${tag.trim()}</a>`);
-          }
-        }
-        entry.fancytags = fancyTagArr.join(' ');
+for (let id of entry.picturedcharacters) {
+    let cleanId = id.trim();
+    
+    // Search the "Characters" Google Sheet data array for a matching ID or slug
+    let character = Characters.find(c => 
+        (c.id && c.id.toLowerCase() === cleanId.toLowerCase()) || 
+        (c.slug && c.slug.toLowerCase() === cleanId.toLowerCase())
+    );
+    
+    // Use the character's name if found, otherwise fall back to the ID
+    let displayName = character && character.name ? character.name : cleanId;
+
+    entry.nameBadges.push(
+        `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('characters'), {profile: cleanId})}">${displayName}</a>`
+    );
+}
+
+entry.nameBadges = entry.nameBadges.join(' ');
 
       }
     }
