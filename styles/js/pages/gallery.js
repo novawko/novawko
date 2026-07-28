@@ -22,11 +22,13 @@ entry.nameBadges = [];
 for (let id of entry.picturedcharacters) {
     let cleanId = id.trim();
     
-    // Search the "Characters" Google Sheet data array for a matching ID or slug
-    let character = Characters.find(c => 
+    // Check the global charadex database for your characters sheet data
+    let dbList = typeof charadex !== 'undefined' && charadex.database ? charadex.database.characters : characters;
+    
+    let character = dbList ? dbList.find(c => 
         (c.id && c.id.toLowerCase() === cleanId.toLowerCase()) || 
         (c.slug && c.slug.toLowerCase() === cleanId.toLowerCase())
-    );
+    ) : null;
     
     // Use the character's name if found, otherwise fall back to the ID
     let displayName = character && character.name ? character.name : cleanId;
