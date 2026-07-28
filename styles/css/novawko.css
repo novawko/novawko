@@ -29,6 +29,14 @@
   box-shadow: none !important;
 }
 
+/* Truncate */
+.truncate-3-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
 /* Sticky Sidebar */
 #sidebar {
   max-width: 300px;
@@ -193,6 +201,16 @@ button[aria-expanded="true"] .display-tags {
 
   #commissionspage_title, #bookmarkspage_title, #privacy_title, #todopage_title, #tonetagsmasterlist_title, #tonetags_title, #statuses_title {
   font-size: 2.5rem !important;
+  }
+
+  .news-right-text {
+    margin: -1rem 1.25rem !important;
+  }
+
+  .news-pfp img {
+    max-width: 50px;
+    max-height: 50px;
+    margin: -0.313rem -0.86rem !important;
   }
 
   .dumb {
