@@ -787,7 +787,7 @@ charadex.page.characters = {
   fauxFolder: {
     toggle: true,
     folderProperty: 'Folder',
-    parameters: ['All', 'Warriors', 'Animal Jam', 'Kitiguars', 'Jovalan', 'FNAF', 'Pokémon', 'Adoptables', 'Unsorted']
+    parameters: ['All', 'Warriors', 'Animal Jam', 'Kitiguars', 'Jovalan', 'FNAF', 'Pokémon', 'Adoptables', 'Unsorted', 'Misc']
   },
 
   search: {
