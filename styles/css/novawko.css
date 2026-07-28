@@ -203,6 +203,14 @@ button[aria-expanded="true"] .display-tags {
   font-size: 2.5rem !important;
   }
 
+  .news-right-info {
+	  font-size: 0.813rem;
+  }
+
+  .news-post {
+	  font-size: small;
+  }
+
   .news-right-text {
     margin: -1rem 1.25rem !important;
   }
