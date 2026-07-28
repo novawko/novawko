@@ -20,11 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         entry.nameBadges = [];
         for (let id of entry.picturedcharacters) {
           entry.nameBadges.push(
-            `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('characters'), {profile: id.trim()})}">${ (() => {
-    let db = window.dex?.characters || window.characters || [];
-    let match = db.find(c => String(c.id || c.ID || c.slug).trim() === id.trim());
-    return match ? (match.Name || match.name || id.trim()) : id.trim();
-})() }</a>`
+            `<a class="badge badge-primary" href="${charadex.url.addUrlParameters(charadex.url.getPageUrl('characters'), {profile: id})}">${id.trim()}</a>`
           );
         }
         entry.nameBadges = entry.nameBadges.join(' ');
