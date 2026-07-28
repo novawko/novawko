@@ -82,8 +82,8 @@ img[src=""] {
   color: var(--cd-button-text-color) !important;
 }
 
-/* Permissions */
-.cd-permissions-scroll {
+/* Permissions & Notes */
+.cd-permissions-scroll, .cd-notes-scroll {
   max-height: 200px;
   overflow-y: auto;
 }
