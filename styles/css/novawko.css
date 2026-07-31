@@ -68,8 +68,8 @@ img[src=""] {
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
-    background-color: transparent !important;
-    border-color: transparent !important;
+    background-color: var(--cd-primary-color) !important;
+    border-color: var(--cd-primary-color) !important;
 }
 
 /* Tab Pane Active Fix */
