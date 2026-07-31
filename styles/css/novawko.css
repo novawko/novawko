@@ -451,6 +451,101 @@ button[aria-expanded="true"] .display-tags {
   color: var(--cd-secondary-text-color) !important;
 }
 
+/* ============================================================= */
+/* Rainbow Sidebar Buttons
+/* ============================================================= */
+
+/* Soft Red */
+.soft-red-btn {
+  background-color: #ffbadd !important;
+  border-color: #ffbadd !important;
+  color: #fff !important;
+}
+
+.soft-red-btn:hover {
+  background-color: var(--cd-secondary-color) !important;
+  border-color: var(--cd-secondary-color) !important;
+  color: #fff !important;
+}
+
+/* Soft Orange */
+.soft-orange-btn {
+  background-color: #ffdaba !important;
+  border-color: #ffdaba !important;
+  color: #fff !important;
+}
+
+.soft-orange-btn:hover {
+  background-color: var(--cd-secondary-color) !important;
+  border-color: var(--cd-secondary-color) !important;
+  color: #fff !important;
+}
+
+/* Soft Yellow */
+.soft-yellow-btn {
+  background-color: #feffba !important;
+  border-color: #feffba !important;
+  color: #fff !important;
+}
+
+.soft-yellow-btn:hover {
+  background-color: var(--cd-secondary-color) !important;
+  border-color: var(--cd-secondary-color) !important;
+  color: #fff !important;
+}
+
+/* Soft Green */
+.soft-green-btn {
+  background-color: #c6ffb3 !important;
+  border-color: #c6ffb3 !important;
+  color: #fff !important;
+}
+
+.soft-green-btn:hover {
+  background-color: var(--cd-secondary-color) !important;
+  border-color: var(--cd-secondary-color) !important;
+  color: #fff !important;
+}
+
+/* Soft Teal */
+.soft-teal-btn {
+  background-color: #b3ffeb !important;
+  border-color: #b3ffeb !important;
+  color: #fff !important;
+}
+
+.soft-teal-btn:hover {
+  background-color: var(--cd-secondary-color) !important;
+  border-color: var(--cd-secondary-color) !important;
+  color: #fff !important;
+}
+
+/* Soft Blue */
+.soft-blue-btn {
+  background-color: #b3d8ff !important;
+  border-color: #b3d8ff !important;
+  color: #fff !important;
+}
+
+.soft-blue-btn:hover {
+  background-color: var(--cd-secondary-color) !important;
+  border-color: var(--cd-secondary-color) !important;
+  color: #fff !important;
+}
+
+/* Soft Purple */
+.soft-purple-btn {
+  background-color: #c9b3ff !important;
+  border-color: #c9b3ff !important;
+  color: #fff !important;
+}
+
+.soft-purple-btn:hover {
+  background-color: var(--cd-secondary-color) !important;
+  border-color: var(--cd-secondary-color) !important;
+  color: #fff !important;
+}
+
 
 /* ============================================================= */
 /* Mobile Only Sidebar
