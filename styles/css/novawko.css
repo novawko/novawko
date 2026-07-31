@@ -67,7 +67,8 @@ img[src=""] {
   border-color: var(--cd-primary-color) !important;
 }
 
-.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle,
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
     background-color: var(--cd-primary-color) !important;
     border-color: var(--cd-primary-color) !important;
 }
@@ -462,7 +463,7 @@ button[aria-expanded="true"] .display-tags {
 }
 
 /* ============================================================= */
-/* Rainbow Sidebar Buttons
+/* Rainbow Buttons
 /* ============================================================= */
 
 /* Soft Red */
@@ -493,8 +494,8 @@ button[aria-expanded="true"] .display-tags {
 
 /* Soft Yellow */
 .soft-yellow-btn {
-  background-color: #f7f075 !important;
-  border-color: #f7f075 !important;
+  background-color: #f1ea7c !important;
+  border-color: #f1ea7c !important;
   color: #fff !important;
 }
 
