@@ -737,7 +737,7 @@ charadex.page.resources = {
   fauxFolder: {
     toggle: true,
     folderProperty: 'Type',
-    parameters: ['All',  'Blinkie', 'GIF', 'Illustration', 'Phone Wallpaper', 'Pattern', 'Photo', 'Ribbon', 'Pixel', 'Base', 'PNG', 'Icon', 'Stamp', 'Texture', 'Emoji', 'Sticker', 'Moodboard', 'Palette', 'Divider', 'Flag', 'Art Fight', 'Animal Jam', 'Minecraft', 'Pokémon', 'Tone Indicator', 'Disability', 'Jovalan']
+    parameters: ['All',  'Blinkie', 'GIF', 'Illustration', 'Phone Wallpaper', 'Pattern', 'Photo', 'Photo Edit', 'Ribbon', 'Pixel', 'Base', 'PNG', 'Icon', 'Stamp', 'Texture', 'Emoji', 'Sticker', 'Moodboard', 'Palette', 'Divider', 'Flag', 'Art Fight', 'Animal Jam', 'Minecraft', 'Pokémon', 'Tone Indicator', 'Disability', 'Jovalan']
   },
 
   search: {
