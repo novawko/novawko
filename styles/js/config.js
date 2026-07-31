@@ -516,7 +516,7 @@ charadex.page.myCards = {
   pagination: {
     toggle: true,
     bottomToggle: true,
-    amount: 8,
+    amount: 12,
   },
 
   filters: {
@@ -569,7 +569,7 @@ charadex.page.wishlist = {
   pagination: {
     toggle: true,
     bottomToggle: true,
-    amount: 8,
+    amount: 12,
   },
 
   filters: {
