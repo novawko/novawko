@@ -73,14 +73,14 @@ img[src=""] {
 
 /* Twitter Pills */
 .twitterpill-item {
-  border-color: #8FB7D4;
-  color: #8FB7D4 !important;
+  border-color: #b3d8ff;
+  color: #b3d8ff !important;
 }
 
 .twitterpill-item:hover {
-  border-color: #8FB7D4;
+  border-color: #b3d8ff;
   color: #fff !important;
-  background-color: #8FB7D4;
+  background-color: #b3d8ff;
 }
 
 /* Disabled Links */
