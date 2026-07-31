@@ -29,6 +29,7 @@
   box-shadow: none !important;
 }
 
+/* Dropdown Headers */
 .dropdown-header {
   color: #f0f1c2;
 }
@@ -64,6 +65,11 @@ img[src=""] {
 /* Remove default primary BS color */
 .btn-outline-primary, .btn-outline-primary:hover, .btn-outline-primary:active {
   border-color: var(--cd-primary-color) !important;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
+    background-color: transparent !important;
+    border-color: transparent !important;
 }
 
 /* Tab Pane Active Fix */
