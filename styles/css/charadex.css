@@ -476,9 +476,9 @@ a:active {
 
 .btn.btn-primary,
 .badge.badge-primary {
-  color: var(--cd-button-text-color) !important;
-  background-color: var(--cd-button-background-color) !important;
-  border-color: var(--cd-button-border-color) !important;
+  color: var(--cd-button-text-color);
+  background-color: var(--cd-button-background-color);
+  border-color: var(--cd-button-border-color);
 }
 
 .btn.btn-primary:hover,
