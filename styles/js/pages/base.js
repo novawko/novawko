@@ -33,17 +33,22 @@ document.addEventListener("DOMContentLoaded", () => {
 /* ==================================================================== */
 /* Copy to Clipboard
 ======================================================================= */
-document.getElementById('copyBtn').addEventListener('click', function() {
-    // 1. Retrieve the text directly from the data attribute
-    const textToCopy = this.getAttribute('data-copy-text');
-    
-    // 2. Write to the system clipboard
-    navigator.clipboard.writeText(textToCopy).then(() => {
-        alert("Copied successfully!");
-    }).catch(err => {
-        console.error("Failed to copy text: ", err);
+/* ==================================================================== */
+/* Copy to Clipboard
+======================================================================= */
+const copyBtn = document.getElementById('copyBtn');
+
+if (copyBtn) {
+    copyBtn.addEventListener('click', function() {
+        const textToCopy = this.getAttribute('data-copy-text');
+        
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            alert("Copied successfully!");
+        }).catch(err => {
+            console.error("Failed to copy text: ", err);
+        });
     });
-});
+}
 
 /* ==================================================================== */
 /* Handle URL Hashes for Tabs/Pills
