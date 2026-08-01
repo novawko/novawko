@@ -18,8 +18,12 @@
 /* ============================================================= */
 
 /* Custom Cursor */
-body {
-  cursor: url('https://img-l.ink/img/1NayjB5gGkPFAsyvYOiq20u7MIArOKjgM.gif'), auto;
+* {
+  cursor: url('https://img-l.ink/img/1NayjB5gGkPFAsyvYOiq20u7MIArOKjgM.gif'), default !important;
+}
+
+* :hover {
+    cursor: url('https://img-l.ink/img/19OhMW3Jiafnr83iHAOQO4_fvohi-WX-V.png'), auto !important;
 }
 
 /* Sidebar Icon */
