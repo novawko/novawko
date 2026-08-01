@@ -146,3 +146,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+/* ==================================================================== */
+/* Tooltips Fix
+======================================================================= */
+$(document).ready(function() {
+  $('body').tooltip({
+    selector: '[data-toggle="tooltip"]',
+    trigger: 'hover',
+    boundary: 'window' // Forces 4.5.3 to use the 4.6 placement boundary rules
+  });
+});
