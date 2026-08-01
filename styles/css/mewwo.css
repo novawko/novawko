@@ -914,3 +914,34 @@ p:last-child {
   border-right-color: #2c3e50 !important;
 }
 
+
+/* ============================================================= */
+/* Dark Mode
+/* ============================================================= */
+
+body.dark {
+
+  color-scheme: dark;
+
+  /* ============================================================= */
+  /* Backgrounds
+  ================================================================ */
+  --cd-body-background-color:            #333337;
+  --cd-content-background-color:         #3f3f44;
+  --cd-faded-background-color:           #4d4c51;
+  --cd-navbar-background-color:          #201f22;
+
+  /* ============================================================= */
+  /* Text
+  ================================================================ */
+  --cd-body-text-color:                  #fafafa;
+  --cd-faded-text-color:                 #b5c8d8;
+  --cd-navbar-text-color:                var(--cd-faded-text-color);
+  --cd-link-text-color:                  var(--cd-primary-color);
+
+  /* ============================================================= */
+  /* Borders
+  ================================================================ */
+  --cd-border-color:                     rgba(232, 237, 250, 0.125);
+
+}
