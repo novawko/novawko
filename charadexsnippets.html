@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- ----------------------------------------------------------------- -->
+   <!-- About Your Site                                                   -->
+   <!-- ----------------------------------------------------------------- -->
+   <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+   <title>Novawko | Charadex Snippets</title>
+   <meta name="title" content="Novawko | Charadex Snippets" />
+   <meta name="type" content="website" />
+   <meta name="url" content="https://novawko.com/charadexsnippets" />
+   <meta property="og:image" content="https://novawko.com/assets/meta.png">
+   <meta property="og:image:type" content="image/png">
+   <meta property="og:image:width" content="1200">
+   <meta property="og:image:height" content="630">
+   <meta name="theme-color" content="#FFB6C1">
+   <meta name="description" content="A code guide for your Charadex site.">
+   <!-- No AI scraping directives -->
+   <meta name="robots" content="noai">
+   <meta name="robots" content="noimageai">
+   <!-- ----------------------------------------------------------------- -->
+   <!-- Styles                                                            -->
+   <!-- ----------------------------------------------------------------- -->
+   <!-- Bootstrap CSS -->
+   <!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
+   <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+   <!-- Font Awesome Icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <!-- ----------------------------------------------------------------- -->
+   <!-- Optional Styles                                                   -->
+   <!-- ----------------------------------------------------------------- -->
+   <!-- Custom CSS -->
+   <link rel="stylesheet" type="text/css" href="styles/css/mewwo.css">
+   <!-- Google Font -->
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500|Kalnia+Glaze:700|Honk:MORF@15&display=swap" rel="stylesheet">
+</head>
+
+<body id="charadex-body">
+   <!-- --------------------------------------------------------------------
+   <-- Header
+   <-------------------------------------------------------------------- -->
+   <div class="load-html" id="header" data-source="includes/mockheader.html"></div>
+   <!-- --------------------------------------------------------------------
+   <-- Main List
+   <-------------------------------------------------------------------- -->
+   <div class="container" id="main-container">
+      <!-- --------------------------------------------------------------------
+      <-- Title
+      <-------------------------------------------------------------------- -->
+      <div class="col-12 rounded">
+         <div class="card p-3 mx-md-0 mx-n3 my-md-0 my-1" style="min-height: 500px;">
+            <h1 class="display-4 mb-1 text-center text-uppercase" id="snippets_title"><a href="/snippets">F2U SNIPPETS</a></h1>
+            <div class="card rounded-0 mb-3"></div>
+            <!-- --------------------------------------------------------------------
+            <-- Main Content
+            <-------------------------------------------------------------------- -->
+            <!-- Progress Bars -->
+            <h1 id="progressbars">Progress Bars</h1>
+            <hr>
+            <div class="row mb-5">
+               <div class="col-md-1"></div>
+               <div class="col-md-5">
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-warning" style="width:0%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin ="0" aria-valuemax="100" style="width:0%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-warning" style="width:25%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-warning" role="progressbar" aria-valuenow="25" aria-valuemin ="0" aria-valuemax="100" style="width:25%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-warning" style="width:50%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-warning" style="width:75%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin ="0" aria-valuemax="100" style="width:75%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-warning" style="width:100%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin ="0" aria-valuemax="100" style="width:100%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-5 mb-md-5">
+                  <div class="progress my-2">
+                     <div class="progress-bar bg-warning" style="width:0%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2"&gt;&lt;div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin ="0" aria-valuemax="100" style="width:0%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2">
+                     <div class="progress-bar bg-warning" style="width:25%;height:16px;">25%</div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2"&gt;&lt;div class="progress-bar bg-warning" role="progressbar" aria-valuenow="25" aria-valuemin ="0" aria-valuemax="100" style="width:25%;height:16px"&gt;25%&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2">
+                     <div class="progress-bar bg-warning" style="width:50%;height:16px;">50%</div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2"&gt;&lt;div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;50%&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2">
+                     <div class="progress-bar bg-warning" style="width:75%;height:16px;">75%</div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2"&gt;&lt;div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin ="0" aria-valuemax="100" style="width:75%;height:16px"&gt;75%&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2">
+                     <div class="progress-bar bg-warning" style="width:100%;height:16px;">100%</div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2"&gt;&lt;div class="progress-bar bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin ="0" aria-valuemax="100" style="width:100%;height:16px"&gt;100%&lt;/div&gt;&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-1"></div>
+               <div class="col-md-1"></div>
+               <div class="col-md-5">
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-primary" style="width:50%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-primary" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-success" style="width:50%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-success" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-info" style="width:50%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-info" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-warning" style="width:50%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-danger" style="width:50%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-secondary" style="width:50%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-dark" style="width:50%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-dark" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-light" style="width:50%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-light" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-5">
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-primary progress-bar-striped" style="width:50%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;iv class="progress-bar bg-primary progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-success progress-bar-striped" style="width:50%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-success progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-info progress-bar-striped" style="width:50%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-warning progress-bar-striped" style="width:50%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-danger progress-bar-striped" style="width:50%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-danger progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-secondary progress-bar-striped" style="width:50%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-secondary progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-dark progress-bar-striped" style="width:50%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-dark progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+                  <div class="progress my-2 rounded-0">
+                     <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width:50%;height:16px;"></div>
+                  </div>
+                  <pre><code>&lt;div class="progress my-2 rounded-0"&gt;&lt;div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin ="0" aria-valuemax="100" style="width:50%;height:16px"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-1"></div>
+            </div>
+            <!-- Cards -->
+            <h1 id="cards">Cards</h1>
+            <hr>
+            <div class="row mb-5">
+               <div class="col-md-1"></div>
+               <div class="col-md-10">
+                  <div class="card p-3">card + padding</div>
+                  <pre><code>&lt;div class="card p-3"&gt;card&lt;/div&gt;</code></pre>
+                  <div class="card rounded-0 p-3">card without rounded borders + padding</div>
+                  <pre><code>&lt;div class="card rounded-0 p-3"&gt;card without rounded borders&lt;/div&gt;</code></pre>
+                  <div class="bg-faded p-1">
+                     <div class="card border-0 p-3">card without borders + padding</div>
+                     <pre><code>&lt;div class="card border-0 p-3"&gt;card without borders&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="card bg-primary p-3 mt-1">card + primary background + padding</div>
+                  <pre><code>&lt;div class="card bg-primary p-3"&gt;card&lt;/div&gt;</code></pre>
+                  <div class="card card-outline-primary p-3">card + primary outline + padding</div>
+                  <pre><code>&lt;div class="card card-outline-primary p-3"&gt;card&lt;/div&gt;</code></pre>
+                  <div class="card p-3 card-outline-primary" style="border:4px solid #171717;">card + #171717 outline + padding</div>
+                  <pre><code>&lt;div class="card p-3 card-outline-primary" style="border:4px solid #171717;"&gt;card&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-1"></div>
+            </div>
+            <!-- Tooltips -->
+            <h1 id="tooltips">Tooltips</h1>
+            <hr>
+            <div class="mb-3">The following CSS and HTML provided has been modified only for Charadex on my end since the tooltips never displayed correctly like an actual clean tooltip with the arrow.</div>
+            <h2>CSS for <code>charadex.css</code></h2>
+            <pre><code>/* ============================================================= */
+/* Tooltips
+/* ============================================================= */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #000;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}</code></pre>
+            <h2>HTML</h2>
+            <div class="row mb-5">
+               <div class="col-md-1"></div>
+               <div class="col-md-5">
+                  <button type="button" class="btn btn-primary m-2" data-toggle="tooltip" data-placement="top" title="Custom Top Tooltip!"> Tooltip on top </button>
+                  <pre><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-primary m-2&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Custom Top Tooltip!&quot;&gt; Tooltip on top &lt;/button&gt;</code></pre>
+                  <button type="button" class="btn btn-success m-2" data-toggle="tooltip" data-placement="left" title="Custom Left Tooltip!"> Tooltip on left </button>
+                  <pre><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-success m-2&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;Custom Left Tooltip!&quot;&gt; Tooltip on left &lt;/button&gt;</code></pre>
+               </div>
+               <div class="col-md-5">
+                  <button type="button" class="btn btn-secondary m-2" data-toggle="tooltip" data-placement="bottom" title="Custom Bottom Tooltip!"> Tooltip on bottom </button>
+                  <pre><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary m-2&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Custom Bottom Tooltip!&quot;&gt; Tooltip on bottom &lt;/button&gt;</code></pre>
+                  <button type="button" class="btn btn-danger m-2" data-toggle="tooltip" data-placement="right" title="Custom Right Tooltip!"> Tooltip on right </button>
+                  <pre><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-danger m-2&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;right&quot; title=&quot;Custom Right Tooltip!&quot;&gt; Tooltip on right &lt;/button&gt;</code></pre>
+               </div>
+               <div class="col-md-1"></div>
+            </div>
+            <!-- Anchors -->
+            <h1 id="anchors">Anchors & Table of Contents</h1>
+            <hr>
+            <div class="row mb-5">
+               <div class="col-md-1"></div>
+               <div class="col-md-10">
+                  <ul>
+                     <li><a href="#first">1</a></li>
+                     <li><a href="#second">2</a></li>
+                     <li><a href="#third">3</a></li>
+                     <li><a href="#fourth">4</a></li>
+                     <li><a href="#fifth">5</a></li>
+                     <li><a href="#sixth">6</a></li>
+                  </ul>
+                  <div class="p-3">
+                     <div id="first">This is the first one</div>
+                     <div id="second">This is the second one</div>
+                     <div id="third">This is the third one</div>
+                     <div id="fourth">This is the fourth one</div>
+                     <div id="fifth">This is the fifth one</div>
+                     <div id="sixth">This is the sixth one</div>
+                  </div>
+                  <pre><code>&lt;ul&gt;
+  &lt;li&gt;&lt;a href="#first"&gt;1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#second"&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#third"&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#fourth"&gt;4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#fifth"&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#sixth"&gt;6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="p-3"&gt;
+  &lt;div id="first"&gt;This is the first one&lt;/div&gt;
+  &lt;div id="second"&gt;This is the second one&lt;/div&gt;
+  &lt;div id="third"&gt;This is the third one&lt;/div&gt;
+  &lt;div id="fourth"&gt;This is the fourth one&lt;/div&gt;
+  &lt;div id="fifth"&gt;This is the fifth one&lt;/div&gt;
+  &lt;div id="sixth"&gt;This is the sixth one&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-1"></div>
+            </div>
+            <!-- Padding -->
+            <h1 id="padding">Padding</h1>
+            <hr>
+            <div class="mb-3">
+               <p>Padding adds a small amount of space to the top, bottom, left, and right of the content the div is contained in. The space is added in to the div itself, pushing any content that's contained within inwards but not constraining the div's own size. This is an easy way to make sure the text doesn't just hang against the border of the containing element.</p>
+               <p>Both padding and margin can be applied to the whole element, to one direction, or to an axis. p-1 applies to all four directions, pl-1 to the left, pr-1 to the right, pb-1 to the bottom, pt-1 to the top, px-1 to the left and right, and py-1 to the top and bottom. You can combine multiple of these.</p>
+            </div>
+            <div class="row mb-5">
+               <div class="col-md-1"></div>
+               <div class="col-md-3 col-6 p-1">
+                  <div class="bg-faded p-0">p-0</div>
+                  <pre><code>&lt;div class="bg-faded p-0&gt;p-0&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-3 col-6 p-1">
+                  <div class="bg-faded p-1">p-1</div>
+                  <pre><code>&lt;div class="bg-faded p-1&gt;p-1&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-3 col-6 p-1">
+                  <div class="bg-faded p-2">p-2</div>
+                  <pre><code>&lt;div class="bg-faded p-2&gt;p-2&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-2"></div>
+               <div class="col-md-1"></div>
+               <div class="col-md-3 col-6 p-1">
+                  <div class="bg-faded p-3">p-3</div>
+                  <pre><code>&lt;div class="bg-faded p-3&gt;p-3&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-3 col-6 p-1">
+                  <div class="bg-faded p-4">p-4</div>
+                  <pre><code>&lt;div class="bg-faded p-4&gt;p-4&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-3 col-6 p-1">
+                  <div class="bg-faded p-5">p-5</div>
+                  <pre><code>&lt;div class="bg-faded p-5&gt;p-5&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-2"></div>
+            </div>
+            <!-- Margins -->
+            <h1 id="margins">Margins</h1>
+            <hr>
+            <div class="mb-3">Margin adds a small amount of space to the top, bottom, left, and right of the content the div outside the div. The space is added outside the div, increasing the empty space between the div and bordering elements. Like this, you can make sure elements don't stick to each other.</div>
+            <div class="row mb-5">
+               <div class="col-md-1"></div>
+               <div class="col-md-3 col-6 p-1">
+                  <div class="bg-faded p-1 mb-0">mb-0</div>
+                  <div class="bg-faded p-1">bottom element</div>
+                  <pre><code>&lt;div class="bg-faded p-1 mb-0"&gt;mb-0&lt;/div&gt;
+&lt;div class="bg-faded p-1"&gt;bottom element&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-3 col-6 p-1">
+                  <div class="bg-faded p-1 mb-1">mb-1</div>
+                  <div class="bg-faded p-1">bottom element</div>
+                  <pre><code>&lt;div class="bg-faded p-1 mb-1"&gt;mb-1&lt;/div&gt;
+&lt;div class="bg-faded p-1"&gt;bottom element&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-3 col-6 p-1">
+                  <div class="bg-faded p-1 mb-2">mb-2</div>
+                  <div class="bg-faded p-1">bottom element</div>
+                  <pre><code>&lt;div class="bg-faded p-1 mb-2"&gt;mb-2&lt;/div&gt;
+&lt;div class="bg-faded p-1"&gt;bottom element&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-2"></div>
+               <div class="col-md-1"></div>
+               <div class="col-md-3 col-6 p-1">
+                  <div class="bg-faded p-1 mb-3">mb-3</div>
+                  <div class="bg-faded p-1">bottom element</div>
+                  <pre><code>&lt;div class="bg-faded p-1 mb-3"&gt;mb-3&lt;/div&gt;
+&lt;div class="bg-faded p-1"&gt;bottom element&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-3 col-6 p-1">
+                  <div class="bg-faded p-1 mb-4">mb-4</div>
+                  <div class="bg-faded p-1">bottom element</div>
+                  <pre><code>&lt;div class="bg-faded p-1 mb-4"&gt;mb-4&lt;/div&gt;
+&lt;div class="bg-faded p-1"&gt;bottom element&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-3 col-6 p-1">
+                  <div class="bg-faded p-1 mb-5">mb-5</div>
+                  <div class="bg-faded p-1">bottom element</div>
+                  <pre><code>&lt;div class="bg-faded p-1 mb-5"&gt;mb-5&lt;/div&gt;
+&lt;div class="bg-faded p-1"&gt;bottom element&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-2"></div>
+               <div class="col-md-1"></div>
+               <div class="col-md-3 col-6 p-1">
+                  <div class="bg-faded p-1 mx-3 mb-3">mx-3 mb-3</div>
+                  <div class="bg-faded p-1 mx-0">mx-0</div>
+                  <pre><code>&lt;div class="bg-faded p-1 mx-3 mb-3"&gt;mx-3 mb-3&lt;/div&gt;
+&lt;div class="bg-faded p-1"&gt;bottom element&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-2"></div>
+            </div>
+            <!-- Justify Content Between -->
+            <h1 id="justifycontentbetween">Justify Content Between</h1>
+            <div class="row mb-5">
+               <div class="col-md-1"></div>
+               <div class="col-md-10">
+                  <div class="d-flex justify-content-between"><span>Value 1</span><span>Value 2</span></div>
+                  <div class="d-flex justify-content-between"><span>Value 1</span><span>Value 2</span><span>Value 3</span></div>
+                  <div class="d-flex justify-content-between"><span>Value 1</span><span>Value 2</span><span>Value 3</span><span>Value 4</span></div>
+                  <div class="d-flex justify-content-between"><span>Value 1</span><span>Value 2</span><span>Value 3</span><span>Value 4</span><span>Value 5</span></div>
+                  <pre><code>&lt;div class="d-flex justify-content-between"&gt;
+  &lt;span&gt;Value 1&lt;/span&gt;
+  &lt;span&gt;Value 2&lt;/span&gt;
+  &lt;span&gt;Value 3&lt;/span&gt;
+  &lt;span&gt;Value 4&lt;/span&gt;
+  &lt;span&gt;Value 5&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+               </div>
+               <div class="col-md-1"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- --------------------------------------------------------------------
+   <-- Footer
+   <-------------------------------------------------------------------- -->
+   <div class="load-html" id="footer" data-source="includes/mockfooter.html"></div>
+   <!-- ----------------------------------------------------------------- -->
+   <!-- JS                                                                -->
+   <!-- ----------------------------------------------------------------- -->
+   <!-- JQuery -->
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+   <!-- Bootstrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+   <!-- Charadex Script -->
+   <script src="styles/js/pages/base.js" type="module"></script>
+</body>
+</html>
