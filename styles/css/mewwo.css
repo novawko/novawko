@@ -942,17 +942,21 @@ body.dark-mode {
 /* Dark Mode - Toggle Icon Visibility & Switching
 /* ============================================================= */
 
-/* Light mode defaults for the icon */
+/* Light Mode Icon */
 .theme-toggle .icon-dark {
   display: none;
 }
 
 .theme-toggle .icon-light {
   display: inline-block;
+  color: var(--cd-body-text-color);
+}
+
+.theme-toggle .icon-light:hover {
   color: var(--cd-primary-color);
 }
 
-/* Dark mode variations triggered by the body class */
+/* Dark Mode */
 body.dark-mode {
   background-color: var(--cd-body-background-color);
   color: var(--cd-body-text-color);
@@ -964,10 +968,14 @@ body.dark-mode .theme-toggle .icon-light {
 
 body.dark-mode .theme-toggle .icon-dark {
   display: inline-block;
+  color: var(--cd-faded-text-color);
+}
+
+body.dark-mode .theme-toggle .icon-dark:hover {
   color: var(--cd-primary-color);
 }
 
-/* Remove default button styles */
+/* Remove default button styles for the theme toggle */
 #theme-btn {
   background: transparent;
   border: none;
