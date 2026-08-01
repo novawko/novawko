@@ -550,8 +550,16 @@ a.badge.badge-primary:active {
 /* Misc
 /* ============================================================= */
 
-.text-primary, .bg-primary, .border-primary {
+.text-primary {
   color: var(--cd-primary-color) !important;
+}
+
+.border-primary {
+  border-color: var(--cd-primary-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--cd-primary-color) !important;
 }
 
 .bg-faded {
