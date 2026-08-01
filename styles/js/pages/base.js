@@ -166,7 +166,7 @@ $(document).ready(function() {
   $(function () {
 
     // Check if the toggle button actually exists on this page
-    if ($('#toggle').length === 0) {
+    if ($('#theme-toggle').length === 0) {
       return; // Exit safely without breaking anything else in this file
     }
 
@@ -187,9 +187,9 @@ $(document).ready(function() {
 
     // Determine initial state
     let isDark = false;
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem('toggle') == null) {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem('theme-toggle') == null) {
       isDark = true;
-    } else if (localStorage.getItem('toggle') == 'true') {
+    } else if (localStorage.getItem('theme-toggle') == 'true') {
       isDark = true;
     }
 
@@ -200,7 +200,7 @@ $(document).ready(function() {
     updateIcons(isDark);
 
     // Toggle click handler
-    $(document).on("click", "#toggle", function () {
+    $(document).on("click", "#theme-toggle", function () {
       if (bodyClass.contains('dark')) {
         bodyClass.remove('dark');
         isDark = false;
@@ -209,7 +209,7 @@ $(document).ready(function() {
         isDark = true;
       }
       
-      localStorage.setItem('toggle', isDark);
+      localStorage.setItem('theme-toggle', isDark);
       updateIcons(isDark);
     });
 
