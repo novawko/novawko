@@ -158,3 +158,17 @@ $(document).ready(function() {
     boundary: 'window' // Forces 4.5.3 to use the 4.6 placement boundary rules
   });
 });
+
+
+/* ==================================================================== */
+/* Light/Dark Toggle
+======================================================================= */
+const themeBtn = document.getElementById('theme-btn');
+
+// Check if the button actually exists on the current page before proceeding
+if (themeBtn) {
+  themeBtn.addEventListener('click', () => {
+    // Toggles the class on body to activate the CSS rule changes
+    document.body.classList.toggle('dark-mode');
+  });
+}
