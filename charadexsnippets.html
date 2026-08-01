@@ -59,7 +59,7 @@
             <-- Main Content
             <-------------------------------------------------------------------- -->
             <!-- Progress Bars -->
-            <h1 id="progressbars">Progress Bars</h1>
+            <h1 class="progressbars-title" id="progressbars">Progress Bars</h1>
             <hr>
             <div class="row mb-5">
                <div class="col-md-1"></div>
@@ -180,7 +180,7 @@
                <div class="col-md-1"></div>
             </div>
             <!-- Cards -->
-            <h1 id="cards">Cards</h1>
+            <h1 class="cards-title" id="cards">Cards</h1>
             <hr>
             <div class="row mb-5">
                <div class="col-md-1"></div>
@@ -203,9 +203,22 @@
                <div class="col-md-1"></div>
             </div>
             <!-- Tooltips -->
-            <h1 id="tooltips">Tooltips</h1>
+            <h1 class="tooltips-title" id="tooltips">Tooltips</h1>
             <hr>
-            <div class="mb-3">The following CSS and HTML provided has been modified only for Charadex on my end since the tooltips never displayed correctly like an actual clean tooltip with the arrow.</div>
+            <div class="mb-3">The following JS along with some CSS and HTML provided has been modified because Charadex's version of Bootstrap doesn't support displaying tooltips like an actual clean, black tooltip with the arrow. You must use the JS below for your tooltips to work because of the version of Bootstrap Charadex is using.</div>
+            <h2>JS for <code>base.js</code></h2>
+            <pre><code>
+               /* ==================================================================== */
+/* Tooltips Fix
+======================================================================= */
+$(document).ready(function() {
+  $(&#39;body&#39;).tooltip({
+    selector: &#39;[data-toggle=&quot;tooltip&quot;]&#39;,
+    trigger: &#39;hover&#39;,
+    boundary: &#39;window&#39; // Forces 4.5.3 to use the 4.6 placement boundary rules
+  });
+});
+            </code></pre>
             <h2>CSS for <code>charadex.css</code></h2>
             <pre><code>/* ============================================================= */
 /* Tooltips
@@ -264,7 +277,7 @@
                <div class="col-md-1"></div>
             </div>
             <!-- Anchors -->
-            <h1 id="anchors">Anchors & Table of Contents</h1>
+            <h1 class="anchors-title" id="anchors">Anchors & Table of Contents</h1>
             <hr>
             <div class="row mb-5">
                <div class="col-md-1"></div>
@@ -306,7 +319,7 @@
                <div class="col-md-1"></div>
             </div>
             <!-- Padding -->
-            <h1 id="padding">Padding</h1>
+            <h1 class="padding-title" id="padding">Padding</h1>
             <hr>
             <div class="mb-3">
                <p>Padding adds a small amount of space to the top, bottom, left, and right of the content the div is contained in. The space is added in to the div itself, pushing any content that's contained within inwards but not constraining the div's own size. This is an easy way to make sure the text doesn't just hang against the border of the containing element.</p>
@@ -343,7 +356,7 @@
                <div class="col-md-2"></div>
             </div>
             <!-- Margins -->
-            <h1 id="margins">Margins</h1>
+            <h1 class="margins-title" id="margins">Margins</h1>
             <hr>
             <div class="mb-3">Margin adds a small amount of space to the top, bottom, left, and right of the content the div outside the div. The space is added outside the div, increasing the empty space between the div and bordering elements. Like this, you can make sure elements don't stick to each other.</div>
             <div class="row mb-5">
@@ -397,7 +410,7 @@
                <div class="col-md-2"></div>
             </div>
             <!-- Justify Content Between -->
-            <h1 id="justifycontentbetween">Justify Content Between</h1>
+            <h1 class="justifycontentbetween-title" id="justifycontentbetween">Justify Content Between</h1>
             <div class="row mb-5">
                <div class="col-md-1"></div>
                <div class="col-md-10">
