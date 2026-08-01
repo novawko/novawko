@@ -445,8 +445,8 @@ a:active {
 
 .card {
   background-color: var(--cd-card-background-color);
-  border-width: var(--cd-card-border-width) !important;
-  border-style: var(--cd-card-border-style) !important;
+  border-width: var(--cd-card-border-width);
+  border-style: var(--cd-card-border-style);
   border-color: var(--cd-card-border-color);
   border-radius: var(--cd-border-radius) !important;
 }
@@ -454,8 +454,8 @@ a:active {
 .card-header {
   background-color: var(--cd-card-header-background-color);
   border-bottom-color: var(--cd-card-border-color);
-  border-bottom-width: var(--cd-card-border-width) !important;
-  border-bottom-style: var(--cd-card-border-style) !important;
+  border-bottom-width: var(--cd-card-border-width);
+  border-bottom-style: var(--cd-card-border-style);
   font-family: var(--cd-card-header-font-family) !important;
   border-radius: calc(var(--cd-border-radius) - 1px) calc(var(--cd-border-radius) - 1px) 0 0 !important;
 }
@@ -463,8 +463,8 @@ a:active {
 .card-footer {
   background-color: var(--cd-card-header-background-color);
   border-top-color: var(--cd-card-border-color);
-  border-top-width: var(--cd-card-border-width) !important;
-  border-top-style: var(--cd-card-border-style) !important;
+  border-top-width: var(--cd-card-border-width);
+  border-top-style: var(--cd-card-border-style);
   font-family: var(--cd-card-header-font-family) !important;
   border-radius: 0 0  calc(var(--cd-border-radius) - 1px) calc(var(--cd-border-radius) - 1px) !important;
 }
@@ -550,7 +550,7 @@ a.badge.badge-primary:active {
 /* Misc
 /* ============================================================= */
 
-.text-primary {
+.text-primary, .bg-primary, .border-primary {
   color: var(--cd-primary-color) !important;
 }
 
