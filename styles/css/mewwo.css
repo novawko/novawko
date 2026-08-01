@@ -724,13 +724,6 @@ p:last-child {
   margin-top: 1rem;
 }
 
-/* Footer Links */
-@media only screen and (max-width: 600px) {
-  .cd-footer-contents {
-    display: none;
-  }
-}
-
 /* Makes sure your text formatting is preserved from the sheet */
 /* Best for large areas like notes */
 .cd-text-pre {
@@ -754,21 +747,6 @@ p:last-child {
   .cd-hero-title {
     letter-spacing: 2px;
     font-size: 5rem;
-  }
-}
-
-/* Alignment fix for the navbar's right side */
-/* Exclusive to Nova's header */
-@media (min-width: 768px) {
-  .navbar-expand-md .navbar-nav {
-    display: flex;
-    align-items: center;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .navbar-expand-md .navbar-nav {
-    display: flex;
-    align-items: start;
   }
 }
 
