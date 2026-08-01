@@ -158,3 +158,59 @@ $(document).ready(function() {
     boundary: 'window' // Forces 4.5.3 to use the 4.6 placement boundary rules
   });
 });
+
+
+/* ==================================================================== */
+/* Dark/Light Toggle
+======================================================================= */
+  $(function () {
+
+    // Check if the toggle button actually exists on this page
+    if ($('#toggle').length === 0) {
+      return; // Exit safely without breaking anything else in this file
+    }
+
+    const bodyClass = document.body.classList;
+    const $moon = $('#theme-toggle .icon-moon');
+    const $sun = $('#theme-toggle .icon-sun');
+
+    // Helper function to update icons based on the dark mode state
+    function updateIcons(isDark) {
+      if (isDark) {
+        $moon.css('display', 'inline');
+        $sun.css('display', 'none');
+      } else {
+        $moon.css('display', 'none');
+        $sun.css('display', 'inline');
+      }
+    }
+
+    // Determine initial state
+    let isDark = false;
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem('toggle') == null) {
+      isDark = true;
+    } else if (localStorage.getItem('toggle') == 'true') {
+      isDark = true;
+    }
+
+    // Apply initial state to body and icons
+    if (isDark) {
+      bodyClass.add('dark');
+    }
+    updateIcons(isDark);
+
+    // Toggle click handler
+    $(document).on("click", "#toggle", function () {
+      if (bodyClass.contains('dark')) {
+        bodyClass.remove('dark');
+        isDark = false;
+      } else {
+        bodyClass.add('dark');
+        isDark = true;
+      }
+      
+      localStorage.setItem('toggle', isDark);
+      updateIcons(isDark);
+    });
+
+  });
