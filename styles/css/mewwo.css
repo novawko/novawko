@@ -804,7 +804,7 @@ p:last-child {
 }
 
 /* ============================================================= */
-/* Pop-Up Magic
+/* Pop-Up V1
 /* ============================================================= */
 
 .modal__img {
@@ -879,3 +879,45 @@ p:last-child {
     padding: 1.5rem;
     }
 }
+
+
+/* ============================================================= */
+/* Tooltips
+/* ============================================================= */
+
+/* 1. Global Box Styling (Background, Text, Radius) */
+.tooltip .tooltip-inner {
+  background-color: #2c3e50 !important; /* Custom background color */
+  color: #ffffff !important;            /* Text color */
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* 2. Global Arrow Color Synchronization */
+/* Top Arrow */
+.tooltip.bs-tooltip-top .arrow::before, 
+.tooltip.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-color: #2c3e50 !important;
+}
+
+/* Bottom Arrow */
+.tooltip.bs-tooltip-bottom .arrow::before, 
+.tooltip.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  border-bottom-color: #2c3e50 !important;
+}
+
+/* Left Arrow */
+.tooltip.bs-tooltip-left .arrow::before, 
+.tooltip.bs-tooltip-auto[x-placement^="left"] .arrow::before {
+  border-left-color: #2c3e50 !important;
+}
+
+/* Right Arrow */
+.tooltip.bs-tooltip-right .arrow::before, 
+.tooltip.bs-tooltip-auto[x-placement^="right"] .arrow::before {
+  border-right-color: #2c3e50 !important;
+}
+
