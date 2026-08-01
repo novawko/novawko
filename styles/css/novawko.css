@@ -17,6 +17,11 @@
 /* General Styles
 /* ============================================================= */
 
+/* Custom Cursor */
+body {
+  cursor: url('https://img-l.ink/img/1NayjB5gGkPFAsyvYOiq20u7MIArOKjgM.gif'), auto;
+}
+
 /* Sidebar Icon */
 .dumb:hover .dumbie {
   opacity: 1;
@@ -126,6 +131,39 @@ img[src=""] {
   background-position: center;
   background-size: 200px;
   min-height: 500px;
+}
+
+
+/* ============================================================= */
+/* Tooltips
+/* ============================================================= */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #000;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 
