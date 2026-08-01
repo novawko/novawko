@@ -789,6 +789,10 @@ p:last-child {
   .anchors-title, .padding-title, .margins-title, .justifycontentbetween-title, .tooltips-title, .cards-title, .progressbars-title {
     font-size: 1.5rem;
   }
+
+  #snippets-title {
+    font-size: 2.5rem;
+  }
 }
 
 
