@@ -945,3 +945,25 @@ body.dark {
   --cd-border-color:                     rgba(232, 237, 250, 0.125);
 
 }
+
+/* Base setup: default to light theme preferences */
+.theme-toggle .icon-dark {
+  display: none; /* Hide moon icon by default */
+}
+
+.theme-toggle .icon-light {
+  display: inline-block; /* Show sun icon by default */
+}
+
+/* Detect dark mode preference via system query */
+@media (prefers-color-scheme: dark) {
+  
+  .theme-toggle .icon-light {
+    display: none; /* Hide sun icon in dark mode */
+  }
+  
+  .theme-toggle .icon-dark {
+    display: inline-block; /* Show moon icon in dark mode */
+  }
+}
+
