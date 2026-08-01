@@ -916,54 +916,55 @@ p:last-child {
 
 
 /* ============================================================= */
-/* Dark Mode
+/* Dark Mode Variables
 /* ============================================================= */
 
-body.dark {
-
+body.dark-mode {
   color-scheme: dark;
 
-  /* ============================================================= */
+  /* ------------------------------------------------------------- */
   /* Backgrounds
-  ================================================================ */
-  --cd-body-background-color:            #333337;
-  --cd-content-background-color:         #3f3f44;
-  --cd-faded-background-color:           #4d4c51;
-  --cd-navbar-background-color:          #201f22;
+  ---------------------------------------------------------------- */
+  --cd-body-background-color:    #333337;
+  --cd-content-background-color: #3f3f44;
+  --cd-faded-background-color:   #4d4c51;
+  --cd-navbar-background-color:  #201f22;
 
-  /* ============================================================= */
+  /* ------------------------------------------------------------- */
   /* Text
-  ================================================================ */
-  --cd-body-text-color:                  #fafafa;
-  --cd-faded-text-color:                 #b5c8d8;
-  --cd-navbar-text-color:                var(--cd-faded-text-color);
-  --cd-link-text-color:                  var(--cd-primary-color);
+  ---------------------------------------------------------------- */
+  --cd-body-text-color:          #fafafa;
+  --cd-faded-text-color:         #b5c8d8;
+  --cd-navbar-text-color:        var(--cd-faded-text-color);
+  --cd-link-text-color:          var(--cd-primary-color);
 
-  /* ============================================================= */
+  /* ------------------------------------------------------------- */
   /* Borders
-  ================================================================ */
-  --cd-border-color:                     rgba(232, 237, 250, 0.125);
-
+  ---------------------------------------------------------------- */
+  --cd-border-color:             rgba(232, 237, 250, 0.125);
 }
 
-/* Base setup: default to light theme preferences */
+/* Light mode defaults */
 .theme-toggle .icon-dark {
-  display: none; /* Hide moon icon by default */
+  display: none;
 }
 
 .theme-toggle .icon-light {
-  display: inline-block; /* Show sun icon by default */
+  display: inline-block;
+  color: var(--cd-primary-color);
 }
 
-/* Detect dark mode preference via system query */
-@media (prefers-color-scheme: dark) {
-  
-  .theme-toggle .icon-light {
-    display: none; /* Hide sun icon in dark mode */
-  }
-  
-  .theme-toggle .icon-dark {
-    display: inline-block; /* Show moon icon in dark mode */
-  }
+/* Dark mode variations triggered by the body class */
+body.dark-mode {
+  background-color: var(--cd-body-background-color);
+  color: var(--cd-body-text-color);
 }
 
+body.dark-mode .theme-toggle .icon-light {
+  display: none;
+}
+
+body.dark-mode .theme-toggle .icon-dark {
+  display: inline-block;
+  color: var(--cd-primary-color);
+}
