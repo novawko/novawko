@@ -778,7 +778,7 @@ p:last-child {
 /* ============================================================= */
 
 @media only screen and (max-width: 600px) {
-  .anchors-title, .padding-title, .margins-title, .justifycontentbetween-title, .tooltips-title, .cards-title, .progressbars-titles {
+  .anchors-title, .padding-title, .margins-title, .justifycontentbetween-title, .tooltips-title, .cards-title, .progressbars-title {
     font-size: 1.5rem;
   }
 }
