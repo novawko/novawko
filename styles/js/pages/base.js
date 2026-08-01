@@ -33,9 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
 /* ==================================================================== */
 /* Copy to Clipboard
 ======================================================================= */
-/* ==================================================================== */
-/* Copy to Clipboard
-======================================================================= */
 const copyBtn = document.getElementById('copyBtn');
 
 if (copyBtn) {
@@ -163,12 +160,21 @@ $(document).ready(function() {
 /* ==================================================================== */
 /* Light/Dark Toggle
 ======================================================================= */
-const themeBtn = document.getElementById('theme-btn');
+  $(function () {
 
-// Check if the button actually exists on the current page before proceeding
-if (themeBtn) {
-  themeBtn.addEventListener('click', () => {
-    // Toggles the class on body to activate the CSS rule changes
-    document.body.classList.toggle('dark-mode');
+    const bodyClass = document.body.classList;
+
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem('theme-toggle') == null) {
+      bodyClass.add('dark-mode');
+    } if (localStorage.getItem('theme-toggle') == 'true') {
+      bodyClass.add('dark-mode');
+    }
+
+    $(document).on("click", "#theme-btn", function () {
+      bodyClass.contains('dark-mode')
+        ? (bodyClass.remove('dark-mode'))
+        : (bodyClass.add('dark-mode'));
+      localStorage.setItem('theme-toggle', bodyClass.contains('dark-mode'));
+    });
+
   });
-}
