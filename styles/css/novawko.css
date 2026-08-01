@@ -18,12 +18,12 @@
 /* ============================================================= */
 
 /* Custom Cursor */
-* {
-  cursor: url('https://img-l.ink/img/1NayjB5gGkPFAsyvYOiq20u7MIArOKjgM.png'), auto !important;
+body {
+  cursor: url('https://img-l.ink/img/1NayjB5gGkPFAsyvYOiq20u7MIArOKjgM.png'), auto;
 }
 
-* :hover {
-    cursor: url('https://img-l.ink/img/19OhMW3Jiafnr83iHAOQO4_fvohi-WX-V.png'), auto !important;
+a, button, input[type="submit"], input[type="button"], [role="button"] {
+  cursor: url('https://img-l.ink/img/19OhMW3Jiafnr83iHAOQO4_fvohi-WX-V.png'), pointer;
 }
 
 /* Sidebar Icon */
