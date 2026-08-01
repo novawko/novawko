@@ -772,6 +772,18 @@ p:last-child {
   color: var(--cd-rarity-legendary-txt);
 }
 
+
+/* ============================================================= */
+/* Nova's Tweaks
+/* ============================================================= */
+
+@media only screen and (max-width: 600px) {
+  .anchors-title, .padding-title, .margins-title, .justifycontentbetween-title, .tooltips-title, .cards-title, .progressbars-titles {
+    font-size: 1.5rem;
+  }
+}
+
+
 /* ============================================================= */
 /* Pop-Up V1
 /* ============================================================= */
