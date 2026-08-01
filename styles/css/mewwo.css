@@ -444,16 +444,16 @@ a:active {
 /* ============================================================= */
 
 .card {
-  background-color: var(--cd-card-background-color) !important;
+  background-color: var(--cd-card-background-color);
   border-width: var(--cd-card-border-width) !important;
   border-style: var(--cd-card-border-style) !important;
-  border-color: var(--cd-card-border-color) !important;
+  border-color: var(--cd-card-border-color);
   border-radius: var(--cd-border-radius) !important;
 }
 
 .card-header {
-  background-color: var(--cd-card-header-background-color) !important;
-  border-bottom-color: var(--cd-card-border-color) !important;
+  background-color: var(--cd-card-header-background-color);
+  border-bottom-color: var(--cd-card-border-color);
   border-bottom-width: var(--cd-card-border-width) !important;
   border-bottom-style: var(--cd-card-border-style) !important;
   font-family: var(--cd-card-header-font-family) !important;
@@ -461,8 +461,8 @@ a:active {
 }
 
 .card-footer {
-  background-color: var(--cd-card-header-background-color) !important;
-  border-top-color: var(--cd-card-border-color) !important;
+  background-color: var(--cd-card-header-background-color);
+  border-top-color: var(--cd-card-border-color);
   border-top-width: var(--cd-card-border-width) !important;
   border-top-style: var(--cd-card-border-style) !important;
   font-family: var(--cd-card-header-font-family) !important;
