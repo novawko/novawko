@@ -281,7 +281,10 @@ button[aria-expanded="true"] .display-tags {
   }
 
   .coolio img {
-	width: 100%;
+	margin-left: -40px !important;
+    margin-right: -40px !important;
+    width: calc(100% + 80px);
+    max-width: calc(100% + 80px);
   }
 
   #commissionspage_title, #bookmarkspage_title, #privacy_title, #todopage_title, #tonetagsmasterlist_title, #tonetags_title, #statuses_title {
