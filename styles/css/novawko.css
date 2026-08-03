@@ -541,7 +541,7 @@ button[aria-expanded="true"] .display-tags {
 .soft-red-btn {
   background-color: #ffbadd !important;
   border-color: #ffbadd !important;
-  color: #fff !important;
+  color: #763A4D !important;
 }
 
 .soft-red-btn:hover {
@@ -554,7 +554,7 @@ button[aria-expanded="true"] .display-tags {
 .soft-orange-btn {
   background-color: #ffdaba !important;
   border-color: #ffdaba !important;
-  color: #fff !important;
+  color: #6E3726 !important;
 }
 
 .soft-orange-btn:hover {
@@ -567,7 +567,7 @@ button[aria-expanded="true"] .display-tags {
 .soft-yellow-btn {
   background-color: #f1ea7c !important;
   border-color: #f1ea7c !important;
-  color: #fff !important;
+  color: #6E4D32 !important;
 }
 
 .soft-yellow-btn:hover {
@@ -580,7 +580,7 @@ button[aria-expanded="true"] .display-tags {
 .soft-green-btn {
   background-color: #c6ffb3 !important;
   border-color: #c6ffb3 !important;
-  color: #fff !important;
+  color: #496F3C !important;
 }
 
 .soft-green-btn:hover {
@@ -593,7 +593,7 @@ button[aria-expanded="true"] .display-tags {
 .soft-teal-btn {
   background-color: #a2fae3 !important;
   border-color: #a2fae3 !important;
-  color: #fff !important;
+  color: #448171 !important;
 }
 
 .soft-teal-btn:hover {
@@ -606,7 +606,7 @@ button[aria-expanded="true"] .display-tags {
 .soft-blue-btn {
   background-color: #b3d8ff !important;
   border-color: #b3d8ff !important;
-  color: #fff !important;
+  color: #45627F !important;
 }
 
 .soft-blue-btn:hover {
@@ -619,7 +619,7 @@ button[aria-expanded="true"] .display-tags {
 .soft-purple-btn {
   background-color: #c9b3ff !important;
   border-color: #c9b3ff !important;
-  color: #fff !important;
+  color: #4D3E74 !important;
 }
 
 .soft-purple-btn:hover {
