@@ -280,6 +280,7 @@ button[aria-expanded="true"] .display-tags {
 
   .coolio img {
 	width: 100%;
+	margin: 6.25rem 0 0 0 !important;
   }
 
   #commissionspage_title, #bookmarkspage_title, #privacy_title, #todopage_title, #tonetagsmasterlist_title, #tonetags_title, #statuses_title {
