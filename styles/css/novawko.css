@@ -266,8 +266,8 @@ button[aria-expanded="true"] .display-tags {
 @media only screen and (max-width: 600px) {
 
   .coolio {
-	display: grid !important;
-	place-items: center !important;
+	display: grid;
+	place-items: center;
     position: absolute !important;
     background-color: rgba(0, 0, 0, 0.95) !important;
     width: 100% !important;
