@@ -265,6 +265,23 @@ button[aria-expanded="true"] .display-tags {
 /* ============================================================= */
 @media only screen and (max-width: 600px) {
 
+  .coolio {
+    position: absolute !important;
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    width: 100% !important;
+    height: 100vh !important;
+    z-index: 99999 !important;
+    position: fixed !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  .coolio img {
+	width: 100%;
+  }
+
   #commissionspage_title, #bookmarkspage_title, #privacy_title, #todopage_title, #tonetagsmasterlist_title, #tonetags_title, #statuses_title {
   font-size: 2.5rem !important;
   }
