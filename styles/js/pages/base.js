@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
   Object.assign(topBtn.style, {
     position: "fixed",
     bottom: "10px",
-    right: "10px",
+    left: "10px",
     zIndex: "99999",
     border: "none",
     outline: "none",
