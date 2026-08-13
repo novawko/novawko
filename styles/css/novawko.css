@@ -19,13 +19,25 @@
 
 /* Sidebar Button IMG Icons Hover */
 /* 1. Set the initial state and transition speed */
-.pure-white {
+.soft-red-btn .pure-white,
+.soft-orange-btn .pure-white,
+.soft-yellow-btn .pure-white,
+.soft-green-btn .pure-white,
+.soft-teal-btn .pure-white,
+.soft-blue-btn .pure-white,
+.soft-purple-btn .pure-white {
   filter: none;
   transition: filter 0.3s ease; /* Makes the whitening effect smooth */
 }
 
 /* 2. Apply the filters only on hover */
-.pure-white:hover {
+.soft-red-btn .pure-white:hover,
+.soft-orange-btn .pure-white:hover,
+.soft-yellow-btn .pure-white:hover,
+.soft-green-btn .pure-white:hover,
+.soft-teal-btn .pure-white:hover,
+.soft-blue-btn .pure-white:hover,
+.soft-purple-btn .pure-white:hover {
   filter: brightness(0) invert(1);
 }
 
