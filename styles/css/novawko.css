@@ -18,9 +18,15 @@
 /* ============================================================= */
 
 /* Sidebar Button IMG Icons Hover */
-.pure-white:hover { 
+/* 1. Set the initial state and transition speed */
+.pure-white {
+  filter: none;
+  transition: filter 0.3s ease; /* Makes the whitening effect smooth */
+}
+
+/* 2. Apply the filters only on hover */
+.pure-white:hover {
   filter: brightness(0) invert(1);
-  transition: .3s ease-in-out;
 }
 
 /* Sidebar Icon */
