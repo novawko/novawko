@@ -18,8 +18,8 @@
 /* ============================================================= */
 
 /* Sidebar Button IMG Icons Hover */
-.gray:hover { 
-  filter: grayscale(100%) brightness(150%) contrast(80%);
+.pure-white:hover { 
+  filter: brightness(0) invert(1);
   transition: .3s ease-in-out;
 }
 
