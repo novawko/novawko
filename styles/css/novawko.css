@@ -17,6 +17,12 @@
 /* General Styles
 /* ============================================================= */
 
+/* Sidebar Button IMG Icons Hover */
+.gray:hover { 
+  filter: grayscale(100%) brightness(150%) contrast(80%);
+  transition: .3s ease-in-out;
+}
+
 /* Sidebar Icon */
 .dumb:hover .dumbie {
   opacity: 1;
