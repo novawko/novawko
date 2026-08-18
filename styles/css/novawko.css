@@ -316,7 +316,7 @@ button[aria-expanded="true"] .display-tags {
   }
 
   .news-right-info {
-	  font-size: 0.813rem;
+	  font-size: 0.75rem;
   }
 
   .news-post {
@@ -416,7 +416,7 @@ button[aria-expanded="true"] .display-tags {
   }
 
   .posts-info {
-      font-size: 12px;
+      font-size: 0.75rem;
   }
 
   .twitterpills {
