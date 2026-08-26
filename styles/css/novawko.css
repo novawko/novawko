@@ -441,6 +441,13 @@ button[aria-expanded="true"] .display-tags {
     height: auto !important;
   }
 
+  .custom-2x2-tabs {
+    flex-wrap: wrap;
+  }
+  .custom-2x2-tabs .nav-item {
+    flex: 1 0 50%;
+  }
+
 }
 
 
