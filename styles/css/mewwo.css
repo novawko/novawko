@@ -984,4 +984,5 @@ body.dark-mode .theme-toggle .icon-dark:hover {
   font: inherit;
   color: inherit;
   appearance: none;
+  text-align: left;
 }
