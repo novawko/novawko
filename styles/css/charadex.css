@@ -653,8 +653,10 @@ body {
 }
 
 #main-container {
-  min-height: calc(100vh - 105px);
+  min-height: calc(100vh - 100px);
   padding: 1rem;
+  display: flex;
+  align-items: center;
   -ml-flex: 1 1 auto !important;
   flex: 1 1 auto !important;
 }
