@@ -549,16 +549,8 @@ a.badge.badge-primary:active {
   color: var(--cd-primary-color) !important;
 }
 
-.text-info {
+.text-info, .bg-info {
   color: #efebce !important;
-}
-
-.text-danger {
-  color: #bb8588 !important;
-}
-
-.text-warning {
-  color: #ffcb69 !important;
 }
 
 .bg-faded {
