@@ -21,7 +21,7 @@ body {
   /* ============================================================= */
   /* Secondary Color
   /* ============================================================= */
-  --cd-secondary-color: #A9A9A9;
+  --cd-secondary-color: #808080;
   --cd-secondary-text-color: #fff;
 
   /* ============================================================= */
@@ -56,7 +56,7 @@ body {
   --cd-navbar-brand-color-hover: var(--cd-secondary-color);
   --cd-navbar-text-color: var(--cd-content-background-color);
   --cd-navbar-link-color: var(--cd-navbar-text-color);
-  --cd-navbar-link-color-hover: #A4AC86;
+  --cd-navbar-link-color-hover: #7F4F24;
   --cd-navbar-font-family: var(--cd-header-font-family);
 
   /* ============================================================= */
