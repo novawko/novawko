@@ -17,42 +17,6 @@
 /* General Styles
 /* ============================================================= */
 
-/* Sidebar Button IMG Icons Hover */
-/* 1. Set the initial state and transition speed */
-.soft-red-btn img,
-.soft-orange-btn img,
-.soft-yellow-btn img,
-.soft-green-btn img,
-.soft-teal-btn img,
-.soft-blue-btn img,
-.soft-purple-btn img {
-  filter: none;
-  transition: filter 0.3s ease; /* Makes the whitening effect smooth */
-}
-
-/* 2. Apply the filters only on hover */
-.soft-red-btn:hover img,
-.soft-orange-btn:hover img,
-.soft-yellow-btn:hover img,
-.soft-green-btn:hover img,
-.soft-teal-btn:hover img,
-.soft-blue-btn:hover img,
-.soft-purple-btn:hover img {
-  filter: brightness(0) invert(1);
-}
-
-/* Sidebar Icon */
-.dumb:hover .dumbie {
-  opacity: 1;
-}
-
-.dumb:focus,
-.dumb:active,
-.dumb:hover {
-  outline: none !important;
-  box-shadow: none !important;
-}
-
 /* Dropdown Headers */
 .dropdown-header {
   color: #f0f1c2;
@@ -70,15 +34,6 @@
 
 .truncate-3-lines * {
   max-height: 100%; /* Ensures any stray images don't peak through the bottom */
-}
-
-/* Sticky Sidebar */
-#sidebar {
-  max-width: 300px;
-  height: 400vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 35px;
 }
 
 /* Remove the broken image icons when no image data has been put */
@@ -110,18 +65,6 @@ img[src=""] {
   display: block !important;
 }
 
-/* Twitter Pills */
-.twitterpill-item {
-  border-color: #b3d8ff;
-  color: #b3d8ff !important;
-}
-
-.twitterpill-item:hover {
-  border-color: #b3d8ff;
-  color: #fff !important;
-  background-color: #b3d8ff;
-}
-
 /* Disabled Links */
 .disabled-link {
   pointer-events: none;
@@ -143,21 +86,6 @@ img[src=""] {
 .cd-permissions-scroll, .cd-notes-scroll {
   max-height: 200px;
   overflow-y: auto;
-}
-
-/* Prompts */
-.cd-prompt-background {
-  background-position: center;
-  background-size: contain;
-  background-repeat:no-repeat;
-  min-height: 200px;
-}
-
-/* Prompts Individual Profiles */
-.cd-mewwo-background {
-  background-position: center;
-  background-size: 200px;
-  min-height: 500px;
 }
 
 
@@ -236,28 +164,6 @@ button[aria-expanded="true"] .display-tags {
   .portfolio-tab-item p {
     font-size: 12px;
   }
-}
-
-
-/* ============================================================= */
-/* Commission Gallery
-/* ============================================================= */
-
-.commission-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.commission-gallery-item {
-  flex: 1 1 calc(33.333% - 5px);
-}
-
-.commission-gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  aspect-ratio: 1 / 1;
 }
 
 
@@ -350,19 +256,6 @@ button[aria-expanded="true"] .display-tags {
       padding-right: 0.5rem;
   }
 
-  .dumbie {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 210px;
-  height: 210px;
-  border-radius: 1rem;
-  background-color: rgba(217, 180, 255, 0.52);
-  opacity: 0;
-  transition: opacity 0.1s ease-in-out;
-  pointer-events: none !important;
-}
-
   #crazy {
   display: flex;
   gap: 0.625rem;
@@ -378,22 +271,6 @@ button[aria-expanded="true"] .display-tags {
     right: -30px !important;
   }
 
-  #sidebar {
-  max-width: 500px;
-  position: static;
-  }
-
-  .cd-footer-contents {
-  display: none;
-  }
-
-  #sidebaricon {
-  max-width: 210px !important;
-  min-height: 210px !important;
-  line-height: 0;
-  font-size: 0;
-  }
-
   #mewwo {
   height: 50px !important;
   }
@@ -406,21 +283,8 @@ button[aria-expanded="true"] .display-tags {
   font-size: 12px;
   }
 
-  .cd-mewwo-background {
-  min-height: 250px;
-  background-size: 100px;
-  }
-
   #portfolio_header_icons, #portfolio_header {
     font-size: 1.5rem;
-  }
-
-  .posts-info {
-      font-size: 0.625rem;
-  }
-
-  .twitterpills {
-    margin-bottom: 0.75rem;
   }
 
   .character-card, .resource-card {
@@ -460,24 +324,6 @@ button[aria-expanded="true"] .display-tags {
     padding: 2rem 1.5rem;
   }
 
-  #sidebaricon {
-  max-width: 120px !important;
-  min-height: 120px !important;
-  position: relative;
-  line-height: 0;
-  font-size: 0;
-  }
-
-  .dumb {
-  position: relative;
-  overflow: hidden;
-  border: none !important;
-  margin-left: auto;
-  margin-right: auto;
-  width: 120px;
-  height: 120px;
-  }
-
   .coolio {
     position: absolute !important;
     background-color: rgba(0, 0, 0, 0.95) !important;
@@ -490,19 +336,6 @@ button[aria-expanded="true"] .display-tags {
     left: 0 !important;
     right: 0 !important;
   }
-  
-  .dumbie {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 120px;
-  height: 120px;
-  border-radius: 1rem;
-  background-color: rgba(217, 180, 255, 0.52);
-  opacity: 0;
-  transition: opacity 0.1s ease-in-out;
-  pointer-events: none !important;
-}
 
   #log-gallery > div.log-list > div > div.col-md-9 > span > div {
     margin-left: -235px;
@@ -562,99 +395,4 @@ button[aria-expanded="true"] .display-tags {
 .nav-pills .nav-link.secondary-pill.show {
   background-color: var(--cd-secondary-color) !important;
   color: var(--cd-secondary-text-color) !important;
-}
-
-/* ============================================================= */
-/* Rainbow Buttons
-/* ============================================================= */
-
-/* Soft Red */
-.soft-red-btn {
-  background-color: #ffbadd !important;
-  border-color: #ffbadd !important;
-  color: #763A4D !important;
-}
-
-.soft-red-btn:hover {
-  background-color: var(--cd-secondary-color) !important;
-  border-color: var(--cd-secondary-color) !important;
-  color: #fff !important;
-}
-
-/* Soft Orange */
-.soft-orange-btn {
-  background-color: #ffdaba !important;
-  border-color: #ffdaba !important;
-  color: #6E3726 !important;
-}
-
-.soft-orange-btn:hover {
-  background-color: var(--cd-secondary-color) !important;
-  border-color: var(--cd-secondary-color) !important;
-  color: #fff !important;
-}
-
-/* Soft Yellow */
-.soft-yellow-btn {
-  background-color: #f1ea7c !important;
-  border-color: #f1ea7c !important;
-  color: #6E4D32 !important;
-}
-
-.soft-yellow-btn:hover {
-  background-color: var(--cd-secondary-color) !important;
-  border-color: var(--cd-secondary-color) !important;
-  color: #fff !important;
-}
-
-/* Soft Green */
-.soft-green-btn {
-  background-color: #c6ffb3 !important;
-  border-color: #c6ffb3 !important;
-  color: #496F3C !important;
-}
-
-.soft-green-btn:hover {
-  background-color: var(--cd-secondary-color) !important;
-  border-color: var(--cd-secondary-color) !important;
-  color: #fff !important;
-}
-
-/* Soft Teal */
-.soft-teal-btn {
-  background-color: #a2fae3 !important;
-  border-color: #a2fae3 !important;
-  color: #448171 !important;
-}
-
-.soft-teal-btn:hover {
-  background-color: var(--cd-secondary-color) !important;
-  border-color: var(--cd-secondary-color) !important;
-  color: #fff !important;
-}
-
-/* Soft Blue */
-.soft-blue-btn {
-  background-color: #b3d8ff !important;
-  border-color: #b3d8ff !important;
-  color: #45627F !important;
-}
-
-.soft-blue-btn:hover {
-  background-color: var(--cd-secondary-color) !important;
-  border-color: var(--cd-secondary-color) !important;
-  color: #fff !important;
-}
-
-/* Soft Purple */
-.soft-purple-btn {
-  background-color: #c9b3ff !important;
-  border-color: #c9b3ff !important;
-  color: #4D3E74 !important;
-}
-
-.soft-purple-btn:hover {
-  background-color: var(--cd-secondary-color) !important;
-  border-color: var(--cd-secondary-color) !important;
-  color: #fff !important;
 }
