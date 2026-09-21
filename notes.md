@@ -98,3 +98,17 @@
 The Naa are the size of a golden/Syrian hamster that have horns or antlers to help defend themselves with. Unlike hamsters, the Naa can be with other Naa of the same gender without fights. The Naa have a feathery coat and have either a long rat long or no tail. They run very fast and have slit pupils and razor sharp teeth. The Naa cannot fly but are very short and stubby.
 
 The Naa are the most common pets for the Kitiguars to have but they usually start off shy and very skittish. Overtime, the Naa do eventually warm up to their owner and will love them. The Naa enjoy crawling on a Kitiguar's fur because it's very soft to them since they don't have fur.
+## Kitiguar Rules
+- Do not claim the species or someone else's Kitiguar character as yours.
+- Canon-Based-Characters are allowed. Just don't heavily reference a character that may lead to copyright issues.
+- Kitiguars based on real people are not allowed. But you can make yourself and your mutuals a Kitiguarsona.
+- Don't make ideological sensitive or culturally insensitive material.
+- Co-ownership is allowed.
+- The original designer should always be credited for the design unless they gave explicit permission for you to transfer the credits entirely to you.
+- Upon trading, reselling or gifting the design to another individual, the previous owner agrees to transfer all ownership rights to the recipient.
+- All edits must be based on the original design and be recognizably the same design.
+- Blacklisted users can not interact with the community beyond trading the species.
+- If a design belonging to a blacklisted user is traded to a non-blacklisted user, the new user may use this design to participate in this community.
+- Any NSFW and suggestive content are strictly prohibited since it's a feral species community. But any degree of gore and sensitive content are allowed. Just filter it accordingly.
+- All Kitiguars must remain feral.
+- All Kitiguars must have paws, sharp teeth, a rabbit-nose, and a longish neck. Any other types of feet and teeth are forbidden. Otherwise, Kitiguars can be unique and/or mutated since they are pretty much open-traited.
