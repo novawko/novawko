@@ -549,6 +549,18 @@ a.badge.badge-primary:active {
   color: var(--cd-primary-color) !important;
 }
 
+.text-info {
+  color: #efebce !important;
+}
+
+.text-danger {
+  color: #bb8588 !important;
+}
+
+.text-warning {
+  color: #ffcb69 !important;
+}
+
 .bg-faded {
   background-color: var(--cd-faded-background-color) !important;
 }
@@ -583,11 +595,11 @@ img {
 
 /* Fix any border radiuses that were messed from before */
 .rounded {
-  border-radius: var(--cd-border-radius) !important
+  border-radius: var(--cd-border-radius) !important;
 }
 
 .rounded-circle {
-  border-radius: 100%;
+  border-radius: 100% !important;
 }
 
 .rounded-0 {
