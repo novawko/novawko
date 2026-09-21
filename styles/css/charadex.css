@@ -15,24 +15,24 @@ body {
   /* ============================================================= */
   /* Primary Color
   /* ============================================================= */
-  --cd-primary-color: #b3d8ff;
+  --cd-primary-color: #656D4A;
   --cd-primary-text-color: #fff;
 
   /* ============================================================= */
   /* Secondary Color
   /* ============================================================= */
-  --cd-secondary-color: #D3D3D3;
+  --cd-secondary-color: #A9A9A9;
   --cd-secondary-text-color: #fff;
 
   /* ============================================================= */
   /* Backgrounds
   /* ============================================================= */
   --cd-body-background-color: #f8f8f8;
-  --cd-content-background-color: #ffffff;
-  --cd-faded-background-color: #f8f8f8;
+  --cd-content-background-color: #B6AD90;
+  --cd-faded-background-color: #A68A64;
 
   /* Background Extras */
-  --cd-body-background-image: url(/assets/wallpaper2.png);
+  --cd-body-background-image: url(https://img-l.ink/img/1Sola4lvGp0zaRJwBHkCpgq1HxtdQqnYo.png);
 
   /* ============================================================= */
   /* Text
@@ -51,12 +51,12 @@ body {
   /* ============================================================= */
   /* Navbar
   /* ============================================================= */
-  --cd-navbar-background-color: #854779;
+  --cd-navbar-background-color: #582F0E;
   --cd-navbar-brand-color: var(--cd-primary-color);
   --cd-navbar-brand-color-hover: var(--cd-secondary-color);
   --cd-navbar-text-color: var(--cd-content-background-color);
   --cd-navbar-link-color: var(--cd-navbar-text-color);
-  --cd-navbar-link-color-hover: #f0f1c2;
+  --cd-navbar-link-color-hover: #A4AC86;
   --cd-navbar-font-family: var(--cd-header-font-family);
 
   /* ============================================================= */
@@ -105,7 +105,7 @@ body {
   /* Link
   /* ============================================================= */
 
-  --cd-link-text-color: #9979E5;
+  --cd-link-text-color: #936639;
   --cd-link-text-color-hover: var(--cd-secondary-color);
 
 
