@@ -47,267 +47,67 @@
    <-- Main Container
    <-------------------------------------------------------------------- -->
    <div class="container" id="main-container">
-      <div class="row justify-content-center">
-         <!-- --------------------------------------------------------------------
-         <-- Sidebar
-         <-------------------------------------------------------------------- -->
-         <div class="load-html" id="sidebar" data-source="includes/sidebar.html"></div>
-         <!-- --------------------------------------------------------------------
-         <-- Main Content
-         <-------------------------------------------------------------------- -->
-         <div class="col-md-9 p-2 mx-md-0 mx-2 mb-md-2 mb-0 bg-faded rounded">
-            <!-- Code
-            <-------------------------------------------------------------------- -->
-            <div class="container-fluid px-0">
-               <div class="card p-2" style="border-radius:0px">
-                  <!-- Banner -->
-                  <div class="py-2 rounded-0" style="background: url(https://img-l.ink/img/1xviDgW-Pl1riOWLeHiiZvRNjQ-l0XWmH.png) center; background-size:15%; border-radius: 1rem 1rem 0 0 !important;">
-                     <!-- Bullhorn, DM, Bookmark, Share -->
-                     <div class="m-5 p-1"></div>
-                  </div>
-                  <div class="bg-faded px-3 rounded-0 h-100">
-                     <div class="pt-4" align="center">
-                        <ul class="nav nav-pills twitterpills" style="float: right;">
-                           <!-- Item -->
-                           <li class="nav-item">
-                              <a class="nav-link btn btn-outline-primary mx-1 twitterpill-item" style="border-radius:25px" href="/news"><i class="fa-solid fa-bullhorn fa-fw"></i></a>
-                           </li>
-                           <!-- Item -->
-                           <li class="nav-item">
-                              <a class="nav-link btn btn-outline-primary mx-1 twitterpill-item" style="border-radius:25px" href="mailto:novawko@gmail.com"><i class="fa-solid fa-envelope fa-fw"></i></a>
-                           </li>
-                           <!-- Item -->
-                           <li class="nav-item">
-                              <a class="nav-link btn btn-outline-primary mx-1 twitterpill-item" style="border-radius:25px" href="/bookmarks"><i class="fa-solid fa-bookmark fa-fw"></i></a>
-                           </li>
-                           <!-- Item -->
-                           <button type="button" class="nav-link btn btn-outline-primary mx-1 twitterpill-item" style="border-radius:25px;" id="copyBtn" data-copy-text="https://novawko.com/">
-                              <i class="fa-solid fa-share-from-square fa-fw"></i>
-                           </button>
-                        </ul>
-                        <!-- Icon -->
-                        <img src="https://img-l.ink/img/1uhUfBray_4Vznd30ID8s5MBIlhvqAF_K.png" class="bg-faded p-1" style="float: left; max-width: 110px; max-height: 110px; margin-top: -80px; border-radius: 100% !important;">
-                     </div>
-                  </div>
-                  <!-- Description -->
-                  <div class="row no-gutters">
-                     <div class="col">
-                        <div class="card bg-faded px-4 py-2" style="border: none !important; border-radius: 0px !important;">
-                           <!-- Display Name -->
-                           <h3 style="line-height:5px;">Nova Wolfcreek <i class="fa-solid fa-shield-cat" style="line-height:5px;"></i></h3>
-                           <!-- Username -->
-                           <p class="text-muted">@Novawko</p>
-                           <!-- Bio -->
-                           <p>I'm Novawko or Pixelination, or Nova, or Pixel, or Kayla. I draw digital art and code a ton. I make free codes for Chee's project called Charadex. I'm the creator of the Kitiguars and Shining Stars story.</p>
-                           <p>I think you're here because you want to look at my art which can be found <a href="/gallery?tags=novawko">here</a> along with <a href="/portfolio">my portfoilo</a> of my current art examples. Or maybe your want help with your own Charadex website. I'm willing to help ya out. Or maybe you want to look at my characters which are all <a href="/characters">here</a>.</p>
-                           <p>Keep in mind that I'm just a member of the Charadex community, I'm not associated with staff. I just support them. All codes I do will remain free since Charadex is a free open-source framework.</p>
-                           <p class="mb-3">If you need to contact me, emailing me at <b>novawko@gmail.com</b> is the fastest, but I'm also available on the desired platforms that can be found on my Linktree.</p>
-                           <!-- Location, Link, Birthday, Stuff -->
-                           <div class="d-inline-flex">
-                              <p class="text-muted mr-3"><i class="fa-solid fa-location-dot"></i> United States</p>
-                              <p class="text-muted mr-3"><i class="fa-solid fa-cake-candles"></i> Born May 24</p>
-                              <p class="text-muted mr-3"><i class="fa-solid fa-calendar-days"></i> Joined July 2025</p>
-                              <p class="text-muted mr-3"><i class="fa-solid fa-code"></i> <a href="https://toyhou.se/7140249.f2u-bootleg-twitter"> HTML <i class="fa-regular fa-copyright fa-xs"></i> CCXVII</a></p>
-                           </div>
-                           <div class="d-inline-flex" style="margin-top: -15px">
-                              <p class="text-muted mr-3"><b>57</b> Following</p>
-                              <p class="text-muted"><b>217</b> Followers</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Tabs -->
-                  <div class="bg-faded" style="border-bottom: 1px solid rgba(0, 0, 0, 0.125);">
-                     <ul class="nav nav-pills nav-justified custom-2x2-tabs" id="twittertablist" role="tablist">
-                        <li class="nav-item"><a class="nav-link primary-pill active" data-toggle="pill" style="border-radius:0px" href="#recentposts" role="tab">Posts</a></li>
-                        <li class="nav-item"><a class="nav-link primary-pill" data-toggle="pill" style="border-radius:0px" href="#recentart" role="tab">Media</a></li>
-                        <li class="nav-item"><a class="nav-link primary-pill" data-toggle="pill" style="border-radius:0px" href="#recentcharacters" role="tab">Characters</a></li>
-                        <li class="nav-item"><a class="nav-link primary-pill" data-toggle="pill" style="border-radius:0px" href="#recentupdates" role="tab">Updates</a></li>
-                     </ul>
-                  </div>
-                  <!-- Posts
-                  -------------------------------------------------->
-                  <div class="tab-content bg-faded" style="overflow-x:hidden;overflow-y:auto;height:350px;" align="left">
-                     <div class="tab-pane fade show active" id="recentposts" role="tabpanel">
-                        <!-- Pinned Post -->
-                        <div id="pinnedpost" class="pr-2 pl-2 pb-2 px-3 bg-faded" style="border-bottom: 1px solid rgba(0, 0, 0, 0.125);">
-                           <div class="row no-gutters">
-                              <div class="col ml-1"><sub class="text-muted ml-5 mb-1"><i class="fa-solid fa-thumbtack"></i> Pinned Post</sub></div>
-                           </div>
-                           <div class="row">
-                              <div class="col-1">
-                                 <img src="https://img-l.ink/img/1uhUfBray_4Vznd30ID8s5MBIlhvqAF_K.png" class="bg-faded p-1 ml-md-0 ml-n3" style="float: left; border-radius: 100%; max-width: 60px; max-height: 60px;">
-                              </div>
-                              <div class="col ml-3">
-                                 <div class="posts-info d-inline-flex">
-                                    <b>Nova Wolfcreek <i class="fa-solid fa-shield-cat" style="line-height:5px;"></i></b>
-                                    <p class="text-muted mx-1">@Novawko</p>
-                                    <p class="text-muted"> · August 26, 2026</p>
-                                 </div>
-                                 <br>
-                                 <p style="margin-top: -15px">My commissions reopen date is currently unknown due to personal life. Read more <a href="https://novawko.com/news?profile=busyworkingstomachissues">here</a>.</p>
-                                 <div class="row mt-2">
-                                    <div class="col"><span class="text-muted"><i class="fa-solid fa-comment"></i> 0</span></div>
-                                    <div class="col"><span class="text-muted"><i class="fa-solid fa-retweet"></i> 0</span></div>
-                                    <div class="col"><span class="text-muted"><i class="fa-solid fa-heart"></i> 0</span></div>
-                                    <div class="col"><a class="text-muted" href="#pinnedpost"><i class="fa-solid fa-external-link"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- Posts -->
-                        <div id="announcement-gallery" class="pr-2 pl-2 pb-2 px-3 bg-faded" style="border-bottom: 1px solid rgba(0, 0, 0, 0.125);">
-                           <div class="announcement-list softload active"></div>
-                        </div>
-                     </div>
-                     <!-- Media
-                     -------------------------------------------------->
-                     <div class="tab-pane fade" id="recentart" role="tabpanel">
-                        <div id="artwork-gallery" class="pb-2 bg-faded" style="border-bottom: 1px solid rgba(0, 0, 0, 0.125);">
-                           <div class="artwork-list softload active"></div>
-                        </div>
-                     </div>
-                     <!-- Characters
-                     -------------------------------------------------->
-                     <div class="tab-pane fade" id="recentcharacters" role="tabpanel">
-                        <div id="design-gallery" class="pb-2 bg-faded" style="border-bottom: 1px solid rgba(0, 0, 0, 0.125);">
-                           <div class="design-list softload active"></div>
-                        </div>
-                     </div>
-                     <!-- Updates
-                     -------------------------------------------------->
-                     <div class="tab-pane fade" id="recentupdates" role="tabpanel">
-                        <div id="update-gallery" class="pb-2 bg-faded" style="border-bottom: 1px solid rgba(0, 0, 0, 0.125);">
-                           <div class="update-list softload active"></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+   <!-- --------------------------------------------------------------------
+   <-- Main Content
+   <-------------------------------------------------------------------- -->
+      <div class="card my-5 mx-md-0 mx-1 p-5" style="border: none !important; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.70);">
+	<div class="row">
+		<div class="col-md-6 col-12">
+			<img class="img-fluid rounded" src="https://img-l.ink/img/1hNAMpiPw5u3BFllTterV6TGzxfQm-QGY.png" style="height: 150px; width:600px; object-fit: cover;">
+			<h3 class="text-center mt-2 mb-1 text-uppercase"><b>Nova Wolfcreek</b></h3>
+			<h3 class="text-muted text-center small">Illustrator | Coder | Charadex Member</h3>
+		</div>
+		<div class="col-md-6 col-12">
+			<div class="row no-gutters mt-2" style="gap: .3rem; display: flex; flex-direction: row; flex-wrap: nowrap;">
+				<div class="col-6" style="flex-shrink: 0;">
+					<a class="soft-red-btn btn w-100 text-uppercase" href="https://novawko.com/portfolio"><b>Portfolio</b></a>
+				</div>
+				<div class="col-6" style="flex-shrink: 0;">
+					<a class="soft-orange-btn btn w-100 text-uppercase" href="https://novawko.com/codes"><b>Codes</b></a>
+				</div>
+			</div>
+			<div class="row no-gutters mt-1" style="gap: .3rem; display: flex; flex-direction: row; flex-wrap: nowrap;">
+				<div class="col-6" style="flex-shrink: 0;">
+					<a class="soft-yellow-btn btn w-100 text-uppercase" href="https://novawko.com/resources?folder=base"><b>Bases</b></a>
+				</div>
+				<div class="col-6" style="flex-shrink: 0;">
+					<a class="soft-green-btn btn w-100 text-uppercase" href="https://novawko.com/kitiguars"><b>Kitiguars</b></a>
+				</div>
+			</div>
+			<div class="row no-gutters mt-1" style="gap: .3rem; display: flex; flex-direction: row; flex-wrap: nowrap;">
+				<div class="col-6" style="flex-shrink: 0;">
+					<a class="soft-teal-btn btn w-100 text-uppercase" href="https://novawko.com/characters"><b>Characters</b></a>
+				</div>
+				<div class="col-6" style="flex-shrink: 0;">
+					<a class="soft-blue-btn btn w-100 text-uppercase disabled" href="#"><b>Commissions</b></a>
+				</div>
+			</div>
+			<div class="row no-gutters mt-1" style="gap: .3rem; display: flex; flex-direction: row; flex-wrap: nowrap;">
+				<div class="col-6" style="flex-shrink: 0;">
+					<a class="soft-purple-btn btn w-100 text-uppercase disabled" href="#"><b>Adoptables</b></a>
+				</div>
+				<div class="col-6" style="flex-shrink: 0;">
+					<a class="soft-red-btn btn w-100 text-uppercase" href="mailto:novawko@gmail.com"><b>Contact</b></a>
+				</div>
+			</div>
+			<div class="container mt-3">
+				<p class="text-center">
+					<a class="text-muted" href="https://novawko.com/news"><i class="fa-solid fa-newspaper fa-fw fa-2xl"></i></a>
+					<a class="text-muted" href="https://novawko.com/characters"><i class="fa-solid fa-users fa-fw fa-2xl"></i></a>
+					<a class="text-muted" href="https://novawko.com/gallery?tags=novawko"><i class="fa-solid fa-images fa-fw fa-2xl"></i></a>
+					<a class="text-muted" href="https://trello.com/b/qc9BMU7U/novawkos-to-do-queue"><i class="fa-brands fa-trello fa-fw fa-2xl"></i></a>
+					<a class="text-muted" href="mailto:novawko@gmail.com"><i class="fa-solid fa-envelope fa-fw fa-2xl"></i></a>
+					<a class="text-muted" href="https://linktr.ee/novawko"><i class="fa-solid fa-link fa-fw fa-2xl"></i></a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
    </div>
    <!-- --------------------------------------------------------------------
    <-- Footer
    <-------------------------------------------------------------------- -->
    <div class="load-html" data-source="includes/footer.html"></div>
-   <!-- --------------------------------------------------------------------
-   <-- Repeat Items
-   <-- Do not remove 'display:none;'
-   <-------------------------------------------------------------------- -->
-   <div style="display:none;">
-      <!-- Posts
-      <!-- --------------------------------------------------------------- -->
-      <div id="announcement-gallery-item" class="pb-2 bg-faded" style="border-bottom: 1px solid rgba(0, 0, 0, 0.125);">
-         <div class="row no-gutters mt-2"></div>
-         <div class="row">
-            <div class="col-1">
-               <img src="https://img-l.ink/img/1uhUfBray_4Vznd30ID8s5MBIlhvqAF_K.png" class="bg-faded p-1 ml-md-0 ml-n3" style="float: left; border-radius: 100% !important; max-width: 60px; max-height: 60px;">
-            </div>
-            <div class="col ml-3">
-               <div class="posts-info d-inline-flex mb-n3">
-                  <b>Nova Wolfcreek <i class="fa-solid fa-shield-cat" style="line-height:5px;"></i></b>
-                  <p class="text-muted mx-1">@Novawko</p>
-                  <p class="text-muted"> · <span class="posteddate"></span></p>
-               </div>
-               <br><span class="description" style="margin-top: -15px"></span>
-               <div class="row mt-2">
-                  <div class="col"><span class="text-muted"><i class="fa-solid fa-comment"></i> 0</span></div>
-                  <div class="col"><span class="text-muted"><i class="fa-solid fa-retweet"></i> 0</span></div>
-                  <div class="col"><span class="text-muted"><i class="fa-solid fa-heart"></i> 0</span></div>
-                  <div class="col"><a class="text-muted profilelink" href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- Artwork
-      <!-- --------------------------------------------------------------- -->
-      <div id="artwork-gallery-item" class="pb-2 bg-faded" style="border-bottom: 1px solid rgba(0, 0, 0, 0.125);">
-         <div class="row no-gutters mt-2"></div>
-         <div class="row px-3">
-            <div class="col-1">
-               <img src="https://img-l.ink/img/1uhUfBray_4Vznd30ID8s5MBIlhvqAF_K.png" class="bg-faded p-1 ml-md-0 ml-n3" style="float: left; border-radius: 100% !important; max-width: 60px; max-height: 60px;">
-            </div>
-            <div class="col ml-3">
-               <div class="posts-info d-inline-flex mb-n3">
-                  <b>Nova Wolfcreek <i class="fa-solid fa-shield-cat" style="line-height:5px;"></i></b>
-                  <p class="text-muted mx-1">@Novawko</p>
-                  <p class="text-muted"><span class="timestamp"></span></p>
-               </div>
-               <p style="margin-top: -5px">Posted a new artwork.</p>
-               <div class="container mt-2">
-                  <div class="row no-gutters" style="margin-left:-5px">
-                     <div class="col mr-1">
-                        <span class="cw"></span>
-                        <img class="image card img-fluid" src="" style="object-fit:cover;height:190px">
-                     </div>
-                  </div>
-               </div>
-               <div class="row mt-2">
-                  <div class="col"><span class="text-muted"><i class="fa-solid fa-comment"></i> 0</span></div>
-                  <div class="col"><span class="text-muted"><i class="fa-solid fa-retweet"></i> 0</span></div>
-                  <div class="col"><span class="text-muted"><i class="fa-solid fa-heart"></i> 0</span></div>
-                  <div class="col"><a class="text-muted profilelink" href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- Characters
-      <!-- --------------------------------------------------------------- -->
-      <div id="design-gallery-item" class="pb-2 bg-faded" style="border-bottom: 1px solid rgba(0, 0, 0, 0.125);">
-         <div class="row no-gutters mt-2"></div>
-         <div class="row px-3">
-            <div class="col-1">
-               <img src="https://img-l.ink/img/1uhUfBray_4Vznd30ID8s5MBIlhvqAF_K.png" class="bg-faded p-1 ml-md-0 ml-n3" style="float: left; border-radius: 100% !important; max-width: 60px; max-height: 60px;">
-            </div>
-            <div class="col ml-3">
-               <div class="posts-info d-inline-flex mb-n3">
-                  <b>Nova Wolfcreek <i class="fa-solid fa-shield-cat" style="line-height:5px;"></i></b>
-                  <p class="text-muted mx-1">@Novawko</p>
-               </div>
-               <br>
-               <p style="margin-top: -5px">Created a new character.</p>
-               <div class="container mt-2">
-                  <div class="row no-gutters" style="margin-left:-5px">
-                     <div class="col mr-1">
-                        <img class="avatar card img-fluid" src="" style="object-fit:cover;height:190px">
-                     </div>
-                  </div>
-               </div>
-               <div class="row mt-2">
-                  <div class="col"><span class="text-muted"><i class="fa-solid fa-comment"></i> 0</span></div>
-                  <div class="col"><span class="text-muted"><i class="fa-solid fa-retweet"></i> 0</span></div>
-                  <div class="col"><span class="text-muted"><i class="fa-solid fa-heart"></i> 0</span></div>
-                  <div class="col"><a class="text-muted profilelink" href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- Updates
-      <!-- --------------------------------------------------------------- -->
-      <div id="update-gallery-item" class="pb-2 bg-faded" style="border-bottom: 1px solid rgba(0, 0, 0, 0.125);">
-         <div class="row no-gutters mt-2"></div>
-         <div class="row px-3">
-            <div class="col-1">
-               <img src="https://img-l.ink/img/1YK2DAfTPUOAF2AxcbBOFyGBpuEPOuVU8.png" class="bg-faded p-1 ml-md-0 ml-n3" style="float: left; border-radius: 100% !important; max-width: 60px; max-height: 60px;">
-            </div>
-            <div class="col ml-3">
-               <div class="posts-info d-inline-flex mb-n3">
-                  <b>Official Automod <i class="fa-solid fa-wrench text-primary"></i></b>
-                  <p class="text-muted mx-1">@Admin</p>
-                  <p class="text-muted"> · <span class="timestamp"></span></p>
-               </div>
-               <br><span class="reason" style="margin-top: -15px"></span>
-               <div class="row mt-2">
-                  <div class="col"><span class="text-muted"><i class="fa-solid fa-comment"></i> 0</span></div>
-                  <div class="col"><span class="text-muted"><i class="fa-solid fa-retweet"></i> 0</span></div>
-                  <div class="col"><span class="text-muted"><i class="fa-solid fa-heart"></i> 0</span></div>
-                  <div class="col"><a class="text-muted" href="/updates"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
    <!-- ----------------------------------------------------------------- -->
    <!-- JS                                                                -->
    <!-- ----------------------------------------------------------------- -->
@@ -318,7 +118,5 @@
    <!-- Charadex Script -->
    <script src="styles/js/pages/base.js" type="module"></script>
    <script src="styles/js/pages/index.js" type="module"></script>
-   <!-- Donation Script -->
-   <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="Pixelination" data-description="Support me on Buy me a coffee!" data-message="Like my stuff?" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 </body>
 </html>
