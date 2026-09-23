@@ -233,7 +233,7 @@ button[aria-expanded="true"] .display-tags {
     margin: -4rem 0 -1rem 2.5rem !important;
   }
 
-  .news-pfp img {
+  .posts-pfp img {
     max-width: 50px;
     max-height: 50px;
     margin: 1rem -0.86rem !important;
