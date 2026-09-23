@@ -8,17 +8,6 @@ import { charadex } from '../charadex.js';
 /* Load
 ======================================================================= */
 document.addEventListener("DOMContentLoaded", async () => {
-  let dex = await charadex.initialize.page(null, charadex.page.news, null, 
-  (listData) => {
-    let backgroundElement = $('.cd-news-background');
-    if (listData.type == 'profile') {
-      backgroundElement.attr('style', `background-image: url(${listData.profileArray[0].image})`);
-    } else {
-      backgroundElement.each(function(i) {
-        const image = listData.array[i]?.image;
-        $(this).attr('style', `background-image: url(${image})`);
-      });
-    }
-  });
+  let dex = await charadex.initialize.page(null, charadex.page.posts);
   charadex.tools.loadPage('.softload', 500);
 });
