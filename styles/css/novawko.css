@@ -217,19 +217,19 @@ button[aria-expanded="true"] .display-tags {
     max-width: calc(100% + 80px);
   }
 
-  #commissionspage_title, #bookmarkspage_title, #privacy_title, #todopage_title, #tonetagsmasterlist_title, #tonetags_title, #statuses_title {
+  #tonetagsmasterlist_title, #tonetags_title, #statuses_title {
   font-size: 2.5rem !important;
   }
 
-  .news-right-info {
+  .posts-right-info {
 	  font-size: 0.75rem;
   }
 
-  .news-post {
+  .posts-post {
 	  font-size: small;
   }
 
-  .news-right-text {
+  .posts-right-text {
     margin: -4rem 0 -1rem 2.5rem !important;
   }
 
@@ -237,23 +237,6 @@ button[aria-expanded="true"] .display-tags {
     max-width: 50px;
     max-height: 50px;
     margin: 1rem -0.86rem !important;
-  }
-
-  .dumb {
-  position: relative;
-  overflow: hidden;
-  border: none !important;
-  margin-left: auto;
-  margin-right: auto;
-  width: 210px;
-  height: 210px;
-}
-
-  .twitterpill-item {
-      padding-top: 0.25rem;
-      padding-bottom: 0.25rem;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
   }
 
   #crazy {
@@ -266,11 +249,6 @@ button[aria-expanded="true"] .display-tags {
     gap: 0.625rem;
   }
 
-  #wonkyheart {
-    position: absolute !important;
-    right: -30px !important;
-  }
-
   #mewwo {
   height: 50px !important;
   }
@@ -281,10 +259,6 @@ button[aria-expanded="true"] .display-tags {
 
   #charadex-tags {
   font-size: 12px;
-  }
-
-  #portfolio_header_icons, #portfolio_header {
-    font-size: 1.5rem;
   }
 
   .character-card, .resource-card {
@@ -310,6 +284,10 @@ button[aria-expanded="true"] .display-tags {
   }
   .custom-2x2-tabs .nav-item {
     flex: 1 0 50%;
+  }
+
+  .posts-username-btn {
+	font-size: 0.625rem;
   }
 
 }
