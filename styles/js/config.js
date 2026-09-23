@@ -32,7 +32,7 @@ charadex.sheet = {
     characters:          "characters",
     characterLog:        "character log",
     imageGallery:        "image gallery",
-    news:                "news",
+    posts:               "posts",
     faq:                 "faq",
     resources:           "resources",
     codes:               "codes",
@@ -175,12 +175,12 @@ charadex.page.updatesCodeV2 = {
 };
 
 
-/* News
+/* Posts
 /* --------------------------------------------------------------- */
-charadex.page.news = {
+charadex.page.posts = {
 
-  sheetPage: charadex.sheet.pages.news,
-  sitePage: 'news',
+  sheetPage: charadex.sheet.pages.posts,
+  sitePage: 'posts',
   dexSelector: 'charadex',
   profileProperty: 'title',
 
@@ -386,7 +386,7 @@ charadex.page.characters = {
   sheetPage: charadex.sheet.pages.characters,
   sitePage: 'characters',
   dexSelector: 'charadex',
-  profileProperty: 'id',
+  profileProperty: 'name',
 
   sort: {
     toggle: true,
@@ -404,7 +404,7 @@ charadex.page.characters = {
   filters: {
     toggle: true,
     parameters: {
-      'Design Type': ['All', 'Original Character', 'Fan Character', 'Original Species', 'Kinsona'],
+      'Design Type': ['All', 'Original Character', 'Fan Character', 'Original Species'],
       'Trade Status': ['All', 'FH', 'NFS/T/O'],
     }
   },
@@ -412,7 +412,7 @@ charadex.page.characters = {
   fauxFolder: {
     toggle: true,
     folderProperty: 'Folder',
-    parameters: ['All', 'Warriors', 'Animal Jam', 'Kitiguars', 'Jovalan', 'FNAF', 'Pokémon', 'Adoptables', 'Unsorted', 'Misc']
+    parameters: ['All', 'Warriors', 'Kitiguars', 'Jovalan', 'Adoptables', 'Unsorted', 'Misc']
   },
 
   search: {
@@ -499,9 +499,9 @@ charadex.page.mockIndex = {
 /* --------------------------------------------------------------- */
 charadex.page.index = {
 
-  news: {
-    ... charadex.page.news,
-    dexSelector: 'announcement',
+  posts: {
+    ... charadex.page.posts,
+    dexSelector: 'post',
     amount: 10,
   },
 
@@ -514,12 +514,6 @@ charadex.page.index = {
   designs: {
     ... charadex.page.characters,
     dexSelector: 'design',
-    amount: 10,
-  },
-
-  updates: {
-    ... charadex.page.updates,
-    dexSelector: 'update',
     amount: 10,
   },
 
