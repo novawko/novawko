@@ -34,7 +34,7 @@ charadex.sheet = {
     imageGallery:        "image gallery",
     posts:               "posts",
     faq:                 "faq",
-    resources:           "resources",
+    assets:              "assets",
     codes:               "codes",
     updatesCodeV2:       "updates code v2",
     mockPrompts:         "mock prompts",
@@ -213,7 +213,7 @@ charadex.page.posts = {
   search: {
     toggle: false,
     filterToggle: false,
-    parameters: ['Title']
+    parameters: []
   },
 
   prevNext: {
@@ -330,12 +330,12 @@ charadex.page.imageGallery = {
 
 
 
-/* Resources
+/* F2U Assets
 /* --------------------------------------------------------------- */
-charadex.page.resources = {
+charadex.page.assets = {
 
-  sheetPage: charadex.sheet.pages.resources,
-  sitePage: 'resources',
+  sheetPage: charadex.sheet.pages.assets,
+  sitePage: 'assets',
   dexSelector: 'charadex',
   profileProperty: 'id',
 
@@ -418,7 +418,7 @@ charadex.page.characters = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Name', 'ID', 'Designer', 'Artist']
+    parameters: ['All', 'Name', 'Designer', 'Artist']
   },
 
   prevNext: {
