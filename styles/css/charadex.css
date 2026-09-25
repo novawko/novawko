@@ -700,3 +700,9 @@ p:last-child {
 .cd-profile-image-container > img {
   max-height: 700px;
 }
+
+/* Makes sure your text formatting is preserved from the sheet */
+/* Best for large areas like notes */
+.cd-text-pre {
+  white-space: break-spaces;
+}
