@@ -313,7 +313,7 @@ charadex.page.imageGallery = {
 
   tags: {
     toggle: true,
-    parameters: ['novawko', '2026', '2025', '2024', 'old'],
+    parameters: ['novawko', '2026', '2025', '2024', '2023', 'old'],
   },
 
   search: {
