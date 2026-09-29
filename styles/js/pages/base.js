@@ -179,37 +179,3 @@ $(document).ready(function() {
 
   });
 
-
-/* ==================================================================== */
-/* Speed Up Images
-======================================================================= */
-const optimizeAllImages = () => {
-  document.querySelectorAll('img').forEach((img) => {
-    // 1. Get the image's position relative to the screen
-    const rect = img.getBoundingClientRect();
-    
-    // 2. Check if the image is within or close to the initial viewport
-    const isAboveFold = rect.top < window.innerHeight && rect.bottom > 0;
-
-    if (isAboveFold || img.offsetTop < window.innerHeight) {
-      // Prioritize images the user can see immediately
-      img.setAttribute('fetchpriority', 'high');
-      img.setAttribute('decoding', 'sync');
-      img.removeAttribute('loading');
-    } else {
-      // Safely defer images hidden further down the page
-      if (!img.hasAttribute('loading')) {
-        img.setAttribute('loading', 'lazy');
-        img.setAttribute('decoding', 'asynchronous');
-      }
-    }
-  });
-};
-
-// Handle both standard loads and dynamic Charadex template injections
-const imageObserver = new MutationObserver(() => optimizeAllImages());
-if (document.body) {
-  imageObserver.observe(document.body, { childList: true, subtree: true });
-  optimizeAllImages(); // Run once initially
-}
-
