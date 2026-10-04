@@ -430,7 +430,7 @@ charadex.page.characters = {
     [charadex.sheet.pages.characterLog]: {
 
       sheetPage: charadex.sheet.pages.characterLog,
-      primaryProperty: 'id',
+      primaryProperty: 'name',
       relatedProperty: 'id',
       dexSelector: 'log',
       profileProperty: 'id',
