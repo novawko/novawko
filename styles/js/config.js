@@ -88,7 +88,7 @@ charadex.page.codes = {
   fauxFolder: {
     toggle: true,
     folderProperty: 'Type',
-    parameters: ['All', 'HTML', 'CSS', 'JS', 'HTML CSS', 'HTML JS', 'CSS JS', 'HTML CSS JS'],
+    parameters: ['All', 'HTML', 'CSS', 'JS', 'HTML CSS', 'HTML JS', 'CSS JS', 'HTML CSS JS', 'TH HTML'],
   },
 
   search: {
