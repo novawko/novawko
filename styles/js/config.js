@@ -313,7 +313,7 @@ charadex.page.imageGallery = {
 
   tags: {
     toggle: true,
-    parameters: ['novawko', '2026', '2025', '2024', '2023', 'old'],
+    parameters: ['novawko', '2026', '2025', '2024', '2023', 'pokemon', 'umbreon', 'eeveelution', 'kitiguars', 'warriorcats', 'animaljam', 'jovalan', 'kumiyaa', 'semiclosedspecies', 'openspecies', 'closedspecies', 'artfight', 'artfight2026', 'artfight2025', 'artfight2024', 'feral', 'anthro', 'sylvarians', 'noodlemoths', 'cedave', 'human', 'humanoid', 'lizae', 'tiger', 'kanpolo', 'deepseakanpolo', 'burgvoir', 'heavians', 'wolf', 'snowleopard', 'leopard', 'old'],
   },
 
   search: {
