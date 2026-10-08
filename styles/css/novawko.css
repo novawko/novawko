@@ -17,6 +17,15 @@
 /* General Styles
 /* ============================================================= */
 
+/* Zoom In */
+.zoom-element {
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.zoom-element:hover {
+  transform: scale(1.1); /* Zooms in by 10% (1.1x) */
+}
+
 /* Grayscale Hovers */
 .grayscale-image {
   filter: grayscale(0%);
