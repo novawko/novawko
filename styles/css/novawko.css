@@ -17,6 +17,16 @@
 /* General Styles
 /* ============================================================= */
 
+/* Grayscale Hovers */
+.grayscale-image {
+  filter: grayscale(0%);
+  transition: filter 0.3s ease;
+}
+
+.grayscale-image:hover {
+  filter: grayscale(100%);
+}
+
 /* Dropdown Headers */
 .dropdown-header {
   color: #f0f1c2;
@@ -82,8 +92,8 @@ img[src=""] {
   color: var(--cd-button-text-color) !important;
 }
 
-/* Permissions & Notes */
-.cd-permissions-scroll, .cd-notes-scroll {
+/* Scrolling Notes */
+.cd-notes-scroll {
   max-height: 200px;
   overflow-y: auto;
 }
@@ -143,27 +153,6 @@ img[src=""] {
 /* Rotate the icon 90 degrees when the collapse is open */
 button[aria-expanded="true"] .display-tags {
     transform: rotate(90deg);
-}
-
-
-/* ============================================================= */
-/* Portfolio
-/* ============================================================= */
-
-@media only screen and (max-width: 600px) {
-  .portfolio-tab-item {
-    margin-left: 0.313rem !important;
-    margin-right: 0.313rem !important;
-  }
-
-  .portfolio-tab-image {
-    height: 50px !important;
-    width: 50px !important;
-  }
-
-  .portfolio-tab-item p {
-    font-size: 12px;
-  }
 }
 
 
