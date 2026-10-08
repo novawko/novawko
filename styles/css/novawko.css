@@ -17,13 +17,21 @@
 /* General Styles
 /* ============================================================= */
 
-/* Zoom In */
-.zoom-element {
-  transition: transform 0.3s ease; /* Smooth animation */
+/* Zoom In Images */
+.img-container {
+  overflow: hidden; /* Clips the zoomed image so it stays inside the borders */
 }
 
-.zoom-element:hover {
-  transform: scale(1.1); /* Zooms in by 10% (1.1x) */
+.zoom-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out; /* Smooth transition when mouse enters/leaves */
+}
+
+/* Zooms the image when the user hovers over the container */
+.img-container:hover .zoom-img {
+  transform: scale(1.15); 
 }
 
 /* Grayscale Hovers */
