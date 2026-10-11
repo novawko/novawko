@@ -1,394 +1,583 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- ----------------------------------------------------------------- -->
-   <!-- About Your Site                                                   -->
-   <!-- ----------------------------------------------------------------- -->
-   <link rel="shortcut icon" type="image/png" href="https://novawko.com/assets/favicon.png?v=2" />
-   <title>Novawko | Characters</title>
-   <meta name="title" content="Novawko | Characters" />
-   <meta name="type" content="website" />
-   <meta name="url" content="https://novawko.com/characters" />
-   <meta property="og:image" content="https://novawko.com/assets/meta.png?v=3">
-   <meta property="og:image:type" content="image/png">
-   <meta property="og:image:width" content="1200">
-   <meta property="og:image:height" content="630">
-   <meta name="theme-color" content="#FFBF00">
-   <meta name="description" content="View characters that Nova currently owns!">
-   <!-- No AI scraping directives -->
-   <meta name="robots" content="noai">
-   <meta name="robots" content="noimageai">
-   <!-- ----------------------------------------------------------------- -->
-   <!-- Styles                                                            -->
-   <!-- ----------------------------------------------------------------- -->
-   <!-- Bootstrap CSS -->
-   <!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
-   <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-   <!-- Multiselect CSS -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
-   <!-- Font Awesome Icons -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-   <!-- ----------------------------------------------------------------- -->
-   <!-- Optional Styles                                                   -->
-   <!-- ----------------------------------------------------------------- -->
-   <!-- Custom CSS -->
-   <link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
-   <link rel="stylesheet" type="text/css" href="styles/css/novawko.css">
-   <!-- Google Font -->
-   <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500|Kalnia+Glaze:700|Honk:MORF@15&display=swap" rel="stylesheet">
-</head>
-<body id="charadex-body">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------------------------------------------------------------- -->
+    <!-- About Your Site                                                   -->
+    <!-- ----------------------------------------------------------------- -->
+    <link rel="shortcut icon" type="image/png" href="https://novawko.com/assets/favicon.png?v=2" />
+    <title>Novawko | Characters</title>
+    <meta name="title" content="Novawko | Characters" />
+    <meta name="type" content="website" />
+    <meta name="url" content="https://novawko.com/characters" />
+    <meta property="og:image" content="https://novawko.com/assets/meta.png?v=3">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="theme-color" content="#FFBF00">
+    <meta name="description" content="View characters that Nova currently owns!">
+    <!-- No AI scraping directives -->
+    <meta name="robots" content="noai">
+    <meta name="robots" content="noimageai">
+    <!-- ----------------------------------------------------------------- -->
+    <!-- Styles                                                            -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- Bootstrap CSS -->
+    <!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
+    <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Multiselect CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- ----------------------------------------------------------------- -->
+    <!-- Optional Styles                                                   -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/novawko.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500|Kalnia+Glaze:700|Honk:MORF@15&display=swap" rel="stylesheet">
+  </head>
+  <body id="charadex-body">
    <!-- --------------------------------------------------------------------
    <-- Header
    <-------------------------------------------------------------------- -->
-   <div class="load-html" id="header" data-source="includes/header.html"></div>
+    <div class="load-html" id="header" data-source="includes/header.html"></div>
    <!-- --------------------------------------------------------------------
    <-- Main Container
    <-------------------------------------------------------------------- -->
-   <div class="container" id="main-container">
+    <div class="container" id="main-container">
       <div class="row no-gutters justify-content-center w-100">
-         <!-- --------------------------------------------------------------------
-         <-- Main Content
-         <-------------------------------------------------------------------- -->
-         <div class="col-12 mx-2">
-            <div id="charadex-gallery">
-               <!-- Top Card Container
-               <!-- ----------------------------------------------------------------- -->
-               <div class="col-md-auto bg-faded p-2 rounded mb-1">
-                  <div class="card p-4">
-                     <!-- Title
-                     <!-- --------------------------------------------------------------- -->
-                     <h3 class="mb-0"><a href="/characters">Nova's Characters</a></h3>
-                     <!-- Faux Folders
-                     <!-- --------------------------------------------------------------- -->
-                     <div style="display:none;" id="charadex-folder-container">
-                        <hr>
-                        <div class="row no-gutters m-n1" id="charadex-folders"></div>
-                        <!-- Buttons -->
-                        <div style="display:none;">
-                           <div class="col-lg-3 col-md-4 col-sm-6 p-1" id="charadex-folder">
-                              <a class="btn btn-primary d-block" href=""></a>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- Filters
-                     <!-- --------------------------------------------------------------- -->
-                     <div style="display:none;" id="charadex-filter-container">
-                        <hr>
-                        <div class="row no-gutters m-n1" id="charadex-filters"></div>
-                        <!-- Filters -->
-                        <div style="display: none;">
-                           <div class="col-md-4 col-12 p-1" id="charadex-filter">
-                              <label class="px-2"></label>
-                              <select class="form-control" multiple></select>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- Search
-                     <!-- --------------------------------------------------------------- -->
-                     <div style="display:none;" id="charadex-search-container">
-                        <hr>
-                        <div class="row no-gutters m-n1">
-                           <!-- Search Filter -->
-                           <div class="col-md-4 col-6 p-1" style="display: none;">
-                              <select class="form-control" id="charadex-search-filter"></select>
-                           </div>
-                           <!-- Search Bar -->
-                           <div class="col d-flex p-1">
-                              <input class="form-control search" type="search" placeholder="Search" id="charadex-search">
-                           </div>
-                        </div>
-                     </div>
-                     <!-- Pagination
-                     <!-- --------------------------------------------------------------- -->
-                     <div style="display: none;" class="charadex-pagination-container">
-                        <hr class="mb-4 mt-4">
-                        <div class="nav d-flex justify-content-center mb-n4">
-                           <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
-                           <ul class="pagination charadex-pagination charadex-pagination-top justify-content-center m-0"></ul>
-                           <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
-                        </div>
-                     </div>
-                     <!-- Prev & Next Topbar
-                     <!-- --------------------------------------------------------------- -->
-                     <div style="display: none;" id="charadex-prevnext-container">
-                        <hr>
-                        <div class="row no-gutters px-2 text-uppercase">
-                           <div class="col-6 px-1">
-                              <a id="entryPrev" href=""><i class="fas fa-chevron-left mr-2"></i><b><span></span></b></a>
-                           </div>
-                           <div class="col-6 px-1 text-right order-md-1">
-                              <a id="entryNext" href=""><b><span></span></b><i class="fas fa-chevron-right ml-2"></i></a>
-                           </div>
-                        </div>
-                     </div>
+        <!-- --------------------------------------------------------------------
+        <-- Main Content
+        <-------------------------------------------------------------------- -->
+        <div class="col-12 mx-2">
+          <div id="charadex-gallery">
+            <!-- Top Card Container
+            <!-- ----------------------------------------------------------------- -->
+            <div class="col-md-auto bg-faded p-2 rounded mb-1">
+              <div class="card p-4">
+                <!-- Title
+                <!-- --------------------------------------------------------------- -->
+                <h3 class="mb-0"><a href="/characters">Nova's Characters</a></h3>
+                <!-- Faux Folders
+                <!-- --------------------------------------------------------------- -->
+                <div style="display:none;" id="charadex-folder-container">
+                  <hr>
+                  <div class="row no-gutters m-n1" id="charadex-folders"></div>
+                  <!-- Buttons -->
+                  <div style="display:none;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 p-1" id="charadex-folder">
+                      <a class="btn btn-primary d-block" href=""></a>
+                    </div>
                   </div>
-               </div>
-               <!-- List Items Render Here
-               <!-- --------------------------------------------------------------- -->
-               <div class="row no-gutters charadex-list softload m-n2"></div>
-               <!-- Pagination
-               <!-- --------------------------------------------------------------- -->
-               <div style="display: none;" class="charadex-pagination-container mt-2">
-                  <div class="bg-faded p-2 rounded">
-                     <div class="card px-3 py-1">
-                        <div class="nav d-flex justify-content-center">
-                           <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
-                           <ul class="pagination charadex-pagination charadex-pagination-bottom justify-content-center m-0"></ul>
-                           <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
-                        </div>
-                     </div>
+                </div>
+                <!-- Filters
+                <!-- --------------------------------------------------------------- -->
+                <div style="display:none;" id="charadex-filter-container">
+                  <hr>
+                  <div class="row no-gutters m-n1" id="charadex-filters"></div>
+                  <!-- Filters -->
+                  <div style="display: none;">
+                    <div class="col-md-4 col-12 p-1" id="charadex-filter">
+                      <label class="px-2"></label>
+                      <select class="form-control" multiple></select>
+                    </div>
                   </div>
-               </div>
+                </div>
+                <!-- Search
+                <!-- --------------------------------------------------------------- -->
+                <div style="display:none;" id="charadex-search-container">
+                  <hr>
+                  <div class="row no-gutters m-n1">
+                    <!-- Search Filter -->
+                    <div class="col-md-4 col-6 p-1" style="display: none;">
+                      <select class="form-control" id="charadex-search-filter"></select>
+                    </div>
+                    <!-- Search Bar -->
+                    <div class="col d-flex p-1">
+                      <input class="form-control search" type="search" placeholder="Search" id="charadex-search">
+                    </div>
+                  </div>
+                </div>
+                <!-- Pagination
+                <!-- --------------------------------------------------------------- -->
+                <div style="display: none;" class="charadex-pagination-container">
+                  <hr class="mb-4 mt-4">
+                  <div class="nav d-flex justify-content-center mb-n4">
+                    <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+                    <ul class="pagination charadex-pagination charadex-pagination-top justify-content-center m-0"></ul>
+                    <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+                  </div>
+                </div>
+                <!-- Prev & Next Topbar
+                <!-- --------------------------------------------------------------- -->
+                <div style="display: none;" id="charadex-prevnext-container">
+                  <hr>
+                  <div class="row no-gutters px-2 text-uppercase">
+                    <div class="col-6 px-1">
+                      <a id="entryPrev" href=""><i class="fas fa-chevron-left mr-2"></i><b><span></span></b></a>
+                    </div>
+                    <div class="col-6 px-1 text-right order-md-1">
+                      <a id="entryNext" href=""><b><span></span></b><i class="fas fa-chevron-right ml-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-         </div>
+            <!-- List Items Render Here
+            <!-- --------------------------------------------------------------- -->
+            <div class="row no-gutters charadex-list softload m-n2"></div>
+            <!-- Pagination
+            <!-- --------------------------------------------------------------- -->
+            <div style="display: none;" class="charadex-pagination-container mt-2">
+              <div class="bg-faded p-2 rounded">
+                <div class="card px-3 py-1">
+                  <div class="nav d-flex justify-content-center">
+                    <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+                    <ul class="pagination charadex-pagination charadex-pagination-bottom justify-content-center m-0"></ul>
+                    <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
    <!-- --------------------------------------------------------------------
    <-- Footer
    <-------------------------------------------------------------------- -->
-   <div class="load-html" id="footer" data-source="includes/footer.html"></div>
-   <!-- --------------------------------------------------------------------
-      <-- Repeat Items
-      <-- Do not remove 'display:none;'
-      <-------------------------------------------------------------------- -->
-   <div style="display:none;">
+    <div class="load-html" id="footer" data-source="includes/footer.html"></div>
+    <!-- --------------------------------------------------------------------
+     <-- Repeat Items
+     <-- Do not remove 'display:none;'
+     <-------------------------------------------------------------------- -->
+    <div style="display:none;">
       <!-- Gallery Items
       <!-- --------------------------------------------------------------- -->
       <div class="col-md-2 col-6 p-2" id="charadex-gallery-item">
-         <div class="character-list-container">
-            <div class="bg-faded h-100 p-2 rounded">
-               <div class="card h-100">
-                  <!-- Header -->
-                  <a class="profilelink" href="">
-                  <div class="card-header text-center p-2" style="border-radius: 1rem 1rem 0 0;">
-                     <h6 class="mb-0">
-                        <span class="displayname small"></span>
-                     </h6>
-                  </div>
-                  <!-- Avatar -->
-                  <div class="character-card img-container" style="width:100%; height:120px; border-radius: 0 0 1rem 1rem;">
-                     <img class="avatar img-fluid mx-auto d-block h-100 w-100 grayscale-image zoom-img" src="" style="object-fit: cover; border-radius: 0 0 1rem 1rem;">
-                  </div>
-                  </a>
-               </div>
+        <div class="character-list-container">
+          <div class="bg-faded h-100 p-2 rounded">
+            <div class="card h-100">
+              <!-- Header -->
+              <a class="profilelink" href="">
+                <div class="card-header text-center p-2" style="border-radius: 1rem 1rem 0 0;">
+                  <h6 class="mb-0">
+                    <span class="displayname small"></span>
+                  </h6>
+                </div>
+                <!-- Avatar -->
+                <div class="character-card img-container" style="width:100%; height:120px; border-radius: 0 0 1rem 1rem;">
+                  <img class="avatar img-fluid mx-auto d-block h-100 w-100 grayscale-image zoom-img" src="" style="object-fit: cover; border-radius: 0 0 1rem 1rem;">
+                </div>
+              </a>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
       <!-- Gallery Profile
       <!-- --------------------------------------------------------------- -->
       <div class="col-12 p-2" id="charadex-profile">
-         <span class="contentwarning"></span>
-         <div class="bg-faded p-2 rounded">
-            <div class="card">
-               <!-- Header -->
-               <div class="card-header p-4 text-center" style="border-radius: 1rem 1rem 0 0;">
-                  <h3 class="mb-0 pr-2"><a class="displayname profilelink"></a></h3>
-               </div>
-               <!-- Image -->
-               <div class="cd-profile-image-container p-md-5 p-4 text-center">
-                  <img class="image img-fluid" src="">
-               </div>
-               <!-- Nav Tabs
-               <!-- ----------------------------------------------------------- -->
-               <hr class="my-0">
-               <ul class="nav row n-gutters m-n1 py-4 px-md-5 px-4" id="profile-tabs" role="tablist">
-                  <li class="col p-1 nav-item" role="presentation">
-                     <a class="w-100 btn btn-primary active" id="profile-tab" data-toggle="tab" href="#profile" aria-controls="profile" aria-selected="true">Profile</a>
-                  </li>
-                  <li class="col p-1 nav-item" role="presentation">
-                     <a class="w-100 btn btn-primary" id="gallery-tab" data-toggle="tab" href="#gallery" aria-controls="gallery" aria-selected="true">Gallery</a>
-                  </li>
-                  <li class="col p-1 nav-item" role="presentation">
-                     <a class="w-100 btn btn-primary" id="logs-tab" data-toggle="tab" href="#logs" aria-controls="logs" aria-selected="false">Logs</a>
-                  </li>
-                  <li class="col p-1 nav-item" role="presentation">
-                     <a class="w-100 btn btn-primary" id="links-tab" data-toggle="tab" href="#links" aria-controls="links" aria-selected="false">Links</a>
-                  </li>
-               </ul>
-               <hr class="my-0">
-               <!-- Main Info
-               <!-- ----------------------------------------------------------- -->
-               <div class="p-md-5 p-4 tab-content">
-                  <!-- Main Profile
-                  <!-- ----------------------------------------------------------- -->
-                  <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                     <h4 class="text-primary">Profile</h4>
-                     <div class="row no-gutters m-n2">
-                        <div class="col-md-6 p-2">
-                           <div class="card p-4 h-100" style="background-color: #f0ead2 !important;">
-                              <!-- Item -->
-                              <div class="d-flex no-gutters mb-2">
-                                 <b class="text-muted col-md-5 col-6">Species</b>
-                                 <span class="species"></span>
-                              </div>
-                              <!-- Item -->
-                              <div class="d-flex no-gutters mb-2">
-                                 <b class="text-muted col-md-5 col-6">Design Type</b>
-                                 <span class="designtype"></span>
-                              </div>
-                              <hr>
-                              <!-- Item -->
-                              <div>
-                                 <b class="text-muted">Notes</b>
-                                 <div class="px-4 cd-text-pre notes cd-notes-scroll"></div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-md-6 p-2">
-                           <div class="card p-4 h-100" style="background-color: #f0ead2 !important;">
-                              <!-- Item -->
-                              <div class="d-flex no-gutters mb-2">
-                                 <b class="text-muted col-md-5 col-6">Owner</b>
-                                 <span class="owner"></span>
-                              </div>
-                              <!-- Item -->
-                              <div class="d-flex no-gutters mb-2">
-                                 <b class="text-muted col-md-5 col-6">Artist</b>
-                                 <span class="artist"></span>
-                              </div>
-                              <!-- Item -->
-                              <div class="d-flex no-gutters mb-2">
-                                 <b class="text-muted col-md-5 col-6">Designer</b>
-                                 <span class="designer"></span>
-                              </div>
-                              <hr>
-                              <!-- Item -->
-                              <div class="d-flex no-gutters mb-2">
-                                 <b class="text-muted col-md-5 col-6">Base Value</b>
-                                 <span class="bv"></span>
-                              </div>
-                              <!-- Item -->
-                              <div class="d-flex no-gutters mb-2">
-                                 <b class="text-muted col-md-5 col-6">Current Value</b>
-                                 <span class="cv"></span>
-                              </div>
-                              <!-- Item -->
-                              <div class="d-flex no-gutters mb-2">
-                                 <b class="text-muted col-md-5 col-6">Status</b>
-                                 <span class="tradestatus"></span>
-                              </div>
-                           </div>
-                        </div>
-                        <h4 class="text-primary ml-2 mb-0 mt-2">Information</h4>
-                        <div class="col-12 p-2">
-                           <div class="card p-4 h-100" style="background-color: #f0ead2 !important;">
-                              <!-- Item -->
-                              <div>
-                                 <div class="description"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Image Gallery
-                  <!-- ----------------------------------------------------------- -->
-                  <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab" tabindex="0">
-                     <h4 class="text-primary"><a href="#gallery">Gallery</a></h4>
-                     <div id="gallery-gallery">
-                        <!-- Pagination
-                        <!-- --------------------------------------------------------------- -->
-                        <div style="display: none;" class="gallery-pagination-container">
-                           <hr>
-                           <div class="nav d-flex justify-content-center my-n2">
-                              <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
-                              <ul class="pagination gallery-pagination gallery-pagination-top justify-content-center m-0"></ul>
-                              <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
-                           </div>
-                           <hr>
-                        </div>
-                        <!-- List -->
-                        <!-- --------------------------------------------------------------- -->
-                        <div class="row no-gutters m-n2 gallery-list"></div>
-                        <!-- List Item -->
-                        <!-- --------------------------------------------------------------- -->
-                        <div style="display: none;">
-                           <div class="col-md-4 p-2" id="gallery-gallery-item">
-                              <div class="card" style="border: none !important; background-color: #f0ead2 !important;">
-                                 <!-- Image-->
-                                 <a class="card-body cd-gallery-card p-2 d-flex flex-fill profilelink" href="">
-                                    <span class="cw"></span>
-                                    <img class="image img-fluid m-auto rounded" src="">
-                                 </a>
-                                 <!-- Artist -->
-                                 <div class="card-footer bg-faded text-right px-3 py-1 small" style="z-index: 1;">
-                                    <i class="fa-solid fa-paintbrush"></i> <span class="artist"></span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- Pagination
-                        <!-- --------------------------------------------------------------- -->
-                        <div style="display: none;" class="gallery-pagination-container">
-                           <hr>
-                           <div class="nav d-flex justify-content-center my-n2">
-                              <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
-                              <ul class="pagination gallery-pagination gallery-pagination-bottom justify-content-center m-0"></ul>
-                              <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Logs
-                  <!-- ----------------------------------------------------------- -->
-                  <div class="tab-pane fade" id="logs" role="tabpanel" aria-labelledby="logs-tab" tabindex="0">
-                     <h4 class="text-primary"><a href="#logs">Changelog</a></h4>
-                     <div class="card bg-faded p-4" id="log-gallery">
-                        <!-- List -->
-                        <!-- --------------------------------------------------------------- -->
-                        <div class="row no-gutters">
-                           <div class="col-md-3"><b>Timestamp</b></div>
-                           <div class="col-md-9"><b>Reason</b></div>
-                        </div>
-                        <hr>
-                        <div class="log-list"></div>
-                        <!-- List Item -->
-                        <!-- --------------------------------------------------------------- -->
-                        <div style="display: none;">
-                           <div class="row no-gutters" id="log-gallery-item">
-                              <div class="col-md-3"><span class="timestamp"></span></div>
-                              <div class="col-md-9"><span class="reason"></span></div>
-                           </div>
-                        </div>
-                        <!-- Pagination
-                        <!-- --------------------------------------------------------------- -->
-                        <div style="display: none;" class="log-pagination-container">
-                           <hr>
-                           <div class="nav d-flex justify-content-center mb-n4">
-                              <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
-                              <ul class="pagination log-pagination log-pagination-top justify-content-center m-0"></ul>
-                              <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Relatonships
-                  <-- ----------------------------------------------------------- -->
-                  <div class="tab-pane fade" id="links" role="tabpanel" aria-labelledby="links-tab" tabindex="0">
-                     <h4 class="text-primary"><a href="#links">Relationships</a></h4>
-                     <div class="card p-md-3 p-3 text-center" style="background-color: #f0ead2 !important;">
-                        <div class="relationships"></div>
-                     </div>
-                  </div>
-               </div>
+        <span class="contentwarning"></span>
+        <div class="bg-faded p-2 rounded">
+          <div class="card">
+            <!-- Header -->
+            <div class="card-header p-4 text-center" style="border-radius: 1rem 1rem 0 0;">
+              <h3 class="mb-0 pr-2"><a class="displayname profilelink"></a></h3>
             </div>
-         </div>
+            <!-- Image -->
+            <div class="cd-profile-image-container p-md-5 p-4 text-center">
+              <img class="image img-fluid" src="">
+            </div>
+            <!-- Nav Tabs
+            <!-- ----------------------------------------------------------- -->
+            <hr class="my-0">
+            <ul class="nav row n-gutters m-n1 py-4 px-md-5 px-4" id="profile-tabs" role="tablist">
+              <li class="col p-1 nav-item" role="presentation">
+                <a class="w-100 btn btn-primary active" id="profile-tab" data-toggle="tab" href="#profile" aria-controls="profile" aria-selected="true">Profile</a>
+              </li>
+              <li class="col p-1 nav-item" role="presentation">
+                <a class="w-100 btn btn-primary" id="gallery-tab" data-toggle="tab" href="#gallery" aria-controls="gallery" aria-selected="true">Gallery</a>
+              </li>
+              <li class="col p-1 nav-item" role="presentation">
+                <a class="w-100 btn btn-primary" id="logs-tab" data-toggle="tab" href="#logs" aria-controls="logs" aria-selected="false">Logs</a>
+              </li>
+              <li class="col p-1 nav-item" role="presentation">
+                <a class="w-100 btn btn-primary" id="links-tab" data-toggle="tab" href="#links" aria-controls="links" aria-selected="false">Links</a>
+              </li>
+              <li class="col p-1 nav-item" role="presentation">
+                <a class="w-100 btn btn-primary" id="permissions-tab" data-toggle="tab" href="#permissions" aria-controls="links" aria-selected="false">Permissions</a>
+              </li>
+            </ul>
+            <hr class="my-0">
+            <!-- Main Info
+            <!-- ----------------------------------------------------------- -->
+            <div class="p-md-5 p-4 tab-content">
+              <!-- Main Profile
+              <!-- ----------------------------------------------------------- -->
+              <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <h4 class="text-primary">Profile</h4>
+                <div class="row no-gutters m-n2">
+                  <div class="col-md-6 p-2">
+                    <div class="card p-4 h-100" style="background-color: #f0ead2 !important;">
+                      <!-- Item -->
+                      <div class="d-flex no-gutters mb-2">
+                        <b class="text-muted col-md-5 col-6">Species</b>
+                        <span class="species"></span>
+                      </div>
+                      <!-- Item -->
+                      <div class="d-flex no-gutters mb-2">
+                        <b class="text-muted col-md-5 col-6">Design Type</b>
+                        <span class="designtype"></span>
+                      </div>
+                      <hr>
+                      <!-- Item -->
+                      <div>
+                        <b class="text-muted">Notes</b>
+                        <div class="px-4 cd-text-pre notes cd-notes-scroll"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-2">
+                    <div class="card p-4 h-100" style="background-color: #f0ead2 !important;">
+                      <!-- Item -->
+                      <div class="d-flex no-gutters mb-2">
+                        <b class="text-muted col-md-5 col-6">Owner</b>
+                        <span class="owner"></span>
+                      </div>
+                      <!-- Item -->
+                      <div class="d-flex no-gutters mb-2">
+                        <b class="text-muted col-md-5 col-6">Artist</b>
+                        <span class="artist"></span>
+                      </div>
+                      <!-- Item -->
+                      <div class="d-flex no-gutters mb-2">
+                        <b class="text-muted col-md-5 col-6">Designer</b>
+                        <span class="designer"></span>
+                      </div>
+                      <hr>
+                      <!-- Item -->
+                      <div class="d-flex no-gutters mb-2">
+                        <b class="text-muted col-md-5 col-6">Base Value</b>
+                        <span class="bv"></span>
+                      </div>
+                      <!-- Item -->
+                      <div class="d-flex no-gutters mb-2">
+                        <b class="text-muted col-md-5 col-6">Current Value</b>
+                        <span class="cv"></span>
+                      </div>
+                      <!-- Item -->
+                      <div class="d-flex no-gutters mb-2">
+                        <b class="text-muted col-md-5 col-6">Status</b>
+                        <span class="tradestatus"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="text-primary ml-2 mb-0 mt-2">Information</h4>
+                  <div class="col-12 p-2">
+                    <div class="card p-4 h-100" style="background-color: #f0ead2 !important;">
+                      <!-- Item -->
+                      <div>
+                        <div class="description"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Image Gallery
+              <!-- ----------------------------------------------------------- -->
+              <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab" tabindex="0">
+                <h4 class="text-primary"><a href="#gallery">Gallery</a></h4>
+                <div id="gallery-gallery">
+                  <!-- Pagination
+                  <!-- --------------------------------------------------------------- -->
+                  <div style="display: none;" class="gallery-pagination-container">
+                    <hr>
+                    <div class="nav d-flex justify-content-center my-n2">
+                      <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+                      <ul class="pagination gallery-pagination gallery-pagination-top justify-content-center m-0"></ul>
+                      <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+                    </div>
+                    <hr>
+                  </div>
+                  <!-- List -->
+                  <!-- --------------------------------------------------------------- -->
+                  <div class="row no-gutters m-n2 gallery-list"></div>
+                  <!-- List Item -->
+                  <!-- --------------------------------------------------------------- -->
+                  <div style="display: none;">
+                    <div class="col-md-4 p-2" id="gallery-gallery-item">
+                      <div class="card" style="border: none !important; background-color: #f0ead2 !important;">
+                        <!-- Image-->
+                        <a class="card-body cd-gallery-card p-2 d-flex flex-fill profilelink" href="">
+                          <span class="cw"></span>
+                          <img class="image img-fluid m-auto rounded" src="">
+                        </a>
+                        <!-- Artist -->
+                        <div class="card-footer bg-faded text-right px-3 py-1 small" style="z-index: 1;">
+                          <i class="fa-solid fa-paintbrush"></i> <span class="artist"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Pagination
+                  <!-- --------------------------------------------------------------- -->
+                  <div style="display: none;" class="gallery-pagination-container">
+                    <hr>
+                    <div class="nav d-flex justify-content-center my-n2">
+                      <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+                      <ul class="pagination gallery-pagination gallery-pagination-bottom justify-content-center m-0"></ul>
+                      <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Logs
+              <!-- ----------------------------------------------------------- -->
+              <div class="tab-pane fade" id="logs" role="tabpanel" aria-labelledby="logs-tab" tabindex="0">
+                <h4 class="text-primary"><a href="#logs">Changelog</a></h4>
+                <div class="card bg-faded p-4" id="log-gallery">
+                  <!-- List -->
+                  <!-- --------------------------------------------------------------- -->
+                  <div class="row no-gutters">
+                    <div class="col-md-3"><b>Timestamp</b></div>
+                    <div class="col-md-9"><b>Reason</b></div>
+                  </div>
+                  <hr>
+                  <div class="log-list"></div>
+                  <!-- List Item -->
+                  <!-- --------------------------------------------------------------- -->
+                  <div style="display: none;">
+                    <div class="row no-gutters" id="log-gallery-item">
+                      <div class="col-md-3"><span class="timestamp"></span></div>
+                      <div class="col-md-9"><span class="reason"></span></div>
+                    </div>
+                  </div>
+                  <!-- Pagination
+                  <!-- --------------------------------------------------------------- -->
+                  <div style="display: none;" class="log-pagination-container">
+                    <hr>
+                    <div class="nav d-flex justify-content-center mb-n4">
+                      <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+                      <ul class="pagination log-pagination log-pagination-top justify-content-center m-0"></ul>
+                      <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Relatonships
+              <-- ----------------------------------------------------------- -->
+              <div class="tab-pane fade" id="links" role="tabpanel" aria-labelledby="links-tab" tabindex="0">
+                <h4 class="text-primary"><a href="#links">Relationships</a></h4>
+                <div class="card p-md-3 p-3 text-center" style="background-color: #f0ead2 !important;">
+                  <div class="relationships"></div>
+                </div>
+              </div>
+              <!-- Permissions
+              <-- ----------------------------------------------------------- -->
+              <div class="tab-pane fade" id="permissions" role="tabpanel" aria-labelledby="permissions-tab" tabindex="0">
+                  <h4 class="text-primary">Global Permissions</h4>
+                  <div class="card p-md-3 p-3" style="background-color: #f0ead2 !important;">
+                    <div class="text-center text-muted mb-2" style="font-family:courier;">
+                      <span class="mr-2"><i class="fa-solid fa-circle-check text-success"></i> okay</span>
+                      <span class="mr-2 ml-2"><i class="fa-solid fa-circle-question text-warning"></i> ask</span>
+                      <span class="ml-2"><i class="fa-solid fa-circle-xmark text-danger"></i> don't</span>
+                    </div>
+                    <div class="card p-0 container-fluid">
+                      <div class="row no-gutters">
+                        <div class="col-md-3 p-2">
+                          <h5 class="text-center my-0">Design</h5>
+                          <div class="card my-2"></div>
+                          <ul class="fa-ul text-muted m-0 ml-4" style="font-family:courier;">
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> artistic liberty</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> simplification</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-info"></i></span> general alterations</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> different gender</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> diff. body type</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-question text-warning"></i></span> diff. hairstyle</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> diff. colors</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> missing features</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-info"></i></span> different species</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> default</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> human</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> anthro</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> feral</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> monster/cryptid</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> mythological</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-info"></i></span> different clothing</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> minimalist</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> revealing</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-success text-success"></i></span> form-fitting</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> different themes</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3 p-2">
+                          <h5 class="text-center my-0">NSFL content</h5>
+                          <div class="card my-2"></div>
+                          <ul class="fa-ul text-muted m-0 ml-4" style="font-family:courier;">
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-info"></i></span> injury</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> minor injuries</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-question text-warning"></i></span> gaping wounds</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> dislocated joints</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> broken bones</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> burns</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> blunt-force</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> head injuries</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> bullet wounds</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-question text-warning"></i></span> stab wounds</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-info"></i></span> gore</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> cartoony style</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> 'candy gore'</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> realistic</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> gut spill</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> excessive blood</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> skinned</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-info"></i></span> harm/harming others</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> assault</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-question text-warning"></i></span> murder</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> torture</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> suicide</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-question text-warning"></i></span> self-harm</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-question text-warning"></i></span> deceased</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> decomposing</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3 p-2">
+                          <h5 class="text-center my-0">NSFW content</h5>
+                          <div class="card my-2"></div>
+                          <ul class="fa-ul text-muted m-0 ml-4" style="font-family:courier;">
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-question text-warning"></i></span> non-explicit</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-question text-warning"></i></span> suggestive</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-question text-warning"></i></span> implied s**</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-question text-warning"></i></span> joke content</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-info"></i></span> nudity</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> non-s**ual</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> s**ual</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-question text-warning"></i></span> s**ual acts</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> intercourse</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> BDSM</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> fetish content</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3 p-2">
+                          <h5 class="text-center my-0">Interactions</h5>
+                          <div class="card my-2"></div>
+                          <ul class="fa-ul text-muted m-0 ml-4" style="font-family:courier;">
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-info"></i></span> generally interacting</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> w/ my OCs</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> w/ your OCs</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> w/ canon chars.</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> crossovers</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> friendly talking</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> arguing/fighting</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-info"></i></span> (SFW) affection</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> hand-holding</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> hugging</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> cuddling</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> kissing</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> nicknames</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> petnames</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-info"></i></span> shipping</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-question text-warning"></i></span> w/ my OCs</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> w/ your OCs</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-question text-warning"></i></span> w/ canon chars.</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> rivalries</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4 p-2 mt-md-4">
+                          <h5 class="text-center my-0">Activities</h5>
+                          <div class="card my-2"></div>
+                          <ul class="fa-ul text-muted m-0 ml-4" style="font-family:courier;">
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> w/ pets</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-question text-warning"></i></span> w/ weapons</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-info"></i></span> using substances</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> alcohol</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> drugs</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> sleeping</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> ^ otherwise relaxing</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> outdoors</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> dancing</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> religious-related</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> government-related</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4 p-2 mt-md-4">
+                          <h5 class="text-center my-0">Other</h5>
+                          <div class="card my-2"></div>
+                          <ul class="fa-ul text-muted m-0 ml-4" style="font-family:courier;">
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> OOC</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-info"></i></span> crossovers</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> your universe</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> canon universe</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> AUs</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4 p-2 mt-md-4">
+                          <h5 class="text-center my-0">Audience Interaction</h5>
+                          <div class="card my-2"></div>
+                          <ul class="fa-ul text-muted m-0 ml-4" style="font-family:courier;">
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> artwork</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> writing</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> headcanons</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> kinning</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> using art as pfp/banner</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> adding art to char. galleries</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-xmark text-danger"></i></span> reposting art</li>
+                            <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-circle-info"></i></span> artfight attacks</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> digital art</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> traditional art</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> animated/GIFs</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> map/pmv vids</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> 3D modals</li>
+                            <li class="mt-1 ml-4"><span class="fa-li"><i class="fa-solid fa-circle-check text-success"></i></span> crafts</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container-fluid mt-2 p-0">
+                      <h3 class="mb-1 mt-2">Notes...</h3>
+                      <ul class="fa-ul ml-4 my-0 text-muted">
+                        <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span> All underaged characters and feral characters must <b>not</b> have NSFW. NSFW only applies to adult-aged characters and human and anthro characters.</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span> Always check the individual character permissions and links if any.</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span> You may draw my characters randomly! I love when people draw my characters.</li>
+                        <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span> Remember that some of these aren't allowed on Art Fight due to their rules about drawing canon characters on-site.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Credits -->
+                  <div class="row no-gutters align-items-center">
+                    <div class="col">
+                      <div class="card"></div>
+                    </div>
+                    <div class="col-auto px-1"><a href="https://toyhou.se/25861684.html-art-permissions-f2u"><i class="fa-solid fa-code fa-xs" data-toggle="tooltip" title="code by rottenmaw"></i></a></div>
+                    <div class="col">
+                      <div class="card"></div>
+                    </div>
+                  </div>
+                <h4 class="text-primary"><a href="#permissions">Character Permissions</a></h4>
+                <div class="card p-md-3 p-3" style="background-color: #f0ead2 !important;">
+                  <div class="permissions"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <!-- ----------------------------------------------------------------- -->
-   <!-- JS                                                                -->
-   <!-- ----------------------------------------------------------------- -->
-   <!-- JQuery -->
-   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-   <!-- Bootstrap -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-   <!-- Bootstrap Multiselect -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-   <!-- Charadex Script -->
-   <script src="styles/js/pages/characters.js" type="module"></script>
-   <script src="styles/js/pages/base.js" type="module"></script>
-</body>
+    </div>
+    <!-- ----------------------------------------------------------------- -->
+    <!-- JS                                                                -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- Bootstrap Multiselect -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <!-- Charadex Script -->
+    <script src="styles/js/pages/characters.js" type="module"></script>
+    <script src="styles/js/pages/base.js" type="module"></script>
+  </body>
 </html>
