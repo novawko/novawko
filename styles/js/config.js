@@ -405,7 +405,7 @@ charadex.page.characters = {
     toggle: true,
     parameters: {
       'Design Type': ['All', 'Original Character', 'Fan Character', 'Original Species'],
-      'Trade Status': ['All', 'Forever Homed', 'For Offer', 'Freebie', 'On Hold', 'Not For Trade'],
+      'Trade Status': ['All', 'Forever Homed', 'For Offer', 'Freebie', 'On Hold', 'Transferring', 'Not For Trade'],
     }
   },
 
