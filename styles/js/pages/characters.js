@@ -1,11 +1,7 @@
 /* ==================================================================== */
 /* Import Charadex
 ======================================================================= */
-import {
-   charadex
-}
-
-from '../charadex.js';
+import { charadex } from '../charadex.js';
 
 
 /* ==================================================================== */
@@ -13,34 +9,54 @@ from '../charadex.js';
 ======================================================================= */
 document.addEventListener("DOMContentLoaded", async () => {
 
-   let dex = await charadex.initialize.page(null,
-      charadex.page.characters,
+   let dex = await charadex.initialize.page(
       null,
-      async (listData) => {
+      charadex.page.characters,
+      
+      // Callback 1: Format array items (including your tags snippet)
+      (arr) => {
+         for (let entry of arr) {
+            // Make the tags pretty and actually work
+            entry.tags = entry.tags ? entry.tags.split(',') : [];
+            let fancyTagArr = [];
+            if (entry.tags.length >= 1) {
+               for (let tag of entry.tags) {
+                  fancyTagArr.push(`<a href="${charadex.url.addUrlParameters(charadex.url.getPageUrl(charadex.page.characters.sitePage), {tags: tag})}">#${tag.trim()}</a>`);
+               }
+            }
+            entry.fancytags = fancyTagArr.join(' ');
+         }
+      },
 
+      // Callback 2: Handle profile views, logs, and galleries
+      async (listData) => {
          if (listData.type == 'profile') {
             
             console.log(listData.profileArray[0]);
 
             // Create the log dex
             if (charadex.tools.checkArray(listData.profileArray[0].characterlog)) {
-               let logs = await charadex.initialize.page(listData.profileArray[0].characterlog,
-                  charadex.page.characters.relatedData['character log']);
+               let logs = await charadex.initialize.page(
+                  listData.profileArray[0].characterlog,
+                  charadex.page.characters.relatedData['character log']
+               );
             }
 
             // Create the image gallery
             if (charadex.tools.checkArray(listData.profileArray[0].imagegallery)) {
-               let gallery = await charadex.initialize.page(listData.profileArray[0].imagegallery,
-                  charadex.page.characters.relatedData['image gallery']);
+               let gallery = await charadex.initialize.page(
+                  listData.profileArray[0].imagegallery,
+                  charadex.page.characters.relatedData['image gallery']
+               );
             }
-
          }
-
-      });
+      }
+   );
 
    charadex.tools.loadPage('.softload', 500);
 
 });
+
 
 
 /* ==================================================================== */
