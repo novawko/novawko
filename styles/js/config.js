@@ -417,7 +417,7 @@ charadex.page.characters = {
 
   tags: {
     toggle: true,
-    parameters: ['needsnewref', 'donotdraw', 'human', 'sona', 'persona', 'foreverhomed', 'feral', 'warriors', 'warriorcats', 'fancharacter', 'originalcharacter', 'fandom', 'cat', 'jovalan', 'burgvoir', 'closedspecies', 'originalspecies', 'heavian', 'anthro, 'deepseakanpolo', 'hyperkanpolo', 'pending', 'onhold', 'kumiyaa', 'munchkin', 'bones', 'fire', 'eyes', 'noodlemoth', 'wings', 'shapeshifter', 'sylvarian', 'feline', 'yuecoatl', 'petspecies', 'pet', 'snake', 'rodent', 'chubbo', 'felinesylvarian', 'woobar', 'calico', 'pink', 'black', 'soft', 'kitiguar, 'horns', 'white', 'armor', 'mask', 'collar', 'fluffy', 'antlers', 'fursona', 'fishy', 'heterochromia', 'chains', 'lizard', 'legs', 'caninesylvarian', 'neon', 'rainbow', 'fox'],
+    parameters: ['needsnewref', 'donotdraw', 'human', 'sona', 'persona', 'foreverhomed', 'feral', 'warriors', 'warriorcats', 'fancharacter', 'originalcharacter', 'fandom', 'cat', 'jovalan', 'burgvoir', 'closedspecies', 'semiclosedspecies', 'openspecies', 'originalspecies', 'heavian', 'anthro, 'kanpolo', 'deepseakanpolo', 'hyperkanpolo', 'pending', 'onhold', 'kumiyaa', 'munchkin', 'bones', 'fire', 'eyes', 'noodlemoth', 'wings', 'shapeshifter', 'sylvarian', 'feline', 'canine', 'yuecoatl', 'petspecies', 'pet', 'snake', 'rodent', 'chubbo', 'felinesylvarian', 'woobar', 'calico', 'pink', 'black', 'soft', 'kitiguar', 'horns', 'white', 'armor', 'mask', 'collar', 'fluffy', 'antlers', 'fursona', 'fishy', 'heterochromia', 'chains', 'lizard', 'legs', 'caninesylvarian', 'neon', 'rainbow', 'fox'],
   },
 
   search: {
