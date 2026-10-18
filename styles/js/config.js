@@ -415,6 +415,11 @@ charadex.page.characters = {
     parameters: ['All', 'Warriors', 'Kitiguars', 'Jovalan', 'Adoptables', 'Unsorted', 'Misc']
   },
 
+  tags: {
+    toggle: true,
+    parameters: ['needsnewref', 'donotdraw'],
+  },
+
   search: {
     toggle: true,
     filterToggle: true,
