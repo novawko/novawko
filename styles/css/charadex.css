@@ -15,21 +15,21 @@ body {
   /* ============================================================= */
   /* Primary Color
   /* ============================================================= */
-  --cd-primary-color: #656D4A;
+  --cd-primary-color: #8FB7D4;
   --cd-primary-text-color: #fff;
 
   /* ============================================================= */
   /* Secondary Color
   /* ============================================================= */
-  --cd-secondary-color: #808080;
+  --cd-secondary-color: #939799;
   --cd-secondary-text-color: #fff;
 
   /* ============================================================= */
   /* Backgrounds
   /* ============================================================= */
   --cd-body-background-color: #f8f8f8;
-  --cd-content-background-color: #B6AD90;
-  --cd-faded-background-color: #A68A64;
+  --cd-content-background-color: #FFFFFF;
+  --cd-faded-background-color: #f8f8f8;
 
   /* Background Extras */
   --cd-body-background-image: url(https://img-l.ink/img/1ELKbT7yUtGtG4qm7hyvWQvKUb6Jlthvt.jpeg);
@@ -51,12 +51,12 @@ body {
   /* ============================================================= */
   /* Navbar
   /* ============================================================= */
-  --cd-navbar-background-color: #582F0E;
+  --cd-navbar-background-color: #a569b8;
   --cd-navbar-brand-color: var(--cd-primary-color);
   --cd-navbar-brand-color-hover: var(--cd-secondary-color);
   --cd-navbar-text-color: var(--cd-content-background-color);
   --cd-navbar-link-color: var(--cd-navbar-text-color);
-  --cd-navbar-link-color-hover: #7F4F24;
+  --cd-navbar-link-color-hover: #e8df7d;
   --cd-navbar-font-family: var(--cd-header-font-family);
 
   /* ============================================================= */
@@ -105,7 +105,7 @@ body {
   /* Link
   /* ============================================================= */
 
-  --cd-link-text-color: #936639;
+  --cd-link-text-color: #4c8ebd;
   --cd-link-text-color-hover: var(--cd-secondary-color);
 
 
@@ -257,12 +257,6 @@ a:active {
   color: var(--cd-navbar-brand-color-hover) !important;
 }
 
-@media only screen and (max-width: 600px) {
-  .navbar .navbar-brand {
-  margin-left: unset;
-  }
-}
-
 .navbar .navbar-nav .nav-link {
   color: var(--cd-navbar-link-color) !important;
 }
@@ -323,7 +317,7 @@ a:active {
   background-color: var(--cd-navbar-dropdown-background-hover) !important;
 }
 
-.navbar .dropdown- {
+.navbar .dropdown-header {
   color: var(--cd-navbar-dropdown-link-color-hover) !important;
 }
 
@@ -525,8 +519,8 @@ a.badge.badge-primary:active {
   }
 
   body::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: 4px;
+    height: 4px;
   }
 
   body::-webkit-scrollbar-thumb {
@@ -547,10 +541,6 @@ a.badge.badge-primary:active {
 
 .text-primary {
   color: var(--cd-primary-color) !important;
-}
-
-.text-info, .bg-info {
-  color: #efebce !important;
 }
 
 .bg-faded {
