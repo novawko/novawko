@@ -247,7 +247,7 @@ a:active {
 }
 
 .navbar .navbar-brand {
-  color: var(--cd-navbar-brand-color) !important;
+  color: var(--cd-navbar-brand-color);
   font-size: 2rem;
   margin-left: 20px;
 }
