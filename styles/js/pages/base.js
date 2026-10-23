@@ -95,15 +95,16 @@ document.addEventListener("DOMContentLoaded", () => {
     outline: "none",
     backgroundColor: "transparent",
     color: "white",
-    padding: "15px",
-    fontSize: "50px",
+    padding: "0px",
+    fontSize: "40px",
     opacity: "0",          // start invisible
     pointerEvents: "none", // prevent clicking while hidden
     transition: "opacity 0.3s ease-in-out",
-    width: "50px",
-    height: "50px",
+    width: "40px",
+    height: "40px",
+    borderRadius: "100%",
     lineHeight: "0px",     // vertically centers the arrow
-    boxShadow: "0px 4px 6px rgba(0,0,0,0.5)"
+    boxShadow: "8px 4px 6px rgba(0,0,0,0.5)"
   });
 
   // 3. Show button when user scrolls down 300px
