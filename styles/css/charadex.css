@@ -212,7 +212,7 @@ body {
   background-color: var(--cd-body-background-color);
   background-image: var(--cd-body-background-image);
   background-position: center;
-  background-size: 200px;
+  background-size: 600px;
   background-attachment: fixed;
 
 }
@@ -449,7 +449,7 @@ a:active {
 }
 
 .card-footer {
-  background-color: var(--cd-card--background-color) !important;
+  background-color: var(--cd-card--background-color);
   border-top-color: var(--cd-card-border-color) !important;
   border-top-width: var(--cd-card-border-width) !important;
   border-top-style: var(--cd-card-border-style) !important;
