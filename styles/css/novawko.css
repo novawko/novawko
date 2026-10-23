@@ -18,7 +18,7 @@
 /* ============================================================= */
 
 /* Zoom In Images */
-.img-container {
+.zoom-img-container {
   overflow: hidden; /* Clips the zoomed image so it stays inside the borders */
 }
 
@@ -27,11 +27,11 @@
 }
 
 /* Zooms the image when the user hovers over the container */
-.img-container:hover .zoom-img {
+.zoom-img-container:hover .zoom-img {
   transform: scale(1.15); 
 }
 
-/* Grayscale Hovers */
+/* Grayscale Image Hovers */
 .grayscale-image {
   filter: grayscale(0%);
   transition: filter 0.3s ease;
@@ -39,11 +39,6 @@
 
 .grayscale-image:hover {
   filter: grayscale(100%);
-}
-
-/* Dropdown Headers */
-.dropdown-header {
-  color: #f0f1c2;
 }
 
 /* Truncate */
@@ -151,6 +146,31 @@ img[src=""] {
 .tooltip.bs-tooltip-right .arrow::before, 
 .tooltip.bs-tooltip-auto[x-placement^="right"] .arrow::before {
   border-right-color: #2c3e50 !important;
+}
+
+
+/* ============================================================= */
+/* Border Classes Fix
+/* ============================================================= */
+
+.border-0 {
+	border: 0 !important;
+}
+
+.border-top-0 {
+	border-top: 0 !important;
+}
+
+.border-right-0 {
+	border-right: 0 !important;
+}
+
+.border-bottom-0 {
+	border-bottom: 0 !important;
+}
+
+.border-left-0 {
+	border-left: 0 !important;
 }
 
 
