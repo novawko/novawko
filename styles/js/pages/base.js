@@ -31,23 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 /* ==================================================================== */
-/* Copy to Clipboard
-======================================================================= */
-const copyBtn = document.getElementById('copyBtn');
-
-if (copyBtn) {
-    copyBtn.addEventListener('click', function() {
-        const textToCopy = this.getAttribute('data-copy-text');
-        
-        navigator.clipboard.writeText(textToCopy).then(() => {
-            alert("Copied successfully!");
-        }).catch(err => {
-            console.error("Failed to copy text: ", err);
-        });
-    });
-}
-
-/* ==================================================================== */
 /* Handle URL Hashes for Tabs/Pills
 ======================================================================= */
 $(document).ready(function () {
@@ -97,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Create the button element dynamically
   const topBtn = document.createElement("button");
-  topBtn.innerHTML = "&#8593;"; // Up arrow icon
+  topBtn.innerHTML = '<i class="fa-solid fa-circle-chevron-up"></i>'; // Font Awesome icon
   topBtn.setAttribute("id", "globalBackToTop");
   topBtn.setAttribute("title", "Go to top");
   document.body.appendChild(topBtn);
@@ -110,11 +93,10 @@ document.addEventListener("DOMContentLoaded", () => {
     zIndex: "99999",
     border: "none",
     outline: "none",
-    backgroundColor: "#333",
+    backgroundColor: "transparent",
     color: "white",
     padding: "15px",
-    borderRadius: "50%",
-    fontSize: "32px",
+    fontSize: "50px",
     opacity: "0",          // start invisible
     pointerEvents: "none", // prevent clicking while hidden
     transition: "opacity 0.3s ease-in-out",
