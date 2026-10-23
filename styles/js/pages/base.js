@@ -91,19 +91,23 @@ document.addEventListener("DOMContentLoaded", () => {
     bottom: "10px",
     left: "10px",
     zIndex: "99999",
-    border: "none",
+    borderStyle: "solid",
+    borderWidth: "1px",
+    borderColor: "black",
     outline: "none",
     backgroundColor: "transparent",
     color: "white",
     padding: "0px",
-    fontSize: "40px",
+    fontSize: "20px",
     opacity: "0",          // start invisible
     pointerEvents: "none", // prevent clicking while hidden
     transition: "opacity 0.3s ease-in-out",
     width: "40px",
     height: "40px",
     borderRadius: "100%",
-    lineHeight: "0px",     // vertically centers the arrow
+    display: "flex",
+    alignItems: "center",           // Centers vertically
+    justifyContent: "center",       // Centers horizontally
     boxShadow: "8px 4px 6px rgba(0,0,0,0.5)"
   });
 
