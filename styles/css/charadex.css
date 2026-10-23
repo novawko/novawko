@@ -51,19 +51,19 @@ body {
   /* ============================================================= */
   /* Navbar
   /* ============================================================= */
-  --cd-navbar-background-color: #a569b8;
+  --cd-navbar-background-color: #291720;
   --cd-navbar-brand-color: var(--cd-primary-color);
   --cd-navbar-brand-color-hover: var(--cd-secondary-color);
   --cd-navbar-text-color: var(--cd-content-background-color);
   --cd-navbar-link-color: var(--cd-navbar-text-color);
-  --cd-navbar-link-color-hover: #e8df7d;
+  --cd-navbar-link-color-hover: var(--cd-secondary-color);
   --cd-navbar-font-family: var(--cd-header-font-family);
 
   /* ============================================================= */
   /* Main Fonts
   /* ============================================================= */
-  --cd-body-font-family: 'Montserrat', sans-serif;
-  --cd-header-font-family: 'Comfortaa', sans-serif;
+  --cd-body-font-family: 'Comic Relief', sans-serif;
+  --cd-header-font-family: 'Chewy', sans-serif;
 
 
   /* ============================================================= */
