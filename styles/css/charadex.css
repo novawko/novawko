@@ -32,7 +32,7 @@ body {
   --cd-faded-background-color: #A68A64;
 
   /* Background Extras */
-  --cd-body-background-image: url(https://img-l.ink/img/16CJg8SgduOLLzsdcvPZS9EZUfk0zQoF9.jpeg);
+  --cd-body-background-image: url(https://img-l.ink/img/1ELKbT7yUtGtG4qm7hyvWQvKUb6Jlthvt.jpeg);
 
   /* ============================================================= */
   /* Text
@@ -610,7 +610,7 @@ img {
 
 .softload.active {
   opacity: 1;
-  transition: opacity .1s ease;
+  transition: opacity 2s ease;
 }
 
 /* Fades container in on load so its not as jarring */
