@@ -647,6 +647,7 @@ body {
   padding: 1rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   -ml-flex: 1 1 auto !important;
   flex: 1 1 auto !important;
 }
