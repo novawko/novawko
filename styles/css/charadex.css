@@ -643,12 +643,18 @@ body {
 }
 
 #main-container {
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 105px);
   padding: 1rem;
   display: flex;
   align-items: center;
   -ml-flex: 1 1 auto !important;
   flex: 1 1 auto !important;
+}
+
+@media (min-width: 768px) {
+  #main-container {
+    padding: 5rem 1.5rem;
+  }
 }
 
 /* Remove ugly box shadow */
