@@ -82,7 +82,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const topBtn = document.createElement("button");
   topBtn.innerHTML = '<i class="fa-solid fa-circle-chevron-up"></i>'; // Font Awesome icon
   topBtn.setAttribute("id", "globalBackToTop");
-  topBtn.setAttribute("title", "Go to top");
+  topBtn.setAttribute("data-toggle", "tooltip");
+  topBtn.setAttribute("data-placement", "right"); // Options: 'top', 'bottom', 'left', 'right'
+  topBtn.setTitle = ""; // Clear native title if needed
+  topBtn.setAttribute("title", "Back to top");   // Your tooltip text
   document.body.appendChild(topBtn);
 
   // 2. Inline styles to keep it fixed in the corner
@@ -95,10 +98,10 @@ document.addEventListener("DOMContentLoaded", () => {
     borderWidth: "1px",
     borderColor: "black",
     outline: "none",
-    backgroundColor: "transparent",
+    backgroundColor: "black",
     color: "white",
     padding: "0px",
-    fontSize: "20px",
+    fontSize: "37px",
     opacity: "0",          // start invisible
     pointerEvents: "none", // prevent clicking while hidden
     transition: "opacity 0.3s ease-in-out",
@@ -107,8 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
     borderRadius: "100%",
     display: "flex",
     alignItems: "center",           // Centers vertically
-    justifyContent: "center",       // Centers horizontally
-    boxShadow: "8px 4px 6px rgba(0,0,0,0.5)"
+    justifyContent: "center"       // Centers horizontally
   });
 
   // 3. Show button when user scrolls down 300px
