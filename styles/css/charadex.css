@@ -249,7 +249,6 @@ a:active {
 .navbar .navbar-brand {
   color: var(--cd-navbar-brand-color);
   font-size: 2rem;
-  margin-left: 20px;
 }
 
 .navbar .navbar-brand:hover,
