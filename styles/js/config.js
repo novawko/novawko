@@ -405,14 +405,14 @@ charadex.page.characters = {
     toggle: true,
     parameters: {
       'Design Type': ['All', 'Original Character', 'Fan Character', 'Original Species'],
-      'Trade Status': ['All', 'Forever Homed', 'For Offer', 'Freebie', 'On Hold', 'Transferring', 'Not For Trade'],
+      'Trade Status': ['All', 'Forever Homed', 'On Hold', 'Not For Trade'],
     }
   },
 
   fauxFolder: {
     toggle: true,
     folderProperty: 'Folder',
-    parameters: ['All', 'Warriors', 'Kitiguars', 'Jovalan', 'Adoptables', 'Unsorted', 'Misc']
+    parameters: ['All', 'Warriors', 'Kitiguars', 'Jovalan', 'Adopts', 'Unsorted', 'Misc']
   },
 
   tags: {
