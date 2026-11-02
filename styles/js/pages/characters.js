@@ -58,45 +58,38 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 
-/* ==================================================================== */ 
-/* Load and switch specific navtabs + scroll to ID headers inside them  */ 
-/* ==================================================================== */ 
+/* ==================================================================== */
+/* Load specific navtab from URL hash and scroll to it
+======================================================================= */
 $(function () {
-    function handleHashTab() {
-        var hash = window.location.hash;
-        if (hash) {
-            // 1. Find the tab link that controls this content ID
-            var $targetTab = $(`a[href="${hash}"], a[data-target="${hash}"]`);
-            
-            // 2. If the hash is actually a header inside a tab, find its parent pane
-            var $insidePane = $(hash).closest('.tab-pane');
-            if ($insidePane.length && !$targetTab.length) {
-                // Find the tab link pointing to the parent pane instead
-                $targetTab = $(`a[href="#${$insidePane.attr('id')}"], a[data-target="#${$insidePane.attr('id')}"]`);
+   var hash = window.location.hash; // Captures "#perms" from the URL
+
+   if (hash !== '') {
+      // 1. Find the Bootstrap tab anchor that links to this hash (e.g., a[href="#perms"])
+      var $targetTabLink = $(`a[href="${hash}"]`);
+
+      if ($targetTabLink.length) {
+         // 2. Clear out existing active classes from other tabs/panes
+         $('.tab-pane').removeClass('active in');
+         $('.nav-tabs li, .nav-link').removeClass('active'); // Clears active states on nav headers
+
+         // 3. Show the tab using Bootstrap's native programmatic method
+         $targetTabLink.tab('show'); 
+
+         // 4. Fallback matching to force display if Bootstrap's method doesn't auto-toggle the pane
+         $(hash).addClass('active in'); 
+
+         // 5. Scroll down to the newly opened tab pane once rendered
+         setTimeout(function() {
+            var targetPane = document.getElementById(hash.replace('#', ''));
+            if (targetPane) {
+               targetPane.scrollIntoView({ 
+                  behavior: 'auto', 
+                  block: 'start' 
+               });
             }
-
-            // 3. Activate the tab
-            if ($targetTab.length) {
-                $targetTab.tab('show');
-            }
-
-            // 4. Scroll exactly to the target element (the tab pane or the specific header ID)
-            var $scrollTarget = $(hash);
-            if ($scrollTarget.length) {
-                setTimeout(function() {
-                    $('html, body').animate({
-                        scrollTop: $scrollTarget.offset().top - 40 // Adjust 40 to clear fixed navbars
-                    }, 400);
-                }, 200); // 200ms delay lets Bootstrap finish its fade-in animation
-            }
-        }
-    }
-
-    // Run on initial page load
-    handleHashTab();
-
-    // Run on link clicks that change the hash
-    $(window).on('hashchange', function () {
-        handleHashTab();
-    });
+         }, 150); // 150ms delay gives Bootstrap room to complete the fade/transition animation
+      }
+   }
 });
+
