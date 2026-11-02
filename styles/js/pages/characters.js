@@ -58,18 +58,45 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 
-/* ==================================================================== */
-/* Load any specific navtabs
-======================================================================= */
+/* ==================================================================== */ 
+/* Load and switch specific navtabs + scroll to ID headers inside them  */ 
+/* ==================================================================== */ 
 $(function () {
-   var profile = new URLSearchParams(window.location.search).get('profile');
-   var hash = profile ? '#' + profile : window.location.hash;
+    function handleHashTab() {
+        var hash = window.location.hash;
+        if (hash) {
+            // 1. Find the tab link that controls this content ID
+            var $targetTab = $(`a[href="${hash}"], a[data-target="${hash}"]`);
+            
+            // 2. If the hash is actually a header inside a tab, find its parent pane
+            var $insidePane = $(hash).closest('.tab-pane');
+            if ($insidePane.length && !$targetTab.length) {
+                // Find the tab link pointing to the parent pane instead
+                $targetTab = $(`a[href="#${$insidePane.attr('id')}"], a[data-target="#${$insidePane.attr('id')}"]`);
+            }
 
-   if (hash != '') {
-      $('.tab-pane').removeClass('active in'); // Remove 'active' from all tab panes
-      $(hash).addClass('active in'); // Add 'active' to the target tab pane
-      $(`a[href="${hash}"]`).tab('show'); // Show the tab linked to the hash
-   }
-   
-   if (profile && window.location.hash) setTimeout(() => $(window.location.hash).get(0)?.scrollIntoView(), 150); // <--- Added scroll line
+            // 3. Activate the tab
+            if ($targetTab.length) {
+                $targetTab.tab('show');
+            }
+
+            // 4. Scroll exactly to the target element (the tab pane or the specific header ID)
+            var $scrollTarget = $(hash);
+            if ($scrollTarget.length) {
+                setTimeout(function() {
+                    $('html, body').animate({
+                        scrollTop: $scrollTarget.offset().top - 40 // Adjust 40 to clear fixed navbars
+                    }, 400);
+                }, 200); // 200ms delay lets Bootstrap finish its fade-in animation
+            }
+        }
+    }
+
+    // Run on initial page load
+    handleHashTab();
+
+    // Run on link clicks that change the hash
+    $(window).on('hashchange', function () {
+        handleHashTab();
+    });
 });
