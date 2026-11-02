@@ -58,16 +58,32 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 
-
 /* ==================================================================== */
-/* Load any specific navtabs
+/* Global URL-Driven Tab Activation & Hash Scrolling
 ======================================================================= */
 $(function () {
-   var hash = window.location.hash;
+    var urlParams = new URLSearchParams(window.location.search);
+    var hash = window.location.hash;
 
-   if (hash != '') {
-      $('.tab-pane').removeClass('active in'); // Remove 'active' from all tab panes
-      $(hash).addClass('active in'); // Add 'active' to the target tab pane
-      $(`a[href="${hash}"]`).tab('show'); // Show the tab linked to the hash
-   }
+    // 1. Globally check query parameter values against tab panes on the page
+    urlParams.forEach(function (value) {
+        var $targetPane = $('#' + value);
+        if ($targetPane.length && $targetPane.hasClass('tab-pane')) {
+            $('.tab-pane').removeClass('active in');
+            $targetPane.addClass('active in');
+            $(`a[href="#${value}"]`).tab('show');
+        }
+    });
+
+    // 2. Globally handle scrolling to any hash anchor after content renders
+    if (hash) {
+        setTimeout(function () {
+            var $target = $(hash);
+            if ($target.length) {
+                $('html, body').animate({
+                    scrollTop: $target.offset().top
+                }, 300);
+            }
+        }, 150);
+    }
 });
