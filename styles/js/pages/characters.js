@@ -59,41 +59,15 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
 /* ==================================================================== */
-/* Load specific nav-item tab from URL hash and scroll to it
+/* Load any specific navtabs
 ======================================================================= */
 $(function () {
-   var hash = window.location.hash; // Captures "#perms"
+   var hash = window.location.hash;
 
-   if (hash !== '') {
-      // 1. Find the link inside the nav-item matching the hash
-      var $targetLink = $(`.nav-item a[href="${hash}"], a.nav-link[href="${hash}"]`);
-
-      if ($targetLink.length) {
-         // 2. Remove 'active' and 'in' states from all panes and nav items
-         $('.tab-pane').removeClass('active in');
-         $('.nav-item, .nav-link').removeClass('active');
-
-         // 3. Add active state to the parent .nav-item and the link itself
-         $targetLink.addClass('active');
-         $targetLink.closest('.nav-item').addClass('active');
-
-         // 4. Trigger Bootstrap's tab display method
-         $targetLink.tab('show'); 
-
-         // 5. Force the target content pane to display
-         $(hash).addClass('active in'); 
-
-         // 6. Smoothly scroll down to the target content pane
-         setTimeout(function() {
-            var targetPane = document.getElementById(hash.replace('#', ''));
-            if (targetPane) {
-               targetPane.scrollIntoView({ 
-                  behavior: 'smooth', 
-                  block: 'start' 
-               });
-            }
-         }, 200); // 200ms ensures Bootstrap finishes animating the display change
-      }
+   if (hash != '') {
+      $('.tab-pane').removeClass('active in'); // Remove 'active' from all tab panes
+      $(hash).addClass('active in'); // Add 'active' to the target tab pane
+      $(`a[href="${hash}"]`).tab('show'); // Show the tab linked to the hash
    }
 });
 
