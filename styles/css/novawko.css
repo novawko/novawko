@@ -313,6 +313,10 @@ button[aria-expanded="true"] .display-tags {
 	font-size: 0.625rem;
   }
 
+  .index-fa-icons {
+	font-size: 1.5rem;
+  }
+
 /* Dropdowns */
 .dropdown:hover .dropdown-menu, .dropdown-menu:hover {
     position: absolute !important;
