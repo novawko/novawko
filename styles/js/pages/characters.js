@@ -59,37 +59,42 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
 /* ==================================================================== */
-/* Load specific navtab from URL hash and scroll to it
+/* Load specific nav-item tab from URL hash and scroll to it
 ======================================================================= */
 $(function () {
-   var hash = window.location.hash; // Captures "#perms" from the URL
+   var hash = window.location.hash; // Captures "#perms"
 
    if (hash !== '') {
-      // 1. Find the Bootstrap tab anchor that links to this hash (e.g., a[href="#perms"])
-      var $targetTabLink = $(`a[href="${hash}"]`);
+      // 1. Find the link inside the nav-item matching the hash
+      var $targetLink = $(`.nav-item a[href="${hash}"], a.nav-link[href="${hash}"]`);
 
-      if ($targetTabLink.length) {
-         // 2. Clear out existing active classes from other tabs/panes
+      if ($targetLink.length) {
+         // 2. Remove 'active' and 'in' states from all panes and nav items
          $('.tab-pane').removeClass('active in');
-         $('.nav-tabs li, .nav-link').removeClass('active'); // Clears active states on nav headers
+         $('.nav-item, .nav-link').removeClass('active');
 
-         // 3. Show the tab using Bootstrap's native programmatic method
-         $targetTabLink.tab('show'); 
+         // 3. Add active state to the parent .nav-item and the link itself
+         $targetLink.addClass('active');
+         $targetLink.closest('.nav-item').addClass('active');
 
-         // 4. Fallback matching to force display if Bootstrap's method doesn't auto-toggle the pane
+         // 4. Trigger Bootstrap's tab display method
+         $targetLink.tab('show'); 
+
+         // 5. Force the target content pane to display
          $(hash).addClass('active in'); 
 
-         // 5. Scroll down to the newly opened tab pane once rendered
+         // 6. Smoothly scroll down to the target content pane
          setTimeout(function() {
             var targetPane = document.getElementById(hash.replace('#', ''));
             if (targetPane) {
                targetPane.scrollIntoView({ 
-                  behavior: 'auto', 
+                  behavior: 'smooth', 
                   block: 'start' 
                });
             }
-         }, 150); // 150ms delay gives Bootstrap room to complete the fade/transition animation
+         }, 200); // 200ms ensures Bootstrap finishes animating the display change
       }
    }
 });
+
 
