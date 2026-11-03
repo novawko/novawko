@@ -60,25 +60,6 @@ img[src=""] {
   display: none;
 }
 
-/* Remove default primary BS color */
-.btn-outline-primary, .btn-outline-primary:hover, .btn-outline-primary:active {
-  border-color: var(--cd-primary-color) !important;
-}
-
-.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle,
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-    background-color: var(--cd-primary-color) !important;
-    border-color: var(--cd-primary-color) !important;
-}
-
-.border-primary {
-  border-color: var(--cd-primary-color) !important;
-}
-
-.bg-primary {
-  background-color: var(--cd-primary-color) !important;
-}
-
 /* Tab Pane Active Fix */
 .tab-pane.active {
   display: block !important;
@@ -238,10 +219,6 @@ button[aria-expanded="true"] .display-tags {
     margin-right: -40px !important;
     width: calc(100% + 80px);
     max-width: calc(100% + 80px);
-  }
-
-  #tonetagsmasterlist_title, #tonetags_title, #statuses_title {
-  font-size: 2.5rem !important;
   }
 
   .posts-right-info {
@@ -409,4 +386,153 @@ button[aria-expanded="true"] .display-tags {
 .nav-pills .nav-link.secondary-pill.show {
   background-color: var(--cd-secondary-color) !important;
   color: var(--cd-secondary-text-color) !important;
+}
+
+
+/* ============================================================= */
+/* Bootstrap Color Overrides
+/* ============================================================= */
+
+/* Primary */
+.btn-primary,
+.btn-outline-primary {
+  background-color: var(--cd-primary-color) !important;
+  border-color: var(--cd-primary-color) !important;
+}
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active,
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+  background-color: #46B4E7 !important;
+  border-color: #46B4E7 !important;
+}
+
+.bg-primary {
+  background-color: var(--cd-primary-color) !important;
+}
+
+.text-primary {
+  color: var(--cd-primary-color) !important;
+}
+
+/* Secondary */
+.btn-secondary,
+.btn-outline-secondary {
+  background-color: var(--cd-secondary-color) !important;
+  border-color: var(--cd-secondary-color) !important;
+}
+
+.btn-secondary:hover, 
+.btn-secondary:focus, 
+.btn-secondary:active,
+.btn-outline-secondary:hover,
+.btn-outline-secondary:active {
+  background-color: #969696 !important;
+  border-color: #969696!important;
+}
+
+.bg-secondary {
+  background-color: var(--cd-secondary-color) !important;
+}
+
+.text-secondary {
+  color: var(--cd-secondary-color) !important;
+}
+
+/* Success */
+.btn-success,
+.btn-outline-success {
+  background-color: #93C572 !important;
+  border-color: #93C572 !important;
+}
+
+.btn-success:hover, 
+.btn-success:focus, 
+.btn-success:active,
+.btn-outline-success:hover,
+.btn-outline-success:active {
+  background-color: #8A9A5B !important;
+  border-color: #8A9A5B !important;
+}
+
+.bg-success {
+  background-color: #93C572 !important;
+}
+
+.text-success {
+  color: #93C572 !important;
+}
+
+/* Danger */
+.btn-danger,
+.btn-outline-danger {
+  background-color: #F88379 !important;
+  border-color: #F88379 !important;
+}
+
+.btn-danger:hover, 
+.btn-danger:focus, 
+.btn-danger:active
+.btn-outline-danger:hover,
+.btn-outline-danger:active {
+  background-color: #C71A0A !important;
+  border-color: #C71A0A !important;
+}
+
+.bg-danger {
+  background-color: #F88379 !important;
+}
+
+.text-danger {
+  color: #F88379 !important;
+}
+
+/* Warning */
+.btn-warning,
+.btn-outline-warning {
+  background-color: #F8AB63 !important;
+  border-color: #F8AB63 !important;
+}
+
+.btn-warning:hover, 
+.btn-warning:focus, 
+.btn-warning:active
+.btn-outline-warning:hover,
+.btn-outline-warning:active {
+  background-color: #C86509 !important;
+  border-color: #C86509 !important;
+}
+
+.bg-warning {
+  background-color: #F8AB63 !important;
+}
+
+.text-warning {
+  color: #F8AB63 !important;
+}
+
+/* Info */
+.btn-info,
+.btn-outline-info {
+  background-color: #BDB5D5 !important;
+  border-color: #BDB5D5 !important;
+}
+
+.btn-info:hover, 
+.btn-info:focus, 
+.btn-info:active
+.btn-outline-info:hover,
+.btn-outline-info:active {
+  background-color: #A297C4 !important;
+  border-color: #A297C4 !important;
+}
+
+.bg-info {
+  background-color: #BDB5D5 !important;
+}
+
+.text-info {
+  color: #BDB5D5 !important;
 }
