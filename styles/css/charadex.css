@@ -15,13 +15,13 @@ body {
   /* ============================================================= */
   /* Primary Color
   /* ============================================================= */
-  --cd-primary-color: #797D62;
+  --cd-primary-color: #89CFF0;
   --cd-primary-text-color: #fff;
 
   /* ============================================================= */
   /* Secondary Color
   /* ============================================================= */
-  --cd-secondary-color: #939799;
+  --cd-secondary-color: #F88379;
   --cd-secondary-text-color: #fff;
 
   /* ============================================================= */
@@ -32,7 +32,7 @@ body {
   --cd-faded-background-color: #f8f8f8;
 
   /* Background Extras */
-  --cd-body-background-image: url(https://img-l.ink/img/1QTigT0VTmLrBsnmgJ8-lvISQogM6DgGU.jpeg);
+  --cd-body-background-image: url(https://img-l.ink/img/1cL5YoqALqZHJHrSe8FwVAa5OctLwGJ5X.jpeg);
 
   /* ============================================================= */
   /* Text
@@ -51,7 +51,7 @@ body {
   /* ============================================================= */
   /* Navbar
   /* ============================================================= */
-  --cd-navbar-background-color: #362f28;
+  --cd-navbar-background-color: #303030;
   --cd-navbar-brand-color: var(--cd-primary-color);
   --cd-navbar-brand-color-hover: var(--cd-secondary-color);
   --cd-navbar-text-color: var(--cd-content-background-color);
@@ -105,8 +105,8 @@ body {
   /* Link
   /* ============================================================= */
 
-  --cd-link-text-color: #997B66;
-  --cd-link-text-color-hover: var(--cd-secondary-color);
+  --cd-link-text-color: #C3B1E1;
+  --cd-link-text-color-hover: #FAA0A0;
 
 
   /* ============================================================= */
@@ -212,7 +212,7 @@ body {
   background-color: var(--cd-body-background-color);
   background-image: var(--cd-body-background-image);
   background-position: center;
-  background-size: 400px;
+  background-size: cover;
   background-attachment: fixed;
 
 }
