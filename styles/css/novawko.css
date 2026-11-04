@@ -17,6 +17,15 @@
 /* General Styles
 /* ============================================================= */
 
+/* Brand Image Color Change */
+.color-hover-brand {
+  transition: filter 0.3s ease;
+}
+
+.color-hover-brand:hover {
+  filter: invert(73%) sepia(52%) saturate(17%) hue-rotate(316deg) brightness(97%) contrast(89%);
+}
+
 /* Zoom In Images */
 .zoom-img-container {
   overflow: hidden; /* Clips the zoomed image so it stays inside the borders */
