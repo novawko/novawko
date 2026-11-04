@@ -467,6 +467,10 @@ a:active {
   border-radius: var(--cd-button-border-radius) !important;
 }
 
+.btn.btn-primary {
+  color: var(--cd-button-text-color);
+}
+
 .badge.badge-primary {
   color: var(--cd-button-text-color);
   background-color: var(--cd-button-background-color);
