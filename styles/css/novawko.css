@@ -19,7 +19,7 @@
 
 /* Brand Image Color Change */
 .color-hover-brand {
-  transition: filter 0.3s ease;
+  transition: filter 0.2s ease;
 }
 
 .color-hover-brand:hover {
