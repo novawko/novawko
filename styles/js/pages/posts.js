@@ -18,14 +18,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 ======================================================================= */
 document.addEventListener('DOMContentLoaded', () => {
   const likeButton = document.getElementById('likeButton');
-  const likeIcon = document.getElementById('likeIcon');
   const likeCount = document.getElementById('likeCount');
 
-  // Verify elements exist to prevent silent failures
-  if (!likeButton || !likeIcon || !likeCount) {
-    console.error("Like button elements could not be found in the DOM.");
-    return;
-  }
+  if (!likeButton || !likeCount) return;
 
   let count = 0;
   let isLiked = false;
@@ -34,7 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (localStorage.getItem('isLiked') === 'true') {
     isLiked = true;
     likeButton.classList.add('liked');
-    likeIcon.classList.replace('fa-regular', 'fa-solid');
+    
+    // Find the icon dynamically inside the button regardless of if it's an <i> or an <svg>
+    const icon = likeButton.querySelector('.fa-heart, svg');
+    if (icon) {
+      icon.classList.remove('fa-regular');
+      icon.classList.add('fa-solid');
+    }
   }
 
   if (localStorage.getItem('likeCount')) {
@@ -43,17 +44,27 @@ document.addEventListener('DOMContentLoaded', () => {
   likeCount.innerText = count;
 
   // Handle clicks
-  likeButton.addEventListener('click', () => {
+  likeButton.addEventListener('click', (e) => {
+    // Prevent any button behavior form submissions or hash jumps
+    e.preventDefault(); 
+    
     isLiked = !isLiked;
+    const icon = likeButton.querySelector('.fa-heart, svg');
     
     if (isLiked) {
       count++;
       likeButton.classList.add('liked');
-      likeIcon.classList.replace('fa-regular', 'fa-solid');
+      if (icon) {
+        icon.classList.remove('fa-regular');
+        icon.classList.add('fa-solid');
+      }
     } else {
       count--;
       likeButton.classList.remove('liked');
-      likeIcon.classList.replace('fa-solid', 'fa-regular');
+      if (icon) {
+        icon.classList.remove('fa-solid');
+        icon.classList.add('fa-regular');
+      }
     }
     
     likeCount.innerText = count;
