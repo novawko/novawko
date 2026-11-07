@@ -188,20 +188,36 @@ img[src=""] {
 	border-radius: calc(var(--cd-border-radius)) 0 0 calc(var(--cd-border-radius)) !important;
 }
 
-.border-top-left-radius: {
+.rounded-top-left: {
 	border-radius: calc(var(--cd-border-radius)) 0 0 0 !important;
 }
 
-.border-top-right-radius {
+.rounded-top-right {
 	border-radius: 0 calc(var(--cd-border-radius)) 0 0 !important;
 }
 
-.border-bottom-right-radius {
+.rounded-bottom-right {
 	border-radius: 0 0 calc(var(--cd-border-radius)) 0 !important;
 }
 
-.border-bottom-left-radius: {
+.rounded-bottom-left: {
 	border-radius: 0 0 0 calc(var(--cd-border-radius)) !important;
+}
+
+.sharp-top-left {
+	border-radius: 0 calc(var(--cd-border-radius)) calc(var(--cd-border-radius)) calc(var(--cd-border-radius)) !important;
+}
+
+.sharp-top-right {
+	border-radius: calc(var(--cd-border-radius)) 0 calc(var(--cd-border-radius)) calc(var(--cd-border-radius)) !important;
+}
+
+.sharp-bottom-right {
+	border-radius: calc(var(--cd-border-radius)) calc(var(--cd-border-radius)) 0 calc(var(--cd-border-radius)) !important;
+}
+
+.sharp-bottom-left {
+	border-radius: calc(var(--cd-border-radius)) calc(var(--cd-border-radius)) calc(var(--cd-border-radius)) 0 !important;
 }
 
 
