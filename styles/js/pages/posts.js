@@ -20,13 +20,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 import { initializeApp } from "https://gstatic.com";
 import { getDatabase, ref, runTransaction, onValue } from "https://gstatic.com";
 
-// 2. Your specific Firebase Configuration populated from your setup wizard
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAFBIkJBlv2jHIC5Gcw_xlKBKYe5TvEl4Y",
-  authDomain: "://firebaseapp.com",
-  databaseURL: "https://firebaseio.com",
+  apiKey: "AIzaSyAFBIKJBlv2jHIC5Gcw_xlKBKYe5TvEl4Y",
+  authDomain: "novawko-7c2d3.firebaseapp.com",
+  databaseURL: "https://novawko-7c2d3-default-rtdb.firebaseio.com",
   projectId: "novawko-7c2d3",
-  storageBucket: "://appspot.com",
+  storageBucket: "novawko-7c2d3.firebasestorage.app",
   messagingSenderId: "1097571892349",
   appId: "1:1097571892349:web:37ef1271b741f7aa9a8514",
   measurementId: "G-3TPRQX3G73"
