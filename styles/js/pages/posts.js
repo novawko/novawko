@@ -51,24 +51,25 @@ document.addEventListener('click', (e) => {
   localStorage.setItem(`count_post_${postId}`, count);
 });
 
-// Restore states on page load
-document.addEventListener('DOMContentLoaded', () => {
-  const allLikeButtons = document.querySelectorAll('.like-btn');
+// Run this directly on the page script load:
+const allLikeButtons = document.querySelectorAll('.like-btn');
 
-  allLikeButtons.forEach((button) => {
-    const postId = button.getAttribute('data-id');
-    const likeIcon = button.querySelector('.like-icon');
-    const likeCount = button.querySelector('.like-count');
+allLikeButtons.forEach((button) => {
+  // Check if your HTML uses data-id or data-post-id
+  const postId = button.getAttribute('data-id') || button.getAttribute('data-post-id');
+  const likeIcon = button.querySelector('.like-icon');
+  const likeCount = button.querySelector('.like-count');
 
-    if (!postId || !likeIcon || !likeCount) return;
+  if (!postId || !likeIcon || !likeCount) return;
 
-    if (localStorage.getItem(`liked_post_${postId}`) === 'true') {
-      button.classList.add('liked');
-      likeIcon.classList.replace('fa-regular', 'fa-solid');
-    }
+  // 1. Restore the visual button and heart state
+  if (localStorage.getItem(`liked_post_${postId}`) === 'true') {
+    button.classList.add('liked');
+    likeIcon.classList.replace('fa-regular', 'fa-solid');
+  }
 
-    if (localStorage.getItem(`count_post_${postId}`)) {
-      likeCount.innerText = localStorage.getItem(`count_post_${postId}`);
-    }
-  });
+  // 2. Restore the specific numeric count value from memory
+  if (localStorage.getItem(`count_post_${postId}`)) {
+    likeCount.innerText = localStorage.getItem(`count_post_${postId}`);
+  }
 });
