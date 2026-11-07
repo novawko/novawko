@@ -49,6 +49,31 @@ $(document).ready(function () {
   }
 });
 
+
+/* ==================================================================== */
+/* Show Hashes in URL
+======================================================================= */
+$(function () {
+    // 1. Update the URL hash when a nav-pill or tab is clicked and shown
+    $('a[data-toggle="pill"], a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        var hash = $(e.target).attr('href');
+        
+        // Prevent scrolling immediately on click by using history.pushState or replaceState
+        if (history.pushState) {
+            history.pushState(null, null, hash);
+        } else {
+            window.location.hash = hash;
+        }
+    });
+
+    // 2. Optional: Load the correct pill automatically if a hash exists in the URL on page load
+    var initialHash = window.location.hash;
+    if (initialHash) {
+        $(`a[href="${initialHash}"]`).tab('show');
+    }
+});
+
+
 /* ==================================================================== */
 /* Handle URL Hashes for Collapses (Accordions/Cards)
 ======================================================================= */
