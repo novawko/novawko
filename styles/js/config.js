@@ -182,7 +182,7 @@ charadex.page.posts = {
   sheetPage: charadex.sheet.pages.posts,
   sitePage: 'posts',
   dexSelector: 'charadex',
-  profileProperty: 'title',
+  profileProperty: 'id',
 
   sort: {
     toggle: true,
