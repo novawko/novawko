@@ -16,35 +16,24 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* ==================================================================== */
 /* Like Button
 ======================================================================= */
-// 1. Listen for click events globally across the document body
+// 1. Handle Clicks using Event Delegation
 document.addEventListener('click', (e) => {
-  
-  // Find if the clicked element (or its inner icons/text) is part of the #likeButton
-  const likeButton = e.target.closest('#likeButton');
-  
-  // If the click wasn't on or inside the like button, ignore it completely
+  // Find closest button with the class .like-btn
+  const likeButton = e.target.closest('.like-btn');
   if (!likeButton) return;
 
-  // Prevent default behaviors like page jumps or form submissons
   e.preventDefault();
 
-  // Find the sub-elements dynamically relative to the clicked button
-  const likeIcon = likeButton.querySelector('#likeIcon');
-  const likeCount = likeButton.querySelector('#likeCount');
+  // Extract the unique ID for this specific post
+  const postId = likeButton.getAttribute('data-post-id');
+  const likeIcon = likeButton.querySelector('.like-icon');
+  const likeCount = likeButton.querySelector('.like-count');
 
-  // Verify elements exist locally before modifying states
-  if (!likeIcon || !likeCount) {
-    console.error("Found #likeButton, but missing #likeIcon or #likeCount sub-elements.");
-    return;
-  }
+  if (!likeIcon || !likeCount) return;
 
-  // 2. Core Logic Execution
   let isLiked = likeButton.classList.contains('liked');
-  
-  // Toggle the boolean state
   isLiked = !isLiked;
 
-  // Retrieve and parse current count safely
   let count = parseInt(likeCount.innerText, 10) || 0;
 
   if (isLiked) {
@@ -57,27 +46,32 @@ document.addEventListener('click', (e) => {
     likeIcon.classList.replace('fa-solid', 'fa-regular');
   }
 
-  // Render updated count value to screen
   likeCount.innerText = count;
 
-  // 3. Persist States Locally
-  localStorage.setItem('isLiked', isLiked);
-  localStorage.setItem('likeCount', count);
+  // Save the states using keys unique to this specific post ID
+  localStorage.setItem(`liked_post_${postId}`, isLiked);
+  localStorage.setItem(`count_post_${postId}`, count);
 });
 
-// 4. Handle initial state placement on page load
+// 2. Restore individual post states when the page loads
 document.addEventListener('DOMContentLoaded', () => {
-  const likeButton = document.getElementById('likeButton');
-  const likeIcon = document.getElementById('likeIcon');
-  const likeCount = document.getElementById('likeCount');
+  const allLikeButtons = document.querySelectorAll('.like-btn');
 
-  if (likeButton && likeIcon && likeCount) {
-    if (localStorage.getItem('isLiked') === 'true') {
-      likeButton.classList.add('liked');
+  allLikeButtons.forEach((button) => {
+    const postId = button.getAttribute('data-post-id');
+    const likeIcon = button.querySelector('.like-icon');
+    const likeCount = button.querySelector('.like-count');
+
+    if (!postId || !likeIcon || !likeCount) return;
+
+    // Load initial states matching this specific post ID
+    if (localStorage.getItem(`liked_post_${postId}`) === 'true') {
+      button.classList.add('liked');
       likeIcon.classList.replace('fa-regular', 'fa-solid');
     }
-    if (localStorage.getItem('likeCount')) {
-      likeCount.innerText = localStorage.getItem('likeCount');
+
+    if (localStorage.getItem(`count_post_${postId}`)) {
+      likeCount.innerText = localStorage.getItem(`count_post_${postId}`);
     }
-  }
+  });
 });
