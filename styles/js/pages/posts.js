@@ -16,11 +16,33 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* ==================================================================== */
 /* Like Button
 ======================================================================= */
-// --- HELPER FUNCTION: Safely extracts the unique post identifier ---
+// --- HELPER FUNCTION: Extracts unique post identifier ---
 function getPostId(buttonElement) {
   return buttonElement.getAttribute('data-post-id') || 
          buttonElement.getAttribute('data-id') || 
          buttonElement.id;
+}
+
+// --- FUNCTION: Restores a single button's saved state ---
+function restoreButtonState(button) {
+  const postId = getPostId(button);
+  const likeIcon = button.querySelector('.like-icon');
+  const likeCount = button.querySelector('.like-count');
+
+  if (!postId || !likeIcon || !likeCount) return;
+
+  // 1. Restore active visual style
+  if (localStorage.getItem(`liked_post_${postId}`) === 'true') {
+    button.classList.add('liked');
+    if (likeIcon.classList.contains('fa-regular')) {
+      likeIcon.classList.replace('fa-regular', 'fa-solid');
+    }
+  }
+
+  // 2. Restore calculated counter volume
+  if (localStorage.getItem(`count_post_${postId}`)) {
+    likeCount.innerText = localStorage.getItem(`count_post_${postId}`);
+  }
 }
 
 // 1. CLICK HANDLER (GLOBAL DELEGATION)
@@ -34,12 +56,7 @@ document.addEventListener('click', (e) => {
   const likeIcon = likeButton.querySelector('.like-icon');
   const likeCount = likeButton.querySelector('.like-count');
 
-  // If we can't find an ID, log a detailed error to fix it
-  if (!postId) {
-    console.error("Critical: Clicked a .like-btn but could not extract an ID attribute!", likeButton);
-    return;
-  }
-  if (!likeIcon || !likeCount) return;
+  if (!postId || !likeIcon || !likeCount) return;
 
   let isLiked = likeButton.classList.contains('liked');
   isLiked = !isLiked;
@@ -62,32 +79,27 @@ document.addEventListener('click', (e) => {
 
   likeCount.innerText = count;
 
-  // Persist states safely
   localStorage.setItem(`liked_post_${postId}`, isLiked);
   localStorage.setItem(`count_post_${postId}`, count);
 });
 
-
-// 2. STATE RESTORATION ENGINE (EXECUTES IMMEDIATELY ON MODULE LOAD)
-const allLikeButtons = document.querySelectorAll('.like-btn');
-
-allLikeButtons.forEach((button) => {
-  const postId = getPostId(button);
-  const likeIcon = button.querySelector('.like-icon');
-  const likeCount = button.querySelector('.like-count');
-
-  if (!postId || !likeIcon || !likeCount) return;
-
-  // Restore active visual style
-  if (localStorage.getItem(`liked_post_${postId}`) === 'true') {
-    button.classList.add('liked');
-    if (likeIcon.classList.contains('fa-regular')) {
-      likeIcon.classList.replace('fa-regular', 'fa-solid');
+// 2. AUTOMATIC RESTORATION WATCHER (FOR DYNAMIC/DELAYED POSTS)
+const observer = new MutationObserver(() => {
+  const allLikeButtons = document.querySelectorAll('.like-btn');
+  allLikeButtons.forEach((button) => {
+    // Only process buttons that haven't been checked yet
+    if (!button.hasAttribute('data-state-restored')) {
+      restoreButtonState(button);
+      button.setAttribute('data-state-restored', 'true');
     }
-  }
+  });
+});
 
-  // Restore calculated counter volume
-  if (localStorage.getItem(`count_post_${postId}`)) {
-    likeCount.innerText = localStorage.getItem(`count_post_${postId}`);
-  }
+// Start watching the document body for any changes or incoming posts
+observer.observe(document.body, { childList: true, subtree: true });
+
+// Run a quick check immediately just in case any are already there
+document.querySelectorAll('.like-btn').forEach(button => {
+  restoreButtonState(button);
+  button.setAttribute('data-state-restored', 'true');
 });
