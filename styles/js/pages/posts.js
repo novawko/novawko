@@ -16,25 +16,25 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* ==================================================================== */
 /* Like Button
 ======================================================================= */
-// 1. Import Modern Firebase v10 Core Modules via Cloud CDN
-import { initializeApp } from "https://gstatic.com";
-import { getDatabase, ref, runTransaction, onValue } from "https://gstatic.com";
-
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// 1. Your specific Firebase Configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAFBIKJBlv2jHIC5Gcw_xlKBKYe5TvEl4Y",
-  authDomain: "novawko-7c2d3.firebaseapp.com",
-  databaseURL: "https://novawko-7c2d3-default-rtdb.firebaseio.com",
+  apiKey: "AIzaSyAFBIkJBlv2jHIC5Gcw_xlKBKYe5TvEl4Y",
+  authDomain: "://firebaseapp.com",
+  databaseURL: "https://firebaseio.com",
   projectId: "novawko-7c2d3",
-  storageBucket: "novawko-7c2d3.firebasestorage.app",
+  storageBucket: "://appspot.com",
   messagingSenderId: "1097571892349",
   appId: "1:1097571892349:web:37ef1271b741f7aa9a8514",
   measurementId: "G-3TPRQX3G73"
 };
 
-// Initialize Firebase Core Engine & Database Handles
-const app = initializeApp(firebaseConfig);
-const db = getDatabase(app);
+// 2. Initialize Firebase using the global browser object bundle
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
+// Clean up old faulty global keys
+if (localStorage.getItem('isLiked')) localStorage.removeItem('isLiked');
+if (localStorage.getItem('likeCount')) localStorage.removeItem('likeCount');
 
 // --- HELPER FUNCTION: Extracts unique post identifier ---
 function getPostId(buttonElement) {
@@ -59,10 +59,10 @@ function syncPostLive(button) {
     }
   }
 
-  // Create a live data listener pointing to your database node
-  const countRef = ref(db, `posts/${postId}/count`);
+  // Create a live data listener pointing to your database node path
+  const countRef = db.ref(`posts/${postId}/count`);
   
-  onValue(countRef, (snapshot) => {
+  countRef.on('value', (snapshot) => {
     const cloudValue = snapshot.val();
     likeCount.innerText = cloudValue !== null ? cloudValue : 0;
   });
@@ -92,10 +92,10 @@ document.addEventListener('click', (e) => {
     localStorage.setItem(`liked_post_${postId}`, 'false');
   }
 
-  const postCountRef = ref(db, `posts/${postId}/count`);
+  const postCountRef = db.ref(`posts/${postId}/count`);
 
   // Run transaction helper so numbers calculate correctly on the live server
-  runTransaction(postCountRef, (currentCount) => {
+  postCountRef.transaction((currentCount) => {
     if (currentCount === null) currentCount = 0;
     return isLiked ? currentCount + 1 : Math.max(0, currentCount - 1);
   });
