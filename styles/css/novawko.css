@@ -165,6 +165,31 @@ img[src=""] {
 
 
 /* ============================================================= */
+/* Border-Radius Classes Fix
+/* ============================================================= */
+
+.rounded-0 {
+	border-radius: 0 !important;
+}
+
+.rounded-top {
+	border-radius: calc(var(--cd-border-radius)) calc(var(--cd-border-radius)) 0 0 !important;
+}
+
+.rounded-bottom {
+	border-radius: 0 0 calc(var(--cd-border-radius)) calc(var(--cd-border-radius)) !important;
+}
+
+.rounded-start {
+	border-radius: 0 calc(var(--cd-border-radius)) calc(var(--cd-border-radius)) 0 !important;
+}
+
+.rounded-end {
+	border-radius: calc(var(--cd-border-radius)) 0 0 calc(var(--cd-border-radius)) !important;
+}
+
+
+/* ============================================================= */
 /* Tags Toggle
 /* ============================================================= */
 
