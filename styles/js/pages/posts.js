@@ -16,19 +16,30 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* ==================================================================== */
 /* Like Button
 ======================================================================= */
+// --- HELPER FUNCTION: Safely extracts the unique post identifier ---
+function getPostId(buttonElement) {
+  return buttonElement.getAttribute('data-post-id') || 
+         buttonElement.getAttribute('data-id') || 
+         buttonElement.id;
+}
+
+// 1. CLICK HANDLER (GLOBAL DELEGATION)
 document.addEventListener('click', (e) => {
-  // Target the button class
   const likeButton = e.target.closest('.like-btn');
   if (!likeButton) return;
 
   e.preventDefault();
 
-  const postId = likeButton.getAttribute('data-id');
-  // Target sub-elements via classes instead of IDs
+  const postId = getPostId(likeButton);
   const likeIcon = likeButton.querySelector('.like-icon');
   const likeCount = likeButton.querySelector('.like-count');
 
-  if (!likeIcon || !likeCount || !postId) return;
+  // If we can't find an ID, log a detailed error to fix it
+  if (!postId) {
+    console.error("Critical: Clicked a .like-btn but could not extract an ID attribute!", likeButton);
+    return;
+  }
+  if (!likeIcon || !likeCount) return;
 
   let isLiked = likeButton.classList.contains('liked');
   isLiked = !isLiked;
@@ -38,37 +49,44 @@ document.addEventListener('click', (e) => {
   if (isLiked) {
     count++;
     likeButton.classList.add('liked');
-    likeIcon.classList.replace('fa-regular', 'fa-solid');
+    if (likeIcon.classList.contains('fa-regular')) {
+      likeIcon.classList.replace('fa-regular', 'fa-solid');
+    }
   } else {
     count--;
     likeButton.classList.remove('liked');
-    likeIcon.classList.replace('fa-solid', 'fa-regular');
+    if (likeIcon.classList.contains('fa-solid')) {
+      likeIcon.classList.replace('fa-solid', 'fa-regular');
+    }
   }
 
   likeCount.innerText = count;
 
+  // Persist states safely
   localStorage.setItem(`liked_post_${postId}`, isLiked);
   localStorage.setItem(`count_post_${postId}`, count);
 });
 
-// Run this directly on the page script load:
+
+// 2. STATE RESTORATION ENGINE (EXECUTES IMMEDIATELY ON MODULE LOAD)
 const allLikeButtons = document.querySelectorAll('.like-btn');
 
 allLikeButtons.forEach((button) => {
-  // Check if your HTML uses data-id or data-post-id
-  const postId = button.getAttribute('data-id') || button.getAttribute('data-post-id');
+  const postId = getPostId(button);
   const likeIcon = button.querySelector('.like-icon');
   const likeCount = button.querySelector('.like-count');
 
   if (!postId || !likeIcon || !likeCount) return;
 
-  // 1. Restore the visual button and heart state
+  // Restore active visual style
   if (localStorage.getItem(`liked_post_${postId}`) === 'true') {
     button.classList.add('liked');
-    likeIcon.classList.replace('fa-regular', 'fa-solid');
+    if (likeIcon.classList.contains('fa-regular')) {
+      likeIcon.classList.replace('fa-regular', 'fa-solid');
+    }
   }
 
-  // 2. Restore the specific numeric count value from memory
+  // Restore calculated counter volume
   if (localStorage.getItem(`count_post_${postId}`)) {
     likeCount.innerText = localStorage.getItem(`count_post_${postId}`);
   }
