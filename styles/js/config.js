@@ -175,54 +175,6 @@ charadex.page.updatesCodeV2 = {
 };
 
 
-/* Posts
-/* --------------------------------------------------------------- */
-charadex.page.posts = {
-
-  sheetPage: charadex.sheet.pages.posts,
-  sitePage: 'posts',
-  dexSelector: 'charadex',
-  profileProperty: 'id',
-
-  sort: {
-    toggle: true,
-    key: "posteddate",
-    order: "asc",
-    parameters: []
-  },
-
-  pagination: {
-    toggle: true,
-    bottomToggle: true,
-    amount: 12,
-  },
-
-  filters: {
-    toggle: false,
-    parameters: {
-      'TBA': [],
-    }
-  },
-
-  fauxFolder: {
-    toggle: false,
-    folderProperty: '',
-    parameters: [],
-  },
-
-  search: {
-    toggle: false,
-    filterToggle: false,
-    parameters: []
-  },
-
-  prevNext: {
-    toggle: false,
-  },
-
-};
-
-
 /* FAQ
 /* --------------------------------------------------------------- */
 charadex.page.faq = {
@@ -503,12 +455,6 @@ charadex.page.mockIndex = {
 /* Index
 /* --------------------------------------------------------------- */
 charadex.page.index = {
-
-  posts: {
-    ... charadex.page.posts,
-    dexSelector: 'post',
-    amount: 10,
-  },
 
   art: {
     ... charadex.page.imageGallery,
