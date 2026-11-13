@@ -287,11 +287,6 @@ button[aria-expanded="true"] .display-tags {
     max-width: calc(100% + 80px);
   }
 
-  #crazy {
-  display: flex;
-  gap: 0.625rem;
-  }
-
   .cd-list-fix {
     display: flex;
     gap: 0.625rem;
@@ -385,22 +380,7 @@ button[aria-expanded="true"] .display-tags {
     align-items: center;
   }
 
-  /* Codes Columns Fix */
-  #crazy {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3px;
-  }
-
-  .craziness {
-  max-width: 100%;
-  }
-
-  .hiss {
-  grid-column: 1 / -1;
-  }
-
-  /* Gallery, Art Columns Fix */
+  /* Gallery, Art, Codes Columns Fix */
   .cd-list-fix {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
