@@ -381,6 +381,10 @@ button[aria-expanded="true"] .display-tags {
     padding: 2rem 1.5rem;
   }
 
+  .index-fa-icons {
+	font-size: 0.9375rem;
+  }
+
   .coolio {
     position: absolute !important;
     background-color: rgba(0, 0, 0, 0.95) !important;
