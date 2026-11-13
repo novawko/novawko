@@ -32,7 +32,7 @@ charadex.sheet = {
     characters:          "characters",
     characterLog:        "character log",
     imageGallery:        "image gallery",
-    posts:               "posts",
+    art:                 "art",
     faq:                 "faq",
     assets:              "assets",
     codes:               "codes",
@@ -102,6 +102,57 @@ charadex.page.codes = {
   },
 
 };
+
+
+
+/* Art Portfolio
+/* --------------------------------------------------------------- */
+charadex.page.art = {
+
+  sheetPage: charadex.sheet.pages.art,
+  sitePage: 'art',
+  dexSelector: 'charadex',
+  profileProperty: 'id',
+
+  sort: {
+    toggle: true,
+    key: "id",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 12,
+  },
+
+  filters: {
+    toggle: false,
+    parameters: {
+      'TBA': [],
+    }
+  },
+
+  fauxFolder: {
+    toggle: false,
+    folderProperty: '',
+    parameters: []
+  },
+
+  search: {
+    toggle: false,
+    filterToggle: true,
+    parameters: []
+  },
+
+  prevNext: {
+    toggle: false,
+  },
+
+};
+
+
 
 /* Mock Prompts
 /* --------------------------------------------------------------- */
