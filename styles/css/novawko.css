@@ -287,30 +287,12 @@ button[aria-expanded="true"] .display-tags {
     max-width: calc(100% + 80px);
   }
 
-  .posts-right-info {
-	  font-size: 0.75rem;
-  }
-
-  .posts-post {
-	  font-size: small;
-  }
-
-  .posts-right-text {
-    margin: -4rem 0 -1rem 2.5rem !important;
-  }
-
-  .posts-pfp img {
-    max-width: 50px;
-    max-height: 50px;
-    margin: 1rem -0.86rem !important;
-  }
-
   #crazy {
   display: flex;
   gap: 0.625rem;
   }
 
-  #awesome {
+  .cd-list-fix {
     display: flex;
     gap: 0.625rem;
   }
@@ -350,10 +332,6 @@ button[aria-expanded="true"] .display-tags {
   }
   .custom-2x2-tabs .nav-item {
     flex: 1 0 50%;
-  }
-
-  .posts-username-btn {
-	font-size: 0.625rem;
   }
 
   .index-fa-icons {
@@ -422,18 +400,18 @@ button[aria-expanded="true"] .display-tags {
   grid-column: 1 / -1;
   }
 
-  /* Gallery Columns Fix */
-  #awesome {
+  /* Gallery, Art Columns Fix */
+  .cd-list-fix {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3px;
   }
 
-  .pawsitive {
+  .cd-gallery-item-fix {
   max-width: 100%;
   }
 
-  .purrfect {
+  .cd-profile-fix {
   grid-column: 1 / -1;
   }
 
