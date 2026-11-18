@@ -26,7 +26,7 @@
   filter: invert(73%) sepia(52%) saturate(17%) hue-rotate(316deg) brightness(97%) contrast(89%);
 }
 
-/* Zoom In Images */
+/* Zoom In Character Avatars */
 .zoom-img-container {
   overflow: hidden; /* Clips the zoomed image so it stays inside the borders */
 }
@@ -35,12 +35,11 @@
   transition: transform 0.2s ease-in-out !important; /* Smooth transition when mouse enters/leaves */
 }
 
-/* Zooms the image when the user hovers over the container */
 .zoom-img-container:hover .zoom-img {
   transform: scale(1.15); 
 }
 
-/* Grayscale Image Hovers */
+/* Grayscale Character Avatar Hovers */
 .grayscale-image {
   filter: grayscale(0%);
   transition: filter 0.3s ease;
