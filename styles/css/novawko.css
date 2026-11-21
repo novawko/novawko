@@ -17,6 +17,18 @@
 /* General Styles
 /* ============================================================= */
 
+/* Index Nav Buttons */
+.index-nav-equal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+}
+
+.index-nav-equal .btn {
+  flex: 1 1 0;        /* Forces equal width on each row & fills 100% empty space */
+  min-width: 100%;   /* Triggers wrapping on mobile before buttons get too squished */
+}
+
 /* Brand Image Color Change */
 .color-hover-brand {
   transition: filter 0.2s ease;
