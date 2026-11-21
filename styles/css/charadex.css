@@ -464,7 +464,7 @@ a:active {
 .btn {
   border-style: var(--cd-button-border-style) !important;
   border-width: var(--cd-button-border-width) !important;
-  border-radius: var(--cd-button-border-radius) !important;
+  border-radius: 2rem !important;
 }
 
 .btn.btn-primary {
