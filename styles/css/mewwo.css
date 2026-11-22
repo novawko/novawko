@@ -785,6 +785,18 @@ p:last-child {
 /* Nova's Tweaks
 /* ============================================================= */
 
+/* Index Nav Buttons */
+.index-nav-equal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+}
+
+.index-nav-equal .btn {
+  flex: 1 1 0;        /* Forces equal width on each row & fills 100% empty space */
+  min-width: 100%;   /* Triggers wrapping on mobile before buttons get too squished */
+}
+
 @media only screen and (max-width: 600px) {
   .anchors-title, .padding-title, .margins-title, .justifycontentbetween-title, .tooltips-title, .cards-title, .progressbars-title {
     font-size: 1.5rem;
