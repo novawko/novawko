@@ -60,9 +60,7 @@
    			<a class="btn btn-info text-light" id="about-tab" href="#about" role="button" data-toggle="pill" aria-controls="about" aria-selected="false">About</a>
    		</li>
    		<li class="nav-item">
-			<span data-toggle="tooltip" title="Coming soon!">
-   			<a class="btn btn-success text-light disabled" id="commissions-tab" href="#commissions" role="button" aria-controls="commissions" aria-selected="false">Commissions</a>
-			</span>
+   			<a class="btn btn-success text-light" id="links-tab" href="#links" role="button" aria-controls="links" aria-selected="false">Links</a>
    		</li>
    		<li class="nav-item">
    			<a class="btn btn-warning text-light" href="/tos" role="button" aria-selected="false">TOS</a>
@@ -77,85 +75,30 @@
    	<!-- Tab Content
 	<!-- ----------------------------- -->
    	<div class="tab-content">
+   		<!-- Home
+		<!-- ----------------------------- -->
    		<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-   			<!-- Home
-		    <!-- ----------------------------- -->
    			<div class="card mx-md-0 px-md-5 px-4 py-4">
-   				<div class="row">
-   					<div class="col-md-6 col-12 my-auto">
-   						<img class="img-fluid rounded" src="https://img-l.ink/img/1LtRpiJaeRls93fwqusFkSWwnaHCypB7q.jpeg" style="height: 150px; width:600px; object-fit: cover;">
-   						<h3 class="text-center mt-2 mb-1 text-uppercase"><b>Nova Wolfcreek</b></h3>
-   						<h3 class="text-muted text-center small">Illustrator | Coder | Charadex Member</h3>
-   					</div>
-   					<div class="col-md-6 col-12">
-   						<div class="row no-gutters mt-2" style="gap: .3rem; display: flex; flex-direction: row; flex-wrap: nowrap;">
-   							<div class="col-6" style="flex-shrink: 0;">
-   								<a class="btn btn-primary w-100 text-uppercase text-light" href="/art"><b>Portfolio</b></a>
-   							</div>
-   							<div class="col-6" style="flex-shrink: 0;">
-   								<a class="btn btn-info w-100 text-uppercase text-light" href="/codes"><b>Codes</b></a>
-   							</div>
-   						</div>
-   						<div class="row no-gutters mt-1" style="gap: .3rem; display: flex; flex-direction: row; flex-wrap: nowrap;">
-   							<div class="col-6" style="flex-shrink: 0;">
-   								<a class="btn btn-warning w-100 text-uppercase text-light" href="/assets?folder=base"><b>Bases</b></a>
-   							</div>
-   							<div class="col-6" style="flex-shrink: 0;">
-   								<a class="btn btn-danger w-100 text-uppercase text-light" href="/assets"><b>Assets</b></a>
-   							</div>
-   						</div>
-   						<div class="row no-gutters mt-1" style="gap: .3rem; display: flex; flex-direction: row; flex-wrap: nowrap;">
-   							<div class="col-6" style="flex-shrink: 0;">
-   								<a class="btn btn-primary w-100 text-uppercase text-light" href="/characters"><b>Characters</b></a>
-   							</div>
-   							<div class="col-6" style="flex-shrink: 0;">
-   								<a class="btn btn-info w-100 text-uppercase text-light" href="https://kitiguars.com/"><b>Kitiguars</b></a>
-   							</div>
-   						</div>
-   						<div class="row no-gutters mt-1" style="gap: .3rem; display: flex; flex-direction: row; flex-wrap: nowrap;">
-   							<div class="col-6" style="flex-shrink: 0;">
-   								<a class="btn btn-warning w-100 text-uppercase text-light" href="/characters?folder=adopts"><b>Adopts</b></a>
-   							</div>
-   							<div class="col-6" style="flex-shrink: 0;">
-   								<a class="btn btn-danger w-100 text-uppercase text-light" href="/tos"><b>TOS</b></a>
-   							</div>
-   						</div>
-   						<div class="row no-gutters mt-1" style="gap: .3rem; display: flex; flex-direction: row; flex-wrap: nowrap;">
-   							<div class="col-6" style="flex-shrink: 0;">
-   								<a class="btn btn-primary w-100 text-uppercase text-light" href="/faq"><b>FAQ</b></a>
-   							</div>
-   							<div class="col-6" style="flex-shrink: 0;">
-   								<a class="btn btn-info w-100 text-uppercase text-light" href="https://trello.com/b/BgZnQ6kI/novawkos-queue"><b>Queue</b></a>
-   							</div>
-   						</div>
-   						<div class="container mt-3">
-   							<p class="text-center index-fa-icons">
-   								<a class="text-muted" href="https://bsky.app/profile/novawko.bsky.social"><i class="fa-brands fa-bluesky fa-fw fa-sm"></i></a>
-   								<a class="text-muted" href="https://instagram.com/novawko"><i class="fa-brands fa-instagram fa-fw fa-sm"></i></a>
-   								<a class="text-muted" href="https://www.threads.com/@novawko"><i class="fa-brands fa-threads fa-fw fa-sm"></i></a>
-   								<a class="text-muted" href="https://toyhou.se/Novawko"><i class="fa-solid fa-house fa-fw fa-sm"></i></a>
-   								<a class="text-muted" href="https://toyhou.se/Pixelination"><i class="fa-regular fa-house fa-fw fa-sm"></i></a>
-   								<a class="text-muted" href="https://ko-fi.com/novawko"><i class="fa-solid fa-mug-saucer fa-fw fa-sm"></i></a>
-   								<a class="text-muted" href="https://trello.com/b/qc9BMU7U/novawkos-to-do"><i class="fa-brands fa-trello fa-fw fa-sm"></i></a>
-   								<a class="text-muted" href="https://www.pinterest.com/pixelination"><i class="fa-brands fa-pinterest fa-fw fa-sm"></i></a>
-   								<a class="text-muted" href="https://characterhub.com/profile/Novawko"><i class="fa-solid fa-circle-user fa-fw fa-sm"></i></a>
-   								<a class="text-muted" href="https://unvale.io/Novawko"><i class="fa-solid fa-star fa-fw fa-sm"></i></a>
-   								<a class="text-muted" href="https://www.reddit.com/user/Pixelination"><i class="fa-brands fa-reddit fa-fw fa-sm"></i></a>
-   								<a class="text-muted" href="https://github.com/novawko"><i class="fa-brands fa-github fa-fw fa-sm"></i></a>
-   								<span class="text-muted" data-toggle="tooltip" title="novawko"><i class="fa-brands fa-discord fa-fw fa-sm"></i></span>
-   								<a class="text-muted" href="https://www.roblox.com/users/2710900495/profile"><i class="fa-brands fa-roblox-creator-studio fa-fw fa-sm"></i></a>
-   								<a class="text-muted" href="https://cara.app/novawko"><i class="fa-solid fa-palette fa-fw fa-sm"></i></a>
-   								<a class="text-muted" href="https://artfight.net/~Novawko"><i class="fa-solid fa-paintbrush fa-fw fa-sm"></i></a>
-   								<a class="text-muted" href="https://www.youtube.com/@novawko"><i class="fa-brands fa-youtube fa-fw fa-sm"></i></a>
-   							</p>
-   						</div>
-   					</div>
-   				</div>
+   				<div class="mx-auto" style="max-width:350px;">
+	<!-- Image -->
+	<img class="rounded-circle img-fluid" src="https://img-l.ink/img/13IV9QK4gIYEQ9B0p3Y2VrRVGI1IPfOqw.png" style="max-width: 100px; float:left; margin-right:6px;">
+	<!-- Bits -->
+	<p style="padding-top:5px; margin-bottom:0px; font-size: 15px"> nova wolfcreek
+	<!-- Pixel -->
+		<img src="https://img-l.ink/img/1EYSj2HZsS8AEF6sd0N67x0DgO9ZyMIC5.png" style="height: 20px;"> she/her
+	</p>
+	<!-- Caption -->
+	<p style="font-size: 13px;">
+		<!-- Pixel -->
+		<img src="https://img-l.ink/img/1bcZj7tsVkPTvc6ANJafClKoHwoaXvPUm.gif" style="height:20px"> illustrator, coder, charadex member <br> comms <b>closed</b>, <u><a href="https://kitiguars.com/">kitiguars</a></u>
+		<br> check my <i>bluesky</i> for daily updates!
+	</p>
+</div>
    			</div>
    		</div>
-   		<!-- Commissions
+   		<!-- Links
 		<!-- ----------------------------- -->
-   		<div class="tab-pane fade" id="commissions" role="tabpanel" aria-labelledby="commissions-tab">
+   		<div class="tab-pane fade" id="links" role="tabpanel" aria-labelledby="links-tab">
    			<div class="card mx-md-0 px-md-5 px-4 py-4">
    				<p class="text-center text-muted">Coming soon!</p>
    			</div>
