@@ -276,39 +276,9 @@ button[aria-expanded="true"] .display-tags {
 /* ============================================================= */
 @media only screen and (max-width: 600px) {
 
-  .coolio {
-	display: grid;
-	place-items: center;
-    position: absolute !important;
-    background-color: rgba(0, 0, 0, 0.95) !important;
-    width: 100% !important;
-    height: 100vh !important;
-    z-index: 99999 !important;
-    position: fixed !important;
-    top: 0 !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-  }
-
-  .coolio img {
-	margin-left: -40px !important;
-    margin-right: -40px !important;
-    width: calc(100% + 80px);
-    max-width: calc(100% + 80px);
-  }
-
   .cd-list-fix {
     display: flex;
     gap: 0.625rem;
-  }
-
-  #mewwo {
-  height: 50px !important;
-  }
-
-  #silly {
-  height: 100px !important;
   }
 
   #charadex-tags {
@@ -331,13 +301,6 @@ button[aria-expanded="true"] .display-tags {
 
   .character-list-container, .resource-list-container {
     height: auto !important;
-  }
-
-  .custom-2x2-tabs {
-    flex-wrap: wrap;
-  }
-  .custom-2x2-tabs .nav-item {
-    flex: 1 0 50%;
   }
 
   .index-fa-icons {
@@ -367,19 +330,6 @@ button[aria-expanded="true"] .display-tags {
 
   .index-fa-icons {
 	font-size: 0.9375rem;
-  }
-
-  .coolio {
-    position: absolute !important;
-    background-color: rgba(0, 0, 0, 0.95) !important;
-    width: 100% !important;
-    height: 100vh !important;
-    z-index: 99999 !important;
-    position: fixed !important;
-    top: 0 !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
   }
 
   #log-gallery > div.log-list > div > div.col-md-9 > span > div {
