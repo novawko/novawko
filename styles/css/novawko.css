@@ -291,6 +291,10 @@ button[aria-expanded="true"] .display-tags {
 	  display: block;
   }
 
+  .cd-about-img {
+	  min-height: 200px;
+  }
+
   .cd-list-fix {
     display: flex;
     gap: 0.625rem;
@@ -346,6 +350,10 @@ button[aria-expanded="true"] .display-tags {
   .cd-home {
 	  display: flex;
 	  align-items: center;
+  }
+
+  .cd-about-img {
+	  min-height: 400px;
   }
 
   .index-fa-icons {
