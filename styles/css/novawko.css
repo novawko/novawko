@@ -17,6 +17,17 @@
 /* General Styles
 /* ============================================================= */
 
+/* Responsive Buttons on Mobile */
+@media (max-width: 575.98px) {
+  .btn-group-responsive {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-group-responsive .btn {
+    width: 100%;
+  }
+}
+
 /* Index Nav Buttons */
 .index-nav-equal {
   display: grid;
