@@ -15,7 +15,7 @@ body {
   /* ============================================================= */
   /* Primary Color
   /* ============================================================= */
-  --cd-primary-color: #89CFF0;
+  --cd-primary-color: #a48bad;
   --cd-primary-text-color: #fff;
 
   /* ============================================================= */
@@ -28,7 +28,7 @@ body {
   /* Backgrounds
   /* ============================================================= */
   --cd-body-background-color: #f8f8f8;
-  --cd-content-background-color: #FFFFFF;
+  --cd-content-background-color: #fff7f2;
   --cd-faded-background-color: #f8f8f8;
 
   /* Background Extras */
@@ -37,7 +37,7 @@ body {
   /* ============================================================= */
   /* Text
   /* ============================================================= */
-  --cd-body-text-color: #303030;
+  --cd-body-text-color: #6b5748;
   --cd-faded-text-color: #575757;
 
   /* ============================================================= */
@@ -51,7 +51,7 @@ body {
   /* ============================================================= */
   /* Navbar
   /* ============================================================= */
-  --cd-navbar-background-color: #303030;
+  --cd-navbar-background-color: #444a54;
   --cd-navbar-brand-color: var(--cd-primary-color);
   --cd-navbar-brand-color-hover: var(--cd-secondary-color);
   --cd-navbar-text-color: var(--cd-content-background-color);
@@ -105,7 +105,7 @@ body {
   /* Link
   /* ============================================================= */
 
-  --cd-link-text-color: #C3B1E1;
+  --cd-link-text-color: #6590b5;
   --cd-link-text-color-hover: #FAA0A0;
 
 
